@@ -1,0 +1,814 @@
+"","File","time_ms","env","F0","TP","Word","Gestural_Prom","Prosodic_Prom","Syll_num","Syll","Participant","Language","Item_type","Item_num","Focus","Gender","Age"
+"1","C05_T_02_I",15,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"2","C05_T_02_I",25,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"3","C05_T_02_I",35,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"4","C05_T_02_I",45,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"5","C05_T_02_I",55,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"6","C05_T_02_I",65,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"7","C05_T_02_I",75,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"8","C05_T_02_I",85,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"9","C05_T_02_I",95,0.00581211805200105,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"10","C05_T_02_I",105,0.0115902441951494,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"11","C05_T_02_I",115,0.0115473856147799,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"12","C05_T_02_I",125,0.0115410220556157,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"13","C05_T_02_I",135,0.0115383372015888,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"14","C05_T_02_I",145,0.01151626691379,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"15","C05_T_02_I",155,0.0114687661401335,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"16","C05_T_02_I",165,0.0114019864325634,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"17","C05_T_02_I",175,0.0113349312273384,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"18","C05_T_02_I",185,0.0112888749377372,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"19","C05_T_02_I",195,0.0112764271808796,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"20","C05_T_02_I",205,0.0112958775895707,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"21","C05_T_02_I",215,0.0113454213690234,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"22","C05_T_02_I",225,0.0114405611111763,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"23","C05_T_02_I",235,0.01160363381019,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"24","C05_T_02_I",245,0.0118336573466367,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"25","C05_T_02_I",255,0.0121126137608073,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"26","C05_T_02_I",265,0.0124242372102497,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"27","C05_T_02_I",275,0.0127441349118766,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"28","C05_T_02_I",285,0.0130405516631892,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"29","C05_T_02_I",295,0.0132853610879121,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"30","C05_T_02_I",305,0.0134636097112425,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"31","C05_T_02_I",315,0.0135750229359172,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"32","C05_T_02_I",325,0.0136236880282038,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"33","C05_T_02_I",335,0.0136186043349093,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"34","C05_T_02_I",345,0.0135678288107764,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"35","C05_T_02_I",355,0.0134732495714954,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"36","C05_T_02_I",365,0.0133328878473904,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"37","C05_T_02_I",375,0.0131499196568235,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"38","C05_T_02_I",385,0.012930344683286,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"39","C05_T_02_I",395,0.0126829450525004,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"40","C05_T_02_I",405,0.0124397410820007,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"41","C05_T_02_I",415,0.0122391565111142,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"42","C05_T_02_I",425,0.0120971196052472,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"43","C05_T_02_I",435,0.0120116569591101,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"44","C05_T_02_I",445,0.0119784731762538,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"45","C05_T_02_I",455,0.0119855306603036,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"46","C05_T_02_I",465,0.0120072025801795,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"47","C05_T_02_I",475,0.0120281712692069,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"48","C05_T_02_I",485,0.0120459622685887,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"49","C05_T_02_I",495,0.0120546498035252,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"50","C05_T_02_I",505,0.0120485406979349,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"51","C05_T_02_I",515,0.0120255655280932,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"52","C05_T_02_I",525,0.0119879818020299,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"53","C05_T_02_I",535,0.0119318159004132,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"54","C05_T_02_I",545,0.0118480059167052,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"55","C05_T_02_I",555,0.0117503110564394,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"56","C05_T_02_I",565,0.0116682510620155,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"57","C05_T_02_I",575,0.0116148842074728,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"58","C05_T_02_I",585,0.0115980012439334,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"59","C05_T_02_I",595,0.0116267417926221,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"60","C05_T_02_I",605,0.0116925554316121,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"61","C05_T_02_I",615,0.0117838428305551,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"62","C05_T_02_I",625,0.0118967515862976,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"63","C05_T_02_I",635,0.0120217471330432,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"64","C05_T_02_I",645,0.0121453707465617,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"65","C05_T_02_I",655,0.0122528489052766,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"66","C05_T_02_I",665,0.0123453834044082,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"67","C05_T_02_I",675,0.0124366408382216,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"68","C05_T_02_I",685,0.0125390287350463,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"69","C05_T_02_I",695,0.0126482058404147,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"70","C05_T_02_I",705,0.0127406987137218,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"71","C05_T_02_I",715,0.0128040569424858,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"72","C05_T_02_I",725,0.0128279163707328,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"73","C05_T_02_I",735,0.0128059611809576,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"74","C05_T_02_I",745,0.0127507567544656,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"75","C05_T_02_I",755,0.0126686111460832,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"76","C05_T_02_I",765,0.0125525882494109,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"77","C05_T_02_I",775,0.0124070548585007,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"78","C05_T_02_I",785,0.012248758760824,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"79","C05_T_02_I",795,0.0120969577862286,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"80","C05_T_02_I",805,0.011966383142126,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"81","C05_T_02_I",815,0.0118706535671847,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"82","C05_T_02_I",825,0.011815368769087,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"83","C05_T_02_I",835,0.0118034741980525,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"84","C05_T_02_I",845,0.011844978031629,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"85","C05_T_02_I",855,0.0119443845715624,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"86","C05_T_02_I",865,0.0120779744932606,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"87","C05_T_02_I",875,0.0122048534879673,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"88","C05_T_02_I",885,0.0122875008942815,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"89","C05_T_02_I",895,0.0123133169675722,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"90","C05_T_02_I",905,0.0122927488841326,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"91","C05_T_02_I",915,0.0122262072801398,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"92","C05_T_02_I",925,0.0121193532663285,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"93","C05_T_02_I",935,0.0119825725710197,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"94","C05_T_02_I",945,0.011827133935523,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"95","C05_T_02_I",955,0.0117010926160641,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"96","C05_T_02_I",965,0.0117774731744268,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"97","C05_T_02_I",975,0.0124829816962033,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"98","C05_T_02_I",985,0.0144731827728707,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"99","C05_T_02_I",995,0.0185059262695996,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"100","C05_T_02_I",1005,0.0252671162477833,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"101","C05_T_02_I",1015,0.0351854574067216,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"102","C05_T_02_I",1025,0.0483961460923563,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"103","C05_T_02_I",1035,0.0647563702339935,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"104","C05_T_02_I",1045,0.0838378690048832,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"105","C05_T_02_I",1055,0.104901381200151,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"106","C05_T_02_I",1065,0.126915240707297,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"107","C05_T_02_I",1075,0.148568613326937,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"108","C05_T_02_I",1085,0.168320885415184,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"109","C05_T_02_I",1095,0.184704022979075,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"110","C05_T_02_I",1105,0.19672931374545,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"111","C05_T_02_I",1115,0.203924097078728,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"112","C05_T_02_I",1125,0.206277450114052,238.758926391602,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"113","C05_T_02_I",1135,0.204345552568013,240.998901367188,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"114","C05_T_02_I",1145,0.199259212092467,169.887832641602,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"115","C05_T_02_I",1155,0.192499012144897,130.411972045898,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"116","C05_T_02_I",1165,0.185374373742315,118.776580810547,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"117","C05_T_02_I",1175,0.178741679480803,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"118","C05_T_02_I",1185,0.17310041126027,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"119","C05_T_02_I",1195,0.168659945281082,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"120","C05_T_02_I",1205,0.165359751113727,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"121","C05_T_02_I",1215,0.162941454094959,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"122","C05_T_02_I",1225,0.161037635611515,135.087188720703,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"123","C05_T_02_I",1235,0.159261362359203,133.364959716797,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"124","C05_T_02_I",1245,0.157235219943055,137.651412963867,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"125","C05_T_02_I",1255,0.154514925028872,138.230316162109,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"126","C05_T_02_I",1265,0.150688463350955,138.881713867188,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"127","C05_T_02_I",1275,0.145588062412347,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"128","C05_T_02_I",1285,0.139382983620478,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"129","C05_T_02_I",1295,0.132451473668484,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"130","C05_T_02_I",1305,0.125065200602919,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"131","C05_T_02_I",1315,0.117398365489677,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"132","C05_T_02_I",1325,0.109635273905486,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"133","C05_T_02_I",1335,0.101858718093889,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"134","C05_T_02_I",1345,0.0939774840015565,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"135","C05_T_02_I",1355,0.0858305187777698,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"136","C05_T_02_I",1365,0.0774798019897323,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"137","C05_T_02_I",1375,0.069214454880859,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"138","C05_T_02_I",1385,0.0613213987519297,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"139","C05_T_02_I",1395,0.0540093664679186,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"140","C05_T_02_I",1405,0.0474550432376614,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"141","C05_T_02_I",1415,0.041807298113086,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"142","C05_T_02_I",1425,0.0371269141648114,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"143","C05_T_02_I",1435,0.0333203536772877,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"144","C05_T_02_I",1445,0.0301497257777693,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"145","C05_T_02_I",1455,0.0274454599629314,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"146","C05_T_02_I",1465,0.0251523553382765,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"147","C05_T_02_I",1475,0.0232333588712908,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"148","C05_T_02_I",1485,0.0217239611038165,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"149","C05_T_02_I",1495,0.0208052022817395,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"150","C05_T_02_I",1505,0.0208198729393181,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"151","C05_T_02_I",1515,0.0222442336722805,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"152","C05_T_02_I",1525,0.0255888186838682,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"153","C05_T_02_I",1535,0.0312627512914894,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"154","C05_T_02_I",1545,0.0394506915307592,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"155","C05_T_02_I",1555,0.0499736040238195,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"156","C05_T_02_I",1565,0.0622693535117421,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"157","C05_T_02_I",1575,0.0754651874596818,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"158","C05_T_02_I",1585,0.088490763312893,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"159","C05_T_02_I",1595,0.100270972016204,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"160","C05_T_02_I",1605,0.109891928544464,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"161","C05_T_02_I",1615,0.116723471958715,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"162","C05_T_02_I",1625,0.120453408997976,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"163","C05_T_02_I",1635,0.121134318377417,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"164","C05_T_02_I",1645,0.11918447515701,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"165","C05_T_02_I",1655,0.115246801915388,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"166","C05_T_02_I",1665,0.11013557754282,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"167","C05_T_02_I",1675,0.104841838853893,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"168","C05_T_02_I",1685,0.100345646997046,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"169","C05_T_02_I",1695,0.0973090659442649,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"170","C05_T_02_I",1705,0.0959506500813632,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"171","C05_T_02_I",1715,0.0960960839803374,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"172","C05_T_02_I",1725,0.0972413232031496,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"173","C05_T_02_I",1735,0.0986995631907147,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"174","C05_T_02_I",1745,0.0997593919232284,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"175","C05_T_02_I",1755,0.0998230126313426,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"176","C05_T_02_I",1765,0.0985082500803832,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"177","C05_T_02_I",1775,0.0956963955168704,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"178","C05_T_02_I",1785,0.091512604628378,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"179","C05_T_02_I",1795,0.0862276444690369,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"180","C05_T_02_I",1805,0.0801779012877546,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"181","C05_T_02_I",1815,0.073700932900263,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"182","C05_T_02_I",1825,0.0671224841687545,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"183","C05_T_02_I",1835,0.0606989932059813,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"184","C05_T_02_I",1845,0.0546099247415976,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"185","C05_T_02_I",1855,0.0490444284924744,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"186","C05_T_02_I",1865,0.0441512536705159,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"187","C05_T_02_I",1875,0.0400540527097862,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"188","C05_T_02_I",1885,0.0369938327398296,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"189","C05_T_02_I",1895,0.0352725330366088,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"190","C05_T_02_I",1905,0.0351134753075222,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"191","C05_T_02_I",1915,0.0365772918430608,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"192","C05_T_02_I",1925,0.0395849263649262,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"193","C05_T_02_I",1935,0.0440370358945929,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"194","C05_T_02_I",1945,0.0497708706178874,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"195","C05_T_02_I",1955,0.0564431041672941,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"196","C05_T_02_I",1965,0.0636634719446506,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"197","C05_T_02_I",1975,0.0711078103068696,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"198","C05_T_02_I",1985,0.078464701128082,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"199","C05_T_02_I",1995,0.0854443205207935,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"200","C05_T_02_I",2005,0.0917089933542784,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"201","C05_T_02_I",2015,0.0968691489751954,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"202","C05_T_02_I",2025,0.100630159354883,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"203","C05_T_02_I",2035,0.102878707926992,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"204","C05_T_02_I",2045,0.103674474378545,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"205","C05_T_02_I",2055,0.103161791663127,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"206","C05_T_02_I",2065,0.101515673541871,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"207","C05_T_02_I",2075,0.0988740786327367,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"208","C05_T_02_I",2085,0.0952248953013344,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"209","C05_T_02_I",2095,0.090516711017897,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"210","C05_T_02_I",2105,0.0848322722599541,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"211","C05_T_02_I",2115,0.07840521615675,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"212","C05_T_02_I",2125,0.0715557719679432,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"213","C05_T_02_I",2135,0.06453713409433,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"214","C05_T_02_I",2145,0.057573002892903,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"215","C05_T_02_I",2155,0.0509964870934659,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"216","C05_T_02_I",2165,0.0450916200556909,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"217","C05_T_02_I",2175,0.0399598422477736,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"218","C05_T_02_I",2185,0.0355998796666499,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"219","C05_T_02_I",2195,0.0319236556158899,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"220","C05_T_02_I",2205,0.0288583035745559,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"221","C05_T_02_I",2215,0.0264055475394148,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"222","C05_T_02_I",2225,0.0245296910621361,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"223","C05_T_02_I",2235,0.0231086329624485,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"224","C05_T_02_I",2245,0.021959157455905,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"225","C05_T_02_I",2255,0.0209310014153029,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"226","C05_T_02_I",2265,0.0199524473200512,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"227","C05_T_02_I",2275,0.0189912277892906,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"228","C05_T_02_I",2285,0.0180307107110308,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"229","C05_T_02_I",2295,0.0170776285344283,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"230","C05_T_02_I",2305,0.016170276002825,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"231","C05_T_02_I",2315,0.0153624816123855,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"232","C05_T_02_I",2325,0.0146971373708374,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"233","C05_T_02_I",2335,0.0141898418364041,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"234","C05_T_02_I",2345,0.0138160548530143,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"235","C05_T_02_I",2355,0.0135378557555892,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"236","C05_T_02_I",2365,0.0133272727975608,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"237","C05_T_02_I",2375,0.0131562930086421,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"238","C05_T_02_I",2385,0.0130058526105451,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"239","C05_T_02_I",2395,0.0128671161310859,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"240","C05_T_02_I",2405,0.0127264734358748,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"241","C05_T_02_I",2415,0.0125781420078263,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"242","C05_T_02_I",2425,0.0124268365494236,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"243","C05_T_02_I",2435,0.0122721289349528,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"244","C05_T_02_I",2445,0.0121178127395073,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"245","C05_T_02_I",2455,0.011964350022119,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"246","C05_T_02_I",2465,0.0118205327742406,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"247","C05_T_02_I",2475,0.0116927447150294,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"248","C05_T_02_I",2485,0.0115810639070079,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"249","C05_T_02_I",2495,0.0115038220517142,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"250","C05_T_02_I",2505,0.0114770503490259,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"251","C05_T_02_I",2515,0.0115053372535838,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"252","C05_T_02_I",2525,0.011589687242615,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"253","C05_T_02_I",2535,0.01172761140197,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"254","C05_T_02_I",2545,0.0119530863746895,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"255","C05_T_02_I",2555,0.0123659037372629,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"256","C05_T_02_I",2565,0.0131148499906357,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"257","C05_T_02_I",2575,0.0144101341666533,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"258","C05_T_02_I",2585,0.0164908127096564,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"259","C05_T_02_I",2595,0.0195843031384501,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"260","C05_T_02_I",2605,0.0239022818820114,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"261","C05_T_02_I",2615,0.0295823357641294,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"262","C05_T_02_I",2625,0.0365827797464962,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"263","C05_T_02_I",2635,0.0446188205418589,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"264","C05_T_02_I",2645,0.0531948511899535,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"265","C05_T_02_I",2655,0.0616917977190473,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"266","C05_T_02_I",2665,0.0694335279052226,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"267","C05_T_02_I",2675,0.0757750908194655,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"268","C05_T_02_I",2685,0.0802081432185189,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"269","C05_T_02_I",2695,0.0824176619462337,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"270","C05_T_02_I",2705,0.0823229265741327,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"271","C05_T_02_I",2715,0.0800685958192955,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"272","C05_T_02_I",2725,0.0759852011443478,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"273","C05_T_02_I",2735,0.0705692849941117,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"274","C05_T_02_I",2745,0.0643942898569523,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"275","C05_T_02_I",2755,0.0580142777792837,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"276","C05_T_02_I",2765,0.0519106963661711,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"277","C05_T_02_I",2775,0.0464383437897508,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"278","C05_T_02_I",2785,0.0418065803494602,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"279","C05_T_02_I",2795,0.0380985859662294,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"280","C05_T_02_I",2805,0.0353906022872535,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"281","C05_T_02_I",2815,0.0338016272075025,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"282","C05_T_02_I",2825,0.0334919578663888,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"283","C05_T_02_I",2835,0.0347621271605355,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"284","C05_T_02_I",2845,0.0379195118933486,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"285","C05_T_02_I",2855,0.04301543758877,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"286","C05_T_02_I",2865,0.0497716437151552,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"287","C05_T_02_I",2875,0.0577472777452446,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"288","C05_T_02_I",2885,0.0666234756988858,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"289","C05_T_02_I",2895,0.0761412144344698,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"290","C05_T_02_I",2905,0.0858851046287322,121.550971984863,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"291","C05_T_02_I",2915,0.0952343616458451,120.646270751953,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"292","C05_T_02_I",2925,0.103436023435223,119.968757629395,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"293","C05_T_02_I",2935,0.109809216320983,117.288619995117,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"294","C05_T_02_I",2945,0.113866930172991,114.404853820801,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"295","C05_T_02_I",2955,0.115356015831637,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"296","C05_T_02_I",2965,0.114293506098315,120.198860168457,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"297","C05_T_02_I",2975,0.110904839382485,117.659332275391,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"298","C05_T_02_I",2985,0.105588836244076,117.091003417969,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"299","C05_T_02_I",2995,0.0988840786896545,120.745903015137,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"300","C05_T_02_I",3005,0.0912817166005782,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"301","C05_T_02_I",3015,0.0831912015533879,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"302","C05_T_02_I",3025,0.0749641425288623,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"303","C05_T_02_I",3035,0.0667968068899665,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"304","C05_T_02_I",3045,0.0588402453055717,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"305","C05_T_02_I",3055,0.0513762898687653,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"306","C05_T_02_I",3065,0.0448256827011376,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"307","C05_T_02_I",3075,0.0396183912305996,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"308","C05_T_02_I",3085,0.0359859322198972,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"309","C05_T_02_I",3095,0.0339840504791872,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"310","C05_T_02_I",3105,0.0336629551332153,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"311","C05_T_02_I",3115,0.0352409489343871,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"312","C05_T_02_I",3125,0.0390554104505152,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"313","C05_T_02_I",3135,0.0452027989817689,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"314","C05_T_02_I",3145,0.0534468093190009,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"315","C05_T_02_I",3155,0.0634572574638575,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"316","C05_T_02_I",3165,0.0747362028634148,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"317","C05_T_02_I",3175,0.0865019540497341,153.959289550781,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"318","C05_T_02_I",3185,0.097975084647969,149.089172363281,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"319","C05_T_02_I",3195,0.108507930590301,155.052841186523,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"320","C05_T_02_I",3205,0.117443570978578,154.837661743164,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"321","C05_T_02_I",3215,0.124068621704384,151.585327148438,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"322","C05_T_02_I",3225,0.12777671584929,152.720993041992,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"323","C05_T_02_I",3235,0.12822736099691,154.474182128906,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"324","C05_T_02_I",3245,0.125401696650544,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"325","C05_T_02_I",3255,0.11972653339408,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"326","C05_T_02_I",3265,0.112117324078666,168.823013305664,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"327","C05_T_02_I",3275,0.10374788785649,160.051223754883,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"328","C05_T_02_I",3285,0.0957870163413681,161.56640625,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"329","C05_T_02_I",3295,0.0892255801919316,163.967666625977,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"330","C05_T_02_I",3305,0.0847264140725776,160.525588989258,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"331","C05_T_02_I",3315,0.0825902713969346,174.413330078125,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"332","C05_T_02_I",3325,0.0828215946941431,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"333","C05_T_02_I",3335,0.085187044290272,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"334","C05_T_02_I",3345,0.0892502011132623,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"335","C05_T_02_I",3355,0.0942585669418198,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"336","C05_T_02_I",3365,0.0993304772773203,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"337","C05_T_02_I",3375,0.103751339665743,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"338","C05_T_02_I",3385,0.106879649066427,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"339","C05_T_02_I",3395,0.108156856176071,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"340","C05_T_02_I",3405,0.107252727710553,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"341","C05_T_02_I",3415,0.104143108440252,238.163619995117,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"342","C05_T_02_I",3425,0.0991365045426633,217.639907836914,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"343","C05_T_02_I",3435,0.0927683457334002,218.370880126953,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"344","C05_T_02_I",3445,0.0856471081678096,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"345","C05_T_02_I",3455,0.0783149574849731,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"346","C05_T_02_I",3465,0.0711466239759623,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"347","C05_T_02_I",3475,0.0643583512299378,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"348","C05_T_02_I",3485,0.0580247031726075,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"349","C05_T_02_I",3495,0.0521495101641905,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"350","C05_T_02_I",3505,0.0467762369856982,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"351","C05_T_02_I",3515,0.0419320445776824,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"352","C05_T_02_I",3525,0.0375618153338996,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"353","C05_T_02_I",3535,0.0336414681529802,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"354","C05_T_02_I",3545,0.03019872969538,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"355","C05_T_02_I",3555,0.0272501755518254,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"356","C05_T_02_I",3565,0.0247979438956123,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"357","C05_T_02_I",3575,0.022834302098566,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"358","C05_T_02_I",3585,0.0212979806993513,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"359","C05_T_02_I",3595,0.0200438067695503,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"360","C05_T_02_I",3605,0.0189706491955616,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"361","C05_T_02_I",3615,0.0180790648051138,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"362","C05_T_02_I",3625,0.0173668852123008,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"363","C05_T_02_I",3635,0.0168126862508252,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"364","C05_T_02_I",3645,0.0164131838241406,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"365","C05_T_02_I",3655,0.016152927033194,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"366","C05_T_02_I",3665,0.0159844831824566,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"367","C05_T_02_I",3675,0.0158493017658179,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"368","C05_T_02_I",3685,0.015706498473623,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"369","C05_T_02_I",3695,0.0155517119445408,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"370","C05_T_02_I",3705,0.0154002532200799,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"371","C05_T_02_I",3715,0.0152520783599891,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"372","C05_T_02_I",3725,0.0151022070274391,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"373","C05_T_02_I",3735,0.0149485442051508,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"374","C05_T_02_I",3745,0.0147888020444276,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"375","C05_T_02_I",3755,0.0146191938283205,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"376","C05_T_02_I",3765,0.0144304146695339,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"377","C05_T_02_I",3775,0.0142157557416341,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"378","C05_T_02_I",3785,0.0139657190255369,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"379","C05_T_02_I",3795,0.0136844414694458,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"380","C05_T_02_I",3805,0.0133977208362564,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"381","C05_T_02_I",3815,0.013124027556225,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"382","C05_T_02_I",3825,0.0128645388124203,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"383","C05_T_02_I",3835,0.0126175295037137,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"384","C05_T_02_I",3845,0.012393956586312,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"385","C05_T_02_I",3855,0.0122018495155255,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"386","C05_T_02_I",3865,0.0120431321216698,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"387","C05_T_02_I",3875,0.0119283952779032,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"388","C05_T_02_I",3885,0.0118660589184364,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"389","C05_T_02_I",3895,0.011855332078268,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"390","C05_T_02_I",3905,0.011887453982759,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"391","C05_T_02_I",3915,0.0119468982369444,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"392","C05_T_02_I",3925,0.0120207396136894,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"393","C05_T_02_I",3935,0.0121047665758201,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"394","C05_T_02_I",3945,0.0121913156064695,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"395","C05_T_02_I",3955,0.0122747338474434,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"396","C05_T_02_I",3965,0.0123497411075239,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"397","C05_T_02_I",3975,0.0124022830097023,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"398","C05_T_02_I",3985,0.0124220318554498,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"399","C05_T_02_I",3995,0.0124163522985045,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"400","C05_T_02_I",4005,0.0124004489166288,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"401","C05_T_02_I",4015,0.0123779639353277,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"402","C05_T_02_I",4025,0.0123463802345947,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"403","C05_T_02_I",4035,0.0123000502581971,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"404","C05_T_02_I",4045,0.0122207022263573,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"405","C05_T_02_I",4055,0.0120984580927485,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"406","C05_T_02_I",4065,0.0119397387265808,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"407","C05_T_02_I",4075,0.011757122457073,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"408","C05_T_02_I",4085,0.0115678846951541,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"409","C05_T_02_I",4095,0.0113901585302508,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"410","C05_T_02_I",4105,0.0112485848967864,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"411","C05_T_02_I",4115,0.0111564172339164,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"412","C05_T_02_I",4125,0.0111160250282253,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"413","C05_T_02_I",4135,0.011131167092782,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"414","C05_T_02_I",4145,0.0112065214758108,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"415","C05_T_02_I",4155,0.0113426661803795,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"416","C05_T_02_I",4165,0.0115307172219762,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"417","C05_T_02_I",4175,0.0117626092981952,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"418","C05_T_02_I",4185,0.0120314832860637,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"419","C05_T_02_I",4195,0.0123068251685737,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"420","C05_T_02_I",4205,0.0125340596271984,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"421","C05_T_02_I",4215,0.0126664624580229,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"422","C05_T_02_I",4225,0.0126791473567872,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"423","C05_T_02_I",4235,0.0125646609481364,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"424","C05_T_02_I",4245,0.0123317185378176,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"425","C05_T_02_I",4255,0.0120041389986534,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"426","C05_T_02_I",4265,0.0116179509616443,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"427","C05_T_02_I",4275,0.0112178228840903,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"428","C05_T_02_I",4285,0.0108416380074327,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"429","C05_T_02_I",4295,0.0105124983935328,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"430","C05_T_02_I",4305,0.0102471824269907,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"431","C05_T_02_I",4315,0.0100626118432128,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"432","C05_T_02_I",4325,0.00996279252570454,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"433","C05_T_02_I",4335,0.00994307573703031,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"434","C05_T_02_I",4345,0.00999813733967741,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"435","C05_T_02_I",4355,0.0101227756843336,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"436","C05_T_02_I",4365,0.0103308589594501,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"437","C05_T_02_I",4375,0.010671679419608,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"438","C05_T_02_I",4385,0.011240500316406,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"439","C05_T_02_I",4395,0.0121762435861539,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"440","C05_T_02_I",4405,0.0136561295628747,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"441","C05_T_02_I",4415,0.0159008940784481,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"442","C05_T_02_I",4425,0.0190717675215141,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"443","C05_T_02_I",4435,0.0231778303318481,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"444","C05_T_02_I",4445,0.0281178565938131,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"445","C05_T_02_I",4455,0.0336655617078118,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"446","C05_T_02_I",4465,0.0394638313230197,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"447","C05_T_02_I",4475,0.0450776418653225,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"448","C05_T_02_I",4485,0.0500546006133021,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"449","C05_T_02_I",4495,0.0539962682177367,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"450","C05_T_02_I",4505,0.0566209424866889,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"451","C05_T_02_I",4515,0.0577801000358514,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"452","C05_T_02_I",4525,0.0574422161806946,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"453","C05_T_02_I",4535,0.0556982491711541,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"454","C05_T_02_I",4545,0.0527663341153277,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"455","C05_T_02_I",4555,0.0489696569924604,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"456","C05_T_02_I",4565,0.0446806219276971,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"457","C05_T_02_I",4575,0.0402705515043508,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"458","C05_T_02_I",4585,0.0360627839678947,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"459","C05_T_02_I",4595,0.0323014250244762,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"460","C05_T_02_I",4605,0.0291232169941513,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"461","C05_T_02_I",4615,0.0265064584542068,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"462","C05_T_02_I",4625,0.0243828296254398,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"463","C05_T_02_I",4635,0.0228031757985662,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"464","C05_T_02_I",4645,0.0219078195309008,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"465","C05_T_02_I",4655,0.0218529262923784,0,"La forquilla de color violeta",NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"466","C05_T_02_I",4665,0.0227912610197913,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"467","C05_T_02_I",4675,0.0248519308750081,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"468","C05_T_02_I",4685,0.028050295627352,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"469","C05_T_02_I",4695,0.0322746988052644,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"470","C05_T_02_I",4705,0.0373407222919004,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"471","C05_T_02_I",4715,0.0429834092077808,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"472","C05_T_02_I",4725,0.0488474881518353,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"473","C05_T_02_I",4735,0.0545149955743173,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"474","C05_T_02_I",4745,0.0595375456612801,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"475","C05_T_02_I",4755,0.0634798982192828,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"476","C05_T_02_I",4765,0.0660179914477795,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"477","C05_T_02_I",4775,0.0669711899743643,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"478","C05_T_02_I",4785,0.0662994990357691,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"479","C05_T_02_I",4795,0.064113201268675,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"480","C05_T_02_I",4805,0.0606585024356628,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"481","C05_T_02_I",4815,0.0563086655621773,0,"La forquilla de color violeta","N","2",NA,"1","pre",5,"Catalan","target",2,"information","male",29
+"482","C05_T_02_I",4825,0.0514986071443976,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"483","C05_T_02_I",4835,0.0466045418331239,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"484","C05_T_02_I",4845,0.0418816442083964,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"485","C05_T_02_I",4855,0.0375155152684535,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"486","C05_T_02_I",4865,0.0336670227368956,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"487","C05_T_02_I",4875,0.0305393383842246,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"488","C05_T_02_I",4885,0.0284383532263325,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"489","C05_T_02_I",4895,0.0276312484224266,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"490","C05_T_02_I",4905,0.0282272704496615,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"491","C05_T_02_I",4915,0.030221296612742,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"492","C05_T_02_I",4925,0.0335562212793191,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"493","C05_T_02_I",4935,0.0380764655740146,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"494","C05_T_02_I",4945,0.0435927428392595,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"495","C05_T_02_I",4955,0.0499708460698751,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"496","C05_T_02_I",4965,0.0569821257109756,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"497","C05_T_02_I",4975,0.0642341409617169,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"498","C05_T_02_I",4985,0.0712991053691301,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"499","C05_T_02_I",4995,0.0778137683402848,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"500","C05_T_02_I",5005,0.0834204940069203,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"501","C05_T_02_I",5015,0.0878126730240794,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"502","C05_T_02_I",5025,0.0909184670561006,0,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"503","C05_T_02_I",5035,0.0929344885924759,134.107025146484,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"504","C05_T_02_I",5045,0.0941536255553709,137.727722167969,"La forquilla de color violeta","N","2","1","2","qui",5,"Catalan","target",2,"information","male",29
+"505","C05_T_02_I",5055,0.0947710394344392,139.735092163086,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"506","C05_T_02_I",5065,0.0949593520571564,137.522827148438,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"507","C05_T_02_I",5075,0.0949049664652029,135.969757080078,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"508","C05_T_02_I",5085,0.094699253310346,141.812728881836,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"509","C05_T_02_I",5095,0.0943347402103467,142.42350769043,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"510","C05_T_02_I",5105,0.0937402865980154,156.241943359375,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"511","C05_T_02_I",5115,0.092798182514237,0,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"512","C05_T_02_I",5125,0.0913979268358359,0,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"513","C05_T_02_I",5135,0.0895190754603163,0,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"514","C05_T_02_I",5145,0.0871252768100274,0,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"515","C05_T_02_I",5155,0.0841048440796787,0,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"516","C05_T_02_I",5165,0.0804033910157391,0,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"517","C05_T_02_I",5175,0.0760916181434741,0,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"518","C05_T_02_I",5185,0.0713083834474947,0,"La forquilla de color violeta","N","2","","3","post",5,"Catalan","target",2,"information","male",29
+"519","C05_T_02_I",5195,0.0662090461825794,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"520","C05_T_02_I",5205,0.0610430416788901,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"521","C05_T_02_I",5215,0.0561126857291462,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"522","C05_T_02_I",5225,0.0515566771164987,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"523","C05_T_02_I",5235,0.0472999966718801,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"524","C05_T_02_I",5245,0.0432458598189484,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"525","C05_T_02_I",5255,0.0394498500055512,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"526","C05_T_02_I",5265,0.0359961261296911,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"527","C05_T_02_I",5275,0.0328495024892121,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"528","C05_T_02_I",5285,0.0299303124133341,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"529","C05_T_02_I",5295,0.0272145780550051,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"530","C05_T_02_I",5305,0.0247140395317203,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"531","C05_T_02_I",5315,0.0224592441858609,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"532","C05_T_02_I",5325,0.0204689152759928,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"533","C05_T_02_I",5335,0.0187245820078236,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"534","C05_T_02_I",5345,0.0172235082010824,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"535","C05_T_02_I",5355,0.0159555664553996,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"536","C05_T_02_I",5365,0.0149021444995386,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"537","C05_T_02_I",5375,0.0140750853693931,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"538","C05_T_02_I",5385,0.0134901250697353,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"539","C05_T_02_I",5395,0.0131344332917669,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"540","C05_T_02_I",5405,0.012961301876719,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"541","C05_T_02_I",5415,0.0129047056073034,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"542","C05_T_02_I",5425,0.0129429864294771,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"543","C05_T_02_I",5435,0.0131648899819291,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"544","C05_T_02_I",5445,0.0137591194188985,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"545","C05_T_02_I",5455,0.0149092137559323,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"546","C05_T_02_I",5465,0.0166901929906655,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"547","C05_T_02_I",5475,0.019075226929219,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"548","C05_T_02_I",5485,0.0219633455563839,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"549","C05_T_02_I",5495,0.0251892288939147,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"550","C05_T_02_I",5505,0.0285740695856692,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"551","C05_T_02_I",5515,0.031985593442468,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"552","C05_T_02_I",5525,0.0354153386927663,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"553","C05_T_02_I",5535,0.039066275779642,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"554","C05_T_02_I",5545,0.0433149311825355,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"555","C05_T_02_I",5555,0.0485004493102452,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"556","C05_T_02_I",5565,0.0547354504585097,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"557","C05_T_02_I",5575,0.0618685477289845,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"558","C05_T_02_I",5585,0.0695729428276831,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"559","C05_T_02_I",5595,0.0774311170952943,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"560","C05_T_02_I",5605,0.0849678235821093,0,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"561","C05_T_02_I",5615,0.0916634680091711,120.300750732422,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"562","C05_T_02_I",5625,0.0969833284696182,114.281768798828,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"563","C05_T_02_I",5635,0.100433879524832,109.745170593262,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"564","C05_T_02_I",5645,0.10162132066717,110.80347442627,"La forquilla de color violeta","","","","4","",5,"Catalan","target",2,"information","male",29
+"565","C05_T_02_I",5655,0.100352198813271,122.762145996094,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"566","C05_T_02_I",5665,0.0967145244179742,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"567","C05_T_02_I",5675,0.0910351616531145,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"568","C05_T_02_I",5685,0.0838218378430589,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"569","C05_T_02_I",5695,0.0757360912910736,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"570","C05_T_02_I",5705,0.0675084575895122,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"571","C05_T_02_I",5715,0.0598340747880504,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"572","C05_T_02_I",5725,0.0533696014626242,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"573","C05_T_02_I",5735,0.0486821979892672,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"574","C05_T_02_I",5745,0.0461219887870237,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"575","C05_T_02_I",5755,0.0458252494571665,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"576","C05_T_02_I",5765,0.0478345682130682,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"577","C05_T_02_I",5775,0.0521595748418013,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"578","C05_T_02_I",5785,0.0586536141937936,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"579","C05_T_02_I",5795,0.0668588568807885,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"580","C05_T_02_I",5805,0.076064607608326,0,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"581","C05_T_02_I",5815,0.085509859649754,115.662651062012,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"582","C05_T_02_I",5825,0.0944938287431047,114.489807128906,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"583","C05_T_02_I",5835,0.102452863023092,113.042449951172,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"584","C05_T_02_I",5845,0.108993055662748,112.105041503906,"La forquilla de color violeta","NC","","","4","",5,"Catalan","target",2,"information","male",29
+"585","C05_T_02_I",5855,0.113860034877607,111.287590026855,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"586","C05_T_02_I",5865,0.116982441172682,110.33757019043,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"587","C05_T_02_I",5875,0.118497283597853,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"588","C05_T_02_I",5885,0.118761234950455,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"589","C05_T_02_I",5895,0.118372981784824,109.685844421387,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"590","C05_T_02_I",5905,0.117973993396572,109.715980529785,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"591","C05_T_02_I",5915,0.118071301212594,107.852447509766,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"592","C05_T_02_I",5925,0.118925554508615,109.413330078125,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"593","C05_T_02_I",5935,0.12057038229388,108.488677978516,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"594","C05_T_02_I",5945,0.122811087260056,110.599075317383,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"595","C05_T_02_I",5955,0.125231787144188,110.813346862793,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"596","C05_T_02_I",5965,0.127367724516313,112.855545043945,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"597","C05_T_02_I",5975,0.128768484276678,117.187721252441,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"598","C05_T_02_I",5985,0.129077991067077,119.264533996582,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"599","C05_T_02_I",5995,0.128152867103932,127.927352905273,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"600","C05_T_02_I",6005,0.126059707800601,130.200698852539,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"601","C05_T_02_I",6015,0.122953983107382,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"602","C05_T_02_I",6025,0.119037950436102,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"603","C05_T_02_I",6035,0.114481937188198,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"604","C05_T_02_I",6045,0.109411869437076,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"605","C05_T_02_I",6055,0.103997232336907,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"606","C05_T_02_I",6065,0.0983874414431823,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"607","C05_T_02_I",6075,0.0926962097782006,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"608","C05_T_02_I",6085,0.087009554359865,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"609","C05_T_02_I",6095,0.0813047035021907,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"610","C05_T_02_I",6105,0.0755701865391888,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"611","C05_T_02_I",6115,0.0699103308992488,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"612","C05_T_02_I",6125,0.0644568097724647,0,"La forquilla de color violeta","NC","","2","5","lor",5,"Catalan","target",2,"information","male",29
+"613","C05_T_02_I",6135,0.0591966744283304,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"614","C05_T_02_I",6145,0.0540852568885177,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"615","C05_T_02_I",6155,0.0492153954059883,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"616","C05_T_02_I",6165,0.0446995192441182,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"617","C05_T_02_I",6175,0.0405879633980139,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"618","C05_T_02_I",6185,0.0368703196979388,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"619","C05_T_02_I",6195,0.0335107274115859,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"620","C05_T_02_I",6205,0.0304715974158923,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"621","C05_T_02_I",6215,0.0277476659121748,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"622","C05_T_02_I",6225,0.0253517330925611,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"623","C05_T_02_I",6235,0.0232817459510501,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"624","C05_T_02_I",6245,0.0215104139185979,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"625","C05_T_02_I",6255,0.019987044514484,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"626","C05_T_02_I",6265,0.018693827303904,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"627","C05_T_02_I",6275,0.0176414779307143,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"628","C05_T_02_I",6285,0.016820229693776,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"629","C05_T_02_I",6295,0.0161891571595565,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"630","C05_T_02_I",6305,0.0157128009716481,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"631","C05_T_02_I",6315,0.0154135245506895,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"632","C05_T_02_I",6325,0.0154738787043441,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"633","C05_T_02_I",6335,0.016280533118624,0,"La forquilla de color violeta","","","","6","<p>",5,"Catalan","target",2,"information","male",29
+"634","C05_T_02_I",6345,0.0182902257440866,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"635","C05_T_02_I",6355,0.021896965375707,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"636","C05_T_02_I",6365,0.0273240126325093,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"637","C05_T_02_I",6375,0.0346201742849526,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"638","C05_T_02_I",6385,0.0437032145655166,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"639","C05_T_02_I",6395,0.0543037305339589,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"640","C05_T_02_I",6405,0.0659192987982164,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"641","C05_T_02_I",6415,0.0778863467926653,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"642","C05_T_02_I",6425,0.0895219198968765,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"643","C05_T_02_I",6435,0.100166281149494,111.258827209473,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"644","C05_T_02_I",6445,0.109184142380315,110.742378234863,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"645","C05_T_02_I",6455,0.116089237240752,109.468925476074,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"646","C05_T_02_I",6465,0.120634126356828,110.504127502441,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"647","C05_T_02_I",6475,0.12280000932359,109.865798950195,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"648","C05_T_02_I",6485,0.122787915551259,110.021575927734,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"649","C05_T_02_I",6495,0.121050255935907,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"650","C05_T_02_I",6505,0.118210223100678,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"651","C05_T_02_I",6515,0.114919801917443,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"652","C05_T_02_I",6525,0.11173209243932,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"653","C05_T_02_I",6535,0.108925417259408,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"654","C05_T_02_I",6545,0.106476896658079,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"655","C05_T_02_I",6555,0.104202452900774,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"656","C05_T_02_I",6565,0.1018900659443,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"657","C05_T_02_I",6575,0.099317838447696,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"658","C05_T_02_I",6585,0.0962602279445134,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"659","C05_T_02_I",6595,0.0925583086129052,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"660","C05_T_02_I",6605,0.0881780460340255,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"661","C05_T_02_I",6615,0.0831910257643022,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"662","C05_T_02_I",6625,0.0776933438171918,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"663","C05_T_02_I",6635,0.0718219103406222,0,"La forquilla de color violeta","","","","7","disfluency",5,"Catalan","target",2,"information","male",29
+"664","C05_T_02_I",6645,0.0658342581844205,0,"La forquilla de color violeta","","","","8","",5,"Catalan","target",2,"information","male",29
+"665","C05_T_02_I",6655,0.0601081455367741,0,"La forquilla de color violeta","","","","8","",5,"Catalan","target",2,"information","male",29
+"666","C05_T_02_I",6665,0.0551589569692973,0,"La forquilla de color violeta","","","","8","",5,"Catalan","target",2,"information","male",29
+"667","C05_T_02_I",6675,0.0515732202492026,0,"La forquilla de color violeta","","","","8","",5,"Catalan","target",2,"information","male",29
+"668","C05_T_02_I",6685,0.0498434501923904,0,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"669","C05_T_02_I",6695,0.0502716191926664,0,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"670","C05_T_02_I",6705,0.0529881489349243,0,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"671","C05_T_02_I",6715,0.0579148785165092,0,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"672","C05_T_02_I",6725,0.0646870738367478,0,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"673","C05_T_02_I",6735,0.0727851853296698,0,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"674","C05_T_02_I",6745,0.081693492360991,0,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"675","C05_T_02_I",6755,0.0909152469305495,114.558471679688,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"676","C05_T_02_I",6765,0.0999428493040594,113.124046325684,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"677","C05_T_02_I",6775,0.108191571224403,107.602821350098,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"678","C05_T_02_I",6785,0.115016363893324,110.467308044434,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"679","C05_T_02_I",6795,0.119916283808523,0,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"680","C05_T_02_I",6805,0.122675147038354,0,"La forquilla de color violeta","A","-1","","9","pre",5,"Catalan","target",2,"information","male",29
+"681","C05_T_02_I",6815,0.123394209443919,110.091743469238,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"682","C05_T_02_I",6825,0.122561122923019,107.267784118652,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"683","C05_T_02_I",6835,0.120899174389232,107.609619140625,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"684","C05_T_02_I",6845,0.119098580573551,106.62068939209,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"685","C05_T_02_I",6855,0.117658814320425,105.808059692383,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"686","C05_T_02_I",6865,0.116763335695034,106.502967834473,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"687","C05_T_02_I",6875,0.116358049362492,106.666664123535,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"688","C05_T_02_I",6885,0.116301252156646,105.766624450684,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"689","C05_T_02_I",6895,0.116366478243027,0,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"690","C05_T_02_I",6905,0.116247042713434,0,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"691","C05_T_02_I",6915,0.115614846949414,0,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"692","C05_T_02_I",6925,0.114216770141779,108.893531799316,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"693","C05_T_02_I",6935,0.111895151610728,106.067337036133,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"694","C05_T_02_I",6945,0.108523987149545,106.856758117676,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"695","C05_T_02_I",6955,0.104005796330716,0,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"696","C05_T_02_I",6965,0.0983323388375036,0,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"697","C05_T_02_I",6975,0.0917106799020342,0,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"698","C05_T_02_I",6985,0.0845571012301168,0,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"699","C05_T_02_I",6995,0.077318811611705,0,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"700","C05_T_02_I",7005,0.0703924916324813,0,"La forquilla de color violeta","A","-1","1","10","le",5,"Catalan","target",2,"information","male",29
+"701","C05_T_02_I",7015,0.0640606012670404,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"702","C05_T_02_I",7025,0.0583638378678192,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"703","C05_T_02_I",7035,0.0532262312834417,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"704","C05_T_02_I",7045,0.0486160790413918,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"705","C05_T_02_I",7055,0.044538463608195,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"706","C05_T_02_I",7065,0.0410074510863702,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"707","C05_T_02_I",7075,0.0380187576838935,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"708","C05_T_02_I",7085,0.0355335274999482,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"709","C05_T_02_I",7095,0.0334747404307077,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"710","C05_T_02_I",7105,0.0317308550684432,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"711","C05_T_02_I",7115,0.0302035894490509,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"712","C05_T_02_I",7125,0.0287936825642314,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"713","C05_T_02_I",7135,0.0273855864679831,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"714","C05_T_02_I",7145,0.025911447207197,0,"La forquilla de color violeta","A","-1",NA,"11","post",5,"Catalan","target",2,"information","male",29
+"715","C05_T_02_I",7155,0.0243627108981498,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"716","C05_T_02_I",7165,0.0227640196700903,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"717","C05_T_02_I",7175,0.0211482432414881,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"718","C05_T_02_I",7185,0.0195633854058647,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"719","C05_T_02_I",7195,0.0180841381890157,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"720","C05_T_02_I",7205,0.0167680927492158,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"721","C05_T_02_I",7215,0.0156307149879971,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"722","C05_T_02_I",7225,0.0146726386914966,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"723","C05_T_02_I",7235,0.0138754023076528,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"724","C05_T_02_I",7245,0.0132093433264735,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"725","C05_T_02_I",7255,0.0126560902821949,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"726","C05_T_02_I",7265,0.0122151742774433,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"727","C05_T_02_I",7275,0.0118719154564285,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"728","C05_T_02_I",7285,0.0116050844843368,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"729","C05_T_02_I",7295,0.0114227145654488,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"730","C05_T_02_I",7305,0.0113326868125632,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"731","C05_T_02_I",7315,0.0113137433291287,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"732","C05_T_02_I",7325,0.0113421311221097,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"733","C05_T_02_I",7335,0.0114125352129217,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"734","C05_T_02_I",7345,0.0115256961669068,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"735","C05_T_02_I",7355,0.0116765174148071,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"736","C05_T_02_I",7365,0.0118547820217267,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"737","C05_T_02_I",7375,0.0120511586150248,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"738","C05_T_02_I",7385,0.0122488880202257,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"739","C05_T_02_I",7395,0.0124147982619375,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"740","C05_T_02_I",7405,0.0125251408026133,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"741","C05_T_02_I",7415,0.0125814584417018,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"742","C05_T_02_I",7425,0.0125967421992675,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"743","C05_T_02_I",7435,0.0125852840125865,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"744","C05_T_02_I",7445,0.0125662252697889,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"745","C05_T_02_I",7455,0.0125656694358493,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"746","C05_T_02_I",7465,0.0125918092389018,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"747","C05_T_02_I",7475,0.012641528862539,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"748","C05_T_02_I",7485,0.0127244351642047,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"749","C05_T_02_I",7495,0.0128385355143304,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"750","C05_T_02_I",7505,0.0129656729612699,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"751","C05_T_02_I",7515,0.0130989056191461,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"752","C05_T_02_I",7525,0.0132345416204471,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"753","C05_T_02_I",7535,0.0133550957732387,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"754","C05_T_02_I",7545,0.0134390567826309,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"755","C05_T_02_I",7555,0.0134758160801687,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"756","C05_T_02_I",7565,0.0134700238916954,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"757","C05_T_02_I",7575,0.0134250977667435,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"758","C05_T_02_I",7585,0.0133457884042652,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"759","C05_T_02_I",7595,0.0132522456414609,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"760","C05_T_02_I",7605,0.0131608004746304,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"761","C05_T_02_I",7615,0.0130799421684831,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"762","C05_T_02_I",7625,0.0130131403459186,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"763","C05_T_02_I",7635,0.012960930167441,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"764","C05_T_02_I",7645,0.0129232107885316,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"765","C05_T_02_I",7655,0.012887867871511,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"766","C05_T_02_I",7665,0.0128566947804157,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"767","C05_T_02_I",7675,0.0128456128758411,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"768","C05_T_02_I",7685,0.0128521285371215,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"769","C05_T_02_I",7695,0.0128702184520613,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"770","C05_T_02_I",7705,0.0129047692540392,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"771","C05_T_02_I",7715,0.0129544301416408,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"772","C05_T_02_I",7725,0.013011490476021,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"773","C05_T_02_I",7735,0.0130716667492515,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"774","C05_T_02_I",7745,0.0131346451593879,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"775","C05_T_02_I",7755,0.0132010688816425,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"776","C05_T_02_I",7765,0.0132653163342302,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"777","C05_T_02_I",7775,0.0133136780225314,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"778","C05_T_02_I",7785,0.0133222950747257,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"779","C05_T_02_I",7795,0.0132719661559492,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"780","C05_T_02_I",7805,0.0131590186101884,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"781","C05_T_02_I",7815,0.0129893229551423,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"782","C05_T_02_I",7825,0.0127921029158058,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"783","C05_T_02_I",7835,0.0126099725629812,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"784","C05_T_02_I",7845,0.0124772888452328,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"785","C05_T_02_I",7855,0.0124221788280518,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"786","C05_T_02_I",7865,0.0124564670566478,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"787","C05_T_02_I",7875,0.0125920336373352,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"788","C05_T_02_I",7885,0.0128422434921748,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"789","C05_T_02_I",7895,0.0132048786996259,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"790","C05_T_02_I",7905,0.0136564044730263,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"791","C05_T_02_I",7915,0.0141549637757244,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"792","C05_T_02_I",7925,0.0146534683571551,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"793","C05_T_02_I",7935,0.0151114872251839,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"794","C05_T_02_I",7945,0.0154923859561526,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"795","C05_T_02_I",7955,0.0157561669253551,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"796","C05_T_02_I",7965,0.0158760653066282,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"797","C05_T_02_I",7975,0.0158483312926091,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"798","C05_T_02_I",7985,0.0156959781899675,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"799","C05_T_02_I",7995,0.0154568565544199,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"800","C05_T_02_I",8005,0.0151742259322927,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"801","C05_T_02_I",8015,0.0148858356771259,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"802","C05_T_02_I",8025,0.0146033958985906,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"803","C05_T_02_I",8035,0.014337466673593,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"804","C05_T_02_I",8045,0.0071058830147634,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"805","C05_T_02_I",8055,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"806","C05_T_02_I",8065,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"807","C05_T_02_I",8075,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"808","C05_T_02_I",8085,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"809","C05_T_02_I",8095,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"810","C05_T_02_I",8105,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"811","C05_T_02_I",8115,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"812","C05_T_02_I",8125,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29
+"813","C05_T_02_I",8135,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",2,"information","male",29

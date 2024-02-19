@@ -1,0 +1,552 @@
+"","File","time_ms","env","F0","TP","Word","Gestural_Prom","Prosodic_Prom","Syll_num","Syll","Participant","Language","Item_type","Item_num","Focus","Gender","Age"
+"1","C05_T_24_F",15,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"2","C05_T_24_F",25,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"3","C05_T_24_F",35,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"4","C05_T_24_F",45,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"5","C05_T_24_F",55,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"6","C05_T_24_F",65,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"7","C05_T_24_F",75,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"8","C05_T_24_F",85,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"9","C05_T_24_F",95,0.0056116652027313,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"10","C05_T_24_F",105,0.0113005835653772,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"11","C05_T_24_F",115,0.0114527925463858,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"12","C05_T_24_F",125,0.0115860881635621,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"13","C05_T_24_F",135,0.0116848791866845,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"14","C05_T_24_F",145,0.0117568006486756,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"15","C05_T_24_F",155,0.0118254560858306,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"16","C05_T_24_F",165,0.0119264641725529,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"17","C05_T_24_F",175,0.0120946474788355,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"18","C05_T_24_F",185,0.0123285433363717,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"19","C05_T_24_F",195,0.0125993711802669,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"20","C05_T_24_F",205,0.012889354436544,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"21","C05_T_24_F",215,0.0131818988823949,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"22","C05_T_24_F",225,0.0134365477338902,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"23","C05_T_24_F",235,0.0136232052352343,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"24","C05_T_24_F",245,0.0137440552483262,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"25","C05_T_24_F",255,0.0138031807797316,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"26","C05_T_24_F",265,0.0138053987280885,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"27","C05_T_24_F",275,0.0137741434543836,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"28","C05_T_24_F",285,0.0137452317002629,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"29","C05_T_24_F",295,0.0137442076969634,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"30","C05_T_24_F",305,0.0137770557009082,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"31","C05_T_24_F",315,0.0138422640606464,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"32","C05_T_24_F",325,0.0139411188565412,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"33","C05_T_24_F",335,0.0140734924146533,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"34","C05_T_24_F",345,0.0142209076403462,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"35","C05_T_24_F",355,0.0143542046829336,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"36","C05_T_24_F",365,0.0144419928677581,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"37","C05_T_24_F",375,0.0144462915420913,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"38","C05_T_24_F",385,0.0143555166144166,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"39","C05_T_24_F",395,0.0141851905507073,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"40","C05_T_24_F",405,0.0139556909494768,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"41","C05_T_24_F",415,0.0136830810057545,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"42","C05_T_24_F",425,0.013380829684252,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"43","C05_T_24_F",435,0.0130545337902521,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"44","C05_T_24_F",445,0.0127158896060649,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"45","C05_T_24_F",455,0.0123995006925662,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"46","C05_T_24_F",465,0.0121435420213654,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"47","C05_T_24_F",475,0.0119730972931683,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"48","C05_T_24_F",485,0.0119037811115963,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"49","C05_T_24_F",495,0.0119452649836082,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"50","C05_T_24_F",505,0.012089145862839,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"51","C05_T_24_F",515,0.0123101721946897,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"52","C05_T_24_F",525,0.0125780036176809,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"53","C05_T_24_F",535,0.0128587258311641,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"54","C05_T_24_F",545,0.013122316039359,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"55","C05_T_24_F",555,0.0133448840043677,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"56","C05_T_24_F",565,0.0135094594512218,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"57","C05_T_24_F",575,0.0136092289384768,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"58","C05_T_24_F",585,0.0136394282007478,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"59","C05_T_24_F",595,0.0135932973659201,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"60","C05_T_24_F",605,0.0134622525558834,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"61","C05_T_24_F",615,0.0132583379084944,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"62","C05_T_24_F",625,0.0130162415998453,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"63","C05_T_24_F",635,0.0127687006621795,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"64","C05_T_24_F",645,0.0125326385451882,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"65","C05_T_24_F",655,0.0123121702600535,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"66","C05_T_24_F",665,0.0121038751456837,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"67","C05_T_24_F",675,0.0119026509103878,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"68","C05_T_24_F",685,0.0117039849991968,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"69","C05_T_24_F",695,0.0115054009956743,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"70","C05_T_24_F",705,0.0113180894042236,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"71","C05_T_24_F",715,0.0111714294202592,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"72","C05_T_24_F",725,0.0110882244632257,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"73","C05_T_24_F",735,0.0110752616836108,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"74","C05_T_24_F",745,0.0111371495112405,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"75","C05_T_24_F",755,0.0112694304947196,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"76","C05_T_24_F",765,0.01145568344257,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"77","C05_T_24_F",775,0.0116814149065011,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"78","C05_T_24_F",785,0.0119284012833385,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"79","C05_T_24_F",795,0.012172377928573,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"80","C05_T_24_F",805,0.0123981695234969,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"81","C05_T_24_F",815,0.0125890920957742,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"82","C05_T_24_F",825,0.0127202676028307,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"83","C05_T_24_F",835,0.0127772552508337,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"84","C05_T_24_F",845,0.0127677001724965,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"85","C05_T_24_F",855,0.0127075558043771,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"86","C05_T_24_F",865,0.0126152920163606,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"87","C05_T_24_F",875,0.0125194589168965,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"88","C05_T_24_F",885,0.0124362483118183,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"89","C05_T_24_F",895,0.0123590201093886,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"90","C05_T_24_F",905,0.0122841874300447,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"91","C05_T_24_F",915,0.0122057898717843,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"92","C05_T_24_F",925,0.0121248908493825,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"93","C05_T_24_F",935,0.0120560277657936,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"94","C05_T_24_F",945,0.0120166652212507,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"95","C05_T_24_F",955,0.0120679419893498,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"96","C05_T_24_F",965,0.0123904325785256,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"97","C05_T_24_F",975,0.0133022048089646,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"98","C05_T_24_F",985,0.0152186600602463,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"99","C05_T_24_F",995,0.0185464134574569,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"100","C05_T_24_F",1005,0.0235483651927134,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"101","C05_T_24_F",1015,0.030329533872846,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"102","C05_T_24_F",1025,0.0389130534720325,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"103","C05_T_24_F",1035,0.049211500683283,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"104","C05_T_24_F",1045,0.0609456880741659,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"105","C05_T_24_F",1055,0.0736551219826949,119.10669708252,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"106","C05_T_24_F",1065,0.0866980141931114,123.50414276123,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"107","C05_T_24_F",1075,0.0992969357250627,120.036041259766,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"108","C05_T_24_F",1085,0.110716750333232,127.45548248291,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"109","C05_T_24_F",1095,0.120516539773144,123.357719421387,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"110","C05_T_24_F",1105,0.128551226034589,123.347770690918,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"111","C05_T_24_F",1115,0.134713027620721,121.842094421387,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"112","C05_T_24_F",1125,0.138915707252466,117.429023742676,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"113","C05_T_24_F",1135,0.141340115511739,121.982078552246,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"114","C05_T_24_F",1145,0.142382960498718,123.19979095459,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"115","C05_T_24_F",1155,0.142440286117026,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"116","C05_T_24_F",1165,0.141982927714189,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"117","C05_T_24_F",1175,0.141631518727794,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"118","C05_T_24_F",1185,0.141957240166141,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"119","C05_T_24_F",1195,0.143304998020092,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"120","C05_T_24_F",1205,0.145752301963042,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"121","C05_T_24_F",1215,0.149151380198281,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"122","C05_T_24_F",1225,0.153144941208294,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"123","C05_T_24_F",1235,0.157193607017792,155.076324462891,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"124","C05_T_24_F",1245,0.160717244500254,151.360076904297,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"125","C05_T_24_F",1255,0.163179978581186,149.431579589844,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"126","C05_T_24_F",1265,0.164187725772818,152.159362792969,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"127","C05_T_24_F",1275,0.163504840791949,147.796432495117,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"128","C05_T_24_F",1285,0.160994012535181,148.926651000977,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"129","C05_T_24_F",1295,0.156535773840479,156.403198242188,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"130","C05_T_24_F",1305,0.150052045662267,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"131","C05_T_24_F",1315,0.141716269521153,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"132","C05_T_24_F",1325,0.131972621028614,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"133","C05_T_24_F",1335,0.121292641818068,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"134","C05_T_24_F",1345,0.110182446502521,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"135","C05_T_24_F",1355,0.0992885377502138,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"136","C05_T_24_F",1365,0.0890990837023707,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"137","C05_T_24_F",1375,0.0797267556969541,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"138","C05_T_24_F",1385,0.0711086166561312,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"139","C05_T_24_F",1395,0.0631930083488636,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"140","C05_T_24_F",1405,0.0560056043657403,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"141","C05_T_24_F",1415,0.0495884171236922,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"142","C05_T_24_F",1425,0.0439331069736966,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"143","C05_T_24_F",1435,0.0390184556618546,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"144","C05_T_24_F",1445,0.0347864986176482,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"145","C05_T_24_F",1455,0.0311453782496826,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"146","C05_T_24_F",1465,0.0280022232485344,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"147","C05_T_24_F",1475,0.0253212397922117,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"148","C05_T_24_F",1485,0.0231323633231822,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"149","C05_T_24_F",1495,0.0214813248743739,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"150","C05_T_24_F",1505,0.0205064578709122,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"151","C05_T_24_F",1515,0.0205380885537114,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"152","C05_T_24_F",1525,0.0219816521233579,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"153","C05_T_24_F",1535,0.025097851832191,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"154","C05_T_24_F",1545,0.0299338591396235,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"155","C05_T_24_F",1555,0.0363281719027481,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"156","C05_T_24_F",1565,0.0439805965693491,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"157","C05_T_24_F",1575,0.0525140188599511,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"158","C05_T_24_F",1585,0.0614664367486722,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"159","C05_T_24_F",1595,0.0703883645117133,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"160","C05_T_24_F",1605,0.0789127839185338,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"161","C05_T_24_F",1615,0.0867734645469543,118.27555847168,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"162","C05_T_24_F",1625,0.0937904685795856,117.147941589355,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"163","C05_T_24_F",1635,0.099793855711501,115.276443481445,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"164","C05_T_24_F",1645,0.104645602058039,114.443542480469,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"165","C05_T_24_F",1655,0.108270036717683,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"166","C05_T_24_F",1665,0.110604007364892,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"167","C05_T_24_F",1675,0.111631804598889,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"168","C05_T_24_F",1685,0.111440600496546,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"169","C05_T_24_F",1695,0.11019690918233,136.471557617188,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"170","C05_T_24_F",1705,0.108028775597462,140.980560302734,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"171","C05_T_24_F",1715,0.104911660841804,148.078033447266,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"172","C05_T_24_F",1725,0.100773569670048,148.561935424805,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"173","C05_T_24_F",1735,0.0956684623223286,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"174","C05_T_24_F",1745,0.0898086288402174,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"175","C05_T_24_F",1755,0.0837132976477337,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"176","C05_T_24_F",1765,0.0782742811013812,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"177","C05_T_24_F",1775,0.0744586179720206,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"178","C05_T_24_F",1785,0.0730436481066306,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"179","C05_T_24_F",1795,0.0744277646170433,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"180","C05_T_24_F",1805,0.0785065492408024,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"181","C05_T_24_F",1815,0.0847972291773293,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"182","C05_T_24_F",1825,0.0928033188733058,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"183","C05_T_24_F",1835,0.102189249761591,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"184","C05_T_24_F",1845,0.112525619759843,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"185","C05_T_24_F",1855,0.123180642695219,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"186","C05_T_24_F",1865,0.133528840982401,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"187","C05_T_24_F",1875,0.143038048528584,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"188","C05_T_24_F",1885,0.151190300957264,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"189","C05_T_24_F",1895,0.157446183526674,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"190","C05_T_24_F",1905,0.161388310355384,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"191","C05_T_24_F",1915,0.162836846050529,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"192","C05_T_24_F",1925,0.161843371524195,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"193","C05_T_24_F",1935,0.158723799370732,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"194","C05_T_24_F",1945,0.154034407418121,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"195","C05_T_24_F",1955,0.148384821472893,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"196","C05_T_24_F",1965,0.142280922217055,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"197","C05_T_24_F",1975,0.136202261864804,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"198","C05_T_24_F",1985,0.130545645985718,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"199","C05_T_24_F",1995,0.125538366039437,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"200","C05_T_24_F",2005,0.121427625812775,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"201","C05_T_24_F",2015,0.118411006871264,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"202","C05_T_24_F",2025,0.116288517994637,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"203","C05_T_24_F",2035,0.114466888151112,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"204","C05_T_24_F",2045,0.112372616032345,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"205","C05_T_24_F",2055,0.109667773603178,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"206","C05_T_24_F",2065,0.106114732689915,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"207","C05_T_24_F",2075,0.101461801782772,0,"L'ampolla de color groc","N","1",NA,"1","pre",5,"Catalan","target",24,"filler","male",29
+"208","C05_T_24_F",2085,0.0955558455758403,125.654449462891,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"209","C05_T_24_F",2095,0.0884847283789321,122.32445526123,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"210","C05_T_24_F",2105,0.0805105765960463,127.895553588867,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"211","C05_T_24_F",2115,0.0720263279926741,122.531753540039,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"212","C05_T_24_F",2125,0.063656582313745,122.918022155762,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"213","C05_T_24_F",2135,0.0563171769316795,118.289031982422,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"214","C05_T_24_F",2145,0.051007560265811,127.218475341797,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"215","C05_T_24_F",2155,0.0485011447483021,126.816383361816,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"216","C05_T_24_F",2165,0.0492918854371888,126.98412322998,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"217","C05_T_24_F",2175,0.0535445647757695,0,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"218","C05_T_24_F",2185,0.0610626047285537,0,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"219","C05_T_24_F",2195,0.0714758419972296,0,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"220","C05_T_24_F",2205,0.0843624192268685,0,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"221","C05_T_24_F",2215,0.0992070770911596,0,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"222","C05_T_24_F",2225,0.11524663322806,128.722885131836,"L'ampolla de color groc","N","1","1","2","po",5,"Catalan","target",24,"filler","male",29
+"223","C05_T_24_F",2235,0.131428799315486,125.559989929199,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"224","C05_T_24_F",2245,0.146576038303799,123.105377197266,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"225","C05_T_24_F",2255,0.159529285462683,122.645057678223,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"226","C05_T_24_F",2265,0.169322668444985,121.779251098633,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"227","C05_T_24_F",2275,0.17527405010537,112.520088195801,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"228","C05_T_24_F",2285,0.177043182966459,112.153900146484,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"229","C05_T_24_F",2295,0.17478375086723,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"230","C05_T_24_F",2305,0.169137555540667,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"231","C05_T_24_F",2315,0.161042634570023,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"232","C05_T_24_F",2325,0.151465437853837,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"233","C05_T_24_F",2335,0.141186422914534,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"234","C05_T_24_F",2345,0.130815706826664,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"235","C05_T_24_F",2355,0.120858840052059,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"236","C05_T_24_F",2365,0.111601154275506,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"237","C05_T_24_F",2375,0.103174685677467,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"238","C05_T_24_F",2385,0.0957839930453359,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"239","C05_T_24_F",2395,0.0896232021951991,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"240","C05_T_24_F",2405,0.0846176032439251,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"241","C05_T_24_F",2415,0.0804288230311957,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"242","C05_T_24_F",2425,0.076726666254304,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"243","C05_T_24_F",2435,0.0733352650373162,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"244","C05_T_24_F",2445,0.0701180443936057,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"245","C05_T_24_F",2455,0.0669455670270291,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"246","C05_T_24_F",2465,0.0637341300706472,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"247","C05_T_24_F",2475,0.0605019050823696,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"248","C05_T_24_F",2485,0.0573455863971273,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"249","C05_T_24_F",2495,0.0542802803061134,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"250","C05_T_24_F",2505,0.051224333348041,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"251","C05_T_24_F",2515,0.0481207821115432,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"252","C05_T_24_F",2525,0.0449798772165252,0,"L'ampolla de color groc","N","1","","3","post",5,"Catalan","target",24,"filler","male",29
+"253","C05_T_24_F",2535,0.0418202191520552,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"254","C05_T_24_F",2545,0.0386775309640248,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"255","C05_T_24_F",2555,0.0356291369023502,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"256","C05_T_24_F",2565,0.0327850723840525,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"257","C05_T_24_F",2575,0.0302324230186561,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"258","C05_T_24_F",2585,0.0279829884304396,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"259","C05_T_24_F",2595,0.0260017235741422,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"260","C05_T_24_F",2605,0.0242243763005375,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"261","C05_T_24_F",2615,0.0225922932529246,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"262","C05_T_24_F",2625,0.0210979440760001,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"263","C05_T_24_F",2635,0.019749395911983,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"264","C05_T_24_F",2645,0.0185475467072691,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"265","C05_T_24_F",2655,0.0174877524719367,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"266","C05_T_24_F",2665,0.016542335710919,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"267","C05_T_24_F",2675,0.0156836194452519,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"268","C05_T_24_F",2685,0.0148991583056974,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"269","C05_T_24_F",2695,0.0141709830530961,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"270","C05_T_24_F",2705,0.0134881697566226,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"271","C05_T_24_F",2715,0.0128607263884178,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"272","C05_T_24_F",2725,0.0122965098399241,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"273","C05_T_24_F",2735,0.0117990271722505,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"274","C05_T_24_F",2745,0.0113782430120112,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"275","C05_T_24_F",2755,0.0110321478945327,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"276","C05_T_24_F",2765,0.0107565341797236,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"277","C05_T_24_F",2775,0.0105637117517114,0,"L'ampolla de color groc","","","","4","<p>",5,"Catalan","target",24,"filler","male",29
+"278","C05_T_24_F",2785,0.010467898589879,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"279","C05_T_24_F",2795,0.010468389309909,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"280","C05_T_24_F",2805,0.0105615603730413,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"281","C05_T_24_F",2815,0.0107417785690201,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"282","C05_T_24_F",2825,0.0109704157144262,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"283","C05_T_24_F",2835,0.0111887191043071,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"284","C05_T_24_F",2845,0.0113630721281918,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"285","C05_T_24_F",2855,0.0114841078266319,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"286","C05_T_24_F",2865,0.0115523603455943,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"287","C05_T_24_F",2875,0.0115802949887888,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"288","C05_T_24_F",2885,0.0115917726922088,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"289","C05_T_24_F",2895,0.011603226780374,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"290","C05_T_24_F",2905,0.0116149938642139,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"291","C05_T_24_F",2915,0.0116253131957295,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"292","C05_T_24_F",2925,0.0116445733255005,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"293","C05_T_24_F",2935,0.0116946060528827,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"294","C05_T_24_F",2945,0.0117875563097963,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"295","C05_T_24_F",2955,0.011938812964452,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"296","C05_T_24_F",2965,0.0121636552728714,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"297","C05_T_24_F",2975,0.0124633281720106,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"298","C05_T_24_F",2985,0.0128510652719419,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"299","C05_T_24_F",2995,0.0133521633031257,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"300","C05_T_24_F",3005,0.0139875419352617,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"301","C05_T_24_F",3015,0.0148064093640939,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"302","C05_T_24_F",3025,0.0159743037401321,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"303","C05_T_24_F",3035,0.0177892728642216,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"304","C05_T_24_F",3045,0.0206061260389276,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"305","C05_T_24_F",3055,0.024775304097741,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"306","C05_T_24_F",3065,0.0305282264501369,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"307","C05_T_24_F",3075,0.037938094157637,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"308","C05_T_24_F",3085,0.046945218894589,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"309","C05_T_24_F",3095,0.0572386924865462,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"310","C05_T_24_F",3105,0.0682365227986435,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"311","C05_T_24_F",3115,0.0792479826514303,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"312","C05_T_24_F",3125,0.0895549010011844,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"313","C05_T_24_F",3135,0.0984084679874044,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"314","C05_T_24_F",3145,0.10510686972213,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"315","C05_T_24_F",3155,0.109122253541751,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"316","C05_T_24_F",3165,0.110198483392907,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"317","C05_T_24_F",3175,0.10834982704694,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"318","C05_T_24_F",3185,0.103822423387786,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"319","C05_T_24_F",3195,0.0970889505277845,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"320","C05_T_24_F",3205,0.0888074998324877,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"321","C05_T_24_F",3215,0.0797372172460047,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"322","C05_T_24_F",3225,0.0705925686199949,0,"L'ampolla de color groc","","","","5","",5,"Catalan","target",24,"filler","male",29
+"323","C05_T_24_F",3235,0.0620883315936437,0,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"324","C05_T_24_F",3245,0.0550449800147925,0,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"325","C05_T_24_F",3255,0.0503076480646698,0,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"326","C05_T_24_F",3265,0.0486109544581139,0,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"327","C05_T_24_F",3275,0.0503505068531002,0,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"328","C05_T_24_F",3285,0.0554571674257779,0,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"329","C05_T_24_F",3295,0.0636199074529511,0,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"330","C05_T_24_F",3305,0.0745504846644613,0,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"331","C05_T_24_F",3315,0.0879210246815841,0,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"332","C05_T_24_F",3325,0.103249455102372,0,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"333","C05_T_24_F",3335,0.119950490463907,114.832534790039,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"334","C05_T_24_F",3345,0.137367076014492,117.137809753418,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"335","C05_T_24_F",3355,0.154750856210254,114.81517791748,"L'ampolla de color groc","NC","","","5","",5,"Catalan","target",24,"filler","male",29
+"336","C05_T_24_F",3365,0.171314174860933,114.211540222168,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"337","C05_T_24_F",3375,0.18643242966686,113.036849975586,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"338","C05_T_24_F",3385,0.199671567561085,110.110450744629,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"339","C05_T_24_F",3395,0.210712918916475,115.047401428223,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"340","C05_T_24_F",3405,0.219345255945854,116.424263000488,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"341","C05_T_24_F",3415,0.225455835985671,116.743942260742,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"342","C05_T_24_F",3425,0.229235583988456,117.253189086914,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"343","C05_T_24_F",3435,0.231155914701626,121.882904052734,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"344","C05_T_24_F",3445,0.231554761499529,129.279876708984,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"345","C05_T_24_F",3455,0.230482596794928,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"346","C05_T_24_F",3465,0.227858368918419,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"347","C05_T_24_F",3475,0.223717446547949,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"348","C05_T_24_F",3485,0.21825009032389,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"349","C05_T_24_F",3495,0.211661441836935,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"350","C05_T_24_F",3505,0.2041034517226,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"351","C05_T_24_F",3515,0.195688961053172,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"352","C05_T_24_F",3525,0.186554373976903,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"353","C05_T_24_F",3535,0.176793856704502,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"354","C05_T_24_F",3545,0.166476712679787,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"355","C05_T_24_F",3555,0.155698010935382,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"356","C05_T_24_F",3565,0.14455847291984,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"357","C05_T_24_F",3575,0.133115567260848,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"358","C05_T_24_F",3585,0.12144613486454,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"359","C05_T_24_F",3595,0.109729915489925,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"360","C05_T_24_F",3605,0.0982571886067229,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"361","C05_T_24_F",3615,0.0874384787083283,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"362","C05_T_24_F",3625,0.0775605161791041,0,"L'ampolla de color groc","NC","","1","6","lor",5,"Catalan","target",24,"filler","male",29
+"363","C05_T_24_F",3635,0.0685914490939024,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"364","C05_T_24_F",3645,0.0604203085791115,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"365","C05_T_24_F",3655,0.0530361197303812,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"366","C05_T_24_F",3665,0.0464983783045255,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"367","C05_T_24_F",3675,0.0408693692210503,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"368","C05_T_24_F",3685,0.0361991986213673,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"369","C05_T_24_F",3695,0.0325366947431771,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"370","C05_T_24_F",3705,0.0298224644887847,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"371","C05_T_24_F",3715,0.0278459104091959,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"372","C05_T_24_F",3725,0.0263155343160803,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"373","C05_T_24_F",3735,0.0250061610323443,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"374","C05_T_24_F",3745,0.0237895815226506,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"375","C05_T_24_F",3755,0.0226171972328711,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"376","C05_T_24_F",3765,0.0214975782045139,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"377","C05_T_24_F",3775,0.0204285982017889,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"378","C05_T_24_F",3785,0.0193956082948174,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"379","C05_T_24_F",3795,0.0183873764323966,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"380","C05_T_24_F",3805,0.0174091464062266,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"381","C05_T_24_F",3815,0.0164724333791293,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"382","C05_T_24_F",3825,0.0155888588974922,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"383","C05_T_24_F",3835,0.014783593898991,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"384","C05_T_24_F",3845,0.0141030774576629,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"385","C05_T_24_F",3855,0.013581111892324,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"386","C05_T_24_F",3865,0.0132128358849663,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"387","C05_T_24_F",3875,0.0129599858516204,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"388","C05_T_24_F",3885,0.0127930263393185,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"389","C05_T_24_F",3895,0.0127103986815678,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"390","C05_T_24_F",3905,0.0127200881986931,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"391","C05_T_24_F",3915,0.0128216467037637,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"392","C05_T_24_F",3925,0.0129959576069245,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"393","C05_T_24_F",3935,0.0132278592813457,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"394","C05_T_24_F",3945,0.0134992217144091,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"395","C05_T_24_F",3955,0.0138129428700272,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"396","C05_T_24_F",3965,0.0142720704823613,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"397","C05_T_24_F",3975,0.0150914515896788,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"398","C05_T_24_F",3985,0.016585256877074,0,"L'ampolla de color groc","","","","7","<p>",5,"Catalan","target",24,"filler","male",29
+"399","C05_T_24_F",3995,0.0190460969192417,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"400","C05_T_24_F",4005,0.0225237320566887,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"401","C05_T_24_F",4015,0.0268537337916129,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"402","C05_T_24_F",4025,0.0317716070354115,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"403","C05_T_24_F",4035,0.0369932618704525,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"404","C05_T_24_F",4045,0.0422877932457212,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"405","C05_T_24_F",4055,0.0475765474549434,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"406","C05_T_24_F",4065,0.0529373875077852,123.200317382812,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"407","C05_T_24_F",4075,0.0585707433241196,118.527229309082,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"408","C05_T_24_F",4085,0.0648076965627249,112.90796661377,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"409","C05_T_24_F",4095,0.0718865669956258,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"410","C05_T_24_F",4105,0.0797679151668921,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"411","C05_T_24_F",4115,0.0883228710508105,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"412","C05_T_24_F",4125,0.0975616391350489,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"413","C05_T_24_F",4135,0.107503919230604,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"414","C05_T_24_F",4145,0.118114776892572,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"415","C05_T_24_F",4155,0.129408240887966,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"416","C05_T_24_F",4165,0.141279723549153,125.277069091797,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"417","C05_T_24_F",4175,0.153330833131813,124.200836181641,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"418","C05_T_24_F",4185,0.1647705882262,123.273918151855,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"419","C05_T_24_F",4195,0.174650501080556,125.367515563965,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"420","C05_T_24_F",4205,0.182339728953389,131.010101318359,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"421","C05_T_24_F",4215,0.187488165404367,129.646484375,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"422","C05_T_24_F",4225,0.189848343677791,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"423","C05_T_24_F",4235,0.18929414284202,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"424","C05_T_24_F",4245,0.185863358706605,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"425","C05_T_24_F",4255,0.179741856764188,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"426","C05_T_24_F",4265,0.171251213664516,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"427","C05_T_24_F",4275,0.160781077764448,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"428","C05_T_24_F",4285,0.14869672128493,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"429","C05_T_24_F",4295,0.13553212676073,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"430","C05_T_24_F",4305,0.12211540640316,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"431","C05_T_24_F",4315,0.109244835484993,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"432","C05_T_24_F",4325,0.0974274500481211,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"433","C05_T_24_F",4335,0.0869754187380222,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"434","C05_T_24_F",4345,0.0780257643840259,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"435","C05_T_24_F",4355,0.0703970093414245,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"436","C05_T_24_F",4365,0.0637218332636118,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"437","C05_T_24_F",4375,0.0576831605833774,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"438","C05_T_24_F",4385,0.0521512819573671,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"439","C05_T_24_F",4395,0.0471149006724523,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"440","C05_T_24_F",4405,0.0424994150461048,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"441","C05_T_24_F",4415,0.0382202949500569,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"442","C05_T_24_F",4425,0.0343015473983806,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"443","C05_T_24_F",4435,0.0308516753384818,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"444","C05_T_24_F",4445,0.0279657497964999,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"445","C05_T_24_F",4455,0.0256396794554313,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"446","C05_T_24_F",4465,0.0238035754983006,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"447","C05_T_24_F",4475,0.022386109971802,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"448","C05_T_24_F",4485,0.021317738366162,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"449","C05_T_24_F",4495,0.0205106708508316,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"450","C05_T_24_F",4505,0.0198413577942674,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"451","C05_T_24_F",4515,0.0192334010545121,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"452","C05_T_24_F",4525,0.0186604725674944,0,"L'ampolla de color groc","A","1","2","8","groc",5,"Catalan","target",24,"filler","male",29
+"453","C05_T_24_F",4535,0.0180966832706571,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"454","C05_T_24_F",4545,0.0175179771447266,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"455","C05_T_24_F",4555,0.0169271371838016,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"456","C05_T_24_F",4565,0.0163453046109005,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"457","C05_T_24_F",4575,0.0157752942360661,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"458","C05_T_24_F",4585,0.0152130859058402,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"459","C05_T_24_F",4595,0.0146520193054965,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"460","C05_T_24_F",4605,0.0140875183424067,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"461","C05_T_24_F",4615,0.0135358764250036,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"462","C05_T_24_F",4625,0.0130369283499223,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"463","C05_T_24_F",4635,0.0126211571008979,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"464","C05_T_24_F",4645,0.0122957005209625,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"465","C05_T_24_F",4655,0.0120646733775761,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"466","C05_T_24_F",4665,0.0119196571809784,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"467","C05_T_24_F",4675,0.011844390580683,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"468","C05_T_24_F",4685,0.0118321509548084,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"469","C05_T_24_F",4695,0.0118653552397738,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"470","C05_T_24_F",4705,0.0119204085229701,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"471","C05_T_24_F",4715,0.0119810909905952,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"472","C05_T_24_F",4725,0.012028158866589,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"473","C05_T_24_F",4735,0.0120555583814266,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"474","C05_T_24_F",4745,0.0120725445890091,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"475","C05_T_24_F",4755,0.0120904323279962,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"476","C05_T_24_F",4765,0.0121268835079916,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"477","C05_T_24_F",4775,0.0122155553758431,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"478","C05_T_24_F",4785,0.0123880039494148,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"479","C05_T_24_F",4795,0.0126580222354638,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"480","C05_T_24_F",4805,0.0130324227149965,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"481","C05_T_24_F",4815,0.0135034454536444,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"482","C05_T_24_F",4825,0.0140310280827602,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"483","C05_T_24_F",4835,0.0145630192700933,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"484","C05_T_24_F",4845,0.0150510594758397,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"485","C05_T_24_F",4855,0.0154447168936518,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"486","C05_T_24_F",4865,0.0157045164014857,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"487","C05_T_24_F",4875,0.0158130937941859,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"488","C05_T_24_F",4885,0.0157752127678144,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"489","C05_T_24_F",4895,0.0156084362538242,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"490","C05_T_24_F",4905,0.0153262166596167,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"491","C05_T_24_F",4915,0.0149598263471859,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"492","C05_T_24_F",4925,0.0145836255820618,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"493","C05_T_24_F",4935,0.0142652963321198,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"494","C05_T_24_F",4945,0.0140462575980794,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"495","C05_T_24_F",4955,0.0139612898484404,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"496","C05_T_24_F",4965,0.0140177981738941,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"497","C05_T_24_F",4975,0.0141921416668898,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"498","C05_T_24_F",4985,0.0144526508298483,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"499","C05_T_24_F",4995,0.0147749937753793,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"500","C05_T_24_F",5005,0.0151298938750291,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"501","C05_T_24_F",5015,0.0154685327269499,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"502","C05_T_24_F",5025,0.0157443296238962,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"503","C05_T_24_F",5035,0.015923621460965,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"504","C05_T_24_F",5045,0.0159923379967209,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"505","C05_T_24_F",5055,0.0159653116376885,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"506","C05_T_24_F",5065,0.0158784349731515,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"507","C05_T_24_F",5075,0.015762629124897,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"508","C05_T_24_F",5085,0.0156358337614356,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"509","C05_T_24_F",5095,0.0155343758926145,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"510","C05_T_24_F",5105,0.0155166950771705,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"511","C05_T_24_F",5115,0.0156179541634455,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"512","C05_T_24_F",5125,0.0158202860318756,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"513","C05_T_24_F",5135,0.0160991535440494,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"514","C05_T_24_F",5145,0.0164391543901334,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"515","C05_T_24_F",5155,0.0168296999096956,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"516","C05_T_24_F",5165,0.0172819731246444,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"517","C05_T_24_F",5175,0.0178034533756754,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"518","C05_T_24_F",5185,0.0184045130358228,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"519","C05_T_24_F",5195,0.0190772059252427,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"520","C05_T_24_F",5205,0.0197646909208286,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"521","C05_T_24_F",5215,0.0204290304914528,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"522","C05_T_24_F",5225,0.0210586307690171,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"523","C05_T_24_F",5235,0.021630766026307,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"524","C05_T_24_F",5245,0.0221244984214354,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"525","C05_T_24_F",5255,0.0225119513534559,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"526","C05_T_24_F",5265,0.0227484424635725,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"527","C05_T_24_F",5275,0.022799972869268,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"528","C05_T_24_F",5285,0.022664762033951,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"529","C05_T_24_F",5295,0.0223507105860589,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"530","C05_T_24_F",5305,0.0218589606449821,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"531","C05_T_24_F",5315,0.0212090933041878,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"532","C05_T_24_F",5325,0.0204408414389871,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"533","C05_T_24_F",5335,0.0196075690816622,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"534","C05_T_24_F",5345,0.018778132359157,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"535","C05_T_24_F",5355,0.0179960547892363,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"536","C05_T_24_F",5365,0.0172822686549301,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"537","C05_T_24_F",5375,0.016657000506866,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"538","C05_T_24_F",5385,0.0161088774430783,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"539","C05_T_24_F",5395,0.0156143578533907,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"540","C05_T_24_F",5405,0.0151777299777235,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"541","C05_T_24_F",5415,0.0147980271682444,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"542","C05_T_24_F",5425,0.00730987309566395,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"543","C05_T_24_F",5435,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"544","C05_T_24_F",5445,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"545","C05_T_24_F",5455,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"546","C05_T_24_F",5465,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"547","C05_T_24_F",5475,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"548","C05_T_24_F",5485,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"549","C05_T_24_F",5495,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"550","C05_T_24_F",5505,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29
+"551","C05_T_24_F",5515,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",24,"filler","male",29

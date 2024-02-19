@@ -1,0 +1,390 @@
+"","File","time_ms","env","F0","TP","Word","Gestural_Prom","Prosodic_Prom","Syll_num","Syll","Participant","Language","Item_type","Item_num","Focus","Gender","Age"
+"1","C09_T_28_F",15,0,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"2","C09_T_28_F",25,0,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"3","C09_T_28_F",35,0,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"4","C09_T_28_F",45,0,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"5","C09_T_28_F",55,0,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"6","C09_T_28_F",65,0,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"7","C09_T_28_F",75,0,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"8","C09_T_28_F",85,0,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"9","C09_T_28_F",95,0.0057907237792473,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"10","C09_T_28_F",105,0.0116558076061021,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"11","C09_T_28_F",115,0.0118282685788266,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"12","C09_T_28_F",125,0.0120348166607796,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"13","C09_T_28_F",135,0.0122434310459467,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"14","C09_T_28_F",145,0.0124267711716971,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"15","C09_T_28_F",155,0.0125667237270503,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"16","C09_T_28_F",165,0.0126471048294432,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"17","C09_T_28_F",175,0.0126613643555369,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"18","C09_T_28_F",185,0.0126140022265036,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"19","C09_T_28_F",195,0.0125168399721547,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"20","C09_T_28_F",205,0.0123833268121499,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"21","C09_T_28_F",215,0.0122245526811117,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"22","C09_T_28_F",225,0.0120530523833579,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"23","C09_T_28_F",235,0.0118805292998302,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"24","C09_T_28_F",245,0.0117121474105308,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"25","C09_T_28_F",255,0.0115431925046516,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"26","C09_T_28_F",265,0.0113742797411051,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"27","C09_T_28_F",275,0.0112172452761174,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"28","C09_T_28_F",285,0.0110800568883732,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"29","C09_T_28_F",295,0.010982471167485,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"30","C09_T_28_F",305,0.0109404516634249,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"31","C09_T_28_F",315,0.0109433963572954,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"32","C09_T_28_F",325,0.0109750941572453,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"33","C09_T_28_F",335,0.0110258813745474,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"34","C09_T_28_F",345,0.0110769245083937,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"35","C09_T_28_F",355,0.0111149152582672,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"36","C09_T_28_F",365,0.0111482162544085,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"37","C09_T_28_F",375,0.0111795339408735,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"38","C09_T_28_F",385,0.0111941705978297,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"39","C09_T_28_F",395,0.0111797731827863,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"40","C09_T_28_F",405,0.011135269669354,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"41","C09_T_28_F",415,0.0110562751997047,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"42","C09_T_28_F",425,0.0109409556839649,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"43","C09_T_28_F",435,0.0108038717131536,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"44","C09_T_28_F",445,0.0106692961657298,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"45","C09_T_28_F",455,0.010563042543184,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"46","C09_T_28_F",465,0.0104981598421534,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"47","C09_T_28_F",475,0.010475632200618,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"48","C09_T_28_F",485,0.0104837751460373,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"49","C09_T_28_F",495,0.0104852753968833,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"50","C09_T_28_F",505,0.0104577985973979,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"51","C09_T_28_F",515,0.0104180967331236,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"52","C09_T_28_F",525,0.0103891196758061,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"53","C09_T_28_F",535,0.0103783739486779,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"54","C09_T_28_F",545,0.0103955658355518,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"55","C09_T_28_F",555,0.0104568273938156,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"56","C09_T_28_F",565,0.0105665619307407,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"57","C09_T_28_F",575,0.0107229719307362,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"58","C09_T_28_F",585,0.010933300243151,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"59","C09_T_28_F",595,0.0111912924782116,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"60","C09_T_28_F",605,0.0114763716714291,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"61","C09_T_28_F",615,0.0117737171231925,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"62","C09_T_28_F",625,0.0120680095995381,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"63","C09_T_28_F",635,0.0123361326933717,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"64","C09_T_28_F",645,0.0125524449072987,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"65","C09_T_28_F",655,0.012705039401835,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"66","C09_T_28_F",665,0.0127975096077832,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"67","C09_T_28_F",675,0.0128220178432796,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"68","C09_T_28_F",685,0.0127632087303026,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"69","C09_T_28_F",695,0.0126327985027998,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"70","C09_T_28_F",705,0.0124555763699865,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"71","C09_T_28_F",715,0.0122367896181371,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"72","C09_T_28_F",725,0.0119897092670939,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"73","C09_T_28_F",735,0.0117739704817483,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"74","C09_T_28_F",745,0.0116492676470309,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"75","C09_T_28_F",755,0.01163450285042,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"76","C09_T_28_F",765,0.0117222122478753,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"77","C09_T_28_F",775,0.0118956932626216,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"78","C09_T_28_F",785,0.0121318590237729,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"79","C09_T_28_F",795,0.0124055885891767,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"80","C09_T_28_F",805,0.0126890937685542,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"81","C09_T_28_F",815,0.0129527042872636,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"82","C09_T_28_F",825,0.0131782130676703,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"83","C09_T_28_F",835,0.0133566379450846,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"84","C09_T_28_F",845,0.0134699051313517,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"85","C09_T_28_F",855,0.0134891367072999,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"86","C09_T_28_F",865,0.0134063027754827,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"87","C09_T_28_F",875,0.0132334474124502,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"88","C09_T_28_F",885,0.0129910972554098,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"89","C09_T_28_F",895,0.01271050722414,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"90","C09_T_28_F",905,0.0124218789340723,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"91","C09_T_28_F",915,0.0121592564436558,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"92","C09_T_28_F",925,0.0119529517784551,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"93","C09_T_28_F",935,0.0118023100262581,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"94","C09_T_28_F",945,0.0117114523724962,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"95","C09_T_28_F",955,0.0116999574271906,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"96","C09_T_28_F",965,0.011807362810753,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"97","C09_T_28_F",975,0.0121518090736009,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"98","C09_T_28_F",985,0.0129007463155233,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"99","C09_T_28_F",995,0.0141722573833594,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"100","C09_T_28_F",1005,0.0159929862748138,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"101","C09_T_28_F",1015,0.0183392116884473,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"102","C09_T_28_F",1025,0.0211607193660072,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"103","C09_T_28_F",1035,0.0243920801760634,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"104","C09_T_28_F",1045,0.0279648353646492,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"105","C09_T_28_F",1055,0.0317778511955825,237.7861328125,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"106","C09_T_28_F",1065,0.0356663640925115,224.80078125,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"107","C09_T_28_F",1075,0.0394213762652886,222.810577392578,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"108","C09_T_28_F",1085,0.0428033063916967,214.512237548828,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"109","C09_T_28_F",1095,0.0455535038995702,209.981857299805,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"110","C09_T_28_F",1105,0.0474614483389798,214.185546875,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"111","C09_T_28_F",1115,0.0484132490760909,217.463226318359,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"112","C09_T_28_F",1125,0.0484015174215243,220.058090209961,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"113","C09_T_28_F",1135,0.0475144837112926,222.932632446289,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"114","C09_T_28_F",1145,0.0459148118285933,224.630737304688,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"115","C09_T_28_F",1155,0.0438880344327131,213.994552612305,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"116","C09_T_28_F",1165,0.0419137281437795,214.825622558594,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"117","C09_T_28_F",1175,0.0405337143744161,224.896560668945,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"118","C09_T_28_F",1185,0.0402065945526235,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"119","C09_T_28_F",1195,0.0413292813015542,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"120","C09_T_28_F",1205,0.0441347158434292,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"121","C09_T_28_F",1215,0.0485486873323574,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"122","C09_T_28_F",1225,0.0542931004882626,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"123","C09_T_28_F",1235,0.0610630082437594,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"124","C09_T_28_F",1245,0.0686666077438176,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"125","C09_T_28_F",1255,0.0770672490111508,252.043106079102,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"126","C09_T_28_F",1265,0.086187176978011,253.203170776367,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"127","C09_T_28_F",1275,0.0957564453241714,256.134460449219,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"128","C09_T_28_F",1285,0.105348661500402,259.320373535156,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"129","C09_T_28_F",1295,0.114505577714165,261.718292236328,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"130","C09_T_28_F",1305,0.122838049579432,268.219970703125,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"131","C09_T_28_F",1315,0.130069272634533,266.167114257812,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"132","C09_T_28_F",1325,0.135994515811591,257.760101318359,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"133","C09_T_28_F",1335,0.14038053513592,254.886993408203,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"134","C09_T_28_F",1345,0.143056927110264,255.433792114258,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"135","C09_T_28_F",1355,0.144037331801781,247.925888061523,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"136","C09_T_28_F",1365,0.143347263957663,254.705123901367,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"137","C09_T_28_F",1375,0.140945144154213,243.21369934082,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"138","C09_T_28_F",1385,0.136879529908497,240.144088745117,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"139","C09_T_28_F",1395,0.13131168347174,254.642990112305,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"140","C09_T_28_F",1405,0.124546767234909,258.968505859375,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"141","C09_T_28_F",1415,0.117126241739462,239.871383666992,"La bicicleta groga",NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"142","C09_T_28_F",1425,0.109698970770353,252.420654296875,"La bicicleta groga","N","",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"143","C09_T_28_F",1435,0.102763253785352,234.74967956543,"La bicicleta groga","N","",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"144","C09_T_28_F",1445,0.0964939895556094,252.529418945312,"La bicicleta groga","N","",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"145","C09_T_28_F",1455,0.0907700473600348,245.160675048828,"La bicicleta groga","N","",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"146","C09_T_28_F",1465,0.0853918516608004,234.565612792969,"La bicicleta groga","N","",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"147","C09_T_28_F",1475,0.0802251597373315,241.959609985352,"La bicicleta groga","N","",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"148","C09_T_28_F",1485,0.0752300603879533,219.038528442383,"La bicicleta groga","N","",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"149","C09_T_28_F",1495,0.0704071799798631,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"150","C09_T_28_F",1505,0.0657934326792891,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"151","C09_T_28_F",1515,0.0614522973614302,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"152","C09_T_28_F",1525,0.0574036411638847,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"153","C09_T_28_F",1535,0.0537099553387362,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"154","C09_T_28_F",1545,0.0504597624134903,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"155","C09_T_28_F",1555,0.0476107687295474,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"156","C09_T_28_F",1565,0.0450312728010415,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"157","C09_T_28_F",1575,0.0426174768767221,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"158","C09_T_28_F",1585,0.0402803418806408,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"159","C09_T_28_F",1595,0.0379688188681398,0,"La bicicleta groga","N","",NA,"1","pre",9,"Catalan","target",28,"filler","female",22
+"160","C09_T_28_F",1605,0.0357893949266113,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"161","C09_T_28_F",1615,0.0339477081883916,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"162","C09_T_28_F",1625,0.0325638165312966,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"163","C09_T_28_F",1635,0.0317043008304409,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"164","C09_T_28_F",1645,0.031450952452693,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"165","C09_T_28_F",1655,0.0318192716461758,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"166","C09_T_28_F",1665,0.0327523968066264,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"167","C09_T_28_F",1675,0.0341919977559005,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"168","C09_T_28_F",1685,0.036092227270336,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"169","C09_T_28_F",1695,0.038357142250318,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"170","C09_T_28_F",1705,0.040730215887913,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"171","C09_T_28_F",1715,0.0428410024542122,0,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"172","C09_T_28_F",1725,0.0443698877025402,196.606048583984,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"173","C09_T_28_F",1735,0.0450990442984567,194.995361328125,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"174","C09_T_28_F",1745,0.0449112834122223,195.472900390625,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"175","C09_T_28_F",1755,0.0438000431179419,193.237243652344,"La bicicleta groga","N","","2","2","cle",9,"Catalan","target",28,"filler","female",22
+"176","C09_T_28_F",1765,0.0418986096771739,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"177","C09_T_28_F",1775,0.0394983337938103,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"178","C09_T_28_F",1785,0.0370011014492506,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"179","C09_T_28_F",1795,0.0348011123417761,195.667495727539,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"180","C09_T_28_F",1805,0.0331475286912552,198.226760864258,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"181","C09_T_28_F",1815,0.0321115236981254,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"182","C09_T_28_F",1825,0.0316739643081575,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"183","C09_T_28_F",1835,0.0317596666075372,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"184","C09_T_28_F",1845,0.032219140933205,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"185","C09_T_28_F",1855,0.0328746956225631,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"186","C09_T_28_F",1865,0.0335461166327476,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"187","C09_T_28_F",1875,0.0340322743559328,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"188","C09_T_28_F",1885,0.034135175946195,0,"La bicicleta groga","N","","","3","post",9,"Catalan","target",28,"filler","female",22
+"189","C09_T_28_F",1895,0.033720576463226,0,"La bicicleta groga","","","","4","",9,"Catalan","target",28,"filler","female",22
+"190","C09_T_28_F",1905,0.0327495594382522,0,"La bicicleta groga","","","","4","",9,"Catalan","target",28,"filler","female",22
+"191","C09_T_28_F",1915,0.0312555924350817,0,"La bicicleta groga","","","","4","",9,"Catalan","target",28,"filler","female",22
+"192","C09_T_28_F",1925,0.0293386071940473,0,"La bicicleta groga","","","","4","",9,"Catalan","target",28,"filler","female",22
+"193","C09_T_28_F",1935,0.0271613222591583,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"194","C09_T_28_F",1945,0.0248992486035633,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"195","C09_T_28_F",1955,0.0227283103150265,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"196","C09_T_28_F",1965,0.020796122974155,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"197","C09_T_28_F",1975,0.019164451409341,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"198","C09_T_28_F",1985,0.0178077091509796,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"199","C09_T_28_F",1995,0.0166714754694157,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"200","C09_T_28_F",2005,0.0156992446366758,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"201","C09_T_28_F",2015,0.0148450124028574,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"202","C09_T_28_F",2025,0.0141066095254063,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"203","C09_T_28_F",2035,0.0134989619392279,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"204","C09_T_28_F",2045,0.0130174432834464,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"205","C09_T_28_F",2055,0.0126386737525718,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"206","C09_T_28_F",2065,0.012344703186312,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"207","C09_T_28_F",2075,0.0121376813930552,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"208","C09_T_28_F",2085,0.0120084744644211,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"209","C09_T_28_F",2095,0.0119286674007233,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"210","C09_T_28_F",2105,0.0118768406341399,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"211","C09_T_28_F",2115,0.0118279605039519,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"212","C09_T_28_F",2125,0.0117516109360478,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"213","C09_T_28_F",2135,0.0116654373232428,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"214","C09_T_28_F",2145,0.0116726505993402,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"215","C09_T_28_F",2155,0.0119051494698266,0,"La bicicleta groga","","","","5","<p>",9,"Catalan","target",28,"filler","female",22
+"216","C09_T_28_F",2165,0.0124897687262901,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"217","C09_T_28_F",2175,0.0135315692413073,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"218","C09_T_28_F",2185,0.0150735634330182,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"219","C09_T_28_F",2195,0.017104188565826,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"220","C09_T_28_F",2205,0.0195534365618264,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"221","C09_T_28_F",2215,0.0223266306889188,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"222","C09_T_28_F",2225,0.0253129662686996,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"223","C09_T_28_F",2235,0.028366137454158,209.428451538086,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"224","C09_T_28_F",2245,0.0313790128953344,207.963821411133,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"225","C09_T_28_F",2255,0.0343014720121841,208.786636352539,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"226","C09_T_28_F",2265,0.0370697232087593,192.847595214844,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"227","C09_T_28_F",2275,0.039588697853339,198.380172729492,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"228","C09_T_28_F",2285,0.0417649427577031,216.519226074219,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"229","C09_T_28_F",2295,0.0435341027630297,219.572952270508,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"230","C09_T_28_F",2305,0.0448589719657888,214.351715087891,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"231","C09_T_28_F",2315,0.0457244985161981,196.267532348633,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"232","C09_T_28_F",2325,0.0461388585807167,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"233","C09_T_28_F",2335,0.0461120424473384,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"234","C09_T_28_F",2345,0.0456274851844407,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"235","C09_T_28_F",2355,0.0446595392469624,0,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"236","C09_T_28_F",2365,0.0432026869563385,183.30241394043,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"237","C09_T_28_F",2375,0.0412856455489551,182.870208740234,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"238","C09_T_28_F",2385,0.038998547548077,182.660491943359,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"239","C09_T_28_F",2395,0.036483318646835,183.295944213867,"La bicicleta groga","A","","1","6","gro",9,"Catalan","target",28,"filler","female",22
+"240","C09_T_28_F",2405,0.0339189325703405,0,"La bicicleta groga","A","",NA,"7","post",9,"Catalan","target",28,"filler","female",22
+"241","C09_T_28_F",2415,0.0314747271198861,0,"La bicicleta groga","A","",NA,"7","post",9,"Catalan","target",28,"filler","female",22
+"242","C09_T_28_F",2425,0.0292889013526763,0,"La bicicleta groga","A","",NA,"7","post",9,"Catalan","target",28,"filler","female",22
+"243","C09_T_28_F",2435,0.0274688876984461,0,"La bicicleta groga","A","",NA,"7","post",9,"Catalan","target",28,"filler","female",22
+"244","C09_T_28_F",2445,0.0260303220008633,0,"La bicicleta groga","A","",NA,"7","post",9,"Catalan","target",28,"filler","female",22
+"245","C09_T_28_F",2455,0.0249130008395018,0,"La bicicleta groga","A","",NA,"7","post",9,"Catalan","target",28,"filler","female",22
+"246","C09_T_28_F",2465,0.0240503246600505,0,"La bicicleta groga","A","",NA,"7","post",9,"Catalan","target",28,"filler","female",22
+"247","C09_T_28_F",2475,0.0233900945109629,0,"La bicicleta groga","A","",NA,"7","post",9,"Catalan","target",28,"filler","female",22
+"248","C09_T_28_F",2485,0.0228905416256312,0,"La bicicleta groga","A","",NA,"7","post",9,"Catalan","target",28,"filler","female",22
+"249","C09_T_28_F",2495,0.0224949577783764,0,"La bicicleta groga","A","",NA,"7","post",9,"Catalan","target",28,"filler","female",22
+"250","C09_T_28_F",2505,0.0221276678588349,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"251","C09_T_28_F",2515,0.0217234871306913,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"252","C09_T_28_F",2525,0.0212511371285823,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"253","C09_T_28_F",2535,0.0206986752395144,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"254","C09_T_28_F",2545,0.0200516286193135,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"255","C09_T_28_F",2555,0.0193146729996105,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"256","C09_T_28_F",2565,0.0185071004656327,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"257","C09_T_28_F",2575,0.0176563409263296,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"258","C09_T_28_F",2585,0.0167953874004147,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"259","C09_T_28_F",2595,0.015948058484497,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"260","C09_T_28_F",2605,0.0151334481198048,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"261","C09_T_28_F",2615,0.0143766065766546,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"262","C09_T_28_F",2625,0.0137204093850578,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"263","C09_T_28_F",2635,0.0132033875778612,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"264","C09_T_28_F",2645,0.0128352311522871,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"265","C09_T_28_F",2655,0.0125942487463586,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"266","C09_T_28_F",2665,0.0124441709255486,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"267","C09_T_28_F",2675,0.0123559092049877,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"268","C09_T_28_F",2685,0.0122992751801257,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"269","C09_T_28_F",2695,0.012244289532077,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"270","C09_T_28_F",2705,0.0121737195518814,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"271","C09_T_28_F",2715,0.0120788794477029,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"272","C09_T_28_F",2725,0.0119564058543282,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"273","C09_T_28_F",2735,0.0118247255139598,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"274","C09_T_28_F",2745,0.0117225349129917,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"275","C09_T_28_F",2755,0.0116851617825175,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"276","C09_T_28_F",2765,0.0117499672169206,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"277","C09_T_28_F",2775,0.0119513355855644,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"278","C09_T_28_F",2785,0.0123032695879833,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"279","C09_T_28_F",2795,0.0127931751075375,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"280","C09_T_28_F",2805,0.0133958812573243,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"281","C09_T_28_F",2815,0.0140814593462824,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"282","C09_T_28_F",2825,0.0148121730957312,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"283","C09_T_28_F",2835,0.0155643251793371,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"284","C09_T_28_F",2845,0.0163432689704115,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"285","C09_T_28_F",2855,0.0171510141540431,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"286","C09_T_28_F",2865,0.0179621880713667,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"287","C09_T_28_F",2875,0.0187248072267494,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"288","C09_T_28_F",2885,0.0193671228561803,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"289","C09_T_28_F",2895,0.0198384735835346,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"290","C09_T_28_F",2905,0.0201182851413376,0,NA,NA,"",NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"291","C09_T_28_F",2915,0.0202151501073497,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"292","C09_T_28_F",2925,0.0201486315112964,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"293","C09_T_28_F",2935,0.0199320975884196,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"294","C09_T_28_F",2945,0.0195750388947017,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"295","C09_T_28_F",2955,0.0190843571625862,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"296","C09_T_28_F",2965,0.0184635894509577,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"297","C09_T_28_F",2975,0.0177187147283467,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"298","C09_T_28_F",2985,0.0168822549145983,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"299","C09_T_28_F",2995,0.0160107147153343,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"300","C09_T_28_F",3005,0.0151521134855183,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"301","C09_T_28_F",3015,0.0143359173728608,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"302","C09_T_28_F",3025,0.0135758453645561,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"303","C09_T_28_F",3035,0.0128692048777888,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"304","C09_T_28_F",3045,0.0122059015820081,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"305","C09_T_28_F",3055,0.0115909342175763,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"306","C09_T_28_F",3065,0.0110448447767534,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"307","C09_T_28_F",3075,0.010586931689665,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"308","C09_T_28_F",3085,0.0102411314489895,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"309","C09_T_28_F",3095,0.0100164443688896,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"310","C09_T_28_F",3105,0.00991036911716113,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"311","C09_T_28_F",3115,0.00991425332815423,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"312","C09_T_28_F",3125,0.00999846159325991,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"313","C09_T_28_F",3135,0.0101161591994035,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"314","C09_T_28_F",3145,0.0102398892721077,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"315","C09_T_28_F",3155,0.0103600519315104,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"316","C09_T_28_F",3165,0.0104637150451993,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"317","C09_T_28_F",3175,0.0105442583378501,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"318","C09_T_28_F",3185,0.0105871779887185,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"319","C09_T_28_F",3195,0.0105779422507538,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"320","C09_T_28_F",3205,0.0105187737146686,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"321","C09_T_28_F",3215,0.0104326603819352,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"322","C09_T_28_F",3225,0.0103522157047797,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"323","C09_T_28_F",3235,0.0103014130181539,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"324","C09_T_28_F",3245,0.0102850634600164,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"325","C09_T_28_F",3255,0.0102841241528124,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"326","C09_T_28_F",3265,0.0102735317770374,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"327","C09_T_28_F",3275,0.0102483000867611,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"328","C09_T_28_F",3285,0.0102129534011669,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"329","C09_T_28_F",3295,0.0101726550789126,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"330","C09_T_28_F",3305,0.0101277244441267,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"331","C09_T_28_F",3315,0.0100697147018767,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"332","C09_T_28_F",3325,0.010006077935497,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"333","C09_T_28_F",3335,0.00994507244157345,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"334","C09_T_28_F",3345,0.00987258437162518,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"335","C09_T_28_F",3355,0.00978062322139931,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"336","C09_T_28_F",3365,0.00968181316355129,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"337","C09_T_28_F",3375,0.00959170184054382,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"338","C09_T_28_F",3385,0.0095268481918339,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"339","C09_T_28_F",3395,0.00950593216160453,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"340","C09_T_28_F",3405,0.00955231080608531,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"341","C09_T_28_F",3415,0.00968114499536834,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"342","C09_T_28_F",3425,0.00987975405072462,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"343","C09_T_28_F",3435,0.0101154252072977,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"344","C09_T_28_F",3445,0.0103571330749775,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"345","C09_T_28_F",3455,0.0105880811008332,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"346","C09_T_28_F",3465,0.0107943715307581,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"347","C09_T_28_F",3475,0.0109518137481894,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"348","C09_T_28_F",3485,0.0110455943554425,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"349","C09_T_28_F",3495,0.0110738709527314,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"350","C09_T_28_F",3505,0.0110338146879902,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"351","C09_T_28_F",3515,0.0109258478722961,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"352","C09_T_28_F",3525,0.0107529341131939,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"353","C09_T_28_F",3535,0.0105305319681537,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"354","C09_T_28_F",3545,0.0103071026901295,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"355","C09_T_28_F",3555,0.0101433005332172,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"356","C09_T_28_F",3565,0.0100744045634967,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"357","C09_T_28_F",3575,0.0101219979480617,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"358","C09_T_28_F",3585,0.010289809433676,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"359","C09_T_28_F",3595,0.010552401992323,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"360","C09_T_28_F",3605,0.0108758643892817,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"361","C09_T_28_F",3615,0.011229106338052,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"362","C09_T_28_F",3625,0.0115925901967104,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"363","C09_T_28_F",3635,0.011977651060751,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"364","C09_T_28_F",3645,0.0124084206345809,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"365","C09_T_28_F",3655,0.012883740615404,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"366","C09_T_28_F",3665,0.0133934510147962,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"367","C09_T_28_F",3675,0.0139429795479852,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"368","C09_T_28_F",3685,0.0145259037664723,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"369","C09_T_28_F",3695,0.0151066788565711,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"370","C09_T_28_F",3705,0.0156602998253111,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"371","C09_T_28_F",3715,0.0161786298550686,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"372","C09_T_28_F",3725,0.0166631470296398,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"373","C09_T_28_F",3735,0.0171118967210376,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"374","C09_T_28_F",3745,0.017500654629559,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"375","C09_T_28_F",3755,0.0178138378758923,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"376","C09_T_28_F",3765,0.0180596551590316,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"377","C09_T_28_F",3775,0.0182390090450121,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"378","C09_T_28_F",3785,0.0183555795547272,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"379","C09_T_28_F",3795,0.0184430990331712,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"380","C09_T_28_F",3805,0.0092426124159846,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"381","C09_T_28_F",3815,0,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"382","C09_T_28_F",3825,0,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"383","C09_T_28_F",3835,0,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"384","C09_T_28_F",3845,0,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"385","C09_T_28_F",3855,0,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"386","C09_T_28_F",3865,0,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"387","C09_T_28_F",3875,0,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"388","C09_T_28_F",3885,0,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22
+"389","C09_T_28_F",3895,0,0,NA,NA,NA,NA,NA,NA,9,"Catalan","target",28,"filler","female",22

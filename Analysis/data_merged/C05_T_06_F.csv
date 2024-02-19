@@ -1,0 +1,541 @@
+"","File","time_ms","env","F0","TP","Word","Gestural_Prom","Prosodic_Prom","Syll_num","Syll","Participant","Language","Item_type","Item_num","Focus","Gender","Age"
+"1","C05_T_06_F",15,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"2","C05_T_06_F",25,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"3","C05_T_06_F",35,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"4","C05_T_06_F",45,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"5","C05_T_06_F",55,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"6","C05_T_06_F",65,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"7","C05_T_06_F",75,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"8","C05_T_06_F",85,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"9","C05_T_06_F",95,0.0066453505838966,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"10","C05_T_06_F",105,0.0131098534025929,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"11","C05_T_06_F",115,0.0127272937841379,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"12","C05_T_06_F",125,0.0123145562722691,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"13","C05_T_06_F",135,0.0118984604430011,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"14","C05_T_06_F",145,0.0115111142929648,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"15","C05_T_06_F",155,0.0111750189307341,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"16","C05_T_06_F",165,0.0109124934708134,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"17","C05_T_06_F",175,0.0107551004240494,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"18","C05_T_06_F",185,0.0106977378992098,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"19","C05_T_06_F",195,0.0107077769884547,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"20","C05_T_06_F",205,0.0107706346384857,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"21","C05_T_06_F",215,0.0108803539365496,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"22","C05_T_06_F",225,0.0110395140819274,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"23","C05_T_06_F",235,0.0112460717536502,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"24","C05_T_06_F",245,0.0114753915105187,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"25","C05_T_06_F",255,0.0116981848891031,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"26","C05_T_06_F",265,0.0119099379686982,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"27","C05_T_06_F",275,0.0121158239674583,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"28","C05_T_06_F",285,0.0122997711648324,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"29","C05_T_06_F",295,0.0124425414570029,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"30","C05_T_06_F",305,0.0125459459201528,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"31","C05_T_06_F",315,0.0126435135627748,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"32","C05_T_06_F",325,0.0127708516756096,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"33","C05_T_06_F",335,0.0129531658500634,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"34","C05_T_06_F",345,0.0132078152264922,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"35","C05_T_06_F",355,0.0135359681309047,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"36","C05_T_06_F",365,0.013917653541907,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"37","C05_T_06_F",375,0.0143209547712293,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"38","C05_T_06_F",385,0.014736507540366,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"39","C05_T_06_F",395,0.01514821840504,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"40","C05_T_06_F",405,0.0155178875539898,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"41","C05_T_06_F",415,0.0158196733766389,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"42","C05_T_06_F",425,0.0160321764483876,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"43","C05_T_06_F",435,0.016141821385909,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"44","C05_T_06_F",445,0.0161566259380521,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"45","C05_T_06_F",455,0.0160937998160382,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"46","C05_T_06_F",465,0.0159598115553009,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"47","C05_T_06_F",475,0.0157733110452559,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"48","C05_T_06_F",485,0.0155768918320699,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"49","C05_T_06_F",495,0.015407050687863,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"50","C05_T_06_F",505,0.0152733678805546,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"51","C05_T_06_F",515,0.0151662420478911,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"52","C05_T_06_F",525,0.015104685878554,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"53","C05_T_06_F",535,0.0151091461027359,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"54","C05_T_06_F",545,0.0151806190527977,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"55","C05_T_06_F",555,0.0153355395949294,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"56","C05_T_06_F",565,0.0155932494225194,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"57","C05_T_06_F",575,0.0159505133709174,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"58","C05_T_06_F",585,0.0163672427492194,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"59","C05_T_06_F",595,0.0168046144612825,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"60","C05_T_06_F",605,0.0172453516058157,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"61","C05_T_06_F",615,0.0176572652243338,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"62","C05_T_06_F",625,0.0179908482726939,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"63","C05_T_06_F",635,0.0181983020878881,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"64","C05_T_06_F",645,0.0182466310354587,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"65","C05_T_06_F",655,0.0181273814842611,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"66","C05_T_06_F",665,0.0178672171281199,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"67","C05_T_06_F",675,0.0174978323484223,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"68","C05_T_06_F",685,0.0170511671507885,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"69","C05_T_06_F",695,0.0165740456260793,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"70","C05_T_06_F",705,0.0161174000034892,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"71","C05_T_06_F",715,0.0157139155540576,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"72","C05_T_06_F",725,0.0153600028945844,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"73","C05_T_06_F",735,0.0150543234655329,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"74","C05_T_06_F",745,0.0148042704884317,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"75","C05_T_06_F",755,0.0145942169300899,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"76","C05_T_06_F",765,0.0143945973248892,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"77","C05_T_06_F",775,0.0141870939318125,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"78","C05_T_06_F",785,0.0139698117438615,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"79","C05_T_06_F",795,0.0137423879710209,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"80","C05_T_06_F",805,0.0134992109506706,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"81","C05_T_06_F",815,0.0132502548916516,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"82","C05_T_06_F",825,0.0130118019845096,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"83","C05_T_06_F",835,0.0128040057472488,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"84","C05_T_06_F",845,0.0126558959761675,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"85","C05_T_06_F",855,0.0125871805135313,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"86","C05_T_06_F",865,0.0125913954855602,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"87","C05_T_06_F",875,0.0126543480549466,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"88","C05_T_06_F",885,0.0127681740344253,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"89","C05_T_06_F",895,0.0129267975407969,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"90","C05_T_06_F",905,0.0131307660213348,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"91","C05_T_06_F",915,0.01337627496468,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"92","C05_T_06_F",925,0.0136502412240122,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"93","C05_T_06_F",935,0.0139411404906984,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"94","C05_T_06_F",945,0.0143069718669183,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"95","C05_T_06_F",955,0.014926825394379,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"96","C05_T_06_F",965,0.0160146599989098,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"97","C05_T_06_F",975,0.0177444830944252,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"98","C05_T_06_F",985,0.0203468012703883,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"99","C05_T_06_F",995,0.0242767501281163,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"100","C05_T_06_F",1005,0.0301307876686294,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"101","C05_T_06_F",1015,0.0383792873150666,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"102","C05_T_06_F",1025,0.0491650374716395,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"103","C05_T_06_F",1035,0.0623153518896725,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"104","C05_T_06_F",1045,0.0775369383857636,129.59782409668,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"105","C05_T_06_F",1055,0.0944339001079068,131.816833496094,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"106","C05_T_06_F",1065,0.112410370823981,130.230346679688,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"107","C05_T_06_F",1075,0.130632153774668,125.608551025391,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"108","C05_T_06_F",1085,0.148143299564523,125,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"109","C05_T_06_F",1095,0.164045295984294,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"110","C05_T_06_F",1105,0.177713824061404,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"111","C05_T_06_F",1115,0.188814235701989,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"112","C05_T_06_F",1125,0.197024504710009,120.803802490234,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"113","C05_T_06_F",1135,0.202149639302212,121.150932312012,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"114","C05_T_06_F",1145,0.204412126261278,122.825073242188,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"115","C05_T_06_F",1155,0.204296342888906,123.699569702148,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"116","C05_T_06_F",1165,0.202254671685219,125.436935424805,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"117","C05_T_06_F",1175,0.198791996177941,123.997749328613,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"118","C05_T_06_F",1185,0.194687609652229,132.55778503418,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"119","C05_T_06_F",1195,0.190663004349676,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"120","C05_T_06_F",1205,0.187016530842354,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"121","C05_T_06_F",1215,0.183839955504129,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"122","C05_T_06_F",1225,0.181231246377272,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"123","C05_T_06_F",1235,0.179157838531705,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"124","C05_T_06_F",1245,0.177355042206553,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"125","C05_T_06_F",1255,0.175453877419249,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"126","C05_T_06_F",1265,0.173131606707304,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"127","C05_T_06_F",1275,0.170206143926641,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"128","C05_T_06_F",1285,0.166533038777809,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"129","C05_T_06_F",1295,0.161944882663794,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"130","C05_T_06_F",1305,0.156207033344796,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"131","C05_T_06_F",1315,0.149099111268157,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"132","C05_T_06_F",1325,0.140759882138583,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"133","C05_T_06_F",1335,0.131531182724252,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"134","C05_T_06_F",1345,0.12158372274366,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"135","C05_T_06_F",1355,0.111040930699946,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"136","C05_T_06_F",1365,0.100289995365183,134.898406982422,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"137","C05_T_06_F",1375,0.0898534944282011,126.774513244629,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"138","C05_T_06_F",1385,0.0799490466301203,110.432090759277,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"139","C05_T_06_F",1395,0.07053717628481,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"140","C05_T_06_F",1405,0.0616690883013717,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"141","C05_T_06_F",1415,0.0534576691652024,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"142","C05_T_06_F",1425,0.0460008712767788,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"143","C05_T_06_F",1435,0.0394671654021598,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"144","C05_T_06_F",1445,0.0339945868934996,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"145","C05_T_06_F",1455,0.0295803940833584,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"146","C05_T_06_F",1465,0.0261151339393973,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"147","C05_T_06_F",1475,0.0234319682428652,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"148","C05_T_06_F",1485,0.0213986852473707,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"149","C05_T_06_F",1495,0.0199166376223739,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"150","C05_T_06_F",1505,0.0188671832534865,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"151","C05_T_06_F",1515,0.0181184068339498,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"152","C05_T_06_F",1525,0.0175407793578057,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"153","C05_T_06_F",1535,0.0170706720388875,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"154","C05_T_06_F",1545,0.0166948896875215,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"155","C05_T_06_F",1555,0.0163767865648314,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"156","C05_T_06_F",1565,0.0160763553756478,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"157","C05_T_06_F",1575,0.0157681947496633,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"158","C05_T_06_F",1585,0.015444284667794,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"159","C05_T_06_F",1595,0.0151177164250987,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"160","C05_T_06_F",1605,0.0148074716664578,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"161","C05_T_06_F",1615,0.0145188046707381,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"162","C05_T_06_F",1625,0.01423922022772,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"163","C05_T_06_F",1635,0.0139445366326038,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"164","C05_T_06_F",1645,0.0136200197080067,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"165","C05_T_06_F",1655,0.0132859441733537,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"166","C05_T_06_F",1665,0.0131021453271383,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"167","C05_T_06_F",1675,0.0134739521061938,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"168","C05_T_06_F",1685,0.0149537997962335,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"169","C05_T_06_F",1695,0.0181439890920165,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"170","C05_T_06_F",1705,0.0236010145787105,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"171","C05_T_06_F",1715,0.0317117289626588,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"172","C05_T_06_F",1725,0.0426202450373035,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"173","C05_T_06_F",1735,0.0561776445147632,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"174","C05_T_06_F",1745,0.0719199005112655,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"175","C05_T_06_F",1755,0.0890685275997286,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"176","C05_T_06_F",1765,0.106620288558988,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"177","C05_T_06_F",1775,0.123495221790169,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"178","C05_T_06_F",1785,0.138691325046565,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"179","C05_T_06_F",1795,0.151368735765576,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"180","C05_T_06_F",1805,0.16091468410137,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"181","C05_T_06_F",1815,0.167162172494275,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"182","C05_T_06_F",1825,0.170484752907018,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"183","C05_T_06_F",1835,0.171509289505887,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"184","C05_T_06_F",1845,0.170873181668373,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"185","C05_T_06_F",1855,0.169204227695663,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"186","C05_T_06_F",1865,0.166987936148935,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"187","C05_T_06_F",1875,0.164431530879142,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"188","C05_T_06_F",1885,0.161566211178671,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"189","C05_T_06_F",1895,0.158286482488316,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"190","C05_T_06_F",1905,0.154356699836915,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"191","C05_T_06_F",1915,0.149521344074383,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"192","C05_T_06_F",1925,0.143567392969415,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"193","C05_T_06_F",1935,0.136372618919825,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"194","C05_T_06_F",1945,0.127959143544714,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"195","C05_T_06_F",1955,0.118532441578514,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"196","C05_T_06_F",1965,0.108442346601931,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"197","C05_T_06_F",1975,0.0981312781299812,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"198","C05_T_06_F",1985,0.0880537131725255,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"199","C05_T_06_F",1995,0.0786908928216644,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"200","C05_T_06_F",2005,0.0707232474679321,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"201","C05_T_06_F",2015,0.0647671482481055,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"202","C05_T_06_F",2025,0.0610364077998233,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"203","C05_T_06_F",2035,0.0595687235510015,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"204","C05_T_06_F",2045,0.0603953966845438,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"205","C05_T_06_F",2055,0.0634436413610062,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"206","C05_T_06_F",2065,0.0684601633266732,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"207","C05_T_06_F",2075,0.0749906634511131,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"208","C05_T_06_F",2085,0.0825069305152493,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"209","C05_T_06_F",2095,0.0906077570871571,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"210","C05_T_06_F",2105,0.0989502079309783,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"211","C05_T_06_F",2115,0.107127901491702,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"212","C05_T_06_F",2125,0.114745645829366,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"213","C05_T_06_F",2135,0.121578230566286,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"214","C05_T_06_F",2145,0.127650946180306,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"215","C05_T_06_F",2155,0.133106284235965,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"216","C05_T_06_F",2165,0.138036451026879,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"217","C05_T_06_F",2175,0.14242094881236,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"218","C05_T_06_F",2185,0.14624094551777,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"219","C05_T_06_F",2195,0.149528056538372,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"220","C05_T_06_F",2205,0.152053034063999,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"221","C05_T_06_F",2215,0.153331728283909,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"222","C05_T_06_F",2225,0.153025736365195,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"223","C05_T_06_F",2235,0.151025872476368,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"224","C05_T_06_F",2245,0.147364532962939,0,"La goma d'esborrar de color lila",NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"225","C05_T_06_F",2255,0.142276025372892,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"226","C05_T_06_F",2265,0.136318062889003,120.979766845703,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"227","C05_T_06_F",2275,0.130300733125481,122.55207824707,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"228","C05_T_06_F",2285,0.125036967683402,125.615203857422,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"229","C05_T_06_F",2295,0.121147327136025,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"230","C05_T_06_F",2305,0.11921606861542,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"231","C05_T_06_F",2315,0.1197965556703,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"232","C05_T_06_F",2325,0.123185102169702,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"233","C05_T_06_F",2335,0.129199623666232,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"234","C05_T_06_F",2345,0.137045881996819,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"235","C05_T_06_F",2355,0.145592159552174,118.917831420898,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"236","C05_T_06_F",2365,0.153691817880209,117.884223937988,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"237","C05_T_06_F",2375,0.160371394833943,114.656951904297,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"238","C05_T_06_F",2385,0.164908173199613,113.766540527344,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"239","C05_T_06_F",2395,0.166754326206252,115.924530029297,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"240","C05_T_06_F",2405,0.165648053866383,114.971893310547,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"241","C05_T_06_F",2415,0.161745685014951,113.29345703125,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"242","C05_T_06_F",2425,0.155429813381152,114.558471679688,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"243","C05_T_06_F",2435,0.147168496077345,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"244","C05_T_06_F",2445,0.137577678398136,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"245","C05_T_06_F",2455,0.127395220552592,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"246","C05_T_06_F",2465,0.117302987953068,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"247","C05_T_06_F",2475,0.107849462586198,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"248","C05_T_06_F",2485,0.0994519032147595,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"249","C05_T_06_F",2495,0.0923212147220579,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"250","C05_T_06_F",2505,0.0863629687390332,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"251","C05_T_06_F",2515,0.081292886200325,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"252","C05_T_06_F",2525,0.076832100584137,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"253","C05_T_06_F",2535,0.0728838115667672,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"254","C05_T_06_F",2545,0.0695791900809158,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"255","C05_T_06_F",2555,0.0670904275070089,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"256","C05_T_06_F",2565,0.0655873381283509,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"257","C05_T_06_F",2575,0.0651822210168252,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"258","C05_T_06_F",2585,0.0657579295034098,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"259","C05_T_06_F",2595,0.0670311009237697,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"260","C05_T_06_F",2605,0.0686534730167688,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"261","C05_T_06_F",2615,0.0702409265005483,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"262","C05_T_06_F",2625,0.071463554148851,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"263","C05_T_06_F",2635,0.0720817308673738,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"264","C05_T_06_F",2645,0.0719188127665938,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"265","C05_T_06_F",2655,0.0708428373107812,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"266","C05_T_06_F",2665,0.0688073790509814,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"267","C05_T_06_F",2675,0.0658673329525759,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"268","C05_T_06_F",2685,0.0621473396713791,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"269","C05_T_06_F",2695,0.0578750568228541,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"270","C05_T_06_F",2705,0.0533867868653217,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"271","C05_T_06_F",2715,0.0490969720786938,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"272","C05_T_06_F",2725,0.0454419772401116,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"273","C05_T_06_F",2735,0.0427214263602487,0,"La goma d'esborrar de color lila","N","0",NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"274","C05_T_06_F",2745,0.0410886832414202,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"275","C05_T_06_F",2755,0.040665835410133,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"276","C05_T_06_F",2765,0.0415647569431654,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"277","C05_T_06_F",2775,0.0438637422807166,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"278","C05_T_06_F",2785,0.0475897039198621,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"279","C05_T_06_F",2795,0.0526178415356238,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"280","C05_T_06_F",2805,0.0585708433806197,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"281","C05_T_06_F",2815,0.064916781370126,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"282","C05_T_06_F",2825,0.0711266323457988,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"283","C05_T_06_F",2835,0.0767085580647047,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"284","C05_T_06_F",2845,0.0812548630833866,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"285","C05_T_06_F",2855,0.0845265004291731,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"286","C05_T_06_F",2865,0.0864029064006835,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"287","C05_T_06_F",2875,0.0868509859737333,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"288","C05_T_06_F",2885,0.0859420454658957,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"289","C05_T_06_F",2895,0.0838473679961307,0,"La goma d'esborrar de color lila","N","0",NA,"1","pre",5,"Catalan","target",6,"filler","male",29
+"290","C05_T_06_F",2905,0.0808775473641264,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"291","C05_T_06_F",2915,0.0774544701176008,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"292","C05_T_06_F",2925,0.0739675387900398,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"293","C05_T_06_F",2935,0.0707776639483821,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"294","C05_T_06_F",2945,0.0683881644941224,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"295","C05_T_06_F",2955,0.0674460192550938,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"296","C05_T_06_F",2965,0.0684679224214091,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"297","C05_T_06_F",2975,0.071669638545451,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"298","C05_T_06_F",2985,0.0768982271110972,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"299","C05_T_06_F",2995,0.0838585117848439,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"300","C05_T_06_F",3005,0.0922113199190158,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"301","C05_T_06_F",3015,0.101361232580536,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"302","C05_T_06_F",3025,0.110505396013916,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"303","C05_T_06_F",3035,0.118811637549054,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"304","C05_T_06_F",3045,0.125548369111579,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"305","C05_T_06_F",3055,0.130114183521672,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"306","C05_T_06_F",3065,0.132141974084986,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"307","C05_T_06_F",3075,0.131544091851926,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"308","C05_T_06_F",3085,0.128497977303172,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"309","C05_T_06_F",3095,0.123393270572842,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"310","C05_T_06_F",3105,0.116722062293382,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"311","C05_T_06_F",3115,0.109011035998995,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"312","C05_T_06_F",3125,0.100847606336287,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"313","C05_T_06_F",3135,0.0928478996983997,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"314","C05_T_06_F",3145,0.08543246447185,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"315","C05_T_06_F",3155,0.0787073088753638,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"316","C05_T_06_F",3165,0.0725913285403658,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"317","C05_T_06_F",3175,0.0669301128227681,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"318","C05_T_06_F",3185,0.0616320858267246,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"319","C05_T_06_F",3195,0.0565825527472968,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"320","C05_T_06_F",3205,0.0516840915953046,0,"La goma d'esborrar de color lila","N","0","2","2","rrar",5,"Catalan","target",6,"filler","male",29
+"321","C05_T_06_F",3215,0.0469941098507171,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"322","C05_T_06_F",3225,0.0425890299512513,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"323","C05_T_06_F",3235,0.038540015218274,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"324","C05_T_06_F",3245,0.0349037118353123,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"325","C05_T_06_F",3255,0.0316870282007662,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"326","C05_T_06_F",3265,0.0288417460926149,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"327","C05_T_06_F",3275,0.0263196294221276,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"328","C05_T_06_F",3285,0.0240954293907764,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"329","C05_T_06_F",3295,0.0221620101409578,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"330","C05_T_06_F",3305,0.0205117711266653,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"331","C05_T_06_F",3315,0.0191247483232252,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"332","C05_T_06_F",3325,0.0179838182964125,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"333","C05_T_06_F",3335,0.0170459530272815,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"334","C05_T_06_F",3345,0.0162465767554336,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"335","C05_T_06_F",3355,0.0155293317357795,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"336","C05_T_06_F",3365,0.0148588639868177,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"337","C05_T_06_F",3375,0.014236263836926,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"338","C05_T_06_F",3385,0.0136761697680236,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"339","C05_T_06_F",3395,0.0131923081306799,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"340","C05_T_06_F",3405,0.0127924050580424,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"341","C05_T_06_F",3415,0.0124858391922884,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"342","C05_T_06_F",3425,0.0122958869375021,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"343","C05_T_06_F",3435,0.0122280864477251,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"344","C05_T_06_F",3445,0.0122542146259303,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"345","C05_T_06_F",3455,0.0123297192309564,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"346","C05_T_06_F",3465,0.0124163162187611,0,"La goma d'esborrar de color lila","","","","3","<p>",5,"Catalan","target",6,"filler","male",29
+"347","C05_T_06_F",3475,0.0124874551504813,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"348","C05_T_06_F",3485,0.0125210616606487,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"349","C05_T_06_F",3495,0.0125059210701657,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"350","C05_T_06_F",3505,0.0124514040570217,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"351","C05_T_06_F",3515,0.012383543152075,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"352","C05_T_06_F",3525,0.0123182998641749,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"353","C05_T_06_F",3535,0.012257784125351,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"354","C05_T_06_F",3545,0.0122130009261283,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"355","C05_T_06_F",3555,0.0122131395673926,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"356","C05_T_06_F",3565,0.0122938353195187,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"357","C05_T_06_F",3575,0.0124777547717949,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"358","C05_T_06_F",3585,0.0127806956445613,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"359","C05_T_06_F",3595,0.0132393139601451,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"360","C05_T_06_F",3605,0.0139612046480267,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"361","C05_T_06_F",3615,0.0151823174537059,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"362","C05_T_06_F",3625,0.0172218846075682,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"363","C05_T_06_F",3635,0.0202340113497819,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"364","C05_T_06_F",3645,0.0240805981528356,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"365","C05_T_06_F",3655,0.0284901284675569,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"366","C05_T_06_F",3665,0.0331880810913127,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"367","C05_T_06_F",3675,0.0379598659204073,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"368","C05_T_06_F",3685,0.042683791517907,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"369","C05_T_06_F",3695,0.0473553276366449,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"370","C05_T_06_F",3705,0.0520792934580984,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"371","C05_T_06_F",3715,0.056975036633982,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"372","C05_T_06_F",3725,0.0621360513464573,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"373","C05_T_06_F",3735,0.0675922548284352,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"374","C05_T_06_F",3745,0.0732960982011051,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"375","C05_T_06_F",3755,0.079107227878877,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"376","C05_T_06_F",3765,0.0847636283613908,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"377","C05_T_06_F",3775,0.0899718690713937,0,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"378","C05_T_06_F",3785,0.0944584862940014,112.836555480957,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"379","C05_T_06_F",3795,0.0979458427434758,119.965888977051,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"380","C05_T_06_F",3805,0.100112543943809,119.073463439941,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"381","C05_T_06_F",3815,0.100572351105294,116.984443664551,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"382","C05_T_06_F",3825,0.0989618905199354,117.35767364502,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"383","C05_T_06_F",3835,0.0952033057698818,112.996566772461,"La goma d'esborrar de color lila","","","","4","",5,"Catalan","target",6,"filler","male",29
+"384","C05_T_06_F",3845,0.0896275888512057,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"385","C05_T_06_F",3855,0.0827986830887895,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"386","C05_T_06_F",3865,0.0754149366272712,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"387","C05_T_06_F",3875,0.0683897736272333,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"388","C05_T_06_F",3885,0.0627790643844396,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"389","C05_T_06_F",3895,0.0595540222941931,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"390","C05_T_06_F",3905,0.059353871075522,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"391","C05_T_06_F",3915,0.062333821535759,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"392","C05_T_06_F",3925,0.0682755858168785,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"393","C05_T_06_F",3935,0.0767903813594877,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"394","C05_T_06_F",3945,0.0874205540596767,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"395","C05_T_06_F",3955,0.0996411059807256,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"396","C05_T_06_F",3965,0.112831844463279,0,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"397","C05_T_06_F",3975,0.126265005624183,118.515029907227,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"398","C05_T_06_F",3985,0.139260502771085,119.039321899414,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"399","C05_T_06_F",3995,0.151265138587498,114.757720947266,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"400","C05_T_06_F",4005,0.161690688179241,114.588272094727,"La goma d'esborrar de color lila","NC","","","4","",5,"Catalan","target",6,"filler","male",29
+"401","C05_T_06_F",4015,0.170074860042398,109.229446411133,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"402","C05_T_06_F",4025,0.176402807109528,112.448387145996,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"403","C05_T_06_F",4035,0.181236812656046,113.888290405273,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"404","C05_T_06_F",4045,0.185510641285945,113.908561706543,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"405","C05_T_06_F",4055,0.190155257418826,112.145973205566,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"406","C05_T_06_F",4065,0.195953817191864,116.022438049316,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"407","C05_T_06_F",4075,0.203337749202693,122.746452331543,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"408","C05_T_06_F",4085,0.212357303746286,128.686325073242,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"409","C05_T_06_F",4095,0.222492497489109,0,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"410","C05_T_06_F",4105,0.232812034008119,0,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"411","C05_T_06_F",4115,0.242707353777948,0,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"412","C05_T_06_F",4125,0.251682644279684,0,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"413","C05_T_06_F",4135,0.259091136146005,0,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"414","C05_T_06_F",4145,0.264452498123449,0,"La goma d'esborrar de color lila","NC","","1","5","lor_pre",5,"Catalan","target",6,"filler","male",29
+"415","C05_T_06_F",4155,0.267356906821993,143.435897827148,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"416","C05_T_06_F",4165,0.267404730191073,141.988311767578,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"417","C05_T_06_F",4175,0.264277518956285,141.523422241211,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"418","C05_T_06_F",4185,0.257845688443638,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"419","C05_T_06_F",4195,0.248324878444469,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"420","C05_T_06_F",4205,0.236430167428089,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"421","C05_T_06_F",4215,0.223201105946342,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"422","C05_T_06_F",4225,0.209432525547098,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"423","C05_T_06_F",4235,0.195452029787035,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"424","C05_T_06_F",4245,0.181357508350162,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"425","C05_T_06_F",4255,0.167316511665234,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"426","C05_T_06_F",4265,0.153565049615232,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"427","C05_T_06_F",4275,0.140263228566718,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"428","C05_T_06_F",4285,0.127481674586117,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"429","C05_T_06_F",4295,0.115560686299094,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"430","C05_T_06_F",4305,0.105052104097537,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"431","C05_T_06_F",4315,0.0961671296366016,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"432","C05_T_06_F",4325,0.0889402297387099,0,"La goma d'esborrar de color lila","A","1","1","6","li",5,"Catalan","target",6,"filler","male",29
+"433","C05_T_06_F",4335,0.0834257018879091,0,"La goma d'esborrar de color lila","A","1",NA,"7","post",5,"Catalan","target",6,"filler","male",29
+"434","C05_T_06_F",4345,0.0793684574514608,0,"La goma d'esborrar de color lila","A","1",NA,"7","post",5,"Catalan","target",6,"filler","male",29
+"435","C05_T_06_F",4355,0.0763644658540859,0,"La goma d'esborrar de color lila","A","1",NA,"7","post",5,"Catalan","target",6,"filler","male",29
+"436","C05_T_06_F",4365,0.0740767139742176,0,"La goma d'esborrar de color lila","A","1",NA,"7","post",5,"Catalan","target",6,"filler","male",29
+"437","C05_T_06_F",4375,0.0722869281876927,0,"La goma d'esborrar de color lila","A","1",NA,"7","post",5,"Catalan","target",6,"filler","male",29
+"438","C05_T_06_F",4385,0.0707937548070968,0,"La goma d'esborrar de color lila","A","1",NA,"7","post",5,"Catalan","target",6,"filler","male",29
+"439","C05_T_06_F",4395,0.0692886770809789,0,"La goma d'esborrar de color lila","A","1",NA,"7","post",5,"Catalan","target",6,"filler","male",29
+"440","C05_T_06_F",4405,0.0674309582987822,0,"La goma d'esborrar de color lila","A","1",NA,"7","post",5,"Catalan","target",6,"filler","male",29
+"441","C05_T_06_F",4415,0.0648702744471303,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"442","C05_T_06_F",4425,0.0614569903749064,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"443","C05_T_06_F",4435,0.05729400739444,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"444","C05_T_06_F",4445,0.0525974346286198,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"445","C05_T_06_F",4455,0.047625318742005,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"446","C05_T_06_F",4465,0.0426111172556244,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"447","C05_T_06_F",4475,0.0378184966452031,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"448","C05_T_06_F",4485,0.0334939036808513,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"449","C05_T_06_F",4495,0.0297645394923525,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"450","C05_T_06_F",4505,0.0266855132653967,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"451","C05_T_06_F",4515,0.0242473386797265,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"452","C05_T_06_F",4525,0.0223874115786473,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"453","C05_T_06_F",4535,0.0209835935387226,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"454","C05_T_06_F",4545,0.0198657069824011,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"455","C05_T_06_F",4555,0.0188809552126998,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"456","C05_T_06_F",4565,0.0179577248971306,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"457","C05_T_06_F",4575,0.0170799814560022,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"458","C05_T_06_F",4585,0.0162266145799478,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"459","C05_T_06_F",4595,0.0153857440134362,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"460","C05_T_06_F",4605,0.0145689995573397,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"461","C05_T_06_F",4615,0.0138051822513409,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"462","C05_T_06_F",4625,0.0131236806801067,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"463","C05_T_06_F",4635,0.0125360568488409,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"464","C05_T_06_F",4645,0.0120382340715655,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"465","C05_T_06_F",4655,0.0116298020612371,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"466","C05_T_06_F",4665,0.0113336995002965,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"467","C05_T_06_F",4675,0.0111739758809562,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"468","C05_T_06_F",4685,0.0111491022384897,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"469","C05_T_06_F",4695,0.0112315242802301,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"470","C05_T_06_F",4705,0.0113879842653065,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"471","C05_T_06_F",4715,0.0116012160532238,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"472","C05_T_06_F",4725,0.0118594953942141,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"473","C05_T_06_F",4735,0.0121399146377165,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"474","C05_T_06_F",4745,0.0124165025733404,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"475","C05_T_06_F",4755,0.012663383351103,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"476","C05_T_06_F",4765,0.0128544863883434,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"477","C05_T_06_F",4775,0.0129809189999514,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"478","C05_T_06_F",4785,0.0130492804378933,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"479","C05_T_06_F",4795,0.0130635108264317,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"480","C05_T_06_F",4805,0.0130309304066734,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"481","C05_T_06_F",4815,0.0129694534442083,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"482","C05_T_06_F",4825,0.0128894918106452,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"483","C05_T_06_F",4835,0.0127933631371041,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"484","C05_T_06_F",4845,0.0126854292086409,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"485","C05_T_06_F",4855,0.0125639907502093,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"486","C05_T_06_F",4865,0.0124209492854459,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"487","C05_T_06_F",4875,0.0122454954066794,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"488","C05_T_06_F",4885,0.0120312089166645,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"489","C05_T_06_F",4895,0.0117900894859977,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"490","C05_T_06_F",4905,0.0115488293795724,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"491","C05_T_06_F",4915,0.0113312595730212,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"492","C05_T_06_F",4925,0.0111536521906019,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"493","C05_T_06_F",4935,0.0110279175431241,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"494","C05_T_06_F",4945,0.0109756812766266,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"495","C05_T_06_F",4955,0.0110445394291218,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"496","C05_T_06_F",4965,0.011273861457796,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"497","C05_T_06_F",4975,0.0116456799026689,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"498","C05_T_06_F",4985,0.0121085504587796,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"499","C05_T_06_F",4995,0.0126184024120635,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"500","C05_T_06_F",5005,0.0131213972381718,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"501","C05_T_06_F",5015,0.0135586586162565,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"502","C05_T_06_F",5025,0.0138869392246578,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"503","C05_T_06_F",5035,0.0140769044801125,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"504","C05_T_06_F",5045,0.0141255423265861,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"505","C05_T_06_F",5055,0.0140541623643337,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"506","C05_T_06_F",5065,0.0138924696077035,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"507","C05_T_06_F",5075,0.0136690255458189,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"508","C05_T_06_F",5085,0.013407671061354,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"509","C05_T_06_F",5095,0.0131418852573959,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"510","C05_T_06_F",5105,0.0129051877316512,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"511","C05_T_06_F",5115,0.0127160405085597,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"512","C05_T_06_F",5125,0.0125819519339577,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"513","C05_T_06_F",5135,0.0124998487449941,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"514","C05_T_06_F",5145,0.0124502910537467,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"515","C05_T_06_F",5155,0.0123899507507291,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"516","C05_T_06_F",5165,0.0122711015778585,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"517","C05_T_06_F",5175,0.012080502786207,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"518","C05_T_06_F",5185,0.0118440027480541,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"519","C05_T_06_F",5195,0.011602414350513,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"520","C05_T_06_F",5205,0.0114001101005151,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"521","C05_T_06_F",5215,0.0112686631424877,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"522","C05_T_06_F",5225,0.0112267775192644,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"523","C05_T_06_F",5235,0.0112783993198184,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"524","C05_T_06_F",5245,0.0114019777327684,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"525","C05_T_06_F",5255,0.0115632445650541,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"526","C05_T_06_F",5265,0.0117263704952941,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"527","C05_T_06_F",5275,0.0118616633155912,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"528","C05_T_06_F",5285,0.0119496114163896,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"529","C05_T_06_F",5295,0.0119622987613471,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"530","C05_T_06_F",5305,0.0118807544849757,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"531","C05_T_06_F",5315,0.0059083790927649,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"532","C05_T_06_F",5325,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"533","C05_T_06_F",5335,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"534","C05_T_06_F",5345,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"535","C05_T_06_F",5355,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"536","C05_T_06_F",5365,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"537","C05_T_06_F",5375,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"538","C05_T_06_F",5385,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"539","C05_T_06_F",5395,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29
+"540","C05_T_06_F",5405,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",6,"filler","male",29

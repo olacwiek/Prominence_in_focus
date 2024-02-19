@@ -1,0 +1,538 @@
+"","File","time_ms","env","F0","TP","Word","Gestural_Prom","Prosodic_Prom","Syll_num","Syll","Participant","Language","Item_type","Item_num","Focus","Gender","Age"
+"1","C05_T_27_I",15,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"2","C05_T_27_I",25,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"3","C05_T_27_I",35,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"4","C05_T_27_I",45,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"5","C05_T_27_I",55,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"6","C05_T_27_I",65,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"7","C05_T_27_I",75,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"8","C05_T_27_I",85,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"9","C05_T_27_I",95,0.00740912711520375,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"10","C05_T_27_I",105,0.0148210379668993,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"11","C05_T_27_I",115,0.0147875135252114,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"12","C05_T_27_I",125,0.014670252624629,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"13","C05_T_27_I",135,0.0144592358492488,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"14","C05_T_27_I",145,0.0141593967020879,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"15","C05_T_27_I",155,0.0137974692149417,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"16","C05_T_27_I",165,0.0134071699139285,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"17","C05_T_27_I",175,0.0130179663889631,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"18","C05_T_27_I",185,0.012666194699184,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"19","C05_T_27_I",195,0.0123852473893882,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"20","C05_T_27_I",205,0.0121852894758719,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"21","C05_T_27_I",215,0.012070467736816,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"22","C05_T_27_I",225,0.0120404174174958,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"23","C05_T_27_I",235,0.0120731808372409,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"24","C05_T_27_I",245,0.0121362606866244,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"25","C05_T_27_I",255,0.0121954712807094,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"26","C05_T_27_I",265,0.0122091225392383,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"27","C05_T_27_I",275,0.0121414760563615,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"28","C05_T_27_I",285,0.0119796040794805,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"29","C05_T_27_I",295,0.0117355494670873,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"30","C05_T_27_I",305,0.0114371723087572,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"31","C05_T_27_I",315,0.0111126099725469,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"32","C05_T_27_I",325,0.0107918963265957,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"33","C05_T_27_I",335,0.0105037219269031,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"34","C05_T_27_I",345,0.0102620795174541,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"35","C05_T_27_I",355,0.0100698891963629,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"36","C05_T_27_I",365,0.00992530400696123,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"37","C05_T_27_I",375,0.00982098069475461,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"38","C05_T_27_I",385,0.00974230148602611,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"39","C05_T_27_I",395,0.0096867729587028,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"40","C05_T_27_I",405,0.0096641391345866,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"41","C05_T_27_I",415,0.00967217637408233,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"42","C05_T_27_I",425,0.0097004729573633,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"43","C05_T_27_I",435,0.0097441616219258,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"44","C05_T_27_I",445,0.00980222689215149,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"45","C05_T_27_I",455,0.0098763223427713,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"46","C05_T_27_I",465,0.00997272075323124,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"47","C05_T_27_I",475,0.0100904834470778,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"48","C05_T_27_I",485,0.0102177887483304,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"49","C05_T_27_I",495,0.0103441786514176,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"50","C05_T_27_I",505,0.0104712904029805,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"51","C05_T_27_I",515,0.0106034865792659,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"52","C05_T_27_I",525,0.0107314609148629,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"53","C05_T_27_I",535,0.0108371957150275,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"54","C05_T_27_I",545,0.0109079249651303,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"55","C05_T_27_I",555,0.0109365639797908,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"56","C05_T_27_I",565,0.0109171691948756,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"57","C05_T_27_I",575,0.0108584884002507,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"58","C05_T_27_I",585,0.0107819244137444,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"59","C05_T_27_I",595,0.0107009367193056,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"60","C05_T_27_I",605,0.0106250695505831,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"61","C05_T_27_I",615,0.0105719114644964,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"62","C05_T_27_I",625,0.0105622345826625,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"63","C05_T_27_I",635,0.0106109004586654,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"64","C05_T_27_I",645,0.010718322306303,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"65","C05_T_27_I",655,0.0108694201684645,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"66","C05_T_27_I",665,0.0110533772234069,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"67","C05_T_27_I",675,0.0112719425053146,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"68","C05_T_27_I",685,0.0115239731073125,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"69","C05_T_27_I",695,0.0117896174678313,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"70","C05_T_27_I",705,0.0120445372397218,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"71","C05_T_27_I",715,0.0122843177603038,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"72","C05_T_27_I",725,0.0125118146717023,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"73","C05_T_27_I",735,0.0127299490970054,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"74","C05_T_27_I",745,0.01294481524963,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"75","C05_T_27_I",755,0.0131652730601521,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"76","C05_T_27_I",765,0.0134039654269501,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"77","C05_T_27_I",775,0.0136624291338431,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"78","C05_T_27_I",785,0.0139246660317722,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"79","C05_T_27_I",795,0.0141682441669527,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"80","C05_T_27_I",805,0.0143726892517551,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"81","C05_T_27_I",815,0.0145081374699327,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"82","C05_T_27_I",825,0.01454379378056,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"83","C05_T_27_I",835,0.0144704006051974,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"84","C05_T_27_I",845,0.0142988050033405,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"85","C05_T_27_I",855,0.0140492627218491,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"86","C05_T_27_I",865,0.0137408866073577,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"87","C05_T_27_I",875,0.0134077483041785,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"88","C05_T_27_I",885,0.0130972001998125,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"89","C05_T_27_I",895,0.0128565407485938,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"90","C05_T_27_I",905,0.0127204228437217,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"91","C05_T_27_I",915,0.0126938890656299,78.2226867675781,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"92","C05_T_27_I",925,0.0127654718888262,80.2317810058594,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"93","C05_T_27_I",935,0.0129202413070897,82.4163513183594,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"94","C05_T_27_I",945,0.0131479987231321,77.4225616455078,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"95","C05_T_27_I",955,0.0135166977923204,75.0659790039062,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"96","C05_T_27_I",965,0.0142379594051272,74.766357421875,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"97","C05_T_27_I",975,0.0156634500741655,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"98","C05_T_27_I",985,0.0182661804793488,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"99","C05_T_27_I",995,0.0225780189777462,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"100","C05_T_27_I",1005,0.0290445451454232,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"101","C05_T_27_I",1015,0.0378013051383695,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"102","C05_T_27_I",1025,0.0486946082818194,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"103","C05_T_27_I",1035,0.061453903928757,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"104","C05_T_27_I",1045,0.0756613856357523,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"105","C05_T_27_I",1055,0.0907698479662364,256.521514892578,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"106","C05_T_27_I",1065,0.106153897800609,252.165863037109,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"107","C05_T_27_I",1075,0.120960648601099,251.595504760742,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"108","C05_T_27_I",1085,0.134181355802436,252.624496459961,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"109","C05_T_27_I",1095,0.145005935609995,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"110","C05_T_27_I",1105,0.153042423528409,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"111","C05_T_27_I",1115,0.158207735860679,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"112","C05_T_27_I",1125,0.16048680074933,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"113","C05_T_27_I",1135,0.160060023679823,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"114","C05_T_27_I",1145,0.157457585546855,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"115","C05_T_27_I",1155,0.153430446459332,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"116","C05_T_27_I",1165,0.148878164962214,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"117","C05_T_27_I",1175,0.144638823822889,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"118","C05_T_27_I",1185,0.141180809006899,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"119","C05_T_27_I",1195,0.138609716119728,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"120","C05_T_27_I",1205,0.136834065299885,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"121","C05_T_27_I",1215,0.135836822110033,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"122","C05_T_27_I",1225,0.135657098290493,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"123","C05_T_27_I",1235,0.136079403778563,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"124","C05_T_27_I",1245,0.136753284218059,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"125","C05_T_27_I",1255,0.137319932025081,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"126","C05_T_27_I",1265,0.137327040987903,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"127","C05_T_27_I",1275,0.136465865290771,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"128","C05_T_27_I",1285,0.134647675513639,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"129","C05_T_27_I",1295,0.131797053324794,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"130","C05_T_27_I",1305,0.127751484736149,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"131","C05_T_27_I",1315,0.122398459374044,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"132","C05_T_27_I",1325,0.115918936521155,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"133","C05_T_27_I",1335,0.108652218803211,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"134","C05_T_27_I",1345,0.100920951255893,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"135","C05_T_27_I",1355,0.0929926150692026,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"136","C05_T_27_I",1365,0.0849575391952888,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"137","C05_T_27_I",1375,0.0768307942944289,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"138","C05_T_27_I",1385,0.0687780082355425,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"139","C05_T_27_I",1395,0.0610614420809732,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"140","C05_T_27_I",1405,0.0539374118513693,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"141","C05_T_27_I",1415,0.0475732915276799,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"142","C05_T_27_I",1425,0.0420006414646837,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"143","C05_T_27_I",1435,0.0372340304456745,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"144","C05_T_27_I",1445,0.0332321124944822,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"145","C05_T_27_I",1455,0.0298936276561221,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"146","C05_T_27_I",1465,0.0272746741539579,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"147","C05_T_27_I",1475,0.0256518855143636,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"148","C05_T_27_I",1485,0.0254341617854797,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"149","C05_T_27_I",1495,0.0269668294808555,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"150","C05_T_27_I",1505,0.0303786319056537,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"151","C05_T_27_I",1515,0.0355796361930638,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"152","C05_T_27_I",1525,0.042322414047842,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"153","C05_T_27_I",1535,0.0502578741068448,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"154","C05_T_27_I",1545,0.0589256314932936,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"155","C05_T_27_I",1555,0.0678220634052012,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"156","C05_T_27_I",1565,0.0765344012146351,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"157","C05_T_27_I",1575,0.0847997954154693,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"158","C05_T_27_I",1585,0.092532094300133,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"159","C05_T_27_I",1595,0.0997198867571789,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"160","C05_T_27_I",1605,0.106258889297155,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"161","C05_T_27_I",1615,0.111998553084382,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"162","C05_T_27_I",1625,0.116833589730194,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"163","C05_T_27_I",1635,0.120679891098849,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"164","C05_T_27_I",1645,0.123425916500549,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"165","C05_T_27_I",1655,0.124964710685928,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"166","C05_T_27_I",1665,0.125206096814781,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"167","C05_T_27_I",1675,0.123985609747242,142.756713867188,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"168","C05_T_27_I",1685,0.121096851505544,143.409484863281,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"169","C05_T_27_I",1695,0.116447330789062,146.419143676758,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"170","C05_T_27_I",1705,0.110139711842058,142.023483276367,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"171","C05_T_27_I",1715,0.102472827437173,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"172","C05_T_27_I",1725,0.0938982522692357,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"173","C05_T_27_I",1735,0.0850637002130807,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"174","C05_T_27_I",1745,0.0769006765429578,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"175","C05_T_27_I",1755,0.070377267991907,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"176","C05_T_27_I",1765,0.0661053324656711,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"177","C05_T_27_I",1775,0.0643312807982979,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"178","C05_T_27_I",1785,0.0651418438363696,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"179","C05_T_27_I",1795,0.0685698195624517,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"180","C05_T_27_I",1805,0.0744101258825684,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"181","C05_T_27_I",1815,0.0821199887964207,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"182","C05_T_27_I",1825,0.0910928643672045,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"183","C05_T_27_I",1835,0.100789871156418,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"184","C05_T_27_I",1845,0.110726717153891,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"185","C05_T_27_I",1855,0.120396267211308,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"186","C05_T_27_I",1865,0.129219814399238,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"187","C05_T_27_I",1875,0.136747915714107,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"188","C05_T_27_I",1885,0.142756465175972,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"189","C05_T_27_I",1895,0.147119429479871,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"190","C05_T_27_I",1905,0.149908532794292,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"191","C05_T_27_I",1915,0.151561893102588,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"192","C05_T_27_I",1925,0.152760939007481,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"193","C05_T_27_I",1935,0.154201813361527,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"194","C05_T_27_I",1945,0.156397169979511,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"195","C05_T_27_I",1955,0.159742523278049,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"196","C05_T_27_I",1965,0.164710076775897,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"197","C05_T_27_I",1975,0.171744660340668,0,"La manta de color taronja",NA,NA,NA,"1","pre",5,"Catalan","target",27,"information","male",29
+"198","C05_T_27_I",1985,0.180929614678223,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"199","C05_T_27_I",1995,0.191877122556748,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"200","C05_T_27_I",2005,0.204092236040449,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"201","C05_T_27_I",2015,0.217164130356686,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"202","C05_T_27_I",2025,0.230505836536633,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"203","C05_T_27_I",2035,0.243221179397449,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"204","C05_T_27_I",2045,0.254212759744317,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"205","C05_T_27_I",2055,0.262456275709139,237.99006652832,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"206","C05_T_27_I",2065,0.267316714721624,231.10807800293,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"207","C05_T_27_I",2075,0.268584657539184,229.004699707031,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"208","C05_T_27_I",2085,0.266398741840421,232.522598266602,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"209","C05_T_27_I",2095,0.261249691070831,224.164245605469,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"210","C05_T_27_I",2105,0.253788250942322,232.205474853516,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"211","C05_T_27_I",2115,0.244580292584493,230.682174682617,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"212","C05_T_27_I",2125,0.234086703241652,226.801162719727,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"213","C05_T_27_I",2135,0.222728623600249,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"214","C05_T_27_I",2145,0.21093595843246,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"215","C05_T_27_I",2155,0.199107563485793,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"216","C05_T_27_I",2165,0.187545410978813,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"217","C05_T_27_I",2175,0.176400225731792,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"218","C05_T_27_I",2185,0.165784883779567,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"219","C05_T_27_I",2195,0.15584179925689,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"220","C05_T_27_I",2205,0.146604850324864,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"221","C05_T_27_I",2215,0.137946385423804,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"222","C05_T_27_I",2225,0.129650999405895,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"223","C05_T_27_I",2235,0.121584918980149,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"224","C05_T_27_I",2245,0.113847329412315,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"225","C05_T_27_I",2255,0.106666111985384,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"226","C05_T_27_I",2265,0.100147829484638,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"227","C05_T_27_I",2275,0.0941677331282273,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"228","C05_T_27_I",2285,0.0884632703509066,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"229","C05_T_27_I",2295,0.0827913980473675,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"230","C05_T_27_I",2305,0.0769799853162315,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"231","C05_T_27_I",2315,0.0710110279111318,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"232","C05_T_27_I",2325,0.0652037080921466,0,"La manta de color taronja","N","-1","2","2","man",5,"Catalan","target",27,"information","male",29
+"233","C05_T_27_I",2335,0.060271637052135,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"234","C05_T_27_I",2345,0.0571177165245351,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"235","C05_T_27_I",2355,0.0565462913745354,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"236","C05_T_27_I",2365,0.0589576071147477,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"237","C05_T_27_I",2375,0.0642536358995364,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"238","C05_T_27_I",2385,0.071949927910422,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"239","C05_T_27_I",2395,0.0813619889608875,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"240","C05_T_27_I",2405,0.0916763941917187,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"241","C05_T_27_I",2415,0.102019304325867,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"242","C05_T_27_I",2425,0.11159194240389,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"243","C05_T_27_I",2435,0.119670669768168,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"244","C05_T_27_I",2445,0.125572772148047,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"245","C05_T_27_I",2455,0.128769134984742,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"246","C05_T_27_I",2465,0.128977254478949,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"247","C05_T_27_I",2475,0.126161134214574,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"248","C05_T_27_I",2485,0.120553480093313,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"249","C05_T_27_I",2495,0.112669447727111,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"250","C05_T_27_I",2505,0.103312980539554,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"251","C05_T_27_I",2515,0.0934201129836126,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"252","C05_T_27_I",2525,0.0837972770909746,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"253","C05_T_27_I",2535,0.0748852072899032,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"254","C05_T_27_I",2545,0.0667379925144151,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"255","C05_T_27_I",2555,0.0592360805243077,0,"La manta de color taronja","N","-1","","3","post",5,"Catalan","target",27,"information","male",29
+"256","C05_T_27_I",2565,0.0523666659739935,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"257","C05_T_27_I",2575,0.046283186693823,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"258","C05_T_27_I",2585,0.0411078915651178,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"259","C05_T_27_I",2595,0.0368018957188555,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"260","C05_T_27_I",2605,0.0333051095450062,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"261","C05_T_27_I",2615,0.0305339411646896,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"262","C05_T_27_I",2625,0.0282909361372757,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"263","C05_T_27_I",2635,0.0263716150202982,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"264","C05_T_27_I",2645,0.024658010853066,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"265","C05_T_27_I",2655,0.0230746520743325,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"266","C05_T_27_I",2665,0.0215782306176199,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"267","C05_T_27_I",2675,0.0201871090140695,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"268","C05_T_27_I",2685,0.0189404553570645,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"269","C05_T_27_I",2695,0.0178554186536184,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"270","C05_T_27_I",2705,0.0169188290741127,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"271","C05_T_27_I",2715,0.0161168400710723,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"272","C05_T_27_I",2725,0.0154459116891612,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"273","C05_T_27_I",2735,0.0148981299746156,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"274","C05_T_27_I",2745,0.0144549087508719,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"275","C05_T_27_I",2755,0.0140997521029491,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"276","C05_T_27_I",2765,0.0138150404999041,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"277","C05_T_27_I",2775,0.013583639383339,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"278","C05_T_27_I",2785,0.0133908203473365,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"279","C05_T_27_I",2795,0.0132313127696311,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"280","C05_T_27_I",2805,0.0131267276306215,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"281","C05_T_27_I",2815,0.0131859377444635,0,"La manta de color taronja","","","","4","<p>",5,"Catalan","target",27,"information","male",29
+"282","C05_T_27_I",2825,0.0136148978496905,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"283","C05_T_27_I",2835,0.014628730175967,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"284","C05_T_27_I",2845,0.016399837062814,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"285","C05_T_27_I",2855,0.0190652774647367,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"286","C05_T_27_I",2865,0.022830910456069,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"287","C05_T_27_I",2875,0.0280718405002952,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"288","C05_T_27_I",2885,0.0351984537441491,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"289","C05_T_27_I",2895,0.0444948973156914,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"290","C05_T_27_I",2905,0.0559688536446966,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"291","C05_T_27_I",2915,0.0692415900152721,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"292","C05_T_27_I",2925,0.0836162602413147,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"293","C05_T_27_I",2935,0.0981872059844457,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"294","C05_T_27_I",2945,0.1119705369708,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"295","C05_T_27_I",2955,0.124042701032996,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"296","C05_T_27_I",2965,0.133607161961509,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"297","C05_T_27_I",2975,0.140047962585048,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"298","C05_T_27_I",2985,0.142990162446321,125.014152526855,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"299","C05_T_27_I",2995,0.142324683866255,121.518989562988,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"300","C05_T_27_I",3005,0.138259096011002,120.605888366699,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"301","C05_T_27_I",3015,0.131258198832337,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"302","C05_T_27_I",3025,0.121944374839999,0,"La manta de color taronja","","","","5","",5,"Catalan","target",27,"information","male",29
+"303","C05_T_27_I",3035,0.111277414571947,0,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"304","C05_T_27_I",3045,0.100734541785656,0,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"305","C05_T_27_I",3055,0.0920125198319283,0,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"306","C05_T_27_I",3065,0.0864239147629407,0,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"307","C05_T_27_I",3075,0.0848735982971839,0,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"308","C05_T_27_I",3085,0.088104164338812,0,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"309","C05_T_27_I",3095,0.0963501159388852,0,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"310","C05_T_27_I",3105,0.109203204496959,0,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"311","C05_T_27_I",3115,0.125897928250753,0,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"312","C05_T_27_I",3125,0.145401799055144,0,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"313","C05_T_27_I",3135,0.166364598686133,134.296035766602,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"314","C05_T_27_I",3145,0.187430490746633,124.447616577148,"La manta de color taronja","NC","","","5","",5,"Catalan","target",27,"information","male",29
+"315","C05_T_27_I",3155,0.207516085895364,124.084213256836,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"316","C05_T_27_I",3165,0.225640304410337,122.50804901123,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"317","C05_T_27_I",3175,0.240867317192448,121.643112182617,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"318","C05_T_27_I",3185,0.252526320319298,119.752075195312,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"319","C05_T_27_I",3195,0.260259569201822,118.943168640137,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"320","C05_T_27_I",3205,0.263862080770423,127.419761657715,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"321","C05_T_27_I",3215,0.263589592047924,124.446365356445,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"322","C05_T_27_I",3225,0.260175690855495,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"323","C05_T_27_I",3235,0.254420298183108,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"324","C05_T_27_I",3245,0.24688954439827,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"325","C05_T_27_I",3255,0.237909424172887,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"326","C05_T_27_I",3265,0.227876945953253,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"327","C05_T_27_I",3275,0.217040423481931,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"328","C05_T_27_I",3285,0.205348332968673,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"329","C05_T_27_I",3295,0.192831692038864,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"330","C05_T_27_I",3305,0.179780304041287,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"331","C05_T_27_I",3315,0.16660210778151,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"332","C05_T_27_I",3325,0.153663754329568,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"333","C05_T_27_I",3335,0.141356996962161,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"334","C05_T_27_I",3345,0.129910129664648,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"335","C05_T_27_I",3355,0.119191353155581,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"336","C05_T_27_I",3365,0.10901896712154,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"337","C05_T_27_I",3375,0.0993391397624946,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"338","C05_T_27_I",3385,0.0901151215528385,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"339","C05_T_27_I",3395,0.0813710837446238,0,"La manta de color taronja","NC","","2","6","lor",5,"Catalan","target",27,"information","male",29
+"340","C05_T_27_I",3405,0.0733135145657172,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"341","C05_T_27_I",3415,0.0659934763735757,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"342","C05_T_27_I",3425,0.0593039222525701,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"343","C05_T_27_I",3435,0.0531578656069076,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"344","C05_T_27_I",3445,0.0474678349004065,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"345","C05_T_27_I",3455,0.0422364861034386,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"346","C05_T_27_I",3465,0.0375392523642272,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"347","C05_T_27_I",3475,0.0334781298558507,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"348","C05_T_27_I",3485,0.0300647980662975,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"349","C05_T_27_I",3495,0.027240933652462,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"350","C05_T_27_I",3505,0.0249165690729782,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"351","C05_T_27_I",3515,0.0229548083138739,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"352","C05_T_27_I",3525,0.0212571394418,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"353","C05_T_27_I",3535,0.0197818491655047,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"354","C05_T_27_I",3545,0.0185082978600542,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"355","C05_T_27_I",3555,0.0174141709267995,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"356","C05_T_27_I",3565,0.0164636038828392,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"357","C05_T_27_I",3575,0.0156391953428889,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"358","C05_T_27_I",3585,0.0149402806958589,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"359","C05_T_27_I",3595,0.0143596406857146,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"360","C05_T_27_I",3605,0.0138776676856492,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"361","C05_T_27_I",3615,0.0134736386355152,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"362","C05_T_27_I",3625,0.0131281995737288,0,"La manta de color taronja","","","","7","<p>",5,"Catalan","target",27,"information","male",29
+"363","C05_T_27_I",3635,0.0128373210252831,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"364","C05_T_27_I",3645,0.0126125763221802,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"365","C05_T_27_I",3655,0.0124689392896663,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"366","C05_T_27_I",3665,0.0124127909833162,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"367","C05_T_27_I",3675,0.012438911413944,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"368","C05_T_27_I",3685,0.0125342009976505,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"369","C05_T_27_I",3695,0.0126689957517242,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"370","C05_T_27_I",3705,0.0128146619494833,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"371","C05_T_27_I",3715,0.0129542211936706,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"372","C05_T_27_I",3725,0.0130912189938139,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"373","C05_T_27_I",3735,0.0132300404959193,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"374","C05_T_27_I",3745,0.0133577638189763,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"375","C05_T_27_I",3755,0.0134652727390836,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"376","C05_T_27_I",3765,0.0135563891477324,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"377","C05_T_27_I",3775,0.0136285671764642,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"378","C05_T_27_I",3785,0.0136760436453688,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"379","C05_T_27_I",3795,0.0137175491474184,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"380","C05_T_27_I",3805,0.0137946849383911,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"381","C05_T_27_I",3815,0.0139842228612868,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"382","C05_T_27_I",3825,0.0145034614179159,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"383","C05_T_27_I",3835,0.0158450000501427,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"384","C05_T_27_I",3845,0.0186918069521535,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"385","C05_T_27_I",3855,0.0236856901324793,0,"La manta de color taronja","","","","8","",5,"Catalan","target",27,"information","male",29
+"386","C05_T_27_I",3865,0.0312757258711091,0,"La manta de color taronja","A","1","","9","pre",5,"Catalan","target",27,"information","male",29
+"387","C05_T_27_I",3875,0.041728550145252,0,"La manta de color taronja","A","1","","9","pre",5,"Catalan","target",27,"information","male",29
+"388","C05_T_27_I",3885,0.0550950521996228,0,"La manta de color taronja","A","1","","9","pre",5,"Catalan","target",27,"information","male",29
+"389","C05_T_27_I",3895,0.0710384889698791,0,"La manta de color taronja","A","1","","9","pre",5,"Catalan","target",27,"information","male",29
+"390","C05_T_27_I",3905,0.088860770684497,0,"La manta de color taronja","A","1","","9","pre",5,"Catalan","target",27,"information","male",29
+"391","C05_T_27_I",3915,0.107688418385893,0,"La manta de color taronja","A","1","","9","pre",5,"Catalan","target",27,"information","male",29
+"392","C05_T_27_I",3925,0.126613669738067,0,"La manta de color taronja","A","1","","9","pre",5,"Catalan","target",27,"information","male",29
+"393","C05_T_27_I",3935,0.144841425687382,0,"La manta de color taronja","A","1","","9","pre",5,"Catalan","target",27,"information","male",29
+"394","C05_T_27_I",3945,0.16175658769569,0,"La manta de color taronja","A","1","","9","pre",5,"Catalan","target",27,"information","male",29
+"395","C05_T_27_I",3955,0.176844395175917,0,"La manta de color taronja","A","1","","9","pre",5,"Catalan","target",27,"information","male",29
+"396","C05_T_27_I",3965,0.189674799928711,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"397","C05_T_27_I",3975,0.20001022529106,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"398","C05_T_27_I",3985,0.207864171753262,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"399","C05_T_27_I",3995,0.21356816370314,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"400","C05_T_27_I",4005,0.217755187502825,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"401","C05_T_27_I",4015,0.221143816879337,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"402","C05_T_27_I",4025,0.224358617578954,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"403","C05_T_27_I",4035,0.227785995220014,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"404","C05_T_27_I",4045,0.231504072629719,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"405","C05_T_27_I",4055,0.235339048032029,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"406","C05_T_27_I",4065,0.238995494260422,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"407","C05_T_27_I",4075,0.242130188435604,132.231399536133,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"408","C05_T_27_I",4085,0.244496729650731,130.576644897461,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"409","C05_T_27_I",4095,0.246142477322291,131.090835571289,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"410","C05_T_27_I",4105,0.247224133256527,130.561721801758,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"411","C05_T_27_I",4115,0.247639367524824,129.679351806641,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"412","C05_T_27_I",4125,0.2470898264832,132.156494140625,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"413","C05_T_27_I",4135,0.245333385079599,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"414","C05_T_27_I",4145,0.242156212710702,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"415","C05_T_27_I",4155,0.237412207100908,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"416","C05_T_27_I",4165,0.231131276785398,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"417","C05_T_27_I",4175,0.223383279431091,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"418","C05_T_27_I",4185,0.214179402797987,0,"La manta de color taronja","A","1","3","10","ron",5,"Catalan","target",27,"information","male",29
+"419","C05_T_27_I",4195,0.20348314150886,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"420","C05_T_27_I",4205,0.191294006912965,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"421","C05_T_27_I",4215,0.177775982412327,111.253112792969,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"422","C05_T_27_I",4225,0.163239169321475,116.923652648926,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"423","C05_T_27_I",4235,0.148109642766159,113.404937744141,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"424","C05_T_27_I",4245,0.132919205691023,117.249008178711,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"425","C05_T_27_I",4255,0.118269420860784,115.886383056641,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"426","C05_T_27_I",4265,0.104756230847698,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"427","C05_T_27_I",4275,0.092851988768175,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"428","C05_T_27_I",4285,0.0827891008750384,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"429","C05_T_27_I",4295,0.0745400475963365,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"430","C05_T_27_I",4305,0.0679630057963279,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"431","C05_T_27_I",4315,0.0630134079567572,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"432","C05_T_27_I",4325,0.0596423351738679,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"433","C05_T_27_I",4335,0.0575306016154692,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"434","C05_T_27_I",4345,0.0561780094738879,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"435","C05_T_27_I",4355,0.0550877936850906,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"436","C05_T_27_I",4365,0.0538130885017424,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"437","C05_T_27_I",4375,0.052081788137978,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"438","C05_T_27_I",4385,0.0498616899006697,0,"La manta de color taronja","A","1",NA,"11","post",5,"Catalan","target",27,"information","male",29
+"439","C05_T_27_I",4395,0.0472411494412945,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"440","C05_T_27_I",4405,0.0443231981148287,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"441","C05_T_27_I",4415,0.0412489523618636,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"442","C05_T_27_I",4425,0.0381832359198778,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"443","C05_T_27_I",4435,0.0352002515948696,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"444","C05_T_27_I",4445,0.0323234630210347,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"445","C05_T_27_I",4455,0.0296075725860046,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"446","C05_T_27_I",4465,0.0271165350984037,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"447","C05_T_27_I",4475,0.0249021335591418,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"448","C05_T_27_I",4485,0.0229823965776785,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"449","C05_T_27_I",4495,0.0213209541157539,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"450","C05_T_27_I",4505,0.0198551296442497,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"451","C05_T_27_I",4515,0.0185298699103534,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"452","C05_T_27_I",4525,0.0173035912216496,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"453","C05_T_27_I",4535,0.0161656926823863,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"454","C05_T_27_I",4545,0.0151434436729579,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"455","C05_T_27_I",4555,0.0142647150124681,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"456","C05_T_27_I",4565,0.0135312131657762,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"457","C05_T_27_I",4575,0.0129273394953273,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"458","C05_T_27_I",4585,0.0124253729021116,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"459","C05_T_27_I",4595,0.0120084196057222,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"460","C05_T_27_I",4605,0.0116882704940795,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"461","C05_T_27_I",4615,0.0114876517901077,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"462","C05_T_27_I",4625,0.0114172930517176,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"463","C05_T_27_I",4635,0.0114681680908439,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"464","C05_T_27_I",4645,0.0116152941160478,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"465","C05_T_27_I",4655,0.0118261821916175,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"466","C05_T_27_I",4665,0.0120720136499158,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"467","C05_T_27_I",4675,0.0123261031490969,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"468","C05_T_27_I",4685,0.0125547648612751,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"469","C05_T_27_I",4695,0.0127191207528405,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"470","C05_T_27_I",4705,0.0127962658081663,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"471","C05_T_27_I",4715,0.0127950160699797,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"472","C05_T_27_I",4725,0.0127414671295356,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"473","C05_T_27_I",4735,0.0126601191246564,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"474","C05_T_27_I",4745,0.0125677822830161,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"475","C05_T_27_I",4755,0.0124738065367766,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"476","C05_T_27_I",4765,0.0123936311294129,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"477","C05_T_27_I",4775,0.0123405100986749,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"478","C05_T_27_I",4785,0.0123281365874863,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"479","C05_T_27_I",4795,0.0123724116256906,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"480","C05_T_27_I",4805,0.0124761416686672,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"481","C05_T_27_I",4815,0.0126101872925277,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"482","C05_T_27_I",4825,0.0127316261862928,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"483","C05_T_27_I",4835,0.0128175985571376,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"484","C05_T_27_I",4845,0.0128657995711661,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"485","C05_T_27_I",4855,0.0128995895877248,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"486","C05_T_27_I",4865,0.0129560129960213,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"487","C05_T_27_I",4875,0.0130586100775603,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"488","C05_T_27_I",4885,0.0132027166722651,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"489","C05_T_27_I",4895,0.0133725874848215,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"490","C05_T_27_I",4905,0.0135561143773226,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"491","C05_T_27_I",4915,0.0137378998144656,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"492","C05_T_27_I",4925,0.0138948908068618,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"493","C05_T_27_I",4935,0.0139992035437576,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"494","C05_T_27_I",4945,0.0140242048794754,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"495","C05_T_27_I",4955,0.0139604420083623,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"496","C05_T_27_I",4965,0.0138146556529067,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"497","C05_T_27_I",4975,0.0136081904970081,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"498","C05_T_27_I",4985,0.0133563906788145,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"499","C05_T_27_I",4995,0.0130576346923178,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"500","C05_T_27_I",5005,0.0127177774822286,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"501","C05_T_27_I",5015,0.0123595761221944,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"502","C05_T_27_I",5025,0.0120081392361425,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"503","C05_T_27_I",5035,0.0116871768538193,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"504","C05_T_27_I",5045,0.011432700727198,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"505","C05_T_27_I",5055,0.0112771366809272,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"506","C05_T_27_I",5065,0.0112237152355932,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"507","C05_T_27_I",5075,0.0112559028587871,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"508","C05_T_27_I",5085,0.0113642741356836,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"509","C05_T_27_I",5095,0.0115358410565592,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"510","C05_T_27_I",5105,0.0117418183675598,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"511","C05_T_27_I",5115,0.0119497721343696,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"512","C05_T_27_I",5125,0.0121375959924857,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"513","C05_T_27_I",5135,0.012292522900596,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"514","C05_T_27_I",5145,0.0124080459778125,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"515","C05_T_27_I",5155,0.0124852345642278,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"516","C05_T_27_I",5165,0.0125212942682856,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"517","C05_T_27_I",5175,0.0125005913024404,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"518","C05_T_27_I",5185,0.012419605796476,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"519","C05_T_27_I",5195,0.0123044025591955,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"520","C05_T_27_I",5205,0.0121906137454141,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"521","C05_T_27_I",5215,0.0121013753345359,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"522","C05_T_27_I",5225,0.0120550749288327,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"523","C05_T_27_I",5235,0.0120710502964596,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"524","C05_T_27_I",5245,0.0121421416971649,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"525","C05_T_27_I",5255,0.0122332105422646,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"526","C05_T_27_I",5265,0.0123142935124093,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"527","C05_T_27_I",5275,0.0123725228155074,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"528","C05_T_27_I",5285,0.00619744247650515,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"529","C05_T_27_I",5295,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"530","C05_T_27_I",5305,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"531","C05_T_27_I",5315,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"532","C05_T_27_I",5325,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"533","C05_T_27_I",5335,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"534","C05_T_27_I",5345,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"535","C05_T_27_I",5355,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"536","C05_T_27_I",5365,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29
+"537","C05_T_27_I",5375,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",27,"information","male",29

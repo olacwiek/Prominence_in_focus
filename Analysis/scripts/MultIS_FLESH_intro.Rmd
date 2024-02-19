@@ -1,0 +1,1225 @@
+---
+title: "Bridging the Gap: Exploring a Middle-Way Approach for Prosodic Annotation"
+author: "Aleksandra Ćwiek, Alina Gregori, Paula G. Sánchez-Ramón, Frank Kügler, Pilar Prieto"
+date: "2023-09-04"
+output:
+  html_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    df_print: paged
+  pdf_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: '3'
+  html_notebook:
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+editor_options: 
+  chunk_output_type: console
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+Prosodic annotation plays a critical role in linguistic research, enabling a detailed exploration of communication subtleties in diverse languages and contexts. Various methods for prosodic annotation exist, with some well-known and accepted, such as ToBI [@silverman1992]. However, prosody research encounters challenges in the manual annotation of data, primarily regarding inter-rater reliability, where multiple annotators' agreement varies significantly [even between 60% and 90%, @breen2012], leading to potential errors and manipulation.
+
+Manual annotation remains time-consuming and labor-intensive, resulting in limited data availability, hindering the development of reliable computational models for comprehensive and robust prosodic annotation across various schemes and languages [see @ananthakrishnan2008; @rosenberg2010 as examples for ToBI on Standard American English]. To tackle this challenge, our project aims to adopt a middle-way approach, harnessing the expertise of skilled annotators alongside the power of computational tools while being cautious of potential challenges such as the complexity of prosody, interpretation of results, and ethical considerations regarding biases in training data and social impacts. By establishing robust computational models, we seek to significantly speed up the annotation process, generalize findings to new linguistic data, and pave the way for more extensive cross-linguistic studies in prosodic research.
+
+In our project, we aim to establish connections between prosodic prominence marking and automatic predictions of focus conditions -- focus representing a pragmatic domain of prominence [cf. e.g., @krifka2008]. To achieve this, we will analyze data from German and Catalan speakers producing focus types as degrees of prominence in a semi-controlled environment. The perceived prominence of focus types in these data was annotated on a scale from 0 to 3 for prosodic prominence [DIMA, @kügler2015; @kügler2019; @kügler2022]. German and Catalan are suitable languages for investigating the applicability of computational systems across different languages, given their distinct prosodic prominence marking in terms of rhythm class and accentuation patterns [cf. @krahmer2007 for Germanic and Romance languages; @cole2019 for differences between Spanish, French, and English].
+
+To capture acoustic markers of prominence, such as F0 (max peak, mean, range), intensity (max peak, mean, range), and duration, we will extract these measures from the accented syllables of focused words. These acoustic markers will serve as predictors in a Bayesian ordinal model to rate prominence. Our models will account for language-specific variations in acoustic features of prominence between Catalan and German.
+
+Our goal is to identify the most predictive features of prominence in prosody for German and Catalan, effectively bridging the gap between manual and computer-aided annotation. By establishing these links, we aim to address the challenges posed by tiresome manual annotation. Subsequently, we plan to employ our findings to build a classifier for automatic focus-type assignment to utterances, which will undergo verification by human annotators.
+
+# Data preparation
+
+## Source setup
+
+```{r source setup, echo = TRUE, message=FALSE, warning = FALSE}
+
+########## folders ##########
+# current folder (first go to session -> set working directory -> to source file location)
+parentfolder <- dirname(getwd())
+
+data          <- paste0(parentfolder, '/MultIS_data/')
+audiodata     <- paste0(parentfolder, '/audio_processed/')
+dataworkspace <- paste0(parentfolder, '/data_processed/')
+datamerged    <- paste0(parentfolder, '/data_merged/')
+models        <- paste0(parentfolder, '/models/')
+plots         <- paste0(parentfolder, '/plots/')
+scripts       <- paste0(parentfolder, '/scripts/')
+
+########## source file ##########
+
+#source(paste0(scripts, "adjectives-preparation.R"))
+
+#################### packages ####################
+
+# audiovisual processing
+library(seewave) # this for signal processing
+library(signal)
+library(rPraat)
+library(dplR)
+library(signal)
+library(rstudioapi)
+library(stringr)
+library(wrassp)
+library(readr)
+library(readxl)
+library(readtextgrid)   #reading txt grids
+library(textgRid)
+library(zoo)
+library(pracma)
+#library(stringi) # for syllable replacement
+library(tuneR)
+
+# data manipulation and viz
+library(tidyverse)
+library(ggpubr)
+library(gridExtra)
+colorBlindBlack8  <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
+                       "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+# modeling
+library(broom) # for tidy model outputs
+library(brms)
+library(cmdstanr)
+library(HDInterval) # package for credible interval computation
+library(tidybayes) # plotting
+library(bayesplot)
+# option for Bayesian regression models:
+# use all available cores for parallel computing
+options(mc.cores = parallel::detectCores())
+
+# Bayes factor
+#library(BayesFactor)
+library(bayestestR)
+
+# Diagnostics GUI
+library(shinystan)
+
+```
+
+
+```{r read metadata, echo=TRUE, message=FALSE, warning=FALSE}
+participant_info <- read_delim(paste0(data,"ParticipantInfoFocProd.csv"), delim = "\t")
+```
+
+
+# Processing the audio
+
+Here, we show the process of handling the audio data from the raw audio, incl. annotation.
+
+## Select & save parts
+
+The files provided are long. For our sake, we just need parts from which we will extract information, so we will first chop the files accordingly to our needs.
+
+Because the original annotation is done in ELAN, we have to prepare the files for processing.
+
+-   Export .eaf to .TextGrid
+-   Open .TextGrid in Praat
+-   Save .TextGrid using Praat
+
+Now, the files can be imported. If this step is skipped, the files will not be imported correctly.
+
+------------------------------------------------------------------------
+
+Item codes:
+
+-   G04 ---\> number of participant per language (G = German, C = Catalan)
+-   P ---\> practice trial or target item (P = Practice, T = Target)
+-   01 ---\> Itemnumber (begins from 01 for both practice and target)
+-   I ---\> focus condition (I = Information focus, C = Contrastive focus, R = Corrective focus, B = Background, F = filler item)
+
+------------------------------------------------------------------------
+
+We will first locate the .wav files in the input location.
+
+```{r locate wav, echo=TRUE, message=FALSE, warning=FALSE}
+wavFiles <- list.files(data, pattern = "\\.wav$", full.names = TRUE)
+
+# This is the tier we will be cutting from
+targetTier <- "Label"
+```
+
+Now we loop through .wav files.
+
+```{r loop and chop wav, echo=TRUE, message=FALSE, warning=FALSE}
+for (wavFile in wavFiles) {
+
+  # Generate the corresponding TextGrid file name
+  textGridFile <- sub("\\.wav$", ".TextGrid", wavFile)
+  
+  # Check if the TextGrid file exists
+  if (file.exists(textGridFile)) {
+    
+    # Read the TextGrid file
+    tg <- readtextgrid::read_textgrid(textGridFile)
+    
+    # Get the tier specified as input
+    tier <- tg[tg$tier_name == targetTier, ]
+    
+    # Loop through intervals and save corresponding parts of the .wav file
+    for (i in 1:nrow(tier)) {
+      interval <- tier[i, ]
+      
+      # Look if string is text begins with C or G that is followed by a digit
+      if (str_detect(interval$text, "^(C|G)\\d")) { 
+        startTime <- interval$xmin - 1
+        endTime <- interval$xmax + 1
+        
+        # Define the output file name
+        outputFile <- paste0(audiodata, interval$text, ".wav")
+        
+        # Check if the file already exists
+        if (!file.exists(outputFile)) {
+          # Read the .wav file
+          audio <- readWave(wavFile, from = startTime, to = endTime, units = "seconds")
+          
+          # Convert stereo to mono
+          audio <- mono(audio)
+          
+          # Write the .wav file
+          writeWave(audio, file = outputFile)
+          
+          # Remove unnecessary variables from memory
+          rm(audio)
+        } else {
+          cat("File", outputFile, "already exists. Skipping.\n")
+        }
+        
+
+      }
+    }
+    
+  }
+}
+
+rm(startTime, endTime, outputFile, tg, i)
+
+```
+
+But we also need the TextGrids for feature extraction in the stressed syllables.
+
+First, we create a custom function to writeTextGrid in a format that is both Praat and other functions-readable.
+
+```{r writeTextGrid function, echo=TRUE, message=FALSE, warning=FALSE}
+writeTextGrid <- function(data, outputFile) {
+  # Open a connection to the output file
+  con <- file(outputFile, "w")
+  
+  # Write the TextGrid header
+  cat('File type = "ooTextFile"\n', file = con)
+  cat('Object class = "TextGrid"\n', file = con)
+  cat('\n', file = con)  # Add an extra line
+  cat('xmin = 0 \n', file = con)
+  cat('xmax =', max(data$xmax), '\n', file = con)
+  cat('tiers? <exists> \n', file = con)
+  cat('size =', n_distinct(data$tier_name), '\n', file = con)
+  cat('item []:', '\n', file = con)
+  # Write the tier information
+  tiers <- unique(data[, c("tier_num", "tier_name", "tier_type")])
+  for (i in 1:nrow(tiers)) {
+    cat(paste0('    item [', i, ']:\n'), file = con)
+    cat(paste0('        class = "', tiers$tier_type[i], '"\n'), file = con)
+    cat(paste0('        name = "', tiers$tier_name[i], '"\n'), file = con)
+    cat(paste0('        xmin = 0\n'), file = con)
+    cat(paste0('        xmax = ', max(data$xmax), '\n'), file = con)
+    # Write intervals or points
+    if (tiers$tier_type[i] == "IntervalTier") {
+      intervals <- data[data$tier_name == tiers$tier_name[i], ]
+      cat(paste0('        intervals: size = ', nrow(intervals), '\n'), file = con)
+      for (j in 1:nrow(intervals)) {
+        cat(paste0('        intervals [', j, ']:\n'), file = con)
+        cat(paste0('            xmin = ', intervals$xmin[j], '\n'), file = con)
+        cat(paste0('            xmax = ', intervals$xmax[j], '\n'), file = con)
+        cat(paste0('            text = "', intervals$text[j], '"\n'), file = con)
+      }
+    } else if (tiers$tier_type[i] == "PointTier") {
+      points <- data[data$tier_name == tiers$tier_name[i], ]
+      cat(paste0('        points: size = ', nrow(points), '\n'), file = con)
+      for (j in 1:nrow(points)) {
+        cat(paste0('        points [', j, ']:\n'), file = con)
+        cat(paste0('            number = ', j - 1, '\n'), file = con)  # Point numbers start from 0
+        cat(paste0('            time = ', points$xmax[j], '\n'), file = con)  # Assuming xmax as time
+        cat(paste0('            mark = "', points$text[j], '"\n'), file = con)
+      }
+    }
+  }
+  
+  # Close the connection
+  close(con)
+}
+```
+
+Now, we loop through the same list of files that we used for .wav extraction and extract the excerpts of TextGrids for the .wavs.
+
+```{r loop and chop TextGrid, echo=TRUE, message=FALSE, warning=FALSE}
+# Loop through WAV files
+for (wavFile in wavFiles) {
+  
+  # Generate the corresponding TextGrid file name
+  textGridFile <- sub("\\.wav$", ".TextGrid", wavFile)
+  
+  # Check if the TextGrid file exists
+  if (file.exists(textGridFile)) {
+    
+    # Read the original TextGrid file
+    originalTg <- readtextgrid::read_textgrid(textGridFile)
+    
+    # Get the tier specified as input
+    tier <- originalTg[originalTg$tier_name == targetTier, ]
+    
+    # Loop through intervals and annotations and add them to the new TextGrid
+    for (i in 1:nrow(tier)) {
+      interval <- tier[i, ]
+      
+      # Check if interval$text starts with "G" or "C"
+      if (str_detect(interval$text, "^(C|G)\\d")) { 
+        startTime <- interval$xmin - 1
+        endTime <- interval$xmax + 1
+        
+        # Check if the new TextGrid file already exists
+        newTgFile <- file.path(paste0(audiodata, interval$text, ".TextGrid"))
+        
+        if (!file.exists(newTgFile)) {
+          # Find the corresponding annotations in the original TextGrid
+          originalAnnotations <- originalTg[originalTg$xmin >= startTime & originalTg$xmax <= endTime, ]
+          
+          # Ensure that all tiers from originalTg are present in newTgData
+          missingTiers <- setdiff(unique(originalTg$tier_name), unique(originalAnnotations$tier_name))
+          
+          # Initialize newTgData as an empty data frame
+          newTgData <- data.frame()
+          
+          for (tier_name in missingTiers) {
+            # Find corresponding intervals in the original TextGrid for missing tiers
+            originalIntervals <- originalTg[originalTg$tier_name == tier_name, ]
+            
+            # Add missing tiers to newTgData with adjusted time
+            newTgData <- rbind(newTgData, mutate(originalIntervals, 
+                                                 xmin = xmin - startTime, 
+                                                 xmax = xmax - startTime))
+            
+            # Filter rows where xmin is smaller than or equal to zero
+            newTgData <- newTgData %>% filter(xmin <= 0)
+            
+            # Keep only the row with the largest xmin value if there are multiple rows
+            newTgData <- newTgData %>% 
+              group_by(tier_name) %>% 
+              filter(xmin == max(xmin)) %>% 
+              ungroup()
+          }
+          
+          # Time normalization missing tiers
+          newTgData$xmin <- 0
+          newTgData$xmax <- max(originalAnnotations$xmax) - startTime
+          
+          # Copy annotations from originalAnnotations
+          newTgData <- rbind(newTgData, mutate(originalAnnotations, 
+                                               xmin = xmin - startTime, 
+                                               xmax = xmax - startTime))
+          
+          # Time normalization global
+          newTgData$tier_xmin <- 0
+          newTgData$tier_xmax <- max(originalAnnotations$xmax) - startTime
+          
+          # Sort by tier_num
+          newTgData <- newTgData %>% arrange(tier_num, xmin)
+          
+          # Check if there is data to write
+          if (nrow(newTgData) > 0) {
+            # Save the new TextGrid data as a TextGrid file
+            writeTextGrid(newTgData, newTgFile)
+          }
+        }
+      }
+    }
+  }
+}
+
+# Remove unnecessary variables from memory
+rm(interval, startTime, endTime, newTgFile, originalAnnotations, originalIntervals, missingTiers, newTgData, tier, wavFile, wavFiles)
+rm(originalTg)
+rm(targetTier, tier_name, i)
+
+```
+
+# Metadata after cutting wavs
+
+```{r metadata, echo=TRUE, message=FALSE, warning=FALSE}
+# List of the WAV files
+list_wavs <- list.files(audiodata, pattern = ".wav") 
+
+# Function to map focus characters to focus values
+mapFocus <- function(char) {
+  switch(char,
+         I = "information",
+         C = "contrastive",
+         R = "corrective",
+         B = "background",
+         F = "filler",
+         "unknown")
+}
+
+# Initialize an empty dataframe to store the metadata
+META <- data.frame(File = character(),
+                   Language = character(),
+                   Participant = numeric(),
+                   Item_type = character(),
+                   Item_num = numeric(),
+                   Focus = character(),
+                   stringsAsFactors = FALSE)
+
+# Loop through the WAV file names and decode the information
+for (wavFile in list_wavs) {
+  # Split the file name using "_"
+  parts <- strsplit(wavFile, "_")[[1]]
+  
+  # Extract the relevant parts
+  File <- sub("\\.wav$", "", wavFile)
+  Language <- if (startsWith(parts[1], "G")) "German" else "Catalan"
+  Participant <- as.numeric(parse_number(parts[1]))
+  Item_type <- if (parts[2] == "P") "practice" else "target"
+  Item_num <- as.numeric(parts[3])
+  Focus <- mapFocus(substr(parts[4], 1, 1))  # Extract the first character
+  
+  # Create a data frame for the current file
+  file_meta <- data.frame(File, Language, Participant, Item_type, Item_num, Focus)
+  
+  # Append the file metadata to META
+  META <- rbind(META, file_meta)
+
+}
+
+# Remove unnecessary variables from memory
+rm(parts, File, Language, Participant, Item_type, Item_num, Focus, file_meta, wavFile, list_wavs)
+
+```
+
+
+```{r metadata merge, echo=TRUE, message=FALSE, warning=FALSE}
+# Process participant_info so that participant number column is only number
+participant_info$Participant <- parse_number(participant_info$Participant)
+
+# Merge the dataframes by "Participant" and "Language"
+META <- merge(META, participant_info, by = c("Participant", "Language"), all.x = TRUE)
+
+```
+
+
+# Processing audio into time series
+
+Having cut the parts out, we now want to loop through those parts in strategic places and extract acoustic measures.
+
+Ideally, we also want to analyze, how acoustics and gesture work together, so we will adapt our higher-sampled audio to match the video. The video was recorded in **25 frames/second**, therefore we have to downsample radically.
+
+This part is copied from FLESH original [project_Rhyme](https://github.com/sarkadava/FLESH_projects/tree/main/project_Rhyme).
+
+## Amplitude envelope extraction
+
+This part was taken from the [Envision Bootcamp](https://wimpouw.github.io/EnvisionBootcamp2021/extract_AmplitudeEnvelope_Rmarkdown.html) and cleaned for clarity.
+
+```{r extractENV, echo=TRUE, message=FALSE, warning=FALSE}
+# Set whether to overwrite existing files
+overwrite <- FALSE
+
+# List of the WAV files
+list_wavs <- list.files(audiodata, pattern = ".wav") 
+
+# Processing settings
+resample_rate <- 100 # Hz
+smoothing <- 5 # 5Hz low-pass Hanning (the lower the value, the smoother)
+
+##################### Main function to extract smoothed envelope ###############################
+
+amplitude_envelope.extract <- function(locationsound, smoothingHz, resampledHz) {
+  # Read the sound file into R
+  snd <- rPraat::snd.read(locationsound)
+  
+  # Apply the Hilbert transform to the signal
+  hilb <- seewave::hilbert(snd$sig, f = snd$fs, fftw = FALSE)
+  
+  # Apply complex modulus
+  env <- as.vector(abs(hilb))
+  
+  # Smooth with a Hanning window
+  env_smoothed <- dplR::hanning(x = env, n = snd$fs / smoothingHz)
+  
+  # Set undeterminable values at the beginning and end to NA and then to 0
+  env_smoothed[is.na(env_smoothed)] <- 0
+  
+  # Resample settings at the desired sampling rate
+  f <- approxfun(1:(snd$duration * snd$fs), env_smoothed)
+  
+  # Resample
+  downsampled <- f(seq(from = 0, to = snd$duration * snd$fs, by = snd$fs / resampledHz))
+  
+  # Return the downsampled smoothed amplitude envelope
+  return(downsampled[!is.na(downsampled)])
+}
+
+# Loop through soundfile locations
+for (wav in list_wavs) {
+  # Do not run this when these files are already generated and overwrite is not set to TRUE
+  if ((!file.exists(paste0(dataworkspace, substr(wav, 1, nchar(wav) - 4), "_ENV", ".csv"))) & (overwrite != TRUE)) {
+    # Location of the current sound file in the loop  
+    locsound <- paste0(audiodata, wav)
+    
+    # Get the amplitude envelope at location, 5Hz Hanning, 100Hz sampling
+    env <- amplitude_envelope.extract(locsound, smoothing, resample_rate)
+    
+    # Make a time vector based on the sampling rate (1000/Hz)
+    time_ms <- seq(1000 / resample_rate, length(env) * (1000 / resample_rate), by = 1000 / resample_rate)
+    
+    # Bind into a data frame
+    ENV <- cbind.data.frame(time_ms, env)
+    
+    # Save it to a folder
+    write.csv(ENV, file = paste0(dataworkspace, substr(wav, 1, nchar(wav) - 4), "_ENV", ".csv"), row.names = FALSE) 
+  
+  }
+}
+
+# Remove unnecessary variables from memory
+rm(env, time_ms, ENV, wav, list_wavs, resample_rate)
+
+```
+
+## F0 extraction
+
+For more info, see [here](https://osf.io/m43qy). For info about WRASSP, see [here](https://ips-lmu.github.io/The-EMU-SDMS-Manual/chap-wrassp.html).
+
+This script automatically assesses F0 traces from audio using WRASSP. It also needs a META data_file containing gender information so as to set F0 ranges. The function extracts F0 traces from wav, given gender info, at a particular sampling frequency algorithm is based on K. Schaefer-Vincent periodicity detection.
+
+```{r F0 extract prep, echo=TRUE, message=FALSE, warning = FALSE}
+# Set data reading and writing locations
+list_wavs <- list.files(paste0(audiodata), pattern = ".wav")
+
+# Processing settings
+resample_rate <- 100 # Hz
+
+# Do we want to overwrite files?
+overwrite <- FALSE
+
+################### Function to extract F0 ############################
+
+F0.extract <- function(locationsound, gender_fm, resampledHz) {
+  # Ranges for females and males (data-driven decision)
+  if (gender_fm == 'female') { ranges <- c(100, 450) }
+  if (gender_fm == 'male') { ranges <- c(70, 300) }
+
+  minF0 <- ranges[1] 
+  maxF0 <- ranges[2]
+
+  F0 <- wrassp::ksvF0(locationsound, 
+                      windowShift = 1000 / resampledHz, 
+                      toFile = FALSE, 
+                      maxF = maxF0, minF = minF0) 
+  
+  # Extract F0 info and save into object
+  
+  F0_vec <- F0$F0[, 1] # Only save F0 trace
+  F0_time <- seq(from = attributes(F0)$startTime * 1000, # Make time vector
+                 to = attributes(F0)$endRecord[1] * (1000 / attributes(F0)$sampleRate), 
+                 by = 1000 / attributes(F0)$sampleRate)
+  F0_df <- cbind.data.frame(round(F0_time), F0_vec) # Save time and F0 trace into one object
+  return(F0_df)
+}
+```
+
+I separated these chunks, because having them together sometimes made my R session abort. Also, I run this next chunk by marking the for-loop first and then the rest. Otherwise the R session aborts. Not sure how this helps.
+
+```{r extractF0, echo=TRUE, message=FALSE, warning = FALSE}
+
+# Loop through the folder containing audio (WAV files) and extract F0
+for (wav in list_wavs) {
+  # Output file name
+  output_file <- paste0(dataworkspace, str_sub(wav, end = -5), "_F0.csv")
+  
+  # Check if the output file exists and whether to overwrite
+  if ((!file.exists(output_file) || overwrite)) {
+    # Take gender info by extracting the first letter (either G or C)
+    PP <- str_extract(wav, "^[GC](\\d+)") %>% str_replace("^[GC]", "") %>% as.numeric()
+    
+    # Extract the first letter of wav file
+    first_letter <- substr(wav, 1, 1)
+    
+    # Find unique gender where both conditions are met
+    gender <- unique(META$Gender[META$Participant == PP & substr(META$Language, 1, 1) == first_letter])
+    
+    locsound <- paste0(audiodata, wav)
+    
+    # Apply the main function
+    F0_vec <- F0.extract(locsound, gender, resample_rate)
+    colnames(F0_vec) <- c("time_ms", "F0")
+    
+    # Write to a file and save
+    write.csv(F0_vec, file = output_file, row.names = FALSE) 
+  }
+}
+
+# Remove unnecessary dependencies
+rm(PP, gender, locsound, F0_vec, first_letter, output_file, list_wavs, wav, overwrite, resample_rate, smoothing, i)
+    
+```
+
+
+
+## Other functions
+
+Here are further FLESH functions for processing and merging of data.
+
+### `load.in.event` function
+
+**Purpose:** This function loads annotations into a time series based on their begin and end times.
+
+**Parameters:**
+
+-   `time_original`: The original time series.
+-   `anno`: A dataframe containing annotations with columns 'begintime', 'endtime', and 'annotation'.
+
+**Description:** It iterates through each annotation event and assigns the corresponding annotation to the time series where the time falls within the event's begin and end times.
+
+```{r load.in.event function, echo=TRUE, message=FALSE, warning=FALSE}
+load.in.event <- function(time_original, annotations) {
+  # Initialize an output vector with NA values
+  output <- rep(NA, length(time_original))
+  
+  # Iterate through each annotation event
+  for (i in 1:nrow(annotations)) {
+    begin_time <- annotations[i, "xmin"]
+    end_time <- annotations[i, "xmax"]
+    annotation <- as.character(annotations[i, "anno"])
+    
+    # Check if the time falls within the annotation event
+    time_mask <- (time_original >= begin_time) & (time_original <= end_time)
+    
+    # Assign the annotation to the corresponding time points
+    output[time_mask] <- annotation
+  }
+  
+  return(output)
+}
+```
+
+### `load.in.anno_num` function
+
+**Purpose:** Similar to `load.in.event`, this function loads numeric annotations into a time series based on their begin and end times.
+
+**Parameters:**
+
+-   `time_original`: The original time series.
+-   `anno`: A dataframe containing annotations with columns 'begintime', 'endtime', 'annotation', and 'numeric_annotation'.
+
+**Description:** It iterates through each annotation event and assigns the corresponding numeric annotation to the time series where the time falls within the event's begin and end times.
+
+```{r load.in.anno_num function, echo=TRUE, message=FALSE, warning=FALSE}
+load.in.anno_num <- function(time_original, numeric_annotations) {
+  # Initialize an output vector with NA values
+  output <- rep(NA, length(time_original))
+  
+  # Iterate through each numeric annotation event
+  for (i in 1:nrow(numeric_annotations)) {
+    begin_time <- numeric_annotations[i, "xmin"]
+    end_time <- numeric_annotations[i, "xmax"]
+    numeric_annotation <- as.character(numeric_annotations[i, "anno_num"])
+    
+    # Check if the time falls within the numeric annotation event
+    time_mask <- (time_original >= begin_time) & (time_original <= end_time)
+    
+    # Assign the numeric annotation to the corresponding time points
+    output[time_mask] <- numeric_annotation
+  }
+  
+  return(output)
+}
+```
+
+### `getphases.it` function
+
+**Purpose:** This function automatically detects phases in gesture movement.
+
+**Parameters:**
+
+-   `time`: The time series of the gesture data.
+-   `mvmnt`: The movement data.
+-   `syll`: A numeric vector indicating syllable numbers.
+
+**Description:** It identifies phases in gesture movement and creates an annotation dataframe with the begin and end times for each phase. It also annotates the direction of movement (forward or backward) and assigns a numeric annotation for each phase. This function is useful for analyzing gesture phases during speech.
+
+```{r getphases.it function, echo=TRUE, message=FALSE, warning=FALSE}
+getphases.it <- function(time, movement, syllable) {
+  # Convert the syllable column to numeric
+  syllable <- as.numeric(as.character(syllable))
+  
+  # Find the minimum and maximum times for syllable number 2 and the last unique syllable number
+  min_syll_time <- min(time[syllable == 2])
+  max_syll_time <- max(time[syllable == max(unique(syllable)) - 1])
+  
+  # Create a speech column that indicates ongoing speech
+  speech <- rep("no ongoing speech", length(time))
+  speech[time >= min_syll_time & time <= max_syll_time] <- "ongoing speech"
+  
+  # Create a column for peaks
+  peaks <- rep(NA, length(movement))
+  
+  # Center the movement values
+  centered_movement <- movement - mean(movement)
+  
+  # Find peaks in the absolutized movement
+  all_peaks <- findpeaks(abs(centered_movement))[, 2]
+  
+  # Assign peak direction (forward or backward)
+  peaks[all_peaks] <- movement[all_peaks]
+  peaks[!is.na(peaks)] <- ifelse(centered_movement[all_peaks] > 0, 'start_backward', 'start_forward')
+  
+  # Create an annotation dataframe with begin and end times for each gesture phase
+  begin_time <- time[all_peaks[1:(length(all_peaks) - 1)]]
+  end_time <- time[all_peaks[-1]]
+  annotation <- ifelse(peaks[all_peaks[1:(length(all_peaks) - 1)]] == 'start_backward', 'forward_movement', 'backward_movement')
+  annotation2 <- seq(1, length(begin_time), 1)
+  
+  gesture_phases <- data.frame(BeginTime = begin_time, EndTime = end_time, Annotation = annotation)
+  gesture_phases2 <- data.frame(BeginTime = begin_time, EndTime = end_time, NumericAnnotation = annotation2)
+  
+  # Load annotations into time series
+  gesture_phases <- load.in.event(time, gesture_phases)
+  gesture_phases2 <- load.in.event(time, gesture_phases2)
+  
+  return(cbind(gesture_phases, gesture_phases2))
+}
+```
+
+# Merging extracted data
+
+We will now merge the extracted data.
+
+```{r merging all, echo=TRUE, message=FALSE, warning=FALSE}
+# First give the list of files for which we have envelopes
+envelopedata <- list.files(dataworkspace, pattern = '*.ENV.csv')
+
+############### butter filter ###############
+butter.it <- function(x, samplingrate = 100, order = 2, lowpasscutoff = 30) {
+  bf <- butter(order, lowpasscutoff / samplingrate, type = "low") #normalized frequency
+  x <<- as.numeric(signal::filtfilt(bf, x)) #apply forwards and backwards using filtfilt
+}
+
+############### Select tiers and cols ##############
+
+# List of tier names you want to extract
+tiers_to_extract <- c("TP", "Word", "Gestural_Prom", "Prosodic_Prom", "Syll")
+
+cols_to_load <- c("Participant", "Language", "Item_type", "Item_num", "Focus", "Gender", "Age")
+
+############### Merging ###################
+
+# Loop through envelope data files and merge
+for (d in envelopedata) {
+  # trial <- str_remove(d, '_ENV.csv') # If you want to remove '_ENV.csv' from the file name
+
+  # Read envelope data
+  env <- read.csv(file.path(dataworkspace, d))
+  
+  # Read F0 data
+  trial <- sub("_ENV.csv$", "", d) # Extract trial name from envelope data file name
+  F0 <- read.csv(file.path(dataworkspace, paste0(trial, '_F0.csv')))
+  
+  # Read text grid information and prepare for reading into the time series
+  fname <- file.path(audiodata, paste0(trial, '.TextGrid'))
+  
+  if (file.exists(fname)) {
+    # Prepare text grids
+    txtgrds <- readtextgrid::read_textgrid(fname)
+    
+    # Initialize a list to store the annotations for each tier
+    annotations <- list()
+    
+    # Loop through the tiers you want to extract
+    for (tier_name in tiers_to_extract) {
+      # Filter for the current tier
+      txtgrd_tier <- txtgrds[txtgrds$tier_name == tier_name, ]
+      
+      # Extract necessary information
+      xmin <- round(txtgrd_tier$xmin * 1000)
+      xmax <- round(txtgrd_tier$xmax * 1000)
+      anno <- txtgrd_tier$text
+      anno_num <- txtgrd_tier$annotation_num
+      
+      # Create the annotation data frame
+      annotation <- data.frame(xmin, xmax, anno, anno_num)
+      
+      # Add it to the list with a consistent name
+      annotations[[tier_name]] <- annotation
+    }
+    
+    # Merge envelope and F0 data
+    ac_merged <- merge(x = env, y = F0, by.x = "time_ms", by.y = "time_ms", all = TRUE)
+    ac_merged$env <- na.approx(ac_merged$env, x = ac_merged$time_ms, na.rm = FALSE)
+    # Filter rows where F0 is NA
+    ac_merged <- ac_merged[(!is.na(ac_merged$F0)),]
+    # Also remove trailing NA's
+    ac_merged <- na.trim(ac_merged) 
+
+    # Loop through the tiers you want to extract and load them into ac_merged
+    for (tier_name in tiers_to_extract) {
+      if (tier_name == "Syll") {
+        # If the tier is "Syll," load numeric annotations
+        ac_merged$Syll_num <- load.in.anno_num(time_original = ac_merged$time_ms, numeric_annotations = annotations[[tier_name]])
+        
+        # Also use load.in.event for "Syll" to store annotations
+        ac_merged[[tier_name]] <- load.in.event(time_original = ac_merged$time_ms, annotations = annotations[[tier_name]])
+      } else {
+        # For other tiers, use load.in.event
+        ac_merged[[tier_name]] <- load.in.event(time_original = ac_merged$time_ms, annotations = annotations[[tier_name]])
+      }
+    }
+
+    # Add a "File" column with the value of "trial"
+    ac_merged$File <- trial
+    
+    # Add some info for analyses
+    ac_merged <- merge(ac_merged, META[, c("File", cols_to_load)], by = "File", all.x = TRUE)
+    
+    # Check if the file already exists in the datamerged directory
+    outputFileName <- paste0(trial, '.csv')
+    outputFile <- file.path(datamerged, outputFileName)
+    
+    if (!file.exists(outputFile)) {
+      # Save to the merge folder
+      write.csv(ac_merged, outputFile)
+    } else {
+      cat("File", outputFileName, "already exists in datamerged directory. Skipping.\n")
+    }
+    
+    # Remove unnecessary dependencies
+    rm(env, F0, txtgrds, annotations, ac_merged, annotation, anno, anno_num, d, fname, outputFile, outputFileName, envelopedata, tier_name, trial, xmin, xmax, wavFile, wavFiles, txtgrd_tier)
+  }
+}
+
+rm(tiers_to_extract, cols_to_load)
+
+```
+
+With this, we created tables for each utterance of each participant. 
+
+# Extract target syllable values
+
+Now, we want to these files and extract some information for the target syllables (and later pre- and post-tonic syllables), namely:
+
+- duration
+- F0 min
+- F0 max
+- F0 range
+- ENV min
+- ENV max
+- ENV range
+
+We also have to be mindful about the perceived prosodic prominence annotated for these syllables
+
+```{r extract target syllable acoustics, echo=TRUE, message=FALSE, warning=FALSE}
+# Get a list of all CSV files in the datamerged directory
+csv_files <- list.files(datamerged, pattern = ".csv", full.names = TRUE)
+
+# Initialize an empty list to store results
+results_list <- list()
+
+# Create a custom function to calculate the mode:
+# The most frequent value within an interval
+mode_function <- function(x) {
+  uniq_x <- na.omit(x)  # Remove NAs
+  if (length(uniq_x) == 0) {
+    return(NA)  # Return NA if all values are NA
+  }
+  counts <- table(uniq_x)
+  max_count <- max(counts)
+  mode_val <- names(counts[counts == max_count])
+  if (is.na(mode_val) && sum(is.na(x)) > max_count) {
+    return(NA)  # Return NA if NAs are more frequent
+  }
+  return(mode_val)
+}
+
+# Loop through each CSV file and process it
+for (csv_file in csv_files) {
+  # Read the CSV file
+  test <- read.csv(csv_file)
+  
+  # Filter and summarize Syll
+  test_intervals <- 
+    test %>%
+    filter(!is.na(Syll) & Syll != "") %>%
+    group_by(Syll_num) %>%
+    summarize(min_time = min(time_ms),
+              max_time = max(time_ms)) %>%
+    arrange(min_time)
+  
+  # Check if test_intervals has rows
+  if (nrow(test_intervals) > 0) {
+    # Calculate additional metrics
+    test_intervals <- test_intervals %>%
+          group_by(Syll_num) %>%
+          mutate(
+            F0_min = min(test$F0[test$time_ms >= min_time & 
+                                   test$time_ms <= max_time & 
+                                   test$F0 > 0], na.rm = TRUE),
+            F0_max = max(test$F0[test$time_ms >= min_time & 
+                                   test$time_ms <= max_time & 
+                                   test$F0 > 0], na.rm = TRUE),
+            F0_mean = mean(test$F0[test$time_ms >= min_time & 
+                                     test$time_ms <= max_time & 
+                                     test$F0 > 0], na.rm = TRUE),
+            F0_range = ifelse(is.na(F0_min) | is.na(F0_max), NA, F0_max - F0_min),
+            env_min = min(test$env[test$time_ms >= min_time & 
+                                     test$time_ms <= max_time], na.rm = TRUE),
+            env_max = max(test$env[test$time_ms >= min_time & 
+                                     test$time_ms <= max_time], na.rm = TRUE),
+            env_mean = mean(test$env[test$time_ms >= min_time & 
+                                       test$time_ms <= max_time], na.rm = TRUE),
+            env_range = ifelse(is.na(env_min) | is.na(env_max), NA, env_max - env_min),
+            duration = ifelse(is.na(min_time) | is.na(max_time), NA, max_time - min_time),
+            Prosodic_Prom = 
+              mode_function(test$Prosodic_Prom[test$time_ms >= min_time &
+                                                 test$time_ms <= max_time]),
+            TP = 
+              mode_function(test$TP[test$time_ms >= min_time &
+                                      test$time_ms <= max_time]),
+            Word = 
+              mode_function(test$Word[test$time_ms >= min_time &
+                                        test$time_ms <= max_time]),
+            Syll_num = unique(test$Syll_num[test$time_ms >= min_time &
+                                              test$time_ms <= max_time &
+                                              !is.na(test$Syll_num)])
+          ) %>%
+          left_join(test %>%
+            select(File, Participant, Language, Item_type, Item_num, Focus, Gender, Age, Syll, Syll_num) %>%
+            distinct(File, Syll_num, .keep_all = TRUE), by = "Syll_num")
+    
+    # Append the result to the list
+    results_list[[csv_file]] <- test_intervals
+  }
+}
+
+rm(csv_file, csv_files, test, test_intervals)
+
+# Combine all results into a single dataframe
+final_result <- do.call(rbind, results_list)
+
+# Rearrange the column names
+final_result <- final_result %>%
+  select(
+    "File", "Language", "Participant", "Item_type", "Item_num", "Focus", "TP", "Word", "Syll", "Syll_num", "Prosodic_Prom",
+    "min_time", "max_time", "F0_mean", "F0_min", "F0_max", "F0_range", "env_mean", "env_min", "env_max", "env_range", "duration", "Gender", "Age"
+  )
+
+```
+
+We will only look at data in the target items.
+
+```{r target items only, echo=TRUE, message=FALSE, warning=FALSE}
+df <- final_result %>%
+  filter(Item_type == "target") #%>%
+  #subset(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>") & is.na(Prosodic_Prom)))
+
+
+```
+
+
+## Outliers
+
+```{r outliers, eval=FALSE, echo=TRUE, message=FALSE, warning=FALSE}
+# Columns to process
+columns_to_process <- c("duration", "F0_mean", "F0_max", "F0_min", "F0_range", 
+                        "env_mean", "env_max", "env_min", "env_range"
+                        )
+
+# Initialize a list to store outlier information
+outliers_info <- list()
+
+# Loop through each column
+for (col_name in columns_to_process) {
+  cat("Processing column:", col_name, "\n")
+  
+  # Calculate IQR
+  Q1 <- quantile(df[[col_name]], 0.25, na.rm = TRUE)
+  Q3 <- quantile(df[[col_name]], 0.75, na.rm = TRUE)
+  IQR <- Q3 - Q1
+  
+  # Define lower and upper bounds for outliers
+  lower_bound <- Q1 - 1.5 * IQR
+  upper_bound <- Q3 + 1.5 * IQR
+  
+  # Identify outliers
+  outliers <- df[[col_name]] < lower_bound | df[[col_name]] > upper_bound
+  
+  # Get outlier information
+  outliers_info[[col_name]] <- list(
+    N_outliers = sum(outliers, na.rm = TRUE),
+    Prop_outliers = (sum(outliers, na.rm = TRUE) / length(df[[col_name]])) * 100,
+    Mean_outliers = mean(df[[col_name]][outliers], na.rm = TRUE),
+    Mean_with_outliers = mean(df[[col_name]], na.rm = TRUE),
+    Mean_without_outliers = mean(df[[col_name]][!outliers], na.rm = TRUE)
+  )
+  
+  # Replace outliers with NA
+  df[[col_name]][outliers] <- NA
+}
+
+# Create a summary table
+outliers_summary <- data.frame(t(sapply(outliers_info, unlist)))
+colnames(outliers_summary) <- c("N_outliers", "Prop_outliers", "Mean_outliers", "Mean_with_outliers", "Mean_without_outliers")
+
+# Remove unnecessary variables
+rm(columns_to_process, outliers_info, Q1, Q3, lower_bound, upper_bound, IQR, col_name)
+
+# Print the summary table
+print(outliers_summary)
+
+```
+
+# Descriptive statistics
+
+Now that we have a table with stressed and pre and postonic syllables, let us look at some descriptive statistics.
+
+For some plots, we also need a subset of only target syllables.
+
+```{r target sylls only, echo=TRUE, message=FALSE, warning=FALSE}
+# Create subset without pre and post-tonic
+df_targets <- df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>")))
+```
+
+## Frequencies and proportions
+
+How many target syllables do we have per language?
+
+```{r sylls per lang, echo=TRUE, message=FALSE, warning=FALSE}
+df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>"))) %>%
+  group_by(Language) %>%
+  summarize(Cumulative_Count = n())
+```
+
+How are they distributed across different focus conditions?
+
+```{r sylls per foc, echo=TRUE, message=FALSE, warning=FALSE}
+syll_per_foc <- 
+  df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>"))) %>%
+  group_by(Language, Focus) %>%
+  summarize(Count = n()) %>%
+  mutate(Proportion = Count / sum(Count))
+syll_per_foc
+
+## Count
+ggplot(syll_per_foc, aes(x = Focus, y = Count, fill = Language)) +
+  geom_bar(stat = "identity", position = "dodge", alpha = 0.7) +
+  labs(title = "Count of Syll per Language and Focus",
+       x = "Focus", y = "Count") +
+  scale_fill_manual(values = colorBlindBlack8) + 
+  theme_minimal()
+
+## Proportion
+ggplot(syll_per_foc, aes(x = Focus, y = Proportion, fill = Language)) +
+  geom_bar(stat = "identity", position = "dodge", alpha = 0.7) +
+  labs(title = "Proportion of Syll per Language and Focus",
+       x = "Focus", y = "Priportion") +
+  scale_fill_manual(values = colorBlindBlack8) + 
+  theme_minimal()
+```
+
+And how are they distributed across perceived prosodic prominence ratings?
+
+```{r sylls per pros, echo=TRUE, message=FALSE, warning=FALSE}
+syll_per_pros <- 
+  df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>"))) %>%
+  group_by(Language, Prosodic_Prom) %>%
+  summarize(Count = n()) %>%
+  mutate(Proportion = Count / sum(Count))
+syll_per_pros
+
+# Identify NA
+df_targets %>%
+  filter(Language == "German", is.na(Prosodic_Prom)) %>%
+  select(File, Syll)
+
+## Count
+ggplot(syll_per_pros, aes(x = Prosodic_Prom, y = Count, fill = Language)) +
+  geom_bar(stat = "identity", position = "dodge", alpha = 0.7) +
+  labs(title = "Count of Syll per Language and Prominence",
+       x = "Prominence", y = "Count") +
+  scale_fill_manual(values = colorBlindBlack8) + 
+  theme_minimal()
+
+## Proportion
+ggplot(syll_per_pros, aes(x = Prosodic_Prom, y = Proportion, fill = Language)) +
+  geom_bar(stat = "identity", position = "dodge", alpha = 0.7) +
+  labs(title = "Proportion of Syll per Language and Prominence",
+       x = "Prominence", y = "Proportion") +
+  scale_fill_manual(values = colorBlindBlack8) + 
+  theme_minimal()
+```
+
+## Averages
+
+What is the average duration of the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg duration, echo=TRUE, message=FALSE, warning=FALSE}
+df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>"))) %>%
+  group_by(Language, Prosodic_Prom) %>%
+  summarize(Average_Duration = mean(duration, na.rm = TRUE))
+```
+
+Let's plot it.
+
+```{r avg duration plot, echo=TRUE, message=FALSE, warning=FALSE}
+ggplot(df_targets, aes(x = Language, y = duration, fill = Prosodic_Prom)) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Duration",
+    fill = "Prosodic Prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+
+```
+
+What is the average F0 of the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg F0, echo=TRUE, message=FALSE, warning=FALSE}
+# Calculate z-scores for F0 within each combination of Language and Speaker
+df_targets <- df_targets %>%
+  group_by(Language, Participant) %>%
+  mutate(F0_mean_z = scale(F0_mean))
+
+# Calculate means for raw F0
+df_targets %>%
+  group_by(Language, Prosodic_Prom) %>%
+  summarize(Average_F0 = mean(F0_mean, na.rm = TRUE))
+
+# Calculate means for z-scored F0
+df_targets %>%
+  group_by(Language, Prosodic_Prom) %>%
+  summarize(Average_F0_z = mean(F0_mean_z, na.rm = TRUE))
+```
+
+Let's plot it.
+
+```{r avg F0 plot, echo=TRUE, message=FALSE, warning=FALSE}
+## Raw F0
+ggplot(df_targets, aes(x = Language, y = F0_mean, fill = Prosodic_Prom)) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    title = "F0 means of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "F0",
+    fill = "Prosodic Prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+
+## z-scored F0
+ggplot(df_targets, aes(x = Language, y = F0_mean_z, fill = Prosodic_Prom)) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    title = "F0 means of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "F0 (z-scored)",
+    fill = "Prosodic Prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+
+```
+
+What is the average amplitude envelope of the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
+# Calculate z-scores for F0 within each combination of Language and Speaker
+df_targets <- df_targets %>%
+  group_by(Language, Participant) %>%
+  mutate(env_mean_z = scale(env_mean))
+
+# Calculate means for raw F0
+df_targets %>%
+  group_by(Language, Prosodic_Prom) %>%
+  summarize(Average_env = mean(env_mean, na.rm = TRUE))
+
+# Calculate means for z-scored F0
+df_targets %>%
+  group_by(Language, Prosodic_Prom) %>%
+  summarize(Average_env_z = mean(env_mean_z, na.rm = TRUE))
+```
+
+Let's plot it.
+
+```{r avg env plot, echo=TRUE, message=FALSE, warning=FALSE}
+## Raw env
+ggplot(df_targets, aes(x = Language, y = env_mean, fill = Prosodic_Prom)) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    title = "ENV means of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "ENV",
+    fill = "Prosodic Prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+
+## z-scored env
+ggplot(df_targets, aes(x = Language, y = env_mean_z, fill = Prosodic_Prom)) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    title = "ENV means of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "ENV (z-scored)",
+    fill = "Prosodic Prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+
+```
+
+## Pre- and posttonic
+
+Try looking at pre- and post-tonic.
+
+```{r prepost, echo=TRUE, message=FALSE, warning=FALSE}
+df %>%
+  arrange(Syll_num) %>%
+  group_by(Syll) %>%
+  mutate(
+    prev_duration = case_when(
+      Syll %in% c("pre", "post_pre") ~ lag(duration),
+      TRUE ~ lag(duration, 2)
+    ),
+    next_duration = case_when(
+      Syll %in% c("post", "post_pre") ~ lead(duration),
+      TRUE ~ lead(duration, 2)
+    )
+  ) %>%
+  summarize(
+    avg_prev_duration = mean(prev_duration, na.rm = TRUE),
+    avg_curr_duration = mean(duration),
+    avg_next_duration = mean(next_duration, na.rm = TRUE)
+  ) %>%
+  ungroup()
+```
+

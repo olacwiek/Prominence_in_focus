@@ -1,0 +1,616 @@
+"","File","time_ms","env","F0","TP","Word","Gestural_Prom","Prosodic_Prom","Syll_num","Syll","Participant","Language","Item_type","Item_num","Focus","Gender","Age"
+"1","C02_T_31_B",15,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"2","C02_T_31_B",25,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"3","C02_T_31_B",35,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"4","C02_T_31_B",45,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"5","C02_T_31_B",55,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"6","C02_T_31_B",65,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"7","C02_T_31_B",75,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"8","C02_T_31_B",85,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"9","C02_T_31_B",95,0.00475238820783091,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"10","C02_T_31_B",105,0.00952430041619707,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"11","C02_T_31_B",115,0.00956647801261739,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"12","C02_T_31_B",125,0.00962108258716849,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"13","C02_T_31_B",135,0.00970301633329588,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"14","C02_T_31_B",145,0.00982057292937941,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"15","C02_T_31_B",155,0.00996577132456515,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"16","C02_T_31_B",165,0.0101309305051557,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"17","C02_T_31_B",175,0.0103090649775373,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"18","C02_T_31_B",185,0.0104864050430677,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"19","C02_T_31_B",195,0.0106488864901008,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"20","C02_T_31_B",205,0.010782163243463,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"21","C02_T_31_B",215,0.0108736941558988,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"22","C02_T_31_B",225,0.010917638529422,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"23","C02_T_31_B",235,0.0109131400607554,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"24","C02_T_31_B",245,0.0108662921431154,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"25","C02_T_31_B",255,0.0107930123967631,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"26","C02_T_31_B",265,0.0107076542642746,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"27","C02_T_31_B",275,0.010619004771627,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"28","C02_T_31_B",285,0.0105439057917519,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"29","C02_T_31_B",295,0.0104955722891626,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"30","C02_T_31_B",305,0.0104767350591938,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"31","C02_T_31_B",315,0.0104811112389761,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"32","C02_T_31_B",325,0.0104962355149107,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"33","C02_T_31_B",335,0.0105110221079886,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"34","C02_T_31_B",345,0.0105113717314232,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"35","C02_T_31_B",355,0.0104910021378632,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"36","C02_T_31_B",365,0.0104421266131648,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"37","C02_T_31_B",375,0.0103633424557452,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"38","C02_T_31_B",385,0.0102659929683934,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"39","C02_T_31_B",395,0.0101600228177974,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"40","C02_T_31_B",405,0.0100616831032322,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"41","C02_T_31_B",415,0.00999614910789652,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"42","C02_T_31_B",425,0.00998065490290679,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"43","C02_T_31_B",435,0.0100112493979675,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"44","C02_T_31_B",445,0.0100702482144013,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"45","C02_T_31_B",455,0.0101490970282834,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"46","C02_T_31_B",465,0.0102504024711365,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"47","C02_T_31_B",475,0.0103695641903266,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"48","C02_T_31_B",485,0.0104926671921251,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"49","C02_T_31_B",495,0.0106020560663638,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"50","C02_T_31_B",505,0.0106909497312924,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"51","C02_T_31_B",515,0.0107573744922976,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"52","C02_T_31_B",525,0.0107984887008306,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"53","C02_T_31_B",535,0.0108181340141522,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"54","C02_T_31_B",545,0.0108270489871638,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"55","C02_T_31_B",555,0.0108294853870804,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"56","C02_T_31_B",565,0.0108224275697283,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"57","C02_T_31_B",575,0.0108039741071265,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"58","C02_T_31_B",585,0.0107718297660037,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"59","C02_T_31_B",595,0.0107246676822104,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"60","C02_T_31_B",605,0.0106612722139022,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"61","C02_T_31_B",615,0.0105815111958035,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"62","C02_T_31_B",625,0.0104865529982935,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"63","C02_T_31_B",635,0.0103860171227187,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"64","C02_T_31_B",645,0.0103038425411336,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"65","C02_T_31_B",655,0.0102520159118879,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"66","C02_T_31_B",665,0.0102256212349252,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"67","C02_T_31_B",675,0.0102366685554374,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"68","C02_T_31_B",685,0.0103007813101639,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"69","C02_T_31_B",695,0.0104263093905654,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"70","C02_T_31_B",705,0.0106213825234574,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"71","C02_T_31_B",715,0.0108891219385747,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"72","C02_T_31_B",725,0.0112193327414576,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"73","C02_T_31_B",735,0.0115850811532674,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"74","C02_T_31_B",745,0.0119547059027518,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"75","C02_T_31_B",755,0.0122963479786004,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"76","C02_T_31_B",765,0.012576201079826,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"77","C02_T_31_B",775,0.0127649028400161,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"78","C02_T_31_B",785,0.0128408191073359,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"79","C02_T_31_B",795,0.0127942010481023,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"80","C02_T_31_B",805,0.0126335208242227,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"81","C02_T_31_B",815,0.0123744289631528,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"82","C02_T_31_B",825,0.0120433080092949,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"83","C02_T_31_B",835,0.0116852424966095,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"84","C02_T_31_B",845,0.0113538750850336,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"85","C02_T_31_B",855,0.0110941795977341,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"86","C02_T_31_B",865,0.0109279446073837,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"87","C02_T_31_B",875,0.0108540339311924,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"88","C02_T_31_B",885,0.0108681083959085,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"89","C02_T_31_B",895,0.0109669357690085,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"90","C02_T_31_B",905,0.0111295898541754,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"91","C02_T_31_B",915,0.0113275983926778,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"92","C02_T_31_B",925,0.0115403527644013,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"93","C02_T_31_B",935,0.0117538834362619,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"94","C02_T_31_B",945,0.0119835687996264,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"95","C02_T_31_B",955,0.0123133909773476,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"96","C02_T_31_B",965,0.0128328721827219,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"97","C02_T_31_B",975,0.0135811246243711,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"98","C02_T_31_B",985,0.0145864631903633,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"99","C02_T_31_B",995,0.0159232510806031,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"100","C02_T_31_B",1005,0.0177589510997839,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"101","C02_T_31_B",1015,0.0203137051346273,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"102","C02_T_31_B",1025,0.0237651383035821,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"103","C02_T_31_B",1035,0.0281715560632778,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"104","C02_T_31_B",1045,0.0335019316377852,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"105","C02_T_31_B",1055,0.0396814642123376,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"106","C02_T_31_B",1065,0.0465512608600562,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"107","C02_T_31_B",1075,0.0538502190678597,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"108","C02_T_31_B",1085,0.0612856617153601,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"109","C02_T_31_B",1095,0.0685980650697108,209.052764892578,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"110","C02_T_31_B",1105,0.0755164183181464,203.652130126953,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"111","C02_T_31_B",1115,0.0817212114736636,207.055389404297,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"112","C02_T_31_B",1125,0.0868914529014509,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"113","C02_T_31_B",1135,0.0907453212994944,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"114","C02_T_31_B",1145,0.0930672983699335,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"115","C02_T_31_B",1155,0.0937474046232744,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"116","C02_T_31_B",1165,0.0928423494234369,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"117","C02_T_31_B",1175,0.0905696019097866,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"118","C02_T_31_B",1185,0.0872478382188596,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"119","C02_T_31_B",1195,0.0832104406802308,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"120","C02_T_31_B",1205,0.0787056509178951,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"121","C02_T_31_B",1215,0.0739211452331523,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"122","C02_T_31_B",1225,0.0690516634119435,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"123","C02_T_31_B",1235,0.0643126780649668,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"124","C02_T_31_B",1245,0.0598643946558476,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"125","C02_T_31_B",1255,0.0557865978882029,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"126","C02_T_31_B",1265,0.0521386736567686,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"127","C02_T_31_B",1275,0.0489682379257117,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"128","C02_T_31_B",1285,0.0462556769577635,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"129","C02_T_31_B",1295,0.0438855021836792,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"130","C02_T_31_B",1305,0.0417319657466424,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"131","C02_T_31_B",1315,0.0397213541595902,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"132","C02_T_31_B",1325,0.0378098101868368,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"133","C02_T_31_B",1335,0.035987903528481,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"134","C02_T_31_B",1345,0.0342689615732751,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"135","C02_T_31_B",1355,0.0326338204439377,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"136","C02_T_31_B",1365,0.0310359007158364,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"137","C02_T_31_B",1375,0.0294446451668968,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"138","C02_T_31_B",1385,0.027857290191675,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"139","C02_T_31_B",1395,0.0263922236869553,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"140","C02_T_31_B",1405,0.0253701068500683,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"141","C02_T_31_B",1415,0.0252002012966095,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"142","C02_T_31_B",1425,0.0263361619022333,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"143","C02_T_31_B",1435,0.0293054244011467,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"144","C02_T_31_B",1445,0.0346430588251396,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"145","C02_T_31_B",1455,0.0427041038266918,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"146","C02_T_31_B",1465,0.0534882711800111,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"147","C02_T_31_B",1475,0.0666906213836387,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"148","C02_T_31_B",1485,0.0818111258955836,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"149","C02_T_31_B",1495,0.098089920041775,225.576385498047,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"150","C02_T_31_B",1505,0.114439168737866,229.825592041016,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"151","C02_T_31_B",1515,0.129560445333279,228.910400390625,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"152","C02_T_31_B",1525,0.142177867784861,224.4033203125,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"153","C02_T_31_B",1535,0.151289965617041,232.969985961914,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"154","C02_T_31_B",1545,0.156321871904663,243.133834838867,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"155","C02_T_31_B",1555,0.157350740082735,242.985000610352,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"156","C02_T_31_B",1565,0.155293201472305,222.225967407227,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"157","C02_T_31_B",1575,0.151640915516173,231.433288574219,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"158","C02_T_31_B",1585,0.147982828213073,231.052749633789,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"159","C02_T_31_B",1595,0.145666986328156,235.832458496094,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"160","C02_T_31_B",1605,0.145676643264504,235.785293579102,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"161","C02_T_31_B",1615,0.148622413411491,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"162","C02_T_31_B",1625,0.154510587252012,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"163","C02_T_31_B",1635,0.162733645074099,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"164","C02_T_31_B",1645,0.172461973703624,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"165","C02_T_31_B",1655,0.182739032327185,282.693481445312,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"166","C02_T_31_B",1665,0.192565809001121,275.724975585938,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"167","C02_T_31_B",1675,0.200981685777431,274.529113769531,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"168","C02_T_31_B",1685,0.206966816463952,276.615325927734,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"169","C02_T_31_B",1695,0.209819307579137,278.018035888672,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"170","C02_T_31_B",1705,0.209530145764884,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"171","C02_T_31_B",1715,0.206633945141845,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"172","C02_T_31_B",1725,0.20209559782495,273.479034423828,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"173","C02_T_31_B",1735,0.197094733124636,273.570495605469,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"174","C02_T_31_B",1745,0.192676988196712,279.280517578125,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"175","C02_T_31_B",1755,0.189522187757318,272.22265625,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"176","C02_T_31_B",1765,0.187599544368585,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"177","C02_T_31_B",1775,0.186282644205639,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"178","C02_T_31_B",1785,0.184961257072421,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"179","C02_T_31_B",1795,0.183266768774475,269.747711181641,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"180","C02_T_31_B",1805,0.180959509740699,265.7412109375,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"181","C02_T_31_B",1815,0.177890796890351,269.776153564453,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"182","C02_T_31_B",1825,0.174084609114911,269.933715820312,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"183","C02_T_31_B",1835,0.169629487367304,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"184","C02_T_31_B",1845,0.164532405588585,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"185","C02_T_31_B",1855,0.158869576144178,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"186","C02_T_31_B",1865,0.152862386468107,268.585662841797,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"187","C02_T_31_B",1875,0.146858904418788,270.385925292969,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"188","C02_T_31_B",1885,0.141327996298124,269.507354736328,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"189","C02_T_31_B",1895,0.13661247172737,268.515411376953,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"190","C02_T_31_B",1905,0.132723075094643,259.515838623047,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"191","C02_T_31_B",1915,0.129547845415196,267.274871826172,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"192","C02_T_31_B",1925,0.126960728301078,268.56201171875,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"193","C02_T_31_B",1935,0.124801886785174,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"194","C02_T_31_B",1945,0.123019902201722,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"195","C02_T_31_B",1955,0.121617926359399,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"196","C02_T_31_B",1965,0.120741505817802,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"197","C02_T_31_B",1975,0.120701621597398,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"198","C02_T_31_B",1985,0.121597909691643,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"199","C02_T_31_B",1995,0.123271611924557,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"200","C02_T_31_B",2005,0.125385615988485,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"201","C02_T_31_B",2015,0.127421462471039,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"202","C02_T_31_B",2025,0.12893251844264,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"203","C02_T_31_B",2035,0.129693871206898,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"204","C02_T_31_B",2045,0.129546264950521,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"205","C02_T_31_B",2055,0.128362025447384,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"206","C02_T_31_B",2065,0.1260382607633,0,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"207","C02_T_31_B",2075,0.122501972966915,199.297958374023,"La flauta de color taronja",NA,NA,NA,"1","pre",2,"Catalan","target",31,"background","female",NA
+"208","C02_T_31_B",2085,0.117829260126263,197.280899047852,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"209","C02_T_31_B",2095,0.112206018330624,191.991744995117,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"210","C02_T_31_B",2105,0.105968109078738,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"211","C02_T_31_B",2115,0.0995221969539699,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"212","C02_T_31_B",2125,0.0931808363052249,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"213","C02_T_31_B",2135,0.0872983632643734,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"214","C02_T_31_B",2145,0.082303734636889,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"215","C02_T_31_B",2155,0.0787268395270085,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"216","C02_T_31_B",2165,0.0772029101008304,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"217","C02_T_31_B",2175,0.0782463301546835,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"218","C02_T_31_B",2185,0.0821473317104504,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"219","C02_T_31_B",2195,0.0888661958625415,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"220","C02_T_31_B",2205,0.0980156444525115,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"221","C02_T_31_B",2215,0.109087224886838,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"222","C02_T_31_B",2225,0.1215363246844,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"223","C02_T_31_B",2235,0.134626622964371,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"224","C02_T_31_B",2245,0.147449703780474,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"225","C02_T_31_B",2255,0.159322821535224,225.643432617188,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"226","C02_T_31_B",2265,0.169726754932076,224.057708740234,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"227","C02_T_31_B",2275,0.178076046397349,223.776229858398,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"228","C02_T_31_B",2285,0.183879844035855,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"229","C02_T_31_B",2295,0.18685642903651,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"230","C02_T_31_B",2305,0.187020156439683,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"231","C02_T_31_B",2315,0.18477644847741,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"232","C02_T_31_B",2325,0.18085394729037,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"233","C02_T_31_B",2335,0.176016068402668,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"234","C02_T_31_B",2345,0.17080558755327,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"235","C02_T_31_B",2355,0.165457513303831,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"236","C02_T_31_B",2365,0.159936526979001,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"237","C02_T_31_B",2375,0.154140742105141,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"238","C02_T_31_B",2385,0.148054316494698,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"239","C02_T_31_B",2395,0.1417127465536,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"240","C02_T_31_B",2405,0.135234736744934,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"241","C02_T_31_B",2415,0.128749407379701,0,"La flauta de color taronja","N","-1","2","2","flau",2,"Catalan","target",31,"background","female",NA
+"242","C02_T_31_B",2425,0.122238395153772,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"243","C02_T_31_B",2435,0.115664444387043,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"244","C02_T_31_B",2445,0.109099345266243,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"245","C02_T_31_B",2455,0.102494943158361,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"246","C02_T_31_B",2465,0.095882462925293,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"247","C02_T_31_B",2475,0.0895790120253266,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"248","C02_T_31_B",2485,0.083974224901382,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"249","C02_T_31_B",2495,0.0794621782613867,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"250","C02_T_31_B",2505,0.0763307213676604,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"251","C02_T_31_B",2515,0.0746362866713602,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"252","C02_T_31_B",2525,0.0742094442691635,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"253","C02_T_31_B",2535,0.0747482359395393,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"254","C02_T_31_B",2545,0.075972976208646,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"255","C02_T_31_B",2555,0.0776603537851993,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"256","C02_T_31_B",2565,0.079591028381909,0,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"257","C02_T_31_B",2575,0.0815624507313301,180.665100097656,"La flauta de color taronja","N","-1","","3","post",2,"Catalan","target",31,"background","female",NA
+"258","C02_T_31_B",2585,0.0834322931667756,181.404083251953,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"259","C02_T_31_B",2595,0.0851910604453526,174.544631958008,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"260","C02_T_31_B",2605,0.0869202540357791,178.793746948242,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"261","C02_T_31_B",2615,0.08870357741228,174.418609619141,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"262","C02_T_31_B",2625,0.09056470645281,167.759719848633,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"263","C02_T_31_B",2635,0.0924771155903091,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"264","C02_T_31_B",2645,0.0943351265303074,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"265","C02_T_31_B",2655,0.0958485066714514,176.030670166016,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"266","C02_T_31_B",2665,0.096604851039528,174.537811279297,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"267","C02_T_31_B",2675,0.0962505272336679,176.686630249023,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"268","C02_T_31_B",2685,0.0946157721018621,174.945037841797,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"269","C02_T_31_B",2695,0.0917805190182203,178.453170776367,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"270","C02_T_31_B",2705,0.0880602145779825,174.914779663086,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"271","C02_T_31_B",2715,0.083884047690322,175.933898925781,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"272","C02_T_31_B",2725,0.079758521007479,177.832290649414,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"273","C02_T_31_B",2735,0.0763038134404312,177.540313720703,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"274","C02_T_31_B",2745,0.074153365408596,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"275","C02_T_31_B",2755,0.0737490658824665,173.821990966797,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"276","C02_T_31_B",2765,0.0752684040517694,171.653747558594,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"277","C02_T_31_B",2775,0.0785534061799381,176.142562866211,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"278","C02_T_31_B",2785,0.0831942885433407,163.463073730469,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"279","C02_T_31_B",2795,0.0887833259801132,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"280","C02_T_31_B",2805,0.0948067722173417,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"281","C02_T_31_B",2815,0.100708223140836,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"282","C02_T_31_B",2825,0.106166820482826,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"283","C02_T_31_B",2835,0.11108015170873,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"284","C02_T_31_B",2845,0.115370926048243,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"285","C02_T_31_B",2855,0.118930889802149,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"286","C02_T_31_B",2865,0.121771493959965,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"287","C02_T_31_B",2875,0.124083305986289,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"288","C02_T_31_B",2885,0.126117336608815,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"289","C02_T_31_B",2895,0.128118373734363,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"290","C02_T_31_B",2905,0.130287329866324,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"291","C02_T_31_B",2915,0.132850651706756,0,"La flauta de color taronja","","","","4","",2,"Catalan","target",31,"background","female",NA
+"292","C02_T_31_B",2925,0.136043658308622,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"293","C02_T_31_B",2935,0.139926920037357,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"294","C02_T_31_B",2945,0.144341206065141,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"295","C02_T_31_B",2955,0.148995992085175,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"296","C02_T_31_B",2965,0.153487804233517,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"297","C02_T_31_B",2975,0.157455858699093,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"298","C02_T_31_B",2985,0.160659416174973,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"299","C02_T_31_B",2995,0.162765632052492,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"300","C02_T_31_B",3005,0.163594614949638,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"301","C02_T_31_B",3015,0.163168432184224,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"302","C02_T_31_B",3025,0.161436363707197,0,"La flauta de color taronja","A","0","","5","pre",2,"Catalan","target",31,"background","female",NA
+"303","C02_T_31_B",3035,0.158308986288082,0,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"304","C02_T_31_B",3045,0.153884452158875,0,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"305","C02_T_31_B",3055,0.148576419062484,0,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"306","C02_T_31_B",3065,0.142907851223387,270.797943115234,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"307","C02_T_31_B",3075,0.137382407217149,256.995483398438,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"308","C02_T_31_B",3085,0.132562177599717,0,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"309","C02_T_31_B",3095,0.128905786529668,249.885925292969,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"310","C02_T_31_B",3105,0.126542956025354,244.507766723633,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"311","C02_T_31_B",3115,0.125322068576686,246.25325012207,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"312","C02_T_31_B",3125,0.125076547122658,241.923767089844,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"313","C02_T_31_B",3135,0.125799230269466,250.37956237793,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"314","C02_T_31_B",3145,0.127682192303913,247.082946777344,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"315","C02_T_31_B",3155,0.131124657906316,242.24299621582,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"316","C02_T_31_B",3165,0.13661189601398,234.546478271484,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"317","C02_T_31_B",3175,0.144640651724108,247.749206542969,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"318","C02_T_31_B",3185,0.155664914059221,253.078231811523,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"319","C02_T_31_B",3195,0.170006118798008,258.019653320312,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"320","C02_T_31_B",3205,0.187640050252888,0,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"321","C02_T_31_B",3215,0.208233736440247,255.691452026367,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"322","C02_T_31_B",3225,0.231280830434192,253.068435668945,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"323","C02_T_31_B",3235,0.255908552256752,261.309631347656,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"324","C02_T_31_B",3245,0.280743613807479,262.495178222656,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"325","C02_T_31_B",3255,0.304065742027891,266.094299316406,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"326","C02_T_31_B",3265,0.324218349213734,262.356811523438,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"327","C02_T_31_B",3275,0.339826514586289,275.937164306641,"La flauta de color taronja","A","0","2","6","ron",2,"Catalan","target",31,"background","female",NA
+"328","C02_T_31_B",3285,0.349758341014266,271.003997802734,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"329","C02_T_31_B",3295,0.353289986179205,268.957366943359,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"330","C02_T_31_B",3305,0.350344696651506,277.381225585938,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"331","C02_T_31_B",3315,0.341566207397923,266.745391845703,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"332","C02_T_31_B",3325,0.32794071294062,263.505889892578,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"333","C02_T_31_B",3335,0.310541742511956,266.092254638672,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"334","C02_T_31_B",3345,0.290552034683725,273.215942382812,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"335","C02_T_31_B",3355,0.269125802472789,278.687713623047,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"336","C02_T_31_B",3365,0.247477897293469,266.616912841797,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"337","C02_T_31_B",3375,0.226820864936151,266.973724365234,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"338","C02_T_31_B",3385,0.208053586258782,274.629089355469,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"339","C02_T_31_B",3395,0.191585581056739,255.882125854492,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"340","C02_T_31_B",3405,0.177541844286396,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"341","C02_T_31_B",3415,0.165800882049716,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"342","C02_T_31_B",3425,0.156050565318589,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"343","C02_T_31_B",3435,0.148053440607499,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"344","C02_T_31_B",3445,0.141731399030016,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"345","C02_T_31_B",3455,0.13707557186174,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"346","C02_T_31_B",3465,0.133864597646308,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"347","C02_T_31_B",3475,0.131686126498874,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"348","C02_T_31_B",3485,0.130135042150822,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"349","C02_T_31_B",3495,0.128836273165389,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"350","C02_T_31_B",3505,0.127506757492375,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"351","C02_T_31_B",3515,0.125794739002195,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"352","C02_T_31_B",3525,0.123332794595412,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"353","C02_T_31_B",3535,0.11998518001431,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"354","C02_T_31_B",3545,0.115847783574193,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"355","C02_T_31_B",3555,0.111238622818436,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"356","C02_T_31_B",3565,0.106403968365074,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"357","C02_T_31_B",3575,0.101350154135878,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"358","C02_T_31_B",3585,0.0960731692378874,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"359","C02_T_31_B",3595,0.0907505264505268,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"360","C02_T_31_B",3605,0.085573841173779,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"361","C02_T_31_B",3615,0.080666507299618,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"362","C02_T_31_B",3625,0.0760262008745191,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"363","C02_T_31_B",3635,0.071528701101791,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"364","C02_T_31_B",3645,0.0670464120035043,0,"La flauta de color taronja","A","0",NA,"7","post",2,"Catalan","target",31,"background","female",NA
+"365","C02_T_31_B",3655,0.0625281559158981,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"366","C02_T_31_B",3665,0.0580617414510106,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"367","C02_T_31_B",3675,0.0537198483090274,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"368","C02_T_31_B",3685,0.0495286729719829,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"369","C02_T_31_B",3695,0.0455418549163134,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"370","C02_T_31_B",3705,0.0417837709811011,275.135772705078,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"371","C02_T_31_B",3715,0.0383130639170697,260.513916015625,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"372","C02_T_31_B",3725,0.0352550530651101,244.412292480469,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"373","C02_T_31_B",3735,0.0326524804256854,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"374","C02_T_31_B",3745,0.0304157159928571,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"375","C02_T_31_B",3755,0.0283763329941054,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"376","C02_T_31_B",3765,0.0264461671055588,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"377","C02_T_31_B",3775,0.0246639625929862,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"378","C02_T_31_B",3785,0.023053479294792,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"379","C02_T_31_B",3795,0.0215999097046677,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"380","C02_T_31_B",3805,0.0202906287880975,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"381","C02_T_31_B",3815,0.019090247335432,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"382","C02_T_31_B",3825,0.0179537978757772,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"383","C02_T_31_B",3835,0.016870616596627,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"384","C02_T_31_B",3845,0.0158686258468489,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"385","C02_T_31_B",3855,0.01497442676451,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"386","C02_T_31_B",3865,0.0142036737221838,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"387","C02_T_31_B",3875,0.0135803737017197,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"388","C02_T_31_B",3885,0.0130889947150415,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"389","C02_T_31_B",3895,0.012697587648481,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"390","C02_T_31_B",3905,0.0123987242396971,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"391","C02_T_31_B",3915,0.0121784451547337,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"392","C02_T_31_B",3925,0.0120107282454472,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"393","C02_T_31_B",3935,0.0118597643523471,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"394","C02_T_31_B",3945,0.0116939408424263,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"395","C02_T_31_B",3955,0.0114919967797451,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"396","C02_T_31_B",3965,0.0112320800329551,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"397","C02_T_31_B",3975,0.0109051696317633,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"398","C02_T_31_B",3985,0.0105218425002742,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"399","C02_T_31_B",3995,0.0101084135673867,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"400","C02_T_31_B",4005,0.00970193322863847,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"401","C02_T_31_B",4015,0.00932884067817187,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"402","C02_T_31_B",4025,0.00900226726498534,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"403","C02_T_31_B",4035,0.00873168230144161,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"404","C02_T_31_B",4045,0.00852971606072822,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"405","C02_T_31_B",4055,0.00840519291928612,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"406","C02_T_31_B",4065,0.00835585185293006,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"407","C02_T_31_B",4075,0.00837116631765082,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"408","C02_T_31_B",4085,0.00843882881096161,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"409","C02_T_31_B",4095,0.00853609081047949,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"410","C02_T_31_B",4105,0.0086300952240485,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"411","C02_T_31_B",4115,0.00869727847961524,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"412","C02_T_31_B",4125,0.00873470694001536,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"413","C02_T_31_B",4135,0.0087568064601369,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"414","C02_T_31_B",4145,0.00877834269589464,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"415","C02_T_31_B",4155,0.00880337490471266,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"416","C02_T_31_B",4165,0.0088334465899096,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"417","C02_T_31_B",4175,0.00886336160987337,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"418","C02_T_31_B",4185,0.00888562479766283,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"419","C02_T_31_B",4195,0.00889630807964832,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"420","C02_T_31_B",4205,0.00888152543238704,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"421","C02_T_31_B",4215,0.00883198424268978,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"422","C02_T_31_B",4225,0.00875592588372787,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"423","C02_T_31_B",4235,0.00866764436702685,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"424","C02_T_31_B",4245,0.00857623700365347,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"425","C02_T_31_B",4255,0.00849086394130857,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"426","C02_T_31_B",4265,0.00842133450215582,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"427","C02_T_31_B",4275,0.00836860575806329,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"428","C02_T_31_B",4285,0.0083369841604992,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"429","C02_T_31_B",4295,0.00833636113627644,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"430","C02_T_31_B",4305,0.00836878598648512,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"431","C02_T_31_B",4315,0.00843034203484221,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"432","C02_T_31_B",4325,0.0085133567830924,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"433","C02_T_31_B",4335,0.00860205210200536,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"434","C02_T_31_B",4345,0.00871073006259497,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"435","C02_T_31_B",4355,0.00896949956146384,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"436","C02_T_31_B",4365,0.00957689924667731,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"437","C02_T_31_B",4375,0.0107191692388956,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"438","C02_T_31_B",4385,0.0125317352794721,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"439","C02_T_31_B",4395,0.0151076861598637,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"440","C02_T_31_B",4405,0.0185594968897943,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"441","C02_T_31_B",4415,0.0230053548450118,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"442","C02_T_31_B",4425,0.0285734914990255,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"443","C02_T_31_B",4435,0.0354566164157711,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"444","C02_T_31_B",4445,0.043901488641774,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"445","C02_T_31_B",4455,0.0541031199885433,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"446","C02_T_31_B",4465,0.0659232625425393,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"447","C02_T_31_B",4475,0.0787889566255627,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"448","C02_T_31_B",4485,0.0919020895268554,210.513275146484,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"449","C02_T_31_B",4495,0.104422866129528,218.610504150391,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"450","C02_T_31_B",4505,0.115645273210536,216.05908203125,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"451","C02_T_31_B",4515,0.125009715235272,214.835739135742,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"452","C02_T_31_B",4525,0.132032132582858,208.867813110352,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"453","C02_T_31_B",4535,0.136357123694686,209.82878112793,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"454","C02_T_31_B",4545,0.137810816131327,206.620681762695,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"455","C02_T_31_B",4555,0.13636562814602,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"456","C02_T_31_B",4565,0.132264404204177,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"457","C02_T_31_B",4575,0.126079547067192,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"458","C02_T_31_B",4585,0.118628070618166,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"459","C02_T_31_B",4595,0.110923673404997,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"460","C02_T_31_B",4605,0.104003826218184,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"461","C02_T_31_B",4615,0.0986479713023835,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"462","C02_T_31_B",4625,0.0952045968768477,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"463","C02_T_31_B",4635,0.0935515910114338,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"464","C02_T_31_B",4645,0.0931164980727474,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"465","C02_T_31_B",4655,0.093075521654251,205.200424194336,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"466","C02_T_31_B",4665,0.0927552847560017,194.588027954102,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"467","C02_T_31_B",4675,0.0918058818722979,187.777542114258,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"468","C02_T_31_B",4685,0.0900546603494096,201.01203918457,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"469","C02_T_31_B",4695,0.0875027766531006,204.536376953125,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"470","C02_T_31_B",4705,0.084369889901714,203.469879150391,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"471","C02_T_31_B",4715,0.0810312253343974,203.866439819336,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"472","C02_T_31_B",4725,0.0779060049933289,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"473","C02_T_31_B",4735,0.0754597955912222,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"474","C02_T_31_B",4745,0.0742081599574204,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"475","C02_T_31_B",4755,0.0745764162695963,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"476","C02_T_31_B",4765,0.0767661696839996,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"477","C02_T_31_B",4775,0.0807805581955583,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"478","C02_T_31_B",4785,0.0863973813067331,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"479","C02_T_31_B",4795,0.0930337017855696,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"480","C02_T_31_B",4805,0.0998643206703431,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"481","C02_T_31_B",4815,0.106114226523996,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"482","C02_T_31_B",4825,0.111189670714825,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"483","C02_T_31_B",4835,0.114674837354788,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"484","C02_T_31_B",4845,0.116348357151458,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"485","C02_T_31_B",4855,0.116191269160961,193.772933959961,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"486","C02_T_31_B",4865,0.114350389755809,191.193252563477,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"487","C02_T_31_B",4875,0.111152779698849,189.502899169922,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"488","C02_T_31_B",4885,0.107114418626256,185.935760498047,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"489","C02_T_31_B",4895,0.102731526725905,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"490","C02_T_31_B",4905,0.0982782349464525,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"491","C02_T_31_B",4915,0.0939101325706191,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"492","C02_T_31_B",4925,0.0898556615454124,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"493","C02_T_31_B",4935,0.0863479493306369,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"494","C02_T_31_B",4945,0.0835053536709728,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"495","C02_T_31_B",4955,0.0813354779513708,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"496","C02_T_31_B",4965,0.0797136676321842,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"497","C02_T_31_B",4975,0.0784054557460208,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"498","C02_T_31_B",4985,0.0771830026738031,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"499","C02_T_31_B",4995,0.0759424053518682,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"500","C02_T_31_B",5005,0.0746987250797109,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"501","C02_T_31_B",5015,0.0734606168861942,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"502","C02_T_31_B",5025,0.0721610922623536,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"503","C02_T_31_B",5035,0.0707553229624579,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"504","C02_T_31_B",5045,0.069251636152151,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"505","C02_T_31_B",5055,0.0676592878776889,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"506","C02_T_31_B",5065,0.065986873720394,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"507","C02_T_31_B",5075,0.0641806185617949,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"508","C02_T_31_B",5085,0.0621260155720929,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"509","C02_T_31_B",5095,0.0597545233609242,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"510","C02_T_31_B",5105,0.0570880106468914,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"511","C02_T_31_B",5115,0.0541900364661362,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"512","C02_T_31_B",5125,0.0511270374274869,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"513","C02_T_31_B",5135,0.047936497997741,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"514","C02_T_31_B",5145,0.0446342100286602,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"515","C02_T_31_B",5155,0.041297212900771,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"516","C02_T_31_B",5165,0.038076978340994,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"517","C02_T_31_B",5175,0.0351088464366669,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"518","C02_T_31_B",5185,0.0324715071628637,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"519","C02_T_31_B",5195,0.0301734772897658,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"520","C02_T_31_B",5205,0.0281165737166821,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"521","C02_T_31_B",5215,0.0262100567645221,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"522","C02_T_31_B",5225,0.0244745775488494,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"523","C02_T_31_B",5235,0.0229404106208154,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"524","C02_T_31_B",5245,0.0216192789821963,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"525","C02_T_31_B",5255,0.0205118678522642,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"526","C02_T_31_B",5265,0.0195915774384609,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"527","C02_T_31_B",5275,0.0188438150033269,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"528","C02_T_31_B",5285,0.0182585212259403,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"529","C02_T_31_B",5295,0.0178083496866702,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"530","C02_T_31_B",5305,0.0174294879771942,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"531","C02_T_31_B",5315,0.0170527731795551,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"532","C02_T_31_B",5325,0.0166348586920053,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"533","C02_T_31_B",5335,0.0161644328246531,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"534","C02_T_31_B",5345,0.0156533085601976,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"535","C02_T_31_B",5355,0.0151110824693003,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"536","C02_T_31_B",5365,0.0145441800154943,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"537","C02_T_31_B",5375,0.013958089213664,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"538","C02_T_31_B",5385,0.0133673908505711,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"539","C02_T_31_B",5395,0.0127923729471302,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"540","C02_T_31_B",5405,0.0122595364647349,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"541","C02_T_31_B",5415,0.0117913199213762,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"542","C02_T_31_B",5425,0.0113903120717281,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"543","C02_T_31_B",5435,0.0110445945257741,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"544","C02_T_31_B",5445,0.010737015924548,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"545","C02_T_31_B",5455,0.0104569506932811,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"546","C02_T_31_B",5465,0.0102070152169703,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"547","C02_T_31_B",5475,0.00999169343424774,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"548","C02_T_31_B",5485,0.00980560715718279,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"549","C02_T_31_B",5495,0.00964899184406924,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"550","C02_T_31_B",5505,0.00951883194220226,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"551","C02_T_31_B",5515,0.00939406548506636,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"552","C02_T_31_B",5525,0.0092584120369242,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"553","C02_T_31_B",5535,0.00911181625606998,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"554","C02_T_31_B",5545,0.00895937922625605,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"555","C02_T_31_B",5555,0.00880651746980637,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"556","C02_T_31_B",5565,0.00866079245260026,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"557","C02_T_31_B",5575,0.00853139176661125,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"558","C02_T_31_B",5585,0.00842301963918448,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"559","C02_T_31_B",5595,0.00833291305187938,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"560","C02_T_31_B",5605,0.00825382373289448,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"561","C02_T_31_B",5615,0.00818300019788696,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"562","C02_T_31_B",5625,0.00812857756069185,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"563","C02_T_31_B",5635,0.00810522873152117,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"564","C02_T_31_B",5645,0.00812676016162433,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"565","C02_T_31_B",5655,0.00820834704437512,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"566","C02_T_31_B",5665,0.00836001968692449,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"567","C02_T_31_B",5675,0.00857277610564997,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"568","C02_T_31_B",5685,0.00882166116281984,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"569","C02_T_31_B",5695,0.00908113969095297,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"570","C02_T_31_B",5705,0.0093390880811032,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"571","C02_T_31_B",5715,0.00958938043760682,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"572","C02_T_31_B",5725,0.00981548731334588,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"573","C02_T_31_B",5735,0.00999739994386337,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"574","C02_T_31_B",5745,0.0101280337292568,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"575","C02_T_31_B",5755,0.0102036371483678,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"576","C02_T_31_B",5765,0.0102158239740099,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"577","C02_T_31_B",5775,0.010160004982503,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"578","C02_T_31_B",5785,0.0100357312247037,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"579","C02_T_31_B",5795,0.00985371695294591,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"580","C02_T_31_B",5805,0.00963633533686217,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"581","C02_T_31_B",5815,0.0094077840674326,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"582","C02_T_31_B",5825,0.00918094173925236,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"583","C02_T_31_B",5835,0.00896302297613418,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"584","C02_T_31_B",5845,0.00876194098318326,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"585","C02_T_31_B",5855,0.00857506709857226,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"586","C02_T_31_B",5865,0.00839702815219979,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"587","C02_T_31_B",5875,0.00823447378050159,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"588","C02_T_31_B",5885,0.00810459682463797,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"589","C02_T_31_B",5895,0.00801367410328729,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"590","C02_T_31_B",5905,0.00796170688670392,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"591","C02_T_31_B",5915,0.00795499774945206,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"592","C02_T_31_B",5925,0.00799356599724594,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"593","C02_T_31_B",5935,0.00806700587922475,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"594","C02_T_31_B",5945,0.00815753347002387,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"595","C02_T_31_B",5955,0.0082462257722668,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"596","C02_T_31_B",5965,0.00832139262893505,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"597","C02_T_31_B",5975,0.00837671066292892,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"598","C02_T_31_B",5985,0.00840394252430466,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"599","C02_T_31_B",5995,0.00839596365833584,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"600","C02_T_31_B",6005,0.00835231591532259,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"601","C02_T_31_B",6015,0.00827450427729037,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"602","C02_T_31_B",6025,0.00816751933040558,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"603","C02_T_31_B",6035,0.00803648762346236,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"604","C02_T_31_B",6045,0.00789135017128713,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"605","C02_T_31_B",6055,0.00775130244467672,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"606","C02_T_31_B",6065,0.00384248588046566,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"607","C02_T_31_B",6075,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"608","C02_T_31_B",6085,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"609","C02_T_31_B",6095,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"610","C02_T_31_B",6105,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"611","C02_T_31_B",6115,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"612","C02_T_31_B",6125,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"613","C02_T_31_B",6135,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"614","C02_T_31_B",6145,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA
+"615","C02_T_31_B",6155,0,0,NA,NA,NA,NA,NA,NA,2,"Catalan","target",31,"background","female",NA

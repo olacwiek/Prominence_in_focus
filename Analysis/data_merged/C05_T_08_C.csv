@@ -1,0 +1,544 @@
+"","File","time_ms","env","F0","TP","Word","Gestural_Prom","Prosodic_Prom","Syll_num","Syll","Participant","Language","Item_type","Item_num","Focus","Gender","Age"
+"1","C05_T_08_C",15,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"2","C05_T_08_C",25,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"3","C05_T_08_C",35,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"4","C05_T_08_C",45,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"5","C05_T_08_C",55,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"6","C05_T_08_C",65,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"7","C05_T_08_C",75,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"8","C05_T_08_C",85,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"9","C05_T_08_C",95,0.0094826057263411,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"10","C05_T_08_C",105,0.0189477988951751,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"11","C05_T_08_C",115,0.0188449894674124,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"12","C05_T_08_C",125,0.018633154313503,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"13","C05_T_08_C",135,0.0183524685518584,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"14","C05_T_08_C",145,0.0180283555263866,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"15","C05_T_08_C",155,0.0176755174612675,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"16","C05_T_08_C",165,0.017305317584166,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"17","C05_T_08_C",175,0.0169253488687641,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"18","C05_T_08_C",185,0.0165424690240165,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"19","C05_T_08_C",195,0.0161684161078181,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"20","C05_T_08_C",205,0.0158187801286246,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"21","C05_T_08_C",215,0.0154957317666016,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"22","C05_T_08_C",225,0.0151862885064797,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"23","C05_T_08_C",235,0.0148793734313343,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"24","C05_T_08_C",245,0.0145590885930147,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"25","C05_T_08_C",255,0.0142359667802983,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"26","C05_T_08_C",265,0.0139503191900444,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"27","C05_T_08_C",275,0.0137396040232693,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"28","C05_T_08_C",285,0.0136295590780185,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"29","C05_T_08_C",295,0.0136350821486457,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"30","C05_T_08_C",305,0.0137603532480112,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"31","C05_T_08_C",315,0.0139885163465044,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"32","C05_T_08_C",325,0.0142777051664521,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"33","C05_T_08_C",335,0.0145817077130328,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"34","C05_T_08_C",345,0.0148708963046838,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"35","C05_T_08_C",355,0.0151252520786758,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"36","C05_T_08_C",365,0.0153111933495264,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"37","C05_T_08_C",375,0.0153881702828282,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"38","C05_T_08_C",385,0.0153499493831395,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"39","C05_T_08_C",395,0.0152323569735699,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"40","C05_T_08_C",405,0.01507303418587,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"41","C05_T_08_C",415,0.0148906003618906,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"42","C05_T_08_C",425,0.0147089757264742,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"43","C05_T_08_C",435,0.0145676598505866,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"44","C05_T_08_C",445,0.0144962034789648,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"45","C05_T_08_C",455,0.0144982445368191,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"46","C05_T_08_C",465,0.0145594727803882,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"47","C05_T_08_C",475,0.0146643023714534,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"48","C05_T_08_C",485,0.0147836923388757,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"49","C05_T_08_C",495,0.0148856584617728,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"50","C05_T_08_C",505,0.0149524041444135,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"51","C05_T_08_C",515,0.0149601732201616,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"52","C05_T_08_C",525,0.0148851968253835,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"53","C05_T_08_C",535,0.0147263785493135,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"54","C05_T_08_C",545,0.0145037814090698,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"55","C05_T_08_C",555,0.0142491210040194,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"56","C05_T_08_C",565,0.0140069362282983,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"57","C05_T_08_C",575,0.0138195952891648,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"58","C05_T_08_C",585,0.013699577568314,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"59","C05_T_08_C",595,0.0136315680563955,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"60","C05_T_08_C",605,0.013606527154567,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"61","C05_T_08_C",615,0.0136146330009006,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"62","C05_T_08_C",625,0.0136282203649387,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"63","C05_T_08_C",635,0.0136283569165718,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"64","C05_T_08_C",645,0.0136244517559828,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"65","C05_T_08_C",655,0.0136273838613851,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"66","C05_T_08_C",665,0.0136331483399544,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"67","C05_T_08_C",675,0.013639965195859,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"68","C05_T_08_C",685,0.0136526042466876,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"69","C05_T_08_C",695,0.0136644936706042,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"70","C05_T_08_C",705,0.0136534792187984,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"71","C05_T_08_C",715,0.0136128919965779,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"72","C05_T_08_C",725,0.0135710286374108,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"73","C05_T_08_C",735,0.0135612388032893,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"74","C05_T_08_C",745,0.0135919595381714,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"75","C05_T_08_C",755,0.0136624469888807,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"76","C05_T_08_C",765,0.013759391915857,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"77","C05_T_08_C",775,0.013865632471875,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"78","C05_T_08_C",785,0.0139775781423077,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"79","C05_T_08_C",795,0.014097211714239,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"80","C05_T_08_C",805,0.0142138942473575,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"81","C05_T_08_C",815,0.0143188241048006,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"82","C05_T_08_C",825,0.0144244590864833,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"83","C05_T_08_C",835,0.0145359703489185,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"84","C05_T_08_C",845,0.014636721437071,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"85","C05_T_08_C",855,0.0147080697633311,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"86","C05_T_08_C",865,0.0147473014630839,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"87","C05_T_08_C",875,0.0147553806016295,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"88","C05_T_08_C",885,0.0147329180636818,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"89","C05_T_08_C",895,0.0146847413612285,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"90","C05_T_08_C",905,0.0146239610687341,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"91","C05_T_08_C",915,0.0145766894798956,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"92","C05_T_08_C",925,0.0145463676285388,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"93","C05_T_08_C",935,0.0145119988766819,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"94","C05_T_08_C",945,0.0144546522596871,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"95","C05_T_08_C",955,0.014361034217324,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"96","C05_T_08_C",965,0.0142893746824033,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"97","C05_T_08_C",975,0.0145243042396212,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"98","C05_T_08_C",985,0.0156772979937954,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"99","C05_T_08_C",995,0.0186328658293297,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"100","C05_T_08_C",1005,0.0243367732088932,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"101","C05_T_08_C",1015,0.0334270414860009,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"102","C05_T_08_C",1025,0.0459932601865864,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"103","C05_T_08_C",1035,0.0616338918205941,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"104","C05_T_08_C",1045,0.0795242862425262,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"105","C05_T_08_C",1055,0.0984511304491333,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"106","C05_T_08_C",1065,0.116986414912015,241.193099975586,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"107","C05_T_08_C",1075,0.133687642017912,245.951507568359,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"108","C05_T_08_C",1085,0.147271413687417,247.38330078125,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"109","C05_T_08_C",1095,0.156793830190279,242.92578125,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"110","C05_T_08_C",1105,0.161839427079556,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"111","C05_T_08_C",1115,0.162529809028576,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"112","C05_T_08_C",1125,0.159376391757904,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"113","C05_T_08_C",1135,0.153255639126398,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"114","C05_T_08_C",1145,0.145330120726892,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"115","C05_T_08_C",1155,0.13681004592716,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"116","C05_T_08_C",1165,0.128890265811781,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"117","C05_T_08_C",1175,0.122540452258049,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"118","C05_T_08_C",1185,0.11822159010104,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"119","C05_T_08_C",1195,0.11592905352457,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"120","C05_T_08_C",1205,0.115248762401915,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"121","C05_T_08_C",1215,0.115520557325634,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"122","C05_T_08_C",1225,0.116190186463209,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"123","C05_T_08_C",1235,0.116921782605847,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"124","C05_T_08_C",1245,0.117431772761225,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"125","C05_T_08_C",1255,0.117529867086364,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"126","C05_T_08_C",1265,0.117102690368055,140.328765869141,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"127","C05_T_08_C",1275,0.11607237920893,140.2998046875,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"128","C05_T_08_C",1285,0.11445166235993,136.423156738281,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"129","C05_T_08_C",1295,0.11224950560095,129.536651611328,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"130","C05_T_08_C",1305,0.109346052924055,123.28157043457,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"131","C05_T_08_C",1315,0.105526414024231,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"132","C05_T_08_C",1325,0.10066012610021,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"133","C05_T_08_C",1335,0.0947143795591127,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"134","C05_T_08_C",1345,0.087781115928001,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"135","C05_T_08_C",1355,0.0801839917182827,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"136","C05_T_08_C",1365,0.072300705983582,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"137","C05_T_08_C",1375,0.0644625099016092,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"138","C05_T_08_C",1385,0.0569908251585746,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"139","C05_T_08_C",1395,0.0500754446138239,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"140","C05_T_08_C",1405,0.0438201287839957,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"141","C05_T_08_C",1415,0.038380637344392,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"142","C05_T_08_C",1425,0.0338359762350823,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"143","C05_T_08_C",1435,0.0300665794766658,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"144","C05_T_08_C",1445,0.0269477054220316,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"145","C05_T_08_C",1455,0.0243914229083569,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"146","C05_T_08_C",1465,0.0223242568722097,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"147","C05_T_08_C",1475,0.0206859521677064,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"148","C05_T_08_C",1485,0.0193593855749926,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"149","C05_T_08_C",1495,0.0182358296164153,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"150","C05_T_08_C",1505,0.0173253425849553,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"151","C05_T_08_C",1515,0.0168520776079878,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"152","C05_T_08_C",1525,0.0172133924567349,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"153","C05_T_08_C",1535,0.0188274542420049,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"154","C05_T_08_C",1545,0.0219685491444239,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"155","C05_T_08_C",1555,0.0267302287623364,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"156","C05_T_08_C",1565,0.0330531966871352,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"157","C05_T_08_C",1575,0.040707550274271,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"158","C05_T_08_C",1585,0.0493317302511495,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"159","C05_T_08_C",1595,0.0585340678154623,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"160","C05_T_08_C",1605,0.0679286231592078,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"161","C05_T_08_C",1615,0.0771182432965177,117.51961517334,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"162","C05_T_08_C",1625,0.0857375297443674,117.80345916748,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"163","C05_T_08_C",1635,0.0935495256191191,116.942665100098,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"164","C05_T_08_C",1645,0.100397375859175,114.558471679688,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"165","C05_T_08_C",1655,0.1060390955837,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"166","C05_T_08_C",1665,0.110216281085982,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"167","C05_T_08_C",1675,0.112806316193245,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"168","C05_T_08_C",1685,0.113825601511861,125,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"169","C05_T_08_C",1695,0.113400798735714,128.272277832031,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"170","C05_T_08_C",1705,0.111677204109316,127.882499694824,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"171","C05_T_08_C",1715,0.108744111787762,131.868515014648,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"172","C05_T_08_C",1725,0.104621705544581,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"173","C05_T_08_C",1735,0.0993375043237102,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"174","C05_T_08_C",1745,0.0931295168369737,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"175","C05_T_08_C",1755,0.0865151294688513,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"176","C05_T_08_C",1765,0.0802302725806265,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"177","C05_T_08_C",1775,0.075111391719222,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"178","C05_T_08_C",1785,0.0718490446905269,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"179","C05_T_08_C",1795,0.0707706801613729,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"180","C05_T_08_C",1805,0.0718506498395489,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"181","C05_T_08_C",1815,0.0748714665988316,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"182","C05_T_08_C",1825,0.0794758435129913,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"183","C05_T_08_C",1835,0.0851184741879579,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"184","C05_T_08_C",1845,0.0911255863897029,185.614852905273,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"185","C05_T_08_C",1855,0.0968685140330355,181.418441772461,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"186","C05_T_08_C",1865,0.101870919935633,184.945861816406,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"187","C05_T_08_C",1875,0.105778438966007,176.308120727539,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"188","C05_T_08_C",1885,0.108346924598308,180.650695800781,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"189","C05_T_08_C",1895,0.10941693273753,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"190","C05_T_08_C",1905,0.108947844413607,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"191","C05_T_08_C",1915,0.107072083832323,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"192","C05_T_08_C",1925,0.104093887477829,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"193","C05_T_08_C",1935,0.100459691442821,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"194","C05_T_08_C",1945,0.0966646081509822,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"195","C05_T_08_C",1955,0.0931347011214063,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"196","C05_T_08_C",1965,0.090198389655963,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"197","C05_T_08_C",1975,0.0881891048603489,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"198","C05_T_08_C",1985,0.0875370112049186,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"199","C05_T_08_C",1995,0.0887138498299026,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"200","C05_T_08_C",2005,0.0921087673327037,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"201","C05_T_08_C",2015,0.0978547346081485,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"202","C05_T_08_C",2025,0.105572215306399,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"203","C05_T_08_C",2035,0.11433232398656,0,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"204","C05_T_08_C",2045,0.123079782045916,126.476837158203,"Les ulleres de color groc",NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"205","C05_T_08_C",2055,0.131016225301163,123.462677001953,"Les ulleres de color groc","N","1",NA,"1","pre",5,"Catalan","target",8,"contrastive","male",29
+"206","C05_T_08_C",2065,0.137486057580187,122.180679321289,"Les ulleres de color groc","N","1",NA,"1","pre",5,"Catalan","target",8,"contrastive","male",29
+"207","C05_T_08_C",2075,0.141942149887221,123.720306396484,"Les ulleres de color groc","N","1",NA,"1","pre",5,"Catalan","target",8,"contrastive","male",29
+"208","C05_T_08_C",2085,0.144108881494959,121.659515380859,"Les ulleres de color groc","N","1",NA,"1","pre",5,"Catalan","target",8,"contrastive","male",29
+"209","C05_T_08_C",2095,0.144060037993395,118.814743041992,"Les ulleres de color groc","N","1",NA,"1","pre",5,"Catalan","target",8,"contrastive","male",29
+"210","C05_T_08_C",2105,0.142316412022231,121.55143737793,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"211","C05_T_08_C",2115,0.139870184021006,123.092788696289,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"212","C05_T_08_C",2125,0.137961600582231,0,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"213","C05_T_08_C",2135,0.13763006399129,0,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"214","C05_T_08_C",2145,0.139257118174457,116.606658935547,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"215","C05_T_08_C",2155,0.142662400837338,114.614364624023,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"216","C05_T_08_C",2165,0.147469625431347,115.755012512207,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"217","C05_T_08_C",2175,0.153050692904188,124.697593688965,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"218","C05_T_08_C",2185,0.158432919100343,127.273849487305,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"219","C05_T_08_C",2195,0.162657740090497,133.585922241211,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"220","C05_T_08_C",2205,0.164898877930404,136.188827514648,"Les ulleres de color groc","N","1","1","2","lle",5,"Catalan","target",8,"contrastive","male",29
+"221","C05_T_08_C",2215,0.164523400774695,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"222","C05_T_08_C",2225,0.161470996050716,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"223","C05_T_08_C",2235,0.156198454738024,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"224","C05_T_08_C",2245,0.149312492269799,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"225","C05_T_08_C",2255,0.141368850860181,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"226","C05_T_08_C",2265,0.132916668549673,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"227","C05_T_08_C",2275,0.124522050902901,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"228","C05_T_08_C",2285,0.116669248041379,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"229","C05_T_08_C",2295,0.109679622507221,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"230","C05_T_08_C",2305,0.103632631858545,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"231","C05_T_08_C",2315,0.0982486590584628,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"232","C05_T_08_C",2325,0.0929457629261259,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"233","C05_T_08_C",2335,0.0872385613380614,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"234","C05_T_08_C",2345,0.0811156486620592,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"235","C05_T_08_C",2355,0.0748816409721307,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"236","C05_T_08_C",2365,0.0687835868198609,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"237","C05_T_08_C",2375,0.0630134218193819,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"238","C05_T_08_C",2385,0.0578553406989515,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"239","C05_T_08_C",2395,0.0534842628043265,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"240","C05_T_08_C",2405,0.0499670546096339,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"241","C05_T_08_C",2415,0.0473070438910052,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"242","C05_T_08_C",2425,0.045312334560771,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"243","C05_T_08_C",2435,0.0437721272932678,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"244","C05_T_08_C",2445,0.0425406222368577,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"245","C05_T_08_C",2455,0.0414856925331394,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"246","C05_T_08_C",2465,0.0405044487439472,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"247","C05_T_08_C",2475,0.0395015775221233,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"248","C05_T_08_C",2485,0.0383898709663531,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"249","C05_T_08_C",2495,0.0371469398884258,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"250","C05_T_08_C",2505,0.0357469375687624,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"251","C05_T_08_C",2515,0.0341219280468889,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"252","C05_T_08_C",2525,0.0322729828872554,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"253","C05_T_08_C",2535,0.0302551624194123,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"254","C05_T_08_C",2545,0.0281228999833742,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"255","C05_T_08_C",2555,0.0259555745009771,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"256","C05_T_08_C",2565,0.0238550910363465,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"257","C05_T_08_C",2575,0.0219142888935967,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"258","C05_T_08_C",2585,0.0201947629562151,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"259","C05_T_08_C",2595,0.0187433854268457,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"260","C05_T_08_C",2605,0.0175942071101404,0,"Les ulleres de color groc","N","1","","3","post",5,"Catalan","target",8,"contrastive","male",29
+"261","C05_T_08_C",2615,0.0167605610461205,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"262","C05_T_08_C",2625,0.0162361493312884,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"263","C05_T_08_C",2635,0.0159807628002004,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"264","C05_T_08_C",2645,0.0159311064418829,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"265","C05_T_08_C",2655,0.0160182589210957,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"266","C05_T_08_C",2665,0.0161755476477722,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"267","C05_T_08_C",2675,0.0163513005902452,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"268","C05_T_08_C",2685,0.0164962541644965,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"269","C05_T_08_C",2695,0.0165729361808618,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"270","C05_T_08_C",2705,0.0165709888821794,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"271","C05_T_08_C",2715,0.0164767017135731,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"272","C05_T_08_C",2725,0.016265785497706,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"273","C05_T_08_C",2735,0.0159410411144454,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"274","C05_T_08_C",2745,0.0155432240839628,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"275","C05_T_08_C",2755,0.0151310843397931,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"276","C05_T_08_C",2765,0.0147456269747036,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"277","C05_T_08_C",2775,0.014415972852938,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"278","C05_T_08_C",2785,0.0141687315553585,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"279","C05_T_08_C",2795,0.0140044010890412,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"280","C05_T_08_C",2805,0.0138937103110276,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"281","C05_T_08_C",2815,0.0137953403290097,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"282","C05_T_08_C",2825,0.0136797323965872,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"283","C05_T_08_C",2835,0.0135347474483659,0,"Les ulleres de color groc","","","","4","<p>",5,"Catalan","target",8,"contrastive","male",29
+"284","C05_T_08_C",2845,0.0133530380993121,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"285","C05_T_08_C",2855,0.0131398753707121,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"286","C05_T_08_C",2865,0.0129072403542006,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"287","C05_T_08_C",2875,0.0126603276332007,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"288","C05_T_08_C",2885,0.0124218263752406,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"289","C05_T_08_C",2895,0.0122283930187959,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"290","C05_T_08_C",2905,0.012105306015753,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"291","C05_T_08_C",2915,0.0120832194462029,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"292","C05_T_08_C",2925,0.0121954502830078,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"293","C05_T_08_C",2935,0.0124431767429926,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"294","C05_T_08_C",2945,0.0128056119327001,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"295","C05_T_08_C",2955,0.0132479134309834,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"296","C05_T_08_C",2965,0.0137176747340573,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"297","C05_T_08_C",2975,0.0141512931566509,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"298","C05_T_08_C",2985,0.0144925353560266,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"299","C05_T_08_C",2995,0.0147216337810375,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"300","C05_T_08_C",3005,0.0148500914693042,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"301","C05_T_08_C",3015,0.0148943748493889,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"302","C05_T_08_C",3025,0.0148755233849069,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"303","C05_T_08_C",3035,0.0148235843502934,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"304","C05_T_08_C",3045,0.0147566366127059,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"305","C05_T_08_C",3055,0.0146734184161979,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"306","C05_T_08_C",3065,0.014577494954716,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"307","C05_T_08_C",3075,0.0144722741478344,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"308","C05_T_08_C",3085,0.0143482778315659,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"309","C05_T_08_C",3095,0.0141985955079602,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"310","C05_T_08_C",3105,0.014025243915424,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"311","C05_T_08_C",3115,0.0138261944901603,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"312","C05_T_08_C",3125,0.0135940064854713,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"313","C05_T_08_C",3135,0.0133374860300059,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"314","C05_T_08_C",3145,0.0130700309917678,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"315","C05_T_08_C",3155,0.0128054347963403,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"316","C05_T_08_C",3165,0.0125815500619164,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"317","C05_T_08_C",3175,0.0124410557078015,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"318","C05_T_08_C",3185,0.0124094227474622,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"319","C05_T_08_C",3195,0.0124839084010351,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"320","C05_T_08_C",3205,0.0126416503988647,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"321","C05_T_08_C",3215,0.0128620280356378,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"322","C05_T_08_C",3225,0.0131232576488011,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"323","C05_T_08_C",3235,0.0134055097119281,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"324","C05_T_08_C",3245,0.0136917295101934,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"325","C05_T_08_C",3255,0.0139612488831777,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"326","C05_T_08_C",3265,0.0141923698160975,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"327","C05_T_08_C",3275,0.0143705004861539,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"328","C05_T_08_C",3285,0.0144889334403438,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"329","C05_T_08_C",3295,0.0145375020391833,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"330","C05_T_08_C",3305,0.0145062874643403,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"331","C05_T_08_C",3315,0.0143940528035199,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"332","C05_T_08_C",3325,0.0142093321475386,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"333","C05_T_08_C",3335,0.0139641705807948,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"334","C05_T_08_C",3345,0.0136695014055608,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"335","C05_T_08_C",3355,0.013333900364122,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"336","C05_T_08_C",3365,0.0129662652812751,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"337","C05_T_08_C",3375,0.0125902141277195,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"338","C05_T_08_C",3385,0.0122379158711395,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"339","C05_T_08_C",3395,0.011928451842429,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"340","C05_T_08_C",3405,0.0116761216679889,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"341","C05_T_08_C",3415,0.0115147687768252,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"342","C05_T_08_C",3425,0.0114941655810331,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"343","C05_T_08_C",3435,0.0117201383200269,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"344","C05_T_08_C",3445,0.0124084476275968,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"345","C05_T_08_C",3455,0.0137894400263617,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"346","C05_T_08_C",3465,0.0159367933382061,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"347","C05_T_08_C",3475,0.01877215760764,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"348","C05_T_08_C",3485,0.0221603832401801,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"349","C05_T_08_C",3495,0.0260262655149162,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"350","C05_T_08_C",3505,0.0304926775086295,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"351","C05_T_08_C",3515,0.0358656501394276,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"352","C05_T_08_C",3525,0.0424453956436731,119.272964477539,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"353","C05_T_08_C",3535,0.0503366707446846,118.183944702148,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"354","C05_T_08_C",3545,0.0595572174155254,125.190391540527,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"355","C05_T_08_C",3555,0.07004801693843,117.61109161377,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"356","C05_T_08_C",3565,0.0813945683522194,116.546699523926,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"357","C05_T_08_C",3575,0.0928566125115477,117.353141784668,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"358","C05_T_08_C",3585,0.10360876814581,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"359","C05_T_08_C",3595,0.112856316679462,0,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"360","C05_T_08_C",3605,0.119893575077074,117.951179504395,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"361","C05_T_08_C",3615,0.124195831295024,116.439163208008,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"362","C05_T_08_C",3625,0.125460931566341,113.916381835938,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"363","C05_T_08_C",3635,0.123572355227384,113.836616516113,"Les ulleres de color groc","","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"364","C05_T_08_C",3645,0.11858291390481,114.499694824219,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"365","C05_T_08_C",3655,0.110780155320774,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"366","C05_T_08_C",3665,0.10080975936724,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"367","C05_T_08_C",3675,0.0897341083176814,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"368","C05_T_08_C",3685,0.0790439763627423,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"369","C05_T_08_C",3695,0.0703781416512199,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"370","C05_T_08_C",3705,0.0651351133445135,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"371","C05_T_08_C",3715,0.0641708603624602,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"372","C05_T_08_C",3725,0.0676623341331186,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"373","C05_T_08_C",3735,0.0753337555301115,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"374","C05_T_08_C",3745,0.0864416651739653,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"375","C05_T_08_C",3755,0.0999182376320861,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"376","C05_T_08_C",3765,0.114873940582863,0,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"377","C05_T_08_C",3775,0.130663179487117,121.356811523438,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"378","C05_T_08_C",3785,0.146719034440257,119.167953491211,"Les ulleres de color groc","NC","","","5","",5,"Catalan","target",8,"contrastive","male",29
+"379","C05_T_08_C",3795,0.162449879244591,120.293846130371,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"380","C05_T_08_C",3805,0.177121781348582,118.402183532715,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"381","C05_T_08_C",3815,0.189995607713291,115.586639404297,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"382","C05_T_08_C",3825,0.200843592204536,113.805877685547,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"383","C05_T_08_C",3835,0.210054514116395,113.186668395996,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"384","C05_T_08_C",3845,0.218075660273769,115.886749267578,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"385","C05_T_08_C",3855,0.225113308955949,118.557723999023,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"386","C05_T_08_C",3865,0.231324854747778,119.421661376953,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"387","C05_T_08_C",3875,0.236735146307483,119.404830932617,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"388","C05_T_08_C",3885,0.240956619111698,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"389","C05_T_08_C",3895,0.243396019274925,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"390","C05_T_08_C",3905,0.243499840979616,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"391","C05_T_08_C",3915,0.24090367121255,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"392","C05_T_08_C",3925,0.235646457591503,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"393","C05_T_08_C",3935,0.228016337721049,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"394","C05_T_08_C",3945,0.218406962771343,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"395","C05_T_08_C",3955,0.207302387349026,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"396","C05_T_08_C",3965,0.19515629923063,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"397","C05_T_08_C",3975,0.182459678397262,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"398","C05_T_08_C",3985,0.169836247565602,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"399","C05_T_08_C",3995,0.158069386078819,0,"Les ulleres de color groc","NC","","1","6","lor_pre",5,"Catalan","target",8,"contrastive","male",29
+"400","C05_T_08_C",4005,0.148260233894313,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"401","C05_T_08_C",4015,0.141585380077273,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"402","C05_T_08_C",4025,0.138370951006215,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"403","C05_T_08_C",4035,0.1379178706883,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"404","C05_T_08_C",4045,0.139387127133793,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"405","C05_T_08_C",4055,0.142235568886916,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"406","C05_T_08_C",4065,0.145948854175871,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"407","C05_T_08_C",4075,0.149974773910002,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"408","C05_T_08_C",4085,0.153863019032597,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"409","C05_T_08_C",4095,0.157127092784281,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"410","C05_T_08_C",4105,0.159229881650017,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"411","C05_T_08_C",4115,0.159721085742789,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"412","C05_T_08_C",4125,0.158281158495045,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"413","C05_T_08_C",4135,0.154836393883921,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"414","C05_T_08_C",4145,0.149589504697171,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"415","C05_T_08_C",4155,0.14289103980248,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"416","C05_T_08_C",4165,0.135160590286818,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"417","C05_T_08_C",4175,0.126789726922378,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"418","C05_T_08_C",4185,0.118057274227492,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"419","C05_T_08_C",4195,0.109151729484109,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"420","C05_T_08_C",4205,0.100103828154971,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"421","C05_T_08_C",4215,0.0907958137458824,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"422","C05_T_08_C",4225,0.0813301610601067,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"423","C05_T_08_C",4235,0.0721182300412259,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"424","C05_T_08_C",4245,0.0635273792549815,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"425","C05_T_08_C",4255,0.0557461250549025,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"426","C05_T_08_C",4265,0.0488687356105229,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"427","C05_T_08_C",4275,0.0429374983606342,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"428","C05_T_08_C",4285,0.0379328497284121,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"429","C05_T_08_C",4295,0.0338214685002882,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"430","C05_T_08_C",4305,0.0305240914577622,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"431","C05_T_08_C",4315,0.0279205135222117,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"432","C05_T_08_C",4325,0.025896847238017,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"433","C05_T_08_C",4335,0.0243279488986814,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"434","C05_T_08_C",4345,0.0230995678508791,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"435","C05_T_08_C",4355,0.0221142245650676,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"436","C05_T_08_C",4365,0.0213255274443346,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"437","C05_T_08_C",4375,0.0207339850407633,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"438","C05_T_08_C",4385,0.0203154700250124,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"439","C05_T_08_C",4395,0.0200162315260528,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"440","C05_T_08_C",4405,0.0197780491518174,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"441","C05_T_08_C",4415,0.0195416033321137,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"442","C05_T_08_C",4425,0.0192639426597983,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"443","C05_T_08_C",4435,0.0189053986462581,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"444","C05_T_08_C",4445,0.0184423033344839,0,"Les ulleres de color groc","A","2","1","7","groc",5,"Catalan","target",8,"contrastive","male",29
+"445","C05_T_08_C",4455,0.0178921698376958,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"446","C05_T_08_C",4465,0.0172860661899839,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"447","C05_T_08_C",4475,0.0166541364633929,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"448","C05_T_08_C",4485,0.0160227178395353,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"449","C05_T_08_C",4495,0.0154155277506565,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"450","C05_T_08_C",4505,0.0148764811964844,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"451","C05_T_08_C",4515,0.0144451713406441,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"452","C05_T_08_C",4525,0.0141343017622718,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"453","C05_T_08_C",4535,0.0139416524420788,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"454","C05_T_08_C",4545,0.0138602914860246,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"455","C05_T_08_C",4555,0.0138932162261841,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"456","C05_T_08_C",4565,0.0140202701319687,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"457","C05_T_08_C",4575,0.0141756984579242,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"458","C05_T_08_C",4585,0.0143074561770178,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"459","C05_T_08_C",4595,0.014389168144351,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"460","C05_T_08_C",4605,0.0143996729052546,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"461","C05_T_08_C",4615,0.0143397048076375,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"462","C05_T_08_C",4625,0.0142121368152257,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"463","C05_T_08_C",4635,0.0140285596132848,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"464","C05_T_08_C",4645,0.0138202773721604,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"465","C05_T_08_C",4655,0.0136040669129823,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"466","C05_T_08_C",4665,0.0133905760766387,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"467","C05_T_08_C",4675,0.0131992593233103,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"468","C05_T_08_C",4685,0.0130538380312004,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"469","C05_T_08_C",4695,0.0129728755649545,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"470","C05_T_08_C",4705,0.0129472949663619,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"471","C05_T_08_C",4715,0.0129562966813019,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"472","C05_T_08_C",4725,0.0129890382866065,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"473","C05_T_08_C",4735,0.0130552561803513,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"474","C05_T_08_C",4745,0.0131629653481685,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"475","C05_T_08_C",4755,0.0132991082566716,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"476","C05_T_08_C",4765,0.0134441955923006,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"477","C05_T_08_C",4775,0.0135812453677427,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"478","C05_T_08_C",4785,0.0136914918161177,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"479","C05_T_08_C",4795,0.013762315565241,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"480","C05_T_08_C",4805,0.0137833619247868,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"481","C05_T_08_C",4815,0.013736160491973,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"482","C05_T_08_C",4825,0.0136282152928003,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"483","C05_T_08_C",4835,0.0134867104163222,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"484","C05_T_08_C",4845,0.0133261444915785,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"485","C05_T_08_C",4855,0.0131562310156181,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"486","C05_T_08_C",4865,0.0129924375327996,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"487","C05_T_08_C",4875,0.0128544593245782,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"488","C05_T_08_C",4885,0.0127618844091993,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"489","C05_T_08_C",4895,0.0127248028539085,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"490","C05_T_08_C",4905,0.0127458634743508,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"491","C05_T_08_C",4915,0.0128332832970978,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"492","C05_T_08_C",4925,0.0129873368965574,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"493","C05_T_08_C",4935,0.0131737096925642,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"494","C05_T_08_C",4945,0.0133549669832777,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"495","C05_T_08_C",4955,0.0135162465394452,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"496","C05_T_08_C",4965,0.0136529054707091,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"497","C05_T_08_C",4975,0.0137622863381379,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"498","C05_T_08_C",4985,0.0138385292197295,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"499","C05_T_08_C",4995,0.0138676058947786,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"500","C05_T_08_C",5005,0.0138396564253752,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"501","C05_T_08_C",5015,0.0137574972950987,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"502","C05_T_08_C",5025,0.0136287080493146,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"503","C05_T_08_C",5035,0.0134595239660673,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"504","C05_T_08_C",5045,0.0132597970262228,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"505","C05_T_08_C",5055,0.013059331898843,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"506","C05_T_08_C",5065,0.0128900310094457,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"507","C05_T_08_C",5075,0.0127631852589284,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"508","C05_T_08_C",5085,0.0126772576844895,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"509","C05_T_08_C",5095,0.0126369322374846,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"510","C05_T_08_C",5105,0.0126486903842818,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"511","C05_T_08_C",5115,0.012702744218989,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"512","C05_T_08_C",5125,0.0127862158774533,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"513","C05_T_08_C",5135,0.0128940376070573,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"514","C05_T_08_C",5145,0.0130146704524007,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"515","C05_T_08_C",5155,0.0131289030280475,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"516","C05_T_08_C",5165,0.0132187781351776,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"517","C05_T_08_C",5175,0.01327568371247,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"518","C05_T_08_C",5185,0.0133012984059159,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"519","C05_T_08_C",5195,0.0132969925043782,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"520","C05_T_08_C",5205,0.0132683681048199,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"521","C05_T_08_C",5215,0.0132286840239921,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"522","C05_T_08_C",5225,0.0131817132631919,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"523","C05_T_08_C",5235,0.0131316498012479,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"524","C05_T_08_C",5245,0.013091448635235,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"525","C05_T_08_C",5255,0.0130613423336519,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"526","C05_T_08_C",5265,0.0130392849154706,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"527","C05_T_08_C",5275,0.0130473888983384,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"528","C05_T_08_C",5285,0.0131087624603092,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"529","C05_T_08_C",5295,0.0132282583455415,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"530","C05_T_08_C",5305,0.0134046755497621,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"531","C05_T_08_C",5315,0.0136316347530248,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"532","C05_T_08_C",5325,0.0138929150776883,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"533","C05_T_08_C",5335,0.0141810671293829,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"534","C05_T_08_C",5345,0.00716638400488985,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"535","C05_T_08_C",5355,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"536","C05_T_08_C",5365,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"537","C05_T_08_C",5375,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"538","C05_T_08_C",5385,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"539","C05_T_08_C",5395,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"540","C05_T_08_C",5405,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"541","C05_T_08_C",5415,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"542","C05_T_08_C",5425,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29
+"543","C05_T_08_C",5435,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",8,"contrastive","male",29

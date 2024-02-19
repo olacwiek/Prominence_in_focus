@@ -1,0 +1,502 @@
+"","File","time_ms","env","F0","TP","Word","Gestural_Prom","Prosodic_Prom","Syll_num","Syll","Participant","Language","Item_type","Item_num","Focus","Gender","Age"
+"1","C05_T_15_C",15,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"2","C05_T_15_C",25,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"3","C05_T_15_C",35,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"4","C05_T_15_C",45,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"5","C05_T_15_C",55,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"6","C05_T_15_C",65,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"7","C05_T_15_C",75,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"8","C05_T_15_C",85,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"9","C05_T_15_C",95,0.00615858701656565,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"10","C05_T_15_C",105,0.0123666582472389,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"11","C05_T_15_C",115,0.0124374014823488,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"12","C05_T_15_C",125,0.0124590526221412,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"13","C05_T_15_C",135,0.0124398594257087,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"14","C05_T_15_C",145,0.012377810731813,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"15","C05_T_15_C",155,0.0122684967849328,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"16","C05_T_15_C",165,0.0121197188183837,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"17","C05_T_15_C",175,0.0119412889733347,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"18","C05_T_15_C",185,0.011741867586094,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"19","C05_T_15_C",195,0.0115431324276517,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"20","C05_T_15_C",205,0.0113625298302099,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"21","C05_T_15_C",215,0.0112111998972492,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"22","C05_T_15_C",225,0.0111108245012148,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"23","C05_T_15_C",235,0.0110898122035498,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"24","C05_T_15_C",245,0.0111695284291615,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"25","C05_T_15_C",255,0.0113513330446227,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"26","C05_T_15_C",265,0.0116135460814579,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"27","C05_T_15_C",275,0.0119287418287165,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"28","C05_T_15_C",285,0.0122646068111095,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"29","C05_T_15_C",295,0.012578610050257,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"30","C05_T_15_C",305,0.0128235702933702,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"31","C05_T_15_C",315,0.0129634346435599,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"32","C05_T_15_C",325,0.0129756445951743,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"33","C05_T_15_C",335,0.0128670741033991,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"34","C05_T_15_C",345,0.0126828970478861,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"35","C05_T_15_C",355,0.0124922365016086,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"36","C05_T_15_C",365,0.0123577117190387,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"37","C05_T_15_C",375,0.0123121043395812,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"38","C05_T_15_C",385,0.0123760513958044,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"39","C05_T_15_C",395,0.0125473715702626,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"40","C05_T_15_C",405,0.0127964911246896,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"41","C05_T_15_C",415,0.0130977478298394,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"42","C05_T_15_C",425,0.0134309191400051,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"43","C05_T_15_C",435,0.0137531714446484,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"44","C05_T_15_C",445,0.0140072685728488,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"45","C05_T_15_C",455,0.014141246174433,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"46","C05_T_15_C",465,0.0141272523976267,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"47","C05_T_15_C",475,0.0139626220240698,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"48","C05_T_15_C",485,0.0136684073263321,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"49","C05_T_15_C",495,0.0132801395986856,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"50","C05_T_15_C",505,0.0128442371739817,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"51","C05_T_15_C",515,0.0124262449996917,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"52","C05_T_15_C",525,0.0120939839146393,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"53","C05_T_15_C",535,0.0118729225552634,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"54","C05_T_15_C",545,0.0117489619879123,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"55","C05_T_15_C",555,0.0116991482258336,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"56","C05_T_15_C",565,0.011708093571335,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"57","C05_T_15_C",575,0.0117811610804707,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"58","C05_T_15_C",585,0.0119094037882485,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"59","C05_T_15_C",595,0.0120635457676683,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"60","C05_T_15_C",605,0.0122213829373276,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"61","C05_T_15_C",615,0.012360381769067,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"62","C05_T_15_C",625,0.0124543985992745,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"63","C05_T_15_C",635,0.0124912974279296,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"64","C05_T_15_C",645,0.0124628839444028,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"65","C05_T_15_C",655,0.0123755552987217,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"66","C05_T_15_C",665,0.0122564807211071,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"67","C05_T_15_C",675,0.0121416965642747,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"68","C05_T_15_C",685,0.0120624228096352,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"69","C05_T_15_C",695,0.0120319840007874,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"70","C05_T_15_C",705,0.012052112307537,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"71","C05_T_15_C",715,0.0121074576436451,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"72","C05_T_15_C",725,0.0121708017154811,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"73","C05_T_15_C",735,0.0122262614982548,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"74","C05_T_15_C",745,0.0122728402009928,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"75","C05_T_15_C",755,0.0123140702901502,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"76","C05_T_15_C",765,0.0123459303664622,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"77","C05_T_15_C",775,0.0123558733279218,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"78","C05_T_15_C",785,0.0123457672496526,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"79","C05_T_15_C",795,0.0123393445554611,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"80","C05_T_15_C",805,0.0123553952270335,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"81","C05_T_15_C",815,0.0123925679340908,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"82","C05_T_15_C",825,0.0124476964837223,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"83","C05_T_15_C",835,0.0125226934124107,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"84","C05_T_15_C",845,0.0126182761867949,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"85","C05_T_15_C",855,0.0127269289353624,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"86","C05_T_15_C",865,0.0128317668624001,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"87","C05_T_15_C",875,0.0129292447623388,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"88","C05_T_15_C",885,0.0130231974966212,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"89","C05_T_15_C",895,0.0131031022949267,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"90","C05_T_15_C",905,0.0131510654820307,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"91","C05_T_15_C",915,0.0131567956303312,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"92","C05_T_15_C",925,0.0131226035739656,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"93","C05_T_15_C",935,0.0130588044840741,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"94","C05_T_15_C",945,0.0129755702978927,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"95","C05_T_15_C",955,0.0128957376199057,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"96","C05_T_15_C",965,0.0129518006340892,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"97","C05_T_15_C",975,0.0134945143721394,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"98","C05_T_15_C",985,0.0150123150472874,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"99","C05_T_15_C",995,0.0179599975446018,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"100","C05_T_15_C",1005,0.0227624156809975,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"101","C05_T_15_C",1015,0.0298803776655391,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"102","C05_T_15_C",1025,0.0396178808717243,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"103","C05_T_15_C",1035,0.051887186363538,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"104","C05_T_15_C",1045,0.0662885886527595,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"105","C05_T_15_C",1055,0.0822598712520761,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"106","C05_T_15_C",1065,0.099119332682693,243.956207275391,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"107","C05_T_15_C",1075,0.116112642132988,243.728500366211,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"108","C05_T_15_C",1085,0.132474700070236,157.49870300293,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"109","C05_T_15_C",1095,0.147396743426604,126.446968078613,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"110","C05_T_15_C",1105,0.159995163181905,126.350944519043,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"111","C05_T_15_C",1115,0.169468247227545,119.51872253418,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"112","C05_T_15_C",1125,0.175342418992398,124.058609008789,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"113","C05_T_15_C",1135,0.177586233758479,125.687797546387,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"114","C05_T_15_C",1145,0.176593791334847,124.899467468262,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"115","C05_T_15_C",1155,0.173147030004893,122.244613647461,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"116","C05_T_15_C",1165,0.16819561753059,122.656288146973,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"117","C05_T_15_C",1175,0.16267663915137,125.106948852539,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"118","C05_T_15_C",1185,0.157522050597584,124.302833557129,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"119","C05_T_15_C",1195,0.153650258060612,124.77660369873,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"120","C05_T_15_C",1205,0.151738029208349,122.44898223877,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"121","C05_T_15_C",1215,0.151909880201319,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"122","C05_T_15_C",1225,0.153830028007745,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"123","C05_T_15_C",1235,0.157068012285805,152.103302001953,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"124","C05_T_15_C",1245,0.161148508854183,153.707183837891,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"125","C05_T_15_C",1255,0.165431865174976,154.50373840332,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"126","C05_T_15_C",1265,0.169162744527588,149.701553344727,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"127","C05_T_15_C",1275,0.171476362989289,149.53125,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"128","C05_T_15_C",1285,0.171555055196965,150.202758789062,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"129","C05_T_15_C",1295,0.16891178354361,151.41178894043,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"130","C05_T_15_C",1305,0.163534792987007,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"131","C05_T_15_C",1315,0.155783931427003,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"132","C05_T_15_C",1325,0.146137180813775,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"133","C05_T_15_C",1335,0.135112462701014,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"134","C05_T_15_C",1345,0.123297663600752,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"135","C05_T_15_C",1355,0.111271129894832,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"136","C05_T_15_C",1365,0.0995764447413145,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"137","C05_T_15_C",1375,0.0886194415297419,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"138","C05_T_15_C",1385,0.0785820262845718,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"139","C05_T_15_C",1395,0.0694685509722345,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"140","C05_T_15_C",1405,0.0611967667133757,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"141","C05_T_15_C",1415,0.0537507884192372,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"142","C05_T_15_C",1425,0.0472140764834128,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"143","C05_T_15_C",1435,0.0416194817807592,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"144","C05_T_15_C",1445,0.036877593192374,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"145","C05_T_15_C",1455,0.0328546872700266,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"146","C05_T_15_C",1465,0.0294129070309195,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"147","C05_T_15_C",1475,0.0264989529086209,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"148","C05_T_15_C",1485,0.0240949572879385,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"149","C05_T_15_C",1495,0.0221425571198077,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"150","C05_T_15_C",1505,0.0205515290634621,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"151","C05_T_15_C",1515,0.0192316831428339,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"152","C05_T_15_C",1525,0.0181470902091009,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"153","C05_T_15_C",1535,0.0172902540218944,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"154","C05_T_15_C",1545,0.0166273962592489,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"155","C05_T_15_C",1555,0.0160955012440441,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"156","C05_T_15_C",1565,0.0156402259155681,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"157","C05_T_15_C",1575,0.0152468835936841,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"158","C05_T_15_C",1585,0.0149134479083803,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"159","C05_T_15_C",1595,0.0146234617647225,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"160","C05_T_15_C",1605,0.014367204989895,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"161","C05_T_15_C",1615,0.0141409507921775,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"162","C05_T_15_C",1625,0.0139352419070241,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"163","C05_T_15_C",1635,0.0137435700788838,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"164","C05_T_15_C",1645,0.0135713088617354,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"165","C05_T_15_C",1655,0.0134282465036152,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"166","C05_T_15_C",1665,0.0133254583779724,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"167","C05_T_15_C",1675,0.0132603769548635,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"168","C05_T_15_C",1685,0.0132245419831534,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"169","C05_T_15_C",1695,0.0132200090750475,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"170","C05_T_15_C",1705,0.0132436110262372,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"171","C05_T_15_C",1715,0.0132812934597146,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"172","C05_T_15_C",1725,0.0133174859851983,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"173","C05_T_15_C",1735,0.0133436206528929,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"174","C05_T_15_C",1745,0.01335123421727,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"175","C05_T_15_C",1755,0.0133324314083498,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"176","C05_T_15_C",1765,0.0132841214560673,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"177","C05_T_15_C",1775,0.0132018712264758,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"178","C05_T_15_C",1785,0.0131064846578413,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"179","C05_T_15_C",1795,0.0131928836425979,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"180","C05_T_15_C",1805,0.0139504914626689,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"181","C05_T_15_C",1815,0.0160725748074541,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"182","C05_T_15_C",1825,0.0203668867916554,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"183","C05_T_15_C",1835,0.0276116189301248,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"184","C05_T_15_C",1845,0.0383225396588324,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"185","C05_T_15_C",1855,0.0526108756981559,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"186","C05_T_15_C",1865,0.0701844469950311,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"187","C05_T_15_C",1875,0.0904307427913555,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"188","C05_T_15_C",1885,0.112551500566675,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"189","C05_T_15_C",1895,0.135512873136718,123.440292358398,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"190","C05_T_15_C",1905,0.158018033319207,124.19548034668,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"191","C05_T_15_C",1915,0.178665945395989,123.39331817627,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"192","C05_T_15_C",1925,0.196136455606306,130.297210693359,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"193","C05_T_15_C",1935,0.209318805908951,122.515068054199,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"194","C05_T_15_C",1945,0.21739379810718,121.832389831543,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"195","C05_T_15_C",1955,0.220003452989516,130.599578857422,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"196","C05_T_15_C",1965,0.217280014070968,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"197","C05_T_15_C",1975,0.209821030768393,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"198","C05_T_15_C",1985,0.198655019295487,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"199","C05_T_15_C",1995,0.184999942413645,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"200","C05_T_15_C",2005,0.16997310354298,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"201","C05_T_15_C",2015,0.154495245798208,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"202","C05_T_15_C",2025,0.139243545380658,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"203","C05_T_15_C",2035,0.124788084430971,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"204","C05_T_15_C",2045,0.111789795727214,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"205","C05_T_15_C",2055,0.101025266170081,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"206","C05_T_15_C",2065,0.0931729802933205,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"207","C05_T_15_C",2075,0.088558313126959,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"208","C05_T_15_C",2085,0.08702274945602,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"209","C05_T_15_C",2095,0.0881137527157616,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"210","C05_T_15_C",2105,0.0914009200502043,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"211","C05_T_15_C",2115,0.0964892126382528,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"212","C05_T_15_C",2125,0.102940379361685,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"213","C05_T_15_C",2135,0.110340550137185,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"214","C05_T_15_C",2145,0.118366432901483,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"215","C05_T_15_C",2155,0.126576771784987,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"216","C05_T_15_C",2165,0.134417451884296,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"217","C05_T_15_C",2175,0.141396966885089,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"218","C05_T_15_C",2185,0.147055486019558,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"219","C05_T_15_C",2195,0.150935265343027,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"220","C05_T_15_C",2205,0.152692205387806,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"221","C05_T_15_C",2215,0.152192664010441,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"222","C05_T_15_C",2225,0.149545359469668,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"223","C05_T_15_C",2235,0.144980378423108,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"224","C05_T_15_C",2245,0.138702873053848,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"225","C05_T_15_C",2255,0.13084784597506,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"226","C05_T_15_C",2265,0.12156590092698,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"227","C05_T_15_C",2275,0.111178812359608,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"228","C05_T_15_C",2285,0.100216041255866,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"229","C05_T_15_C",2295,0.0893031375620614,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"230","C05_T_15_C",2305,0.0789607632091774,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"231","C05_T_15_C",2315,0.069549095905737,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"232","C05_T_15_C",2325,0.0612877959393225,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"233","C05_T_15_C",2335,0.0542167933365081,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"234","C05_T_15_C",2345,0.0482087918658176,0,"La cullera de color negre",NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"235","C05_T_15_C",2355,0.0431329942764187,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"236","C05_T_15_C",2365,0.0388965659250627,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"237","C05_T_15_C",2375,0.0353492313880022,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"238","C05_T_15_C",2385,0.032372384528924,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"239","C05_T_15_C",2395,0.0301311037667705,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"240","C05_T_15_C",2405,0.0291192002358528,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"241","C05_T_15_C",2415,0.0299274006235572,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"242","C05_T_15_C",2425,0.0330884075376954,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"243","C05_T_15_C",2435,0.0392284376795047,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"244","C05_T_15_C",2445,0.0490504508817334,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"245","C05_T_15_C",2455,0.0628641839226577,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"246","C05_T_15_C",2465,0.0804746061999615,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"247","C05_T_15_C",2475,0.101339998972229,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"248","C05_T_15_C",2485,0.12446276849425,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"249","C05_T_15_C",2495,0.1483880120422,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"250","C05_T_15_C",2505,0.17146510116452,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"251","C05_T_15_C",2515,0.192110765781682,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"252","C05_T_15_C",2525,0.208846691518896,0,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"253","C05_T_15_C",2535,0.220417107016672,121.313667297363,"La cullera de color negre","N","1",NA,"1","pre",5,"Catalan","target",15,"contrastive","male",29
+"254","C05_T_15_C",2545,0.226007808401653,119.003143310547,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"255","C05_T_15_C",2555,0.225320963932504,117.326110839844,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"256","C05_T_15_C",2565,0.218758301639473,0,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"257","C05_T_15_C",2575,0.207512347459144,0,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"258","C05_T_15_C",2585,0.193285246610733,119.416221618652,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"259","C05_T_15_C",2595,0.177924568178967,119.56657409668,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"260","C05_T_15_C",2605,0.163230630101481,120.300750732422,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"261","C05_T_15_C",2615,0.150739115593151,121.557411193848,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"262","C05_T_15_C",2625,0.141483192266817,120.025001525879,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"263","C05_T_15_C",2635,0.13590253261149,116.496604919434,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"264","C05_T_15_C",2645,0.133956307619769,119.346084594727,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"265","C05_T_15_C",2655,0.135360422072825,124.483345031738,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"266","C05_T_15_C",2665,0.139763737436123,125.575981140137,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"267","C05_T_15_C",2675,0.146571889319961,131.897232055664,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"268","C05_T_15_C",2685,0.154772270962374,131.477584838867,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"269","C05_T_15_C",2695,0.163341158039061,135.650695800781,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"270","C05_T_15_C",2705,0.171288966936649,138.979370117188,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"271","C05_T_15_C",2715,0.177638183649882,0,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"272","C05_T_15_C",2725,0.181851901516453,0,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"273","C05_T_15_C",2735,0.183811862703621,0,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"274","C05_T_15_C",2745,0.183658549547683,0,"La cullera de color negre","N","1","2","2","lle",5,"Catalan","target",15,"contrastive","male",29
+"275","C05_T_15_C",2755,0.181762959462427,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"276","C05_T_15_C",2765,0.178443860156951,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"277","C05_T_15_C",2775,0.173820517171881,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"278","C05_T_15_C",2785,0.168003484725777,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"279","C05_T_15_C",2795,0.161116215666333,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"280","C05_T_15_C",2805,0.153225480046451,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"281","C05_T_15_C",2815,0.144580085902693,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"282","C05_T_15_C",2825,0.135680019392328,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"283","C05_T_15_C",2835,0.126932983471669,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"284","C05_T_15_C",2845,0.118442773657789,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"285","C05_T_15_C",2855,0.11020824551496,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"286","C05_T_15_C",2865,0.102097813846508,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"287","C05_T_15_C",2875,0.0938859908217878,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"288","C05_T_15_C",2885,0.0856362895156649,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"289","C05_T_15_C",2895,0.077523251681403,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"290","C05_T_15_C",2905,0.0697741807640052,0,"La cullera de color negre","N","1","","3","post",5,"Catalan","target",15,"contrastive","male",29
+"291","C05_T_15_C",2915,0.0626631096601021,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"292","C05_T_15_C",2925,0.0562597421823248,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"293","C05_T_15_C",2935,0.0505039746021468,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"294","C05_T_15_C",2945,0.0452966155653686,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"295","C05_T_15_C",2955,0.0405282936479552,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"296","C05_T_15_C",2965,0.0361773048661643,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"297","C05_T_15_C",2975,0.032296988980435,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"298","C05_T_15_C",2985,0.0289473720070307,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"299","C05_T_15_C",2995,0.0261786569562068,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"300","C05_T_15_C",3005,0.0239842951650559,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"301","C05_T_15_C",3015,0.0222464950387825,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"302","C05_T_15_C",3025,0.0208181714931,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"303","C05_T_15_C",3035,0.0195997951964341,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"304","C05_T_15_C",3045,0.0185314043468309,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"305","C05_T_15_C",3055,0.0175629756674121,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"306","C05_T_15_C",3065,0.0166459723957201,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"307","C05_T_15_C",3075,0.0157748805940581,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"308","C05_T_15_C",3085,0.0149801595351516,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"309","C05_T_15_C",3095,0.0142943765616333,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"310","C05_T_15_C",3105,0.0137265621209914,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"311","C05_T_15_C",3115,0.0132590978751211,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"312","C05_T_15_C",3125,0.0128739422429484,0,"La cullera de color negre","","","","4","<p>",5,"Catalan","target",15,"contrastive","male",29
+"313","C05_T_15_C",3135,0.0125720582867937,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"314","C05_T_15_C",3145,0.0123434522954609,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"315","C05_T_15_C",3155,0.0121849970447085,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"316","C05_T_15_C",3165,0.0121531020544101,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"317","C05_T_15_C",3175,0.0123890443841423,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"318","C05_T_15_C",3185,0.0131058544582416,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"319","C05_T_15_C",3195,0.0145357155756482,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"320","C05_T_15_C",3205,0.0169803898843447,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"321","C05_T_15_C",3215,0.0208670160122252,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"322","C05_T_15_C",3225,0.026565084402362,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"323","C05_T_15_C",3235,0.0342263010656988,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"324","C05_T_15_C",3245,0.0437755626784487,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"325","C05_T_15_C",3255,0.0548858738730827,120.872833251953,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"326","C05_T_15_C",3265,0.0669236039889951,117.932418823242,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"327","C05_T_15_C",3275,0.0790379307428672,120.518898010254,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"328","C05_T_15_C",3285,0.0903371906724623,130.790191650391,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"329","C05_T_15_C",3295,0.100008671915856,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"330","C05_T_15_C",3305,0.107400445617913,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"331","C05_T_15_C",3315,0.112025465920533,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"332","C05_T_15_C",3325,0.113589049828054,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"333","C05_T_15_C",3335,0.112059107392032,0,"La cullera de color negre","","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"334","C05_T_15_C",3345,0.107692974460643,0,"La cullera de color negre","NC","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"335","C05_T_15_C",3355,0.101092836017704,0,"La cullera de color negre","NC","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"336","C05_T_15_C",3365,0.0933401174022166,0,"La cullera de color negre","NC","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"337","C05_T_15_C",3375,0.0858578493804266,0,"La cullera de color negre","NC","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"338","C05_T_15_C",3385,0.0800034756736432,0,"La cullera de color negre","NC","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"339","C05_T_15_C",3395,0.0769166423877929,0,"La cullera de color negre","NC","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"340","C05_T_15_C",3405,0.0774640907632334,0,"La cullera de color negre","NC","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"341","C05_T_15_C",3415,0.0820542710622427,0,"La cullera de color negre","NC","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"342","C05_T_15_C",3425,0.0905463845200616,0,"La cullera de color negre","NC","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"343","C05_T_15_C",3435,0.102226645528746,0,"La cullera de color negre","NC","","","5","",5,"Catalan","target",15,"contrastive","male",29
+"344","C05_T_15_C",3445,0.115996789380605,0,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"345","C05_T_15_C",3455,0.130638587172386,0,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"346","C05_T_15_C",3465,0.144984929500014,128.564453125,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"347","C05_T_15_C",3475,0.15826852330663,125.629417419434,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"348","C05_T_15_C",3485,0.170214497818377,122.841567993164,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"349","C05_T_15_C",3495,0.180774085694885,124.312469482422,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"350","C05_T_15_C",3505,0.190112484715659,125.197067260742,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"351","C05_T_15_C",3515,0.198479848791405,123.611206054688,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"352","C05_T_15_C",3525,0.206091634515687,119.427124023438,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"353","C05_T_15_C",3535,0.213131691622155,130.989471435547,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"354","C05_T_15_C",3545,0.219665110880534,135.593215942383,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"355","C05_T_15_C",3555,0.225770865787483,0,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"356","C05_T_15_C",3565,0.231315910861452,0,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"357","C05_T_15_C",3575,0.2356953451874,0,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"358","C05_T_15_C",3585,0.238250886331875,0,"La cullera de color negre","NC","","0","6","lor_pre",5,"Catalan","target",15,"contrastive","male",29
+"359","C05_T_15_C",3595,0.238594991591147,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"360","C05_T_15_C",3605,0.236424635471604,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"361","C05_T_15_C",3615,0.231437290699926,163.274566650391,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"362","C05_T_15_C",3625,0.22380107786558,164.040435791016,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"363","C05_T_15_C",3635,0.214567726703837,169.921264648438,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"364","C05_T_15_C",3645,0.205176840985067,167.754577636719,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"365","C05_T_15_C",3655,0.196785769947215,166.575424194336,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"366","C05_T_15_C",3665,0.190301906731466,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"367","C05_T_15_C",3675,0.186250680667093,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"368","C05_T_15_C",3685,0.184688779984889,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"369","C05_T_15_C",3695,0.18548557395097,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"370","C05_T_15_C",3705,0.188238642793233,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"371","C05_T_15_C",3715,0.192376101947726,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"372","C05_T_15_C",3725,0.197315196298277,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"373","C05_T_15_C",3735,0.202593757270174,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"374","C05_T_15_C",3745,0.207993897805831,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"375","C05_T_15_C",3755,0.213231483729194,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"376","C05_T_15_C",3765,0.21787552919229,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"377","C05_T_15_C",3775,0.221550633492673,112.412178039551,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"378","C05_T_15_C",3785,0.223911508329677,109.451599121094,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"379","C05_T_15_C",3795,0.224587361363753,113.555709838867,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"380","C05_T_15_C",3805,0.223361467734463,115.662651062012,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"381","C05_T_15_C",3815,0.220305823306599,114.708976745605,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"382","C05_T_15_C",3825,0.215485481927613,114.395126342773,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"383","C05_T_15_C",3835,0.208676032637929,113.720397949219,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"384","C05_T_15_C",3845,0.199662165364077,117.64705657959,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"385","C05_T_15_C",3855,0.188740844087691,0,"La cullera de color negre","A","-1","3","7","ne",5,"Catalan","target",15,"contrastive","male",29
+"386","C05_T_15_C",3865,0.176625000174187,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"387","C05_T_15_C",3875,0.164071466544483,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"388","C05_T_15_C",3885,0.1516572909569,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"389","C05_T_15_C",3895,0.139732495244011,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"390","C05_T_15_C",3905,0.128558884374344,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"391","C05_T_15_C",3915,0.11841618222413,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"392","C05_T_15_C",3925,0.109602952498924,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"393","C05_T_15_C",3935,0.102190384778017,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"394","C05_T_15_C",3945,0.0959452644735337,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"395","C05_T_15_C",3955,0.0905037540477656,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"396","C05_T_15_C",3965,0.0854988500197902,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"397","C05_T_15_C",3975,0.0806968180718723,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"398","C05_T_15_C",3985,0.0760135876992447,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"399","C05_T_15_C",3995,0.0714087809323703,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"400","C05_T_15_C",4005,0.0668353213250217,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"401","C05_T_15_C",4015,0.0622576115511578,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"402","C05_T_15_C",4025,0.0576881669918936,0,"La cullera de color negre","A","-1",NA,"8","post",5,"Catalan","target",15,"contrastive","male",29
+"403","C05_T_15_C",4035,0.0531866250034118,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"404","C05_T_15_C",4045,0.0488513803777939,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"405","C05_T_15_C",4055,0.0447543018390897,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"406","C05_T_15_C",4065,0.0408910300925927,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"407","C05_T_15_C",4075,0.0372584722821416,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"408","C05_T_15_C",4085,0.0339139227453007,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"409","C05_T_15_C",4095,0.0309350837408532,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"410","C05_T_15_C",4105,0.0283671480404562,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"411","C05_T_15_C",4115,0.0262001483967036,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"412","C05_T_15_C",4125,0.0243579160395353,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"413","C05_T_15_C",4135,0.022758545576676,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"414","C05_T_15_C",4145,0.0213639479900485,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"415","C05_T_15_C",4155,0.0201460354269926,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"416","C05_T_15_C",4165,0.0190850185143156,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"417","C05_T_15_C",4175,0.0181810622786814,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"418","C05_T_15_C",4185,0.0174212105219694,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"419","C05_T_15_C",4195,0.0167748994727746,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"420","C05_T_15_C",4205,0.0162158676833741,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"421","C05_T_15_C",4215,0.0157219946276474,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"422","C05_T_15_C",4225,0.0152688045339994,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"423","C05_T_15_C",4235,0.0148494204464031,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"424","C05_T_15_C",4245,0.0144792837368043,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"425","C05_T_15_C",4255,0.0141719469557442,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"426","C05_T_15_C",4265,0.0139266337333795,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"427","C05_T_15_C",4275,0.0137209040121182,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"428","C05_T_15_C",4285,0.0135281923116165,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"429","C05_T_15_C",4295,0.0133255798967727,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"430","C05_T_15_C",4305,0.0131089219978286,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"431","C05_T_15_C",4315,0.0128949504699678,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"432","C05_T_15_C",4325,0.0126918879346249,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"433","C05_T_15_C",4335,0.0125022086684169,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"434","C05_T_15_C",4345,0.0123309351871725,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"435","C05_T_15_C",4355,0.0121864777535301,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"436","C05_T_15_C",4365,0.0120831558259649,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"437","C05_T_15_C",4375,0.0120275854673817,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"438","C05_T_15_C",4385,0.0120230309244569,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"439","C05_T_15_C",4395,0.0120782614413656,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"440","C05_T_15_C",4405,0.0121857806142552,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"441","C05_T_15_C",4415,0.0123183030398924,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"442","C05_T_15_C",4425,0.012454146025741,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"443","C05_T_15_C",4435,0.0125780105397316,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"444","C05_T_15_C",4445,0.0126686693381683,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"445","C05_T_15_C",4455,0.0127045046909707,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"446","C05_T_15_C",4465,0.0126704297803234,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"447","C05_T_15_C",4475,0.0125651447380318,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"448","C05_T_15_C",4485,0.0124100064985301,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"449","C05_T_15_C",4495,0.01223896178639,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"450","C05_T_15_C",4505,0.0120678743715554,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"451","C05_T_15_C",4515,0.011901785123991,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"452","C05_T_15_C",4525,0.0117477780535349,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"453","C05_T_15_C",4535,0.0116170772715705,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"454","C05_T_15_C",4545,0.0115260405536927,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"455","C05_T_15_C",4555,0.0114722865798272,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"456","C05_T_15_C",4565,0.0114412725775726,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"457","C05_T_15_C",4575,0.0114449215248585,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"458","C05_T_15_C",4585,0.0114975249414083,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"459","C05_T_15_C",4595,0.011582833926266,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"460","C05_T_15_C",4605,0.0116840210095625,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"461","C05_T_15_C",4615,0.0117982317077511,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"462","C05_T_15_C",4625,0.0119162257901823,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"463","C05_T_15_C",4635,0.0120184852821929,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"464","C05_T_15_C",4645,0.0120940462898605,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"465","C05_T_15_C",4655,0.0121389450760634,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"466","C05_T_15_C",4665,0.0121496170397707,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"467","C05_T_15_C",4675,0.0121323526257487,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"468","C05_T_15_C",4685,0.0120951799673098,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"469","C05_T_15_C",4695,0.012038894360861,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"470","C05_T_15_C",4705,0.0119645749737753,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"471","C05_T_15_C",4715,0.0118735220100079,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"472","C05_T_15_C",4725,0.0117694213072294,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"473","C05_T_15_C",4735,0.011661455262249,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"474","C05_T_15_C",4745,0.0115602000158159,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"475","C05_T_15_C",4755,0.0114768315532017,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"476","C05_T_15_C",4765,0.0114192651414288,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"477","C05_T_15_C",4775,0.0113784931135649,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"478","C05_T_15_C",4785,0.0113450128957321,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"479","C05_T_15_C",4795,0.0113188326086717,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"480","C05_T_15_C",4805,0.0113015826946865,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"481","C05_T_15_C",4815,0.0112961919146402,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"482","C05_T_15_C",4825,0.0113060293758251,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"483","C05_T_15_C",4835,0.0113320771284291,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"484","C05_T_15_C",4845,0.0113636671086298,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"485","C05_T_15_C",4855,0.011401758410454,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"486","C05_T_15_C",4865,0.0114649706118802,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"487","C05_T_15_C",4875,0.0115591714150799,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"488","C05_T_15_C",4885,0.011669254301333,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"489","C05_T_15_C",4895,0.0117790728638618,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"490","C05_T_15_C",4905,0.0118739394598656,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"491","C05_T_15_C",4915,0.0119380598084445,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"492","C05_T_15_C",4925,0.005980489213884,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"493","C05_T_15_C",4935,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"494","C05_T_15_C",4945,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"495","C05_T_15_C",4955,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"496","C05_T_15_C",4965,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"497","C05_T_15_C",4975,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"498","C05_T_15_C",4985,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"499","C05_T_15_C",4995,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"500","C05_T_15_C",5005,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29
+"501","C05_T_15_C",5015,0,0,NA,NA,NA,NA,NA,NA,5,"Catalan","target",15,"contrastive","male",29

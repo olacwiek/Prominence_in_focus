@@ -1,0 +1,433 @@
+"","File","time_ms","env","F0","TP","Word","Gestural_Prom","Prosodic_Prom","Syll_num","Syll","Participant","Language","Item_type","Item_num","Focus","Gender","Age"
+"1","C04_T_17_I",15,0,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"2","C04_T_17_I",25,0,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"3","C04_T_17_I",35,0,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"4","C04_T_17_I",45,0,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"5","C04_T_17_I",55,0,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"6","C04_T_17_I",65,0,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"7","C04_T_17_I",75,0,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"8","C04_T_17_I",85,0,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"9","C04_T_17_I",95,0.0050533241055768,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"10","C04_T_17_I",105,0.0100956088825171,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"11","C04_T_17_I",115,0.0100654787548367,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"12","C04_T_17_I",125,0.0100298202934416,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"13","C04_T_17_I",135,0.0100108466738735,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"14","C04_T_17_I",145,0.0100234534477002,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"15","C04_T_17_I",155,0.0100614008812588,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"16","C04_T_17_I",165,0.0101189769487367,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"17","C04_T_17_I",175,0.010205232334088,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"18","C04_T_17_I",185,0.0103324030772352,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"19","C04_T_17_I",195,0.0105154445867414,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"20","C04_T_17_I",205,0.0107528520944279,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"21","C04_T_17_I",215,0.0110332424387312,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"22","C04_T_17_I",225,0.0113476337617084,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"23","C04_T_17_I",235,0.0116789118121167,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"24","C04_T_17_I",245,0.0120108108406573,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"25","C04_T_17_I",255,0.0123248056897181,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"26","C04_T_17_I",265,0.0126019842524351,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"27","C04_T_17_I",275,0.0128306967319856,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"28","C04_T_17_I",285,0.0129994073860605,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"29","C04_T_17_I",295,0.0131088429442586,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"30","C04_T_17_I",305,0.0131854784955844,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"31","C04_T_17_I",315,0.0132446048900149,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"32","C04_T_17_I",325,0.0132681631487313,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"33","C04_T_17_I",335,0.0132353870970368,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"34","C04_T_17_I",345,0.0131482723197394,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"35","C04_T_17_I",355,0.0130362339695747,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"36","C04_T_17_I",365,0.0129313339449272,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"37","C04_T_17_I",375,0.0128391478032625,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"38","C04_T_17_I",385,0.0127498058757899,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"39","C04_T_17_I",395,0.0126563126682792,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"40","C04_T_17_I",405,0.0125623101397868,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"41","C04_T_17_I",415,0.0124706033197713,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"42","C04_T_17_I",425,0.0123743273281239,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"43","C04_T_17_I",435,0.0122738093606873,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"44","C04_T_17_I",445,0.0121833456610257,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"45","C04_T_17_I",455,0.0121145447935288,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"46","C04_T_17_I",465,0.0120725850500652,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"47","C04_T_17_I",475,0.0120626208678265,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"48","C04_T_17_I",485,0.0120866704685571,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"49","C04_T_17_I",495,0.0121386855943033,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"50","C04_T_17_I",505,0.0121924358290482,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"51","C04_T_17_I",515,0.0122332324525912,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"52","C04_T_17_I",525,0.0122726851747931,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"53","C04_T_17_I",535,0.0123238976507304,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"54","C04_T_17_I",545,0.0123904328543222,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"55","C04_T_17_I",555,0.0124606274615436,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"56","C04_T_17_I",565,0.0125091985673121,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"57","C04_T_17_I",575,0.012532266904612,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"58","C04_T_17_I",585,0.012552044989929,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"59","C04_T_17_I",595,0.0125741700421575,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"60","C04_T_17_I",605,0.0125953457675475,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"61","C04_T_17_I",615,0.0126308649365461,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"62","C04_T_17_I",625,0.0127056229513103,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"63","C04_T_17_I",635,0.0128488680052622,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"64","C04_T_17_I",645,0.0130949970351131,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"65","C04_T_17_I",655,0.0134648057792034,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"66","C04_T_17_I",665,0.013961708050078,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"67","C04_T_17_I",675,0.014565272404364,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"68","C04_T_17_I",685,0.0152368952087009,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"69","C04_T_17_I",695,0.0159262044415187,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"70","C04_T_17_I",705,0.0165774579788887,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"71","C04_T_17_I",715,0.0171491752358642,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"72","C04_T_17_I",725,0.0176047495130627,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"73","C04_T_17_I",735,0.0179130414751313,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"74","C04_T_17_I",745,0.0180539342539596,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"75","C04_T_17_I",755,0.0180168954678703,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"76","C04_T_17_I",765,0.0178168749808609,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"77","C04_T_17_I",775,0.0174753162955789,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"78","C04_T_17_I",785,0.0170048842634617,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"79","C04_T_17_I",795,0.0164397073150137,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"80","C04_T_17_I",805,0.0158360507405269,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"81","C04_T_17_I",815,0.0152415797708338,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"82","C04_T_17_I",825,0.0146895007142492,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"83","C04_T_17_I",835,0.014192517923335,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"84","C04_T_17_I",845,0.0137407590670405,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"85","C04_T_17_I",855,0.0133299868535327,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"86","C04_T_17_I",865,0.0129568751773,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"87","C04_T_17_I",875,0.0126145421239469,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"88","C04_T_17_I",885,0.0122995172822567,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"89","C04_T_17_I",895,0.0120069293101196,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"90","C04_T_17_I",905,0.0117350080903373,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"91","C04_T_17_I",915,0.0114823553228278,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"92","C04_T_17_I",925,0.0112526215356686,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"93","C04_T_17_I",935,0.0110504002184045,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"94","C04_T_17_I",945,0.0108751090015234,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"95","C04_T_17_I",955,0.0107289727505334,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"96","C04_T_17_I",965,0.0106158875992168,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"97","C04_T_17_I",975,0.0105803703064817,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"98","C04_T_17_I",985,0.0107830278923931,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"99","C04_T_17_I",995,0.0115695449987919,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"100","C04_T_17_I",1005,0.0134225508458076,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"101","C04_T_17_I",1015,0.0168006268779685,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"102","C04_T_17_I",1025,0.0220520410075091,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"103","C04_T_17_I",1035,0.0294030582939276,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"104","C04_T_17_I",1045,0.0389215499507801,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"105","C04_T_17_I",1055,0.0504730159363964,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"106","C04_T_17_I",1065,0.0637026463532819,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"107","C04_T_17_I",1075,0.0779653107879419,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"108","C04_T_17_I",1085,0.0922534654360214,232.197204589844,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"109","C04_T_17_I",1095,0.105408207061281,234.9501953125,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"110","C04_T_17_I",1105,0.11646561249578,226.157089233398,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"111","C04_T_17_I",1115,0.124800386785706,226.595413208008,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"112","C04_T_17_I",1125,0.130087249176998,226.645736694336,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"113","C04_T_17_I",1135,0.13228601818479,226.403060913086,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"114","C04_T_17_I",1145,0.131735777016387,222.131301879883,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"115","C04_T_17_I",1155,0.129135968249052,223.459182739258,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"116","C04_T_17_I",1165,0.125386632284744,220.102676391602,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"117","C04_T_17_I",1175,0.12140193077555,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"118","C04_T_17_I",1185,0.117891318406201,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"119","C04_T_17_I",1195,0.115289230441808,225.352111816406,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"120","C04_T_17_I",1205,0.113775446668912,223.59814453125,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"121","C04_T_17_I",1215,0.113382176060768,224.000137329102,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"122","C04_T_17_I",1225,0.114112784641527,226.399368286133,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"123","C04_T_17_I",1235,0.115807135707851,230.492202758789,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"124","C04_T_17_I",1245,0.118002486396425,223.305160522461,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"125","C04_T_17_I",1255,0.120061836340599,223.781204223633,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"126","C04_T_17_I",1265,0.121356391598711,235.982543945312,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"127","C04_T_17_I",1275,0.1214529061987,238.669372558594,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"128","C04_T_17_I",1285,0.120363851254233,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"129","C04_T_17_I",1295,0.11842017317634,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"130","C04_T_17_I",1305,0.115997504609416,236.329574584961,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"131","C04_T_17_I",1315,0.113521837139329,235.963119506836,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"132","C04_T_17_I",1325,0.111554952184168,235.252700805664,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"133","C04_T_17_I",1335,0.11071350314811,225.643432617188,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"134","C04_T_17_I",1345,0.111412407334151,228.925094604492,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"135","C04_T_17_I",1355,0.113718832361654,225.293685913086,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"136","C04_T_17_I",1365,0.117378347170113,229.421890258789,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"137","C04_T_17_I",1375,0.121894842925359,237.271560668945,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"138","C04_T_17_I",1385,0.126646658855208,233.941299438477,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"139","C04_T_17_I",1395,0.130915629256779,237.461822509766,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"140","C04_T_17_I",1405,0.133995041106155,229.911437988281,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"141","C04_T_17_I",1415,0.135264640632606,232.023986816406,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"142","C04_T_17_I",1425,0.134141531064526,228.911437988281,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"143","C04_T_17_I",1435,0.130230575143245,227.976852416992,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"144","C04_T_17_I",1445,0.123544272802614,227.554595947266,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"145","C04_T_17_I",1455,0.11448344766944,227.670074462891,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"146","C04_T_17_I",1465,0.103772332940279,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"147","C04_T_17_I",1475,0.0923911037390902,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"148","C04_T_17_I",1485,0.0814561085086848,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"149","C04_T_17_I",1495,0.072141889282141,226.615051269531,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"150","C04_T_17_I",1505,0.0654488499293319,227.278213500977,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"151","C04_T_17_I",1515,0.0618869268921164,228.228897094727,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"152","C04_T_17_I",1525,0.0613486500783854,229.978759765625,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"153","C04_T_17_I",1535,0.0632814553115704,0,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"154","C04_T_17_I",1545,0.0670232915069277,0,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"155","C04_T_17_I",1555,0.072016464125862,257.233734130859,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"156","C04_T_17_I",1565,0.077803405178374,243.112655639648,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"157","C04_T_17_I",1575,0.0840237967882909,260.302856445312,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"158","C04_T_17_I",1585,0.0904520473118869,264.760620117188,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"159","C04_T_17_I",1595,0.0968441921379598,257.454498291016,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"160","C04_T_17_I",1605,0.10281425226936,258.562713623047,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"161","C04_T_17_I",1615,0.107934416990923,0,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"162","C04_T_17_I",1625,0.111824129447016,0,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"163","C04_T_17_I",1635,0.114185988616637,261.297424316406,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"164","C04_T_17_I",1645,0.114864454306422,261.441497802734,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"165","C04_T_17_I",1655,0.113889448569027,257.346343994141,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"166","C04_T_17_I",1665,0.111376733697687,258.475341796875,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"167","C04_T_17_I",1675,0.107486678285549,253.735290527344,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"168","C04_T_17_I",1685,0.102372412575642,256.988403320312,"La pilota de color tronja",NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"169","C04_T_17_I",1695,0.096140943307668,262.763488769531,"La pilota de color tronja","N","",NA,"1","pre",4,"Catalan","target",17,"information","female",18
+"170","C04_T_17_I",1705,0.0890446878528275,256.903076171875,"La pilota de color tronja","N","",NA,"1","pre",4,"Catalan","target",17,"information","female",18
+"171","C04_T_17_I",1715,0.0816073272456712,259.64794921875,"La pilota de color tronja","N","",NA,"1","pre",4,"Catalan","target",17,"information","female",18
+"172","C04_T_17_I",1725,0.074619836314065,0,"La pilota de color tronja","N","",NA,"1","pre",4,"Catalan","target",17,"information","female",18
+"173","C04_T_17_I",1735,0.0690834660887521,0,"La pilota de color tronja","N","",NA,"1","pre",4,"Catalan","target",17,"information","female",18
+"174","C04_T_17_I",1745,0.065841623436505,0,"La pilota de color tronja","N","",NA,"1","pre",4,"Catalan","target",17,"information","female",18
+"175","C04_T_17_I",1755,0.0651963474066899,0,"La pilota de color tronja","N","",NA,"1","pre",4,"Catalan","target",17,"information","female",18
+"176","C04_T_17_I",1765,0.0669990329497751,0,"La pilota de color tronja","N","",NA,"1","pre",4,"Catalan","target",17,"information","female",18
+"177","C04_T_17_I",1775,0.0708816227722902,0,"La pilota de color tronja","N","",NA,"1","pre",4,"Catalan","target",17,"information","female",18
+"178","C04_T_17_I",1785,0.0763930961132405,0,"La pilota de color tronja","N","",NA,"1","pre",4,"Catalan","target",17,"information","female",18
+"179","C04_T_17_I",1795,0.083160697174524,262.379150390625,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"180","C04_T_17_I",1805,0.0908560051455943,264.571624755859,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"181","C04_T_17_I",1815,0.0990430627111409,261.542327880859,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"182","C04_T_17_I",1825,0.107231195778214,262.671966552734,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"183","C04_T_17_I",1835,0.115098464716053,262.132629394531,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"184","C04_T_17_I",1845,0.122582470828353,251.302810668945,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"185","C04_T_17_I",1855,0.12972087938458,254.57438659668,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"186","C04_T_17_I",1865,0.136524783614869,251.555847167969,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"187","C04_T_17_I",1875,0.142863990280766,258.235168457031,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"188","C04_T_17_I",1885,0.148452530553984,262.61181640625,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"189","C04_T_17_I",1895,0.152988529265888,245.067794799805,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"190","C04_T_17_I",1905,0.156196995385651,245.888519287109,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"191","C04_T_17_I",1915,0.15787287790074,243.292205810547,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"192","C04_T_17_I",1925,0.157936832101372,240.623199462891,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"193","C04_T_17_I",1935,0.156229514442645,241.363327026367,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"194","C04_T_17_I",1945,0.152495641200621,240.851928710938,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"195","C04_T_17_I",1955,0.146717748326813,238.03678894043,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"196","C04_T_17_I",1965,0.139250677658978,234.423446655273,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"197","C04_T_17_I",1975,0.130686781974192,232.671798706055,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"198","C04_T_17_I",1985,0.121587851177407,233.662139892578,"La pilota de color tronja","N","","2","2","lo",4,"Catalan","target",17,"information","female",18
+"199","C04_T_17_I",1995,0.112337523290556,232.358963012695,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"200","C04_T_17_I",2005,0.103247513634736,225.448822021484,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"201","C04_T_17_I",2015,0.0946713545130883,229.503952026367,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"202","C04_T_17_I",2025,0.086969815488173,237.443283081055,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"203","C04_T_17_I",2035,0.0803572014212195,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"204","C04_T_17_I",2045,0.0748719176531595,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"205","C04_T_17_I",2055,0.0705265016901772,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"206","C04_T_17_I",2065,0.0674306061541874,233.2265625,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"207","C04_T_17_I",2075,0.065859636572289,233.794998168945,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"208","C04_T_17_I",2085,0.0662392739217935,234.324096679688,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"209","C04_T_17_I",2095,0.0690078238551486,233.856353759766,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"210","C04_T_17_I",2105,0.0744144991089948,232.524795532227,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"211","C04_T_17_I",2115,0.0823648737044549,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"212","C04_T_17_I",2125,0.0923810788859888,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"213","C04_T_17_I",2135,0.103792661992846,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"214","C04_T_17_I",2145,0.115984705198413,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"215","C04_T_17_I",2155,0.128426906487263,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"216","C04_T_17_I",2165,0.140550596854708,229.104598999023,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"217","C04_T_17_I",2175,0.151664354771169,227.920501708984,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"218","C04_T_17_I",2185,0.161048797053616,228.114303588867,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"219","C04_T_17_I",2195,0.168101624865371,225.518310546875,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"220","C04_T_17_I",2205,0.172467560439569,224.168121337891,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"221","C04_T_17_I",2215,0.174197941296512,223.945877075195,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"222","C04_T_17_I",2225,0.173708871907844,222.798126220703,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"223","C04_T_17_I",2235,0.171458143568749,223.050399780273,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"224","C04_T_17_I",2245,0.167710353879174,222.460388183594,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"225","C04_T_17_I",2255,0.162628830833531,222.011459350586,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"226","C04_T_17_I",2265,0.156410246950906,221.553558349609,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"227","C04_T_17_I",2275,0.149265499551644,219.659225463867,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"228","C04_T_17_I",2285,0.14133532037724,219.820022583008,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"229","C04_T_17_I",2295,0.132703645030498,217.941940307617,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"230","C04_T_17_I",2305,0.123504690088074,220.74462890625,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"231","C04_T_17_I",2315,0.113988827591565,221.474914550781,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"232","C04_T_17_I",2325,0.10447874654331,220.171600341797,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"233","C04_T_17_I",2335,0.0952907242938415,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"234","C04_T_17_I",2345,0.086713683707314,216.398513793945,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"235","C04_T_17_I",2355,0.0789630879324506,215.894073486328,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"236","C04_T_17_I",2365,0.0721525667145743,215.657424926758,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"237","C04_T_17_I",2375,0.0663448399263119,217.424179077148,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"238","C04_T_17_I",2385,0.0615950235476176,213.525146484375,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"239","C04_T_17_I",2395,0.0579622459199408,213.149780273438,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"240","C04_T_17_I",2405,0.0554467518581087,211.267608642578,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"241","C04_T_17_I",2415,0.0538511553806934,211.560806274414,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"242","C04_T_17_I",2425,0.0528174955285755,212.456878662109,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"243","C04_T_17_I",2435,0.052074285757376,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"244","C04_T_17_I",2445,0.0515308406260847,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"245","C04_T_17_I",2455,0.0511393057201428,0,"La pilota de color tronja","N","","","3","post",4,"Catalan","target",17,"information","female",18
+"246","C04_T_17_I",2465,0.0508175970747698,0,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"247","C04_T_17_I",2475,0.0505248241517625,0,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"248","C04_T_17_I",2485,0.0503626739509548,0,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"249","C04_T_17_I",2495,0.0504944408143101,0,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"250","C04_T_17_I",2505,0.0509637826757946,0,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"251","C04_T_17_I",2515,0.0516810072084469,0,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"252","C04_T_17_I",2525,0.0525152862617436,0,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"253","C04_T_17_I",2535,0.0533419068997694,0,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"254","C04_T_17_I",2545,0.0539961287499976,208.33332824707,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"255","C04_T_17_I",2555,0.0542610990885943,208.614212036133,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"256","C04_T_17_I",2565,0.0539692234672415,208.46955871582,"La pilota de color tronja","","","","4","",4,"Catalan","target",17,"information","female",18
+"257","C04_T_17_I",2575,0.0530591391869463,204.678909301758,"La pilota de color tronja","NC","","","4","",4,"Catalan","target",17,"information","female",18
+"258","C04_T_17_I",2585,0.0515919533255483,206.864501953125,"La pilota de color tronja","NC","","","4","",4,"Catalan","target",17,"information","female",18
+"259","C04_T_17_I",2595,0.049788671088816,208.621536254883,"La pilota de color tronja","NC","","","4","",4,"Catalan","target",17,"information","female",18
+"260","C04_T_17_I",2605,0.0480327854941686,208.555160522461,"La pilota de color tronja","NC","","","4","",4,"Catalan","target",17,"information","female",18
+"261","C04_T_17_I",2615,0.0467675615943814,0,"La pilota de color tronja","NC","","","4","",4,"Catalan","target",17,"information","female",18
+"262","C04_T_17_I",2625,0.046365729421003,0,"La pilota de color tronja","NC","","","4","",4,"Catalan","target",17,"information","female",18
+"263","C04_T_17_I",2635,0.047093812934157,0,"La pilota de color tronja","NC","","","4","",4,"Catalan","target",17,"information","female",18
+"264","C04_T_17_I",2645,0.0490870701029358,0,"La pilota de color tronja","NC","","","4","",4,"Catalan","target",17,"information","female",18
+"265","C04_T_17_I",2655,0.0523852929398241,0,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"266","C04_T_17_I",2665,0.0570049402328436,0,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"267","C04_T_17_I",2675,0.0629043923685998,0,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"268","C04_T_17_I",2685,0.0699189958068538,0,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"269","C04_T_17_I",2695,0.0777017107117224,0,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"270","C04_T_17_I",2705,0.0856832772620552,0,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"271","C04_T_17_I",2715,0.0931376638253708,0,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"272","C04_T_17_I",2725,0.0993442461758006,0,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"273","C04_T_17_I",2735,0.103723166554624,0,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"274","C04_T_17_I",2745,0.105901574884642,417.81640625,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"275","C04_T_17_I",2755,0.105770235643947,412.811645507812,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"276","C04_T_17_I",2765,0.103513396791928,410.263153076172,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"277","C04_T_17_I",2775,0.0995550145029875,412.332885742188,"La pilota de color tronja","NC","","0","5","lor_pre",4,"Catalan","target",17,"information","female",18
+"278","C04_T_17_I",2785,0.0943985770925539,407.681945800781,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"279","C04_T_17_I",2795,0.0884847589899656,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"280","C04_T_17_I",2805,0.0821583992246162,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"281","C04_T_17_I",2815,0.0757522584332176,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"282","C04_T_17_I",2825,0.0696313756812924,209.725433349609,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"283","C04_T_17_I",2835,0.0641261989401941,206.445785522461,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"284","C04_T_17_I",2845,0.0595265160736747,202.932723999023,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"285","C04_T_17_I",2855,0.0559977968859606,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"286","C04_T_17_I",2865,0.0534758675929328,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"287","C04_T_17_I",2875,0.0517389647291442,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"288","C04_T_17_I",2885,0.0504670418624704,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"289","C04_T_17_I",2895,0.0493272380431135,110.008018493652,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"290","C04_T_17_I",2905,0.0481708916134116,109.421455383301,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"291","C04_T_17_I",2915,0.0470471199279391,105.855995178223,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"292","C04_T_17_I",2925,0.0460632372954796,115.073860168457,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"293","C04_T_17_I",2935,0.0452966686386634,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"294","C04_T_17_I",2945,0.0447901320409804,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"295","C04_T_17_I",2955,0.0445456498171563,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"296","C04_T_17_I",2965,0.0444663821416283,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"297","C04_T_17_I",2975,0.0443736079319166,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"298","C04_T_17_I",2985,0.044151083711129,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"299","C04_T_17_I",2995,0.0438010817685006,0,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"300","C04_T_17_I",3005,0.0433575050633717,201.759460449219,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"301","C04_T_17_I",3015,0.0428067595114028,208.745681762695,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"302","C04_T_17_I",3025,0.0420897574056734,206.377105712891,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"303","C04_T_17_I",3035,0.0411824587587582,206.975845336914,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"304","C04_T_17_I",3045,0.0400901231000739,205.80989074707,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"305","C04_T_17_I",3055,0.0388333527530925,206.850463867188,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"306","C04_T_17_I",3065,0.0374546959722525,204.977920532227,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"307","C04_T_17_I",3075,0.0359528178171803,204.898895263672,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"308","C04_T_17_I",3085,0.0342850314447511,208.617950439453,"La pilota de color tronja","A","","2","6","tron",4,"Catalan","target",17,"information","female",18
+"309","C04_T_17_I",3095,0.0324500159799102,206.795333862305,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"310","C04_T_17_I",3105,0.0305212545977414,205.253341674805,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"311","C04_T_17_I",3115,0.0286317146954359,198.126266479492,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"312","C04_T_17_I",3125,0.0269333469646042,205.423843383789,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"313","C04_T_17_I",3135,0.025567564713806,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"314","C04_T_17_I",3145,0.0246506725621665,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"315","C04_T_17_I",3155,0.0242455932255003,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"316","C04_T_17_I",3165,0.0243282251705269,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"317","C04_T_17_I",3175,0.0248216950351877,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"318","C04_T_17_I",3185,0.0256369939313162,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"319","C04_T_17_I",3195,0.0266439940702283,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"320","C04_T_17_I",3205,0.027671418761829,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"321","C04_T_17_I",3215,0.0285475923532163,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"322","C04_T_17_I",3225,0.0291351628946993,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"323","C04_T_17_I",3235,0.0293345942976449,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"324","C04_T_17_I",3245,0.0291032453344596,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"325","C04_T_17_I",3255,0.0284602234308762,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"326","C04_T_17_I",3265,0.0274682967802083,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"327","C04_T_17_I",3275,0.0262295986425101,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"328","C04_T_17_I",3285,0.024861911666957,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"329","C04_T_17_I",3295,0.0234622693521545,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"330","C04_T_17_I",3305,0.0220859841588473,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"331","C04_T_17_I",3315,0.0207546522411706,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"332","C04_T_17_I",3325,0.0194888375037467,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"333","C04_T_17_I",3335,0.0183121191851787,0,"La pilota de color tronja","A","",NA,"7","post",4,"Catalan","target",17,"information","female",18
+"334","C04_T_17_I",3345,0.0172373101628295,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"335","C04_T_17_I",3355,0.0162707930926499,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"336","C04_T_17_I",3365,0.0154304552379594,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"337","C04_T_17_I",3375,0.0147290982215701,0,NA,NA,"",NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"338","C04_T_17_I",3385,0.0141386468912037,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"339","C04_T_17_I",3395,0.0136301420682069,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"340","C04_T_17_I",3405,0.0132022321376888,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"341","C04_T_17_I",3415,0.0128547611007681,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"342","C04_T_17_I",3425,0.01258919924254,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"343","C04_T_17_I",3435,0.0124102047298285,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"344","C04_T_17_I",3445,0.0123095033401272,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"345","C04_T_17_I",3455,0.0122700655330568,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"346","C04_T_17_I",3465,0.0122675936581914,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"347","C04_T_17_I",3475,0.0122717946240206,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"348","C04_T_17_I",3485,0.0122531290157019,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"349","C04_T_17_I",3495,0.0121892574739248,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"350","C04_T_17_I",3505,0.0120770819377695,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"351","C04_T_17_I",3515,0.0119233632071188,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"352","C04_T_17_I",3525,0.0117399623217692,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"353","C04_T_17_I",3535,0.0115518262252719,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"354","C04_T_17_I",3545,0.0113799176007821,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"355","C04_T_17_I",3555,0.0112314992167454,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"356","C04_T_17_I",3565,0.0111139722012415,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"357","C04_T_17_I",3575,0.0110342389865521,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"358","C04_T_17_I",3585,0.0109974534339329,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"359","C04_T_17_I",3595,0.0110025826453096,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"360","C04_T_17_I",3605,0.0110474721554552,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"361","C04_T_17_I",3615,0.0111336912514724,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"362","C04_T_17_I",3625,0.011248125349675,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"363","C04_T_17_I",3635,0.0113686909179822,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"364","C04_T_17_I",3645,0.0114783022429538,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"365","C04_T_17_I",3655,0.0115557549041629,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"366","C04_T_17_I",3665,0.0115807915666796,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"367","C04_T_17_I",3675,0.0115525126600837,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"368","C04_T_17_I",3685,0.0114994920792506,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"369","C04_T_17_I",3695,0.0114556430685351,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"370","C04_T_17_I",3705,0.0114395734401313,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"371","C04_T_17_I",3715,0.0114648763342685,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"372","C04_T_17_I",3725,0.0115278164694619,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"373","C04_T_17_I",3735,0.0116105174063944,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"374","C04_T_17_I",3745,0.0116965120239324,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"375","C04_T_17_I",3755,0.0117798758503054,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"376","C04_T_17_I",3765,0.0118655635725771,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"377","C04_T_17_I",3775,0.0119525112499018,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"378","C04_T_17_I",3785,0.0120274581420836,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"379","C04_T_17_I",3795,0.0120740469591883,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"380","C04_T_17_I",3805,0.0120767845570917,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"381","C04_T_17_I",3815,0.0120258973018405,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"382","C04_T_17_I",3825,0.0119266859175848,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"383","C04_T_17_I",3835,0.0117941802563196,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"384","C04_T_17_I",3845,0.0116469415149031,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"385","C04_T_17_I",3855,0.0115216480960442,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"386","C04_T_17_I",3865,0.0114530226075307,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"387","C04_T_17_I",3875,0.0114501524912868,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"388","C04_T_17_I",3885,0.0114951316324229,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"389","C04_T_17_I",3895,0.0115590581867454,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"390","C04_T_17_I",3905,0.011621630767167,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"391","C04_T_17_I",3915,0.0116655235036346,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"392","C04_T_17_I",3925,0.0116816957494923,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"393","C04_T_17_I",3935,0.0116718023002623,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"394","C04_T_17_I",3945,0.0116423169772824,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"395","C04_T_17_I",3955,0.0115891544788099,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"396","C04_T_17_I",3965,0.0115009792078195,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"397","C04_T_17_I",3975,0.0113785433699269,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"398","C04_T_17_I",3985,0.0112291247292246,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"399","C04_T_17_I",3995,0.0110588520622762,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"400","C04_T_17_I",4005,0.0108778988867835,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"401","C04_T_17_I",4015,0.0107108559478657,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"402","C04_T_17_I",4025,0.0105897582861946,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"403","C04_T_17_I",4035,0.0105335695546854,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"404","C04_T_17_I",4045,0.0105502740098948,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"405","C04_T_17_I",4055,0.0106268525178819,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"406","C04_T_17_I",4065,0.0107422845038584,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"407","C04_T_17_I",4075,0.0108773766773436,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"408","C04_T_17_I",4085,0.0110073059368121,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"409","C04_T_17_I",4095,0.0111209828061286,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"410","C04_T_17_I",4105,0.0112169226044832,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"411","C04_T_17_I",4115,0.0112968509912138,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"412","C04_T_17_I",4125,0.0113644079548349,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"413","C04_T_17_I",4135,0.0114114893787577,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"414","C04_T_17_I",4145,0.0114357936222769,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"415","C04_T_17_I",4155,0.0114570299613979,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"416","C04_T_17_I",4165,0.0114849832574738,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"417","C04_T_17_I",4175,0.0115107125964761,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"418","C04_T_17_I",4185,0.0115274525793623,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"419","C04_T_17_I",4195,0.0115391114570331,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"420","C04_T_17_I",4205,0.0115459561072415,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"421","C04_T_17_I",4215,0.0115367944701934,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"422","C04_T_17_I",4225,0.0115040780049344,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"423","C04_T_17_I",4235,0.005740786099111,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"424","C04_T_17_I",4245,0,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"425","C04_T_17_I",4255,0,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"426","C04_T_17_I",4265,0,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"427","C04_T_17_I",4275,0,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"428","C04_T_17_I",4285,0,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"429","C04_T_17_I",4295,0,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"430","C04_T_17_I",4305,0,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"431","C04_T_17_I",4315,0,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18
+"432","C04_T_17_I",4325,0,0,NA,NA,NA,NA,NA,NA,4,"Catalan","target",17,"information","female",18

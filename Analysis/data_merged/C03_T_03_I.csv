@@ -1,0 +1,468 @@
+"","File","time_ms","env","F0","TP","Word","Gestural_Prom","Prosodic_Prom","Syll_num","Syll","Participant","Language","Item_type","Item_num","Focus","Gender","Age"
+"1","C03_T_03_I",15,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"2","C03_T_03_I",25,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"3","C03_T_03_I",35,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"4","C03_T_03_I",45,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"5","C03_T_03_I",55,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"6","C03_T_03_I",65,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"7","C03_T_03_I",75,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"8","C03_T_03_I",85,0,237.32292175293,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"9","C03_T_03_I",95,0.035301207276411,239.257583618164,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"10","C03_T_03_I",105,0.072706458022002,266.526641845703,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"11","C03_T_03_I",115,0.0762930578216965,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"12","C03_T_03_I",125,0.0784845685301989,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"13","C03_T_03_I",135,0.0790721723761313,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"14","C03_T_03_I",145,0.0780116946189094,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"15","C03_T_03_I",155,0.0753952633594367,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"16","C03_T_03_I",165,0.071460933804525,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"17","C03_T_03_I",175,0.0665745967655603,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"18","C03_T_03_I",185,0.0611341819864955,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"19","C03_T_03_I",195,0.0554795272201527,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"20","C03_T_03_I",205,0.0498463388257304,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"21","C03_T_03_I",215,0.044443460120357,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"22","C03_T_03_I",225,0.0395319657465827,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"23","C03_T_03_I",235,0.0352910791130134,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"24","C03_T_03_I",245,0.0317522738589108,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"25","C03_T_03_I",255,0.0289240299654313,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"26","C03_T_03_I",265,0.026762917461646,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"27","C03_T_03_I",275,0.0251529140586512,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"28","C03_T_03_I",285,0.0239838980928669,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"29","C03_T_03_I",295,0.0231500127564845,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"30","C03_T_03_I",305,0.0225378295313443,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"31","C03_T_03_I",315,0.0220999105632134,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"32","C03_T_03_I",325,0.0218806367748951,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"33","C03_T_03_I",335,0.0218729548300539,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"34","C03_T_03_I",345,0.0219966872252193,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"35","C03_T_03_I",355,0.0221903455808894,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"36","C03_T_03_I",365,0.0224028831407329,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"37","C03_T_03_I",375,0.0225591792942778,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"38","C03_T_03_I",385,0.0226103816880112,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"39","C03_T_03_I",395,0.0225455861761739,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"40","C03_T_03_I",405,0.0223487674389586,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"41","C03_T_03_I",415,0.0219975649439035,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"42","C03_T_03_I",425,0.0214896317582429,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"43","C03_T_03_I",435,0.0208372277284487,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"44","C03_T_03_I",445,0.0200606072296282,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"45","C03_T_03_I",455,0.0192211473730697,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"46","C03_T_03_I",465,0.0183912362091847,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"47","C03_T_03_I",475,0.0175997792257252,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"48","C03_T_03_I",485,0.0168651315738435,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"49","C03_T_03_I",495,0.0162042199983276,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"50","C03_T_03_I",505,0.0156129804613581,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"51","C03_T_03_I",515,0.0150738167285808,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"52","C03_T_03_I",525,0.0145591431122294,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"53","C03_T_03_I",535,0.014068599396339,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"54","C03_T_03_I",545,0.0136373934720687,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"55","C03_T_03_I",555,0.0132925785833365,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"56","C03_T_03_I",565,0.0130566261836402,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"57","C03_T_03_I",575,0.0129639852478471,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"58","C03_T_03_I",585,0.0130216865040493,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"59","C03_T_03_I",595,0.0131909234351114,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"60","C03_T_03_I",605,0.0134196511010543,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"61","C03_T_03_I",615,0.0136686417555309,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"62","C03_T_03_I",625,0.0139166663714391,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"63","C03_T_03_I",635,0.0141390588860997,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"64","C03_T_03_I",645,0.0142914569416773,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"65","C03_T_03_I",655,0.0143209454716551,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"66","C03_T_03_I",665,0.0141931490336438,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"67","C03_T_03_I",675,0.013909378234157,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"68","C03_T_03_I",685,0.0134993410745061,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"69","C03_T_03_I",695,0.0130064132725187,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"70","C03_T_03_I",705,0.0124847839540692,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"71","C03_T_03_I",715,0.0119935073000958,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"72","C03_T_03_I",725,0.0115807693025849,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"73","C03_T_03_I",735,0.0112886270313354,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"74","C03_T_03_I",745,0.0111390822926889,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"75","C03_T_03_I",755,0.0111152950711572,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"76","C03_T_03_I",765,0.0111824041845252,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"77","C03_T_03_I",775,0.011311605166775,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"78","C03_T_03_I",785,0.0114859254527388,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"79","C03_T_03_I",795,0.011694379683879,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"80","C03_T_03_I",805,0.0119275384238849,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"81","C03_T_03_I",815,0.0121749647497746,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"82","C03_T_03_I",825,0.0124172282862164,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"83","C03_T_03_I",835,0.0126393734227441,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"84","C03_T_03_I",845,0.0128639214018587,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"85","C03_T_03_I",855,0.0131437272053101,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"86","C03_T_03_I",865,0.0135218221226886,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"87","C03_T_03_I",875,0.014013787592737,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"88","C03_T_03_I",885,0.0146064903028406,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"89","C03_T_03_I",895,0.0152656132314483,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"90","C03_T_03_I",905,0.0159571883719241,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"91","C03_T_03_I",915,0.0166607529760099,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"92","C03_T_03_I",925,0.017348636811539,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"93","C03_T_03_I",935,0.0179652096239929,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"94","C03_T_03_I",945,0.018488151238169,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"95","C03_T_03_I",955,0.0190302287883271,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"96","C03_T_03_I",965,0.0197859734673251,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"97","C03_T_03_I",975,0.0209063112241162,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"98","C03_T_03_I",985,0.0225249826872282,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"99","C03_T_03_I",995,0.0248115513356119,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"100","C03_T_03_I",1005,0.0279859312462286,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"101","C03_T_03_I",1015,0.0322783106756346,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"102","C03_T_03_I",1025,0.0378212613485584,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"103","C03_T_03_I",1035,0.0446051770693384,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"104","C03_T_03_I",1045,0.0524552342244354,237.384994506836,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"105","C03_T_03_I",1055,0.0610129070212403,220.004776000977,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"106","C03_T_03_I",1065,0.069853843849583,217.238632202148,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"107","C03_T_03_I",1075,0.0785653413790749,213.119232177734,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"108","C03_T_03_I",1085,0.0867760784987721,210.822982788086,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"109","C03_T_03_I",1095,0.0942596208621237,209.537399291992,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"110","C03_T_03_I",1105,0.100958171151912,207.865417480469,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"111","C03_T_03_I",1115,0.106975660493986,204.736434936523,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"112","C03_T_03_I",1125,0.112539358187571,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"113","C03_T_03_I",1135,0.117909707922089,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"114","C03_T_03_I",1145,0.123321236465415,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"115","C03_T_03_I",1155,0.128846090890406,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"116","C03_T_03_I",1165,0.13435550700275,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"117","C03_T_03_I",1175,0.139697888636607,218.442077636719,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"118","C03_T_03_I",1185,0.144743163003296,228.600555419922,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"119","C03_T_03_I",1195,0.149273127271624,219.277633666992,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"120","C03_T_03_I",1205,0.152888922384672,221.789245605469,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"121","C03_T_03_I",1215,0.155054369663258,224.414321899414,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"122","C03_T_03_I",1225,0.155278840481967,221.753707885742,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"123","C03_T_03_I",1235,0.153260219021485,217.772705078125,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"124","C03_T_03_I",1245,0.148904967055573,218.847702026367,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"125","C03_T_03_I",1255,0.142370481038008,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"126","C03_T_03_I",1265,0.134099717830069,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"127","C03_T_03_I",1275,0.124715644375168,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"128","C03_T_03_I",1285,0.114838327209873,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"129","C03_T_03_I",1295,0.104971844295118,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"130","C03_T_03_I",1305,0.0954940885642701,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"131","C03_T_03_I",1315,0.0866354544503772,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"132","C03_T_03_I",1325,0.0785079808968129,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"133","C03_T_03_I",1335,0.0711674250329608,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"134","C03_T_03_I",1345,0.0646556325464629,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"135","C03_T_03_I",1355,0.0590834341212532,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"136","C03_T_03_I",1365,0.0546470039274329,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"137","C03_T_03_I",1375,0.051561685844805,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"138","C03_T_03_I",1385,0.0499689571924702,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"139","C03_T_03_I",1395,0.0499559662837448,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"140","C03_T_03_I",1405,0.05156859310778,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"141","C03_T_03_I",1415,0.0547107243035986,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"142","C03_T_03_I",1425,0.0591252658602717,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"143","C03_T_03_I",1435,0.0644475217652966,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"144","C03_T_03_I",1445,0.070397899231176,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"145","C03_T_03_I",1455,0.0768638301449991,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"146","C03_T_03_I",1465,0.0837119290383124,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"147","C03_T_03_I",1475,0.0906962952623631,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"148","C03_T_03_I",1485,0.0976312345782245,222.010345458984,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"149","C03_T_03_I",1495,0.104454385697778,222.916687011719,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"150","C03_T_03_I",1505,0.111078041764122,219.299194335938,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"151","C03_T_03_I",1515,0.11737289415235,209.061218261719,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"152","C03_T_03_I",1525,0.123194367480807,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"153","C03_T_03_I",1535,0.128320084513814,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"154","C03_T_03_I",1545,0.132444395719184,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"155","C03_T_03_I",1555,0.135238601660273,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"156","C03_T_03_I",1565,0.136457591436261,238.501098632812,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"157","C03_T_03_I",1575,0.135934980862998,242.815338134766,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"158","C03_T_03_I",1585,0.133545666827252,244.094314575195,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"159","C03_T_03_I",1595,0.129183308571905,243.13395690918,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"160","C03_T_03_I",1605,0.122835645515358,241.864318847656,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"161","C03_T_03_I",1615,0.114781730126568,241.034439086914,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"162","C03_T_03_I",1625,0.105615102968868,240.270629882812,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"163","C03_T_03_I",1635,0.09613605454406,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"164","C03_T_03_I",1645,0.0871350019118766,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"165","C03_T_03_I",1655,0.0792097148801502,241.324737548828,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"166","C03_T_03_I",1665,0.0727986494819649,242.949661254883,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"167","C03_T_03_I",1675,0.068294378318089,239.238311767578,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"168","C03_T_03_I",1685,0.0659258426584599,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"169","C03_T_03_I",1695,0.0656479838259623,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"170","C03_T_03_I",1705,0.0672277985003599,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"171","C03_T_03_I",1715,0.0703014532889286,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"172","C03_T_03_I",1725,0.074456429188503,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"173","C03_T_03_I",1735,0.0793049613971527,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"174","C03_T_03_I",1745,0.084460394485024,228.205657958984,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"175","C03_T_03_I",1755,0.089584936269451,225.036178588867,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"176","C03_T_03_I",1765,0.0943884146158154,221.711685180664,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"177","C03_T_03_I",1775,0.0985760920434957,218.268035888672,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"178","C03_T_03_I",1785,0.101878573334273,213.79768371582,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"179","C03_T_03_I",1795,0.104074164218631,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"180","C03_T_03_I",1805,0.105030560160722,216.257934570312,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"181","C03_T_03_I",1815,0.104717180435094,214.924560546875,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"182","C03_T_03_I",1825,0.1031692915268,209.308029174805,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"183","C03_T_03_I",1835,0.100441063768145,206.744812011719,"El bolígraf de color lila",NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"184","C03_T_03_I",1845,0.0966050413227501,211.551849365234,"El bolígraf de color lila",NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"185","C03_T_03_I",1855,0.0917941314933096,208.551132202148,"El bolígraf de color lila",NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"186","C03_T_03_I",1865,0.0861864875359336,207.451797485352,"El bolígraf de color lila",NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"187","C03_T_03_I",1875,0.0799797738856575,202.072647094727,"El bolígraf de color lila",NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"188","C03_T_03_I",1885,0.07349595765453,207.105880737305,"El bolígraf de color lila",NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"189","C03_T_03_I",1895,0.0672736936372428,0,"El bolígraf de color lila",NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"190","C03_T_03_I",1905,0.0620394203598907,0,"El bolígraf de color lila",NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"191","C03_T_03_I",1915,0.0585609050071948,0,"El bolígraf de color lila",NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"192","C03_T_03_I",1925,0.057436602953009,0,"El bolígraf de color lila",NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"193","C03_T_03_I",1935,0.0590313073511285,212.14794921875,"El bolígraf de color lila","N","3",NA,"1","pre",3,"Catalan","target",3,"information","female",19
+"194","C03_T_03_I",1945,0.0634071570306395,204.538543701172,"El bolígraf de color lila","N","3",NA,"1","pre",3,"Catalan","target",3,"information","female",19
+"195","C03_T_03_I",1955,0.070142917597965,196.721313476562,"El bolígraf de color lila","N","3",NA,"1","pre",3,"Catalan","target",3,"information","female",19
+"196","C03_T_03_I",1965,0.0784053882167713,195.637069702148,"El bolígraf de color lila","N","3",NA,"1","pre",3,"Catalan","target",3,"information","female",19
+"197","C03_T_03_I",1975,0.087200402273697,201.328567504883,"El bolígraf de color lila","N","3",NA,"1","pre",3,"Catalan","target",3,"information","female",19
+"198","C03_T_03_I",1985,0.095557804039274,204.806365966797,"El bolígraf de color lila","N","3",NA,"1","pre",3,"Catalan","target",3,"information","female",19
+"199","C03_T_03_I",1995,0.102661618549985,206.132064819336,"El bolígraf de color lila","N","3",NA,"1","pre",3,"Catalan","target",3,"information","female",19
+"200","C03_T_03_I",2005,0.107847929379095,205.62890625,"El bolígraf de color lila","N","3",NA,"1","pre",3,"Catalan","target",3,"information","female",19
+"201","C03_T_03_I",2015,0.110625872960664,205.888916015625,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"202","C03_T_03_I",2025,0.1108534919357,204.052719116211,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"203","C03_T_03_I",2035,0.108763009719453,200.968994140625,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"204","C03_T_03_I",2045,0.104789295405657,201.401062011719,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"205","C03_T_03_I",2055,0.0995639171518383,201.099594116211,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"206","C03_T_03_I",2065,0.0939412383214557,202.106964111328,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"207","C03_T_03_I",2075,0.0889525786893856,203.629104614258,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"208","C03_T_03_I",2085,0.0855950466817982,210.166839599609,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"209","C03_T_03_I",2095,0.084486231597416,215.61882019043,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"210","C03_T_03_I",2105,0.0857692343305746,219.837142944336,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"211","C03_T_03_I",2115,0.089219500084269,217.843505859375,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"212","C03_T_03_I",2125,0.0945034502115001,207.587921142578,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"213","C03_T_03_I",2135,0.101346043280504,231.414657592773,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"214","C03_T_03_I",2145,0.10948758273036,0,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"215","C03_T_03_I",2155,0.118620004375907,234.522384643555,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"216","C03_T_03_I",2165,0.128226829080313,231.304244995117,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"217","C03_T_03_I",2175,0.137600905596005,231.088424682617,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"218","C03_T_03_I",2185,0.145977760388038,243.846069335938,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"219","C03_T_03_I",2195,0.152729922854478,249.340042114258,"El bolígraf de color lila","N","3","1","2","lí",3,"Catalan","target",3,"information","female",19
+"220","C03_T_03_I",2205,0.157570395764193,247.361602783203,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"221","C03_T_03_I",2215,0.160532915675545,248.409881591797,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"222","C03_T_03_I",2225,0.161753774927897,242.803375244141,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"223","C03_T_03_I",2235,0.161328334733626,251.059112548828,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"224","C03_T_03_I",2245,0.159518605153204,249.620956420898,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"225","C03_T_03_I",2255,0.156724432311702,237.360198974609,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"226","C03_T_03_I",2265,0.153325178847032,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"227","C03_T_03_I",2275,0.149554082083364,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"228","C03_T_03_I",2285,0.145603356457906,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"229","C03_T_03_I",2295,0.141885975003902,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"230","C03_T_03_I",2305,0.138824107684919,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"231","C03_T_03_I",2315,0.136675341354131,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"232","C03_T_03_I",2325,0.135403523904432,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"233","C03_T_03_I",2335,0.134566368338934,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"234","C03_T_03_I",2345,0.133511545560265,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"235","C03_T_03_I",2355,0.131616643791645,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"236","C03_T_03_I",2365,0.128555576345339,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"237","C03_T_03_I",2375,0.124323134753702,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"238","C03_T_03_I",2385,0.119098391271873,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"239","C03_T_03_I",2395,0.113122966674702,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"240","C03_T_03_I",2405,0.1065801689395,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"241","C03_T_03_I",2415,0.0996080185666219,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"242","C03_T_03_I",2425,0.0923694388596004,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"243","C03_T_03_I",2435,0.0851088523483955,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"244","C03_T_03_I",2445,0.078061411233761,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"245","C03_T_03_I",2455,0.0714135236954188,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"246","C03_T_03_I",2465,0.0653234131794201,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"247","C03_T_03_I",2475,0.0599409908955216,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"248","C03_T_03_I",2485,0.0553089762212085,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"249","C03_T_03_I",2495,0.0512402844838466,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"250","C03_T_03_I",2505,0.0475306998604651,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"251","C03_T_03_I",2515,0.0440505742275681,0,"El bolígraf de color lila","N","3","","3","post",3,"Catalan","target",3,"information","female",19
+"252","C03_T_03_I",2525,0.040691576157231,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"253","C03_T_03_I",2535,0.0374277148979135,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"254","C03_T_03_I",2545,0.0343019552456031,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"255","C03_T_03_I",2555,0.0313863370412118,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"256","C03_T_03_I",2565,0.028727017772692,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"257","C03_T_03_I",2575,0.0263107322061389,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"258","C03_T_03_I",2585,0.0241129915916669,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"259","C03_T_03_I",2595,0.0221171333371147,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"260","C03_T_03_I",2605,0.0203323211674884,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"261","C03_T_03_I",2615,0.0187672433603569,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"262","C03_T_03_I",2625,0.0174220389452224,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"263","C03_T_03_I",2635,0.0163334268046022,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"264","C03_T_03_I",2645,0.0155379157302315,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"265","C03_T_03_I",2655,0.0150547799283079,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"266","C03_T_03_I",2665,0.0149052046615628,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"267","C03_T_03_I",2675,0.0151733665721182,0,"El bolígraf de color lila","","","","4","<p>",3,"Catalan","target",3,"information","female",19
+"268","C03_T_03_I",2685,0.0160846599867831,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"269","C03_T_03_I",2695,0.0180243790357585,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"270","C03_T_03_I",2705,0.0213598964414749,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"271","C03_T_03_I",2715,0.0262837981478155,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"272","C03_T_03_I",2725,0.0330001944034507,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"273","C03_T_03_I",2735,0.0418193682192302,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"274","C03_T_03_I",2745,0.0530186830646088,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"275","C03_T_03_I",2755,0.0665772497100228,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"276","C03_T_03_I",2765,0.0820148728467339,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"277","C03_T_03_I",2775,0.098488871544421,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"278","C03_T_03_I",2785,0.11493026703235,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"279","C03_T_03_I",2795,0.13015306088423,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"280","C03_T_03_I",2805,0.142987189362131,0,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"281","C03_T_03_I",2815,0.152456284696017,230.579193115234,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"282","C03_T_03_I",2825,0.157881717934525,225.05192565918,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"283","C03_T_03_I",2835,0.158928534273141,224.440414428711,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"284","C03_T_03_I",2845,0.155645407025795,218.557632446289,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"285","C03_T_03_I",2855,0.148472100736581,222.652801513672,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"286","C03_T_03_I",2865,0.138185236306771,224.982635498047,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"287","C03_T_03_I",2875,0.125768321430605,228.35920715332,"El bolígraf de color lila","","","","5","",3,"Catalan","target",3,"information","female",19
+"288","C03_T_03_I",2885,0.112246710643959,225.56071472168,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"289","C03_T_03_I",2895,0.0985431552582159,229.6640625,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"290","C03_T_03_I",2905,0.0855827265302769,229.038848876953,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"291","C03_T_03_I",2915,0.0744006943392578,222.096786499023,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"292","C03_T_03_I",2925,0.0659027578477777,220.274963378906,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"293","C03_T_03_I",2935,0.0606560986770673,216.881149291992,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"294","C03_T_03_I",2945,0.0588105643585611,0,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"295","C03_T_03_I",2955,0.0602180239252113,0,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"296","C03_T_03_I",2965,0.0645796511205404,0,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"297","C03_T_03_I",2975,0.0713932761094029,0,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"298","C03_T_03_I",2985,0.0799135990308572,0,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"299","C03_T_03_I",2995,0.0893254372285466,208.913375854492,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"300","C03_T_03_I",3005,0.0989449970879365,213.919586181641,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"301","C03_T_03_I",3015,0.108134147879455,251.124542236328,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"302","C03_T_03_I",3025,0.116222826172485,419.484252929688,"El bolígraf de color lila","NC","","","5","",3,"Catalan","target",3,"information","female",19
+"303","C03_T_03_I",3035,0.122628986797274,324.609558105469,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"304","C03_T_03_I",3045,0.12712548753904,229.88557434082,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"305","C03_T_03_I",3055,0.130006959170783,204.794021606445,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"306","C03_T_03_I",3065,0.13173727052323,205.4716796875,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"307","C03_T_03_I",3075,0.132651795749409,201.223358154297,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"308","C03_T_03_I",3085,0.133060759711642,372.904998779297,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"309","C03_T_03_I",3095,0.133371563397061,429.747680664062,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"310","C03_T_03_I",3105,0.134009512789514,425.431610107422,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"311","C03_T_03_I",3115,0.135178624035584,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"312","C03_T_03_I",3125,0.136745667353485,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"313","C03_T_03_I",3135,0.138266071881783,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"314","C03_T_03_I",3145,0.13914412964065,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"315","C03_T_03_I",3155,0.13884711185807,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"316","C03_T_03_I",3165,0.137045504713386,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"317","C03_T_03_I",3175,0.133644531069898,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"318","C03_T_03_I",3185,0.128808053234792,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"319","C03_T_03_I",3195,0.122862114633919,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"320","C03_T_03_I",3205,0.116058562819892,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"321","C03_T_03_I",3215,0.10863969991736,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"322","C03_T_03_I",3225,0.100984686759238,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"323","C03_T_03_I",3235,0.0935312092094809,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"324","C03_T_03_I",3245,0.0865078174875016,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"325","C03_T_03_I",3255,0.0797693614745837,0,"El bolígraf de color lila","NC","","1","6","lor_pre",3,"Catalan","target",3,"information","female",19
+"326","C03_T_03_I",3265,0.073151961883608,0,"El bolígraf de color lila","","","","7","<p>",3,"Catalan","target",3,"information","female",19
+"327","C03_T_03_I",3275,0.0667416310694019,0,"El bolígraf de color lila","","","","7","<p>",3,"Catalan","target",3,"information","female",19
+"328","C03_T_03_I",3285,0.0607199001713622,0,"El bolígraf de color lila","","","","7","<p>",3,"Catalan","target",3,"information","female",19
+"329","C03_T_03_I",3295,0.0551723703158765,0,"El bolígraf de color lila","","","","7","<p>",3,"Catalan","target",3,"information","female",19
+"330","C03_T_03_I",3305,0.0500675604419911,0,"El bolígraf de color lila","","","","7","<p>",3,"Catalan","target",3,"information","female",19
+"331","C03_T_03_I",3315,0.0454209655735671,0,"El bolígraf de color lila","","","","7","<p>",3,"Catalan","target",3,"information","female",19
+"332","C03_T_03_I",3325,0.0413511746496779,0,"El bolígraf de color lila","","","","7","<p>",3,"Catalan","target",3,"information","female",19
+"333","C03_T_03_I",3335,0.0380359038757346,0,"El bolígraf de color lila","","","","7","<p>",3,"Catalan","target",3,"information","female",19
+"334","C03_T_03_I",3345,0.03564902049009,0,"El bolígraf de color lila","","","","7","<p>",3,"Catalan","target",3,"information","female",19
+"335","C03_T_03_I",3355,0.0343261736898891,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"336","C03_T_03_I",3365,0.0341421938683217,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"337","C03_T_03_I",3375,0.0350882236080223,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"338","C03_T_03_I",3385,0.0370541212019866,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"339","C03_T_03_I",3395,0.0398112328519071,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"340","C03_T_03_I",3405,0.0431760217239157,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"341","C03_T_03_I",3415,0.0471027281675283,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"342","C03_T_03_I",3425,0.051559071225375,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"343","C03_T_03_I",3435,0.0564803627335412,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"344","C03_T_03_I",3445,0.0618185571015851,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"345","C03_T_03_I",3455,0.0675201148914287,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"346","C03_T_03_I",3465,0.0734786515105041,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"347","C03_T_03_I",3475,0.0795488396995978,0,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"348","C03_T_03_I",3485,0.0854854890424253,200.043716430664,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"349","C03_T_03_I",3495,0.0909677581344201,203.645660400391,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"350","C03_T_03_I",3505,0.0958515570066708,204.544540405273,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"351","C03_T_03_I",3515,0.100125536424871,206.571929931641,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"352","C03_T_03_I",3525,0.10375779880065,206.410003662109,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"353","C03_T_03_I",3535,0.106643974779841,204.679000854492,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"354","C03_T_03_I",3545,0.108611039235839,202.684646606445,"El bolígraf de color lila","A","1","2","8","li",3,"Catalan","target",3,"information","female",19
+"355","C03_T_03_I",3555,0.10948300662711,199.560211181641,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"356","C03_T_03_I",3565,0.109161550898274,194.165451049805,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"357","C03_T_03_I",3575,0.107697100373629,0,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"358","C03_T_03_I",3585,0.105225853907116,192.147109985352,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"359","C03_T_03_I",3595,0.101968620321722,192.296661376953,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"360","C03_T_03_I",3605,0.0981763664261115,184.596557617188,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"361","C03_T_03_I",3615,0.0939682942973198,184.339859008789,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"362","C03_T_03_I",3625,0.08938613063004,179.168960571289,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"363","C03_T_03_I",3635,0.0845312636836251,174.102096557617,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"364","C03_T_03_I",3645,0.0795302397196817,0,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"365","C03_T_03_I",3655,0.0744794857221912,0,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"366","C03_T_03_I",3665,0.0694569475826524,0,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"367","C03_T_03_I",3675,0.0645494940329283,0,"El bolígraf de color lila","A","1",NA,"9","post",3,"Catalan","target",3,"information","female",19
+"368","C03_T_03_I",3685,0.0599140559179985,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"369","C03_T_03_I",3695,0.0557336024607357,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"370","C03_T_03_I",3705,0.0519991146017221,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"371","C03_T_03_I",3715,0.0485612889785666,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"372","C03_T_03_I",3725,0.0452804499494869,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"373","C03_T_03_I",3735,0.0420815738019605,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"374","C03_T_03_I",3745,0.0390031461499983,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"375","C03_T_03_I",3755,0.0361405643441207,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"376","C03_T_03_I",3765,0.0335308683850147,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"377","C03_T_03_I",3775,0.0311225245074818,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"378","C03_T_03_I",3785,0.0288795264372002,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"379","C03_T_03_I",3795,0.0267772005035222,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"380","C03_T_03_I",3805,0.024761539525162,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"381","C03_T_03_I",3815,0.0228137919673444,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"382","C03_T_03_I",3825,0.0209751840001648,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"383","C03_T_03_I",3835,0.0192646016034399,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"384","C03_T_03_I",3845,0.0176684049645542,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"385","C03_T_03_I",3855,0.0161960916963296,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"386","C03_T_03_I",3865,0.0148804031031245,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"387","C03_T_03_I",3875,0.0137340439684674,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"388","C03_T_03_I",3885,0.0127594535758826,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"389","C03_T_03_I",3895,0.0119807530718456,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"390","C03_T_03_I",3905,0.0114156472383135,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"391","C03_T_03_I",3915,0.0110402740646268,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"392","C03_T_03_I",3925,0.0107994405424805,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"393","C03_T_03_I",3935,0.0106364227257658,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"394","C03_T_03_I",3945,0.0105088947676531,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"395","C03_T_03_I",3955,0.0103858404409903,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"396","C03_T_03_I",3965,0.0102409033105081,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"397","C03_T_03_I",3975,0.0100665139838536,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"398","C03_T_03_I",3985,0.00987709352500654,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"399","C03_T_03_I",3995,0.00969567870931522,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"400","C03_T_03_I",4005,0.00954442073032323,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"401","C03_T_03_I",4015,0.00943935896012867,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"402","C03_T_03_I",4025,0.00937845404378218,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"403","C03_T_03_I",4035,0.00934795487435341,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"404","C03_T_03_I",4045,0.00933677563479412,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"405","C03_T_03_I",4055,0.0093417921675372,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"406","C03_T_03_I",4065,0.00936905846614956,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"407","C03_T_03_I",4075,0.00942458134872103,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"408","C03_T_03_I",4085,0.00950502194581563,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"409","C03_T_03_I",4095,0.00960302201592281,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"410","C03_T_03_I",4105,0.00971378071016452,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"411","C03_T_03_I",4115,0.00983271395028456,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"412","C03_T_03_I",4125,0.00994764781838952,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"413","C03_T_03_I",4135,0.0100431314746106,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"414","C03_T_03_I",4145,0.0101086459066759,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"415","C03_T_03_I",4155,0.0101430395836101,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"416","C03_T_03_I",4165,0.0101459805003235,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"417","C03_T_03_I",4175,0.0101053026673706,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"418","C03_T_03_I",4185,0.0100008021526526,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"419","C03_T_03_I",4195,0.00982412362382733,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"420","C03_T_03_I",4205,0.00958342448487371,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"421","C03_T_03_I",4215,0.00929753276988562,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"422","C03_T_03_I",4225,0.00899431535862823,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"423","C03_T_03_I",4235,0.00869862916439894,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"424","C03_T_03_I",4245,0.00843247359776552,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"425","C03_T_03_I",4255,0.00821271964909484,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"426","C03_T_03_I",4265,0.00804019969461995,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"427","C03_T_03_I",4275,0.00790889053947391,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"428","C03_T_03_I",4285,0.00782034702413375,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"429","C03_T_03_I",4295,0.00777331374873077,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"430","C03_T_03_I",4305,0.00775359560761621,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"431","C03_T_03_I",4315,0.00774965668051559,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"432","C03_T_03_I",4325,0.00775906249914144,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"433","C03_T_03_I",4335,0.00777871835619172,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"434","C03_T_03_I",4345,0.00780369529829492,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"435","C03_T_03_I",4355,0.00781751635995076,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"436","C03_T_03_I",4365,0.00780491272970221,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"437","C03_T_03_I",4375,0.00776512456978528,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"438","C03_T_03_I",4385,0.00770448148407544,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"439","C03_T_03_I",4395,0.00762676854089243,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"440","C03_T_03_I",4405,0.00752846446564805,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"441","C03_T_03_I",4415,0.00740745930410992,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"442","C03_T_03_I",4425,0.00727037645610713,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"443","C03_T_03_I",4435,0.00713881013742267,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"444","C03_T_03_I",4445,0.00704703115691623,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"445","C03_T_03_I",4455,0.00702748900744786,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"446","C03_T_03_I",4465,0.00710573409097093,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"447","C03_T_03_I",4475,0.0073010810769057,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"448","C03_T_03_I",4485,0.00761000844156151,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"449","C03_T_03_I",4495,0.008009118453693,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"450","C03_T_03_I",4505,0.00847539323727226,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"451","C03_T_03_I",4515,0.00897678380381626,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"452","C03_T_03_I",4525,0.00946989171077814,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"453","C03_T_03_I",4535,0.00991060056125785,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"454","C03_T_03_I",4545,0.0102588075534092,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"455","C03_T_03_I",4555,0.0104922827438289,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"456","C03_T_03_I",4565,0.0105969335595365,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"457","C03_T_03_I",4575,0.0105625741960553,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"458","C03_T_03_I",4585,0.0052551756412432,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"459","C03_T_03_I",4595,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"460","C03_T_03_I",4605,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"461","C03_T_03_I",4615,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"462","C03_T_03_I",4625,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"463","C03_T_03_I",4635,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"464","C03_T_03_I",4645,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"465","C03_T_03_I",4655,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"466","C03_T_03_I",4665,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
+"467","C03_T_03_I",4675,0,0,NA,NA,NA,NA,NA,NA,3,"Catalan","target",3,"information","female",19
