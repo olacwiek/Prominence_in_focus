@@ -1,0 +1,292 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 9.184 
+tiers? <exists> 
+size = 24 
+item []: 
+    item [1]:
+        class = "IntervalTier"
+        name = "Man_Apex_id"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [2]:
+        class = "IntervalTier"
+        name = "Word"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 3
+        intervals [1]:
+            xmin = 6.053
+            xmax = 7.04700000000003
+            text = "Adj"
+        intervals [2]:
+            xmin = 7.04700000000003
+            xmax = 7.33799999999997
+            text = ""
+        intervals [3]:
+            xmin = 7.33799999999997
+            xmax = 8.02199999999993
+            text = "N"
+    item [3]:
+        class = "IntervalTier"
+        name = "Label"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 1
+            xmax = 8.18399999999997
+            text = "G18_T_34_B"
+    item [4]:
+        class = "IntervalTier"
+        name = "Iconicity"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [5]:
+        class = "IntervalTier"
+        name = "Manual_GUnit"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [6]:
+        class = "IntervalTier"
+        name = "FocCondition"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 1
+            xmax = 8.18399999999997
+            text = "Background"
+    item [7]:
+        class = "IntervalTier"
+        name = "Prosodic_Prom"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 3
+        intervals [1]:
+            xmin = 6.053
+            xmax = 7.04700000000003
+            text = "2"
+        intervals [2]:
+            xmin = 7.04700000000003
+            xmax = 7.33799999999997
+            text = ""
+        intervals [3]:
+            xmin = 7.33799999999997
+            xmax = 8.02199999999993
+            text = "2"
+    item [8]:
+        class = "IntervalTier"
+        name = "Syll"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 6
+        intervals [1]:
+            xmin = 6.053
+            xmax = 6.18999999999994
+            text = "pre"
+        intervals [2]:
+            xmin = 6.18999999999994
+            xmax = 6.61799999999994
+            text = "ʁɔʃ"
+        intervals [3]:
+            xmin = 6.61799999999994
+            xmax = 7.04700000000003
+            text = "post_pre"
+        intervals [4]:
+            xmin = 7.04700000000003
+            xmax = 7.33799999999997
+            text = "<p>"
+        intervals [5]:
+            xmin = 7.33799999999997
+            xmax = 7.77300000000002
+            text = "na"
+        intervals [6]:
+            xmin = 7.77300000000002
+            xmax = 8.02199999999993
+            text = "post"
+    item [9]:
+        class = "IntervalTier"
+        name = "Man_Apex"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [10]:
+        class = "IntervalTier"
+        name = "Metaphoricity"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [11]:
+        class = "IntervalTier"
+        name = "Comments"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [12]:
+        class = "IntervalTier"
+        name = "EyebrowMovements"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [13]:
+        class = "IntervalTier"
+        name = "Man_GPhase"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [14]:
+        class = "IntervalTier"
+        name = "Head_Movement_Type"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [15]:
+        class = "IntervalTier"
+        name = "Deixis"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [16]:
+        class = "IntervalTier"
+        name = "Utterance"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [17]:
+        class = "IntervalTier"
+        name = "PA"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 3
+        intervals [1]:
+            xmin = 6.43499999999995
+            xmax = 6.44499999999994
+            text = "L+H*"
+        intervals [2]:
+            xmin = 6.44499999999994
+            xmax = 7.52800000000002
+            text = ""
+        intervals [3]:
+            xmin = 7.52800000000002
+            xmax = 7.53800000000001
+            text = "!H*"
+    item [18]:
+        class = "IntervalTier"
+        name = "Non_referential"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [19]:
+        class = "IntervalTier"
+        name = "TP"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 6.053
+            xmax = 8.02199999999993
+            text = "NP"
+    item [20]:
+        class = "IntervalTier"
+        name = "Gestural_Prom"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [21]:
+        class = "IntervalTier"
+        name = "Man_Articulator_I"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [22]:
+        class = "IntervalTier"
+        name = "Semantic_id"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [23]:
+        class = "IntervalTier"
+        name = "Head_TrajDirection"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""
+    item [24]:
+        class = "IntervalTier"
+        name = "Head_Apex"
+        xmin = 0
+        xmax = 9.18399999999997
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 9.18399999999997
+            text = ""

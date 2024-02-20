@@ -1,0 +1,372 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 4.499 
+tiers? <exists> 
+size = 28 
+item []: 
+    item [1]:
+        class = "IntervalTier"
+        name = "Man_Apex_id"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [2]:
+        class = "IntervalTier"
+        name = "Word"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 4
+        intervals [1]:
+            xmin = 2.178
+            xmax = 2.66999999999999
+            text = "N"
+        intervals [2]:
+            xmin = 2.66999999999999
+            xmax = 2.791
+            text = ""
+        intervals [3]:
+            xmin = 2.791
+            xmax = 3.07899999999998
+            text = "NC"
+        intervals [4]:
+            xmin = 3.07899999999998
+            xmax = 3.499
+            text = "A"
+    item [3]:
+        class = "IntervalTier"
+        name = "Label"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 1
+            xmax = 3.499
+            text = "C18_T_04_C"
+    item [4]:
+        class = "IntervalTier"
+        name = "Iconicity"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [5]:
+        class = "IntervalTier"
+        name = "Comments-1"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [6]:
+        class = "IntervalTier"
+        name = "Manual_GUnit"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [7]:
+        class = "IntervalTier"
+        name = "FocCondition"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 1
+            xmax = 3.499
+            text = "Contrastive Presupposition Focus"
+    item [8]:
+        class = "IntervalTier"
+        name = "Prosodic_Prom"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 4
+        intervals [1]:
+            xmin = 2.404
+            xmax = 2.53
+            text = "2"
+        intervals [2]:
+            xmin = 2.53
+            xmax = 2.91399999999999
+            text = ""
+        intervals [3]:
+            xmin = 2.91399999999999
+            xmax = 3.07899999999998
+            text = "2"
+        intervals [4]:
+            xmin = 3.07899999999998
+            xmax = 3.251
+            text = "2"
+    item [9]:
+        class = "IntervalTier"
+        name = "Syll"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 7
+        intervals [1]:
+            xmin = 2.178
+            xmax = 2.404
+            text = "pre"
+        intervals [2]:
+            xmin = 2.404
+            xmax = 2.53
+            text = "pel"
+        intervals [3]:
+            xmin = 2.53
+            xmax = 2.66999999999999
+            text = "post"
+        intervals [4]:
+            xmin = 2.66999999999999
+            xmax = 2.91399999999999
+            text = ""
+        intervals [5]:
+            xmin = 2.91399999999999
+            xmax = 3.07899999999998
+            text = "lo_pre"
+        intervals [6]:
+            xmin = 3.07899999999998
+            xmax = 3.251
+            text = "ne"
+        intervals [7]:
+            xmin = 3.251
+            xmax = 3.499
+            text = "post"
+    item [10]:
+        class = "IntervalTier"
+        name = "Man_Apex"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [11]:
+        class = "IntervalTier"
+        name = "Prosodic_Prom_2"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 4
+        intervals [1]:
+            xmin = 2.404
+            xmax = 2.53
+            text = "2W"
+        intervals [2]:
+            xmin = 2.53
+            xmax = 2.91399999999999
+            text = ""
+        intervals [3]:
+            xmin = 2.91399999999999
+            xmax = 3.07899999999998
+            text = "2W"
+        intervals [4]:
+            xmin = 3.07899999999998
+            xmax = 3.251
+            text = "2S"
+    item [12]:
+        class = "IntervalTier"
+        name = "Metaphoricity"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [13]:
+        class = "IntervalTier"
+        name = "Comments"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [14]:
+        class = "IntervalTier"
+        name = "EyebrowMovements"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [15]:
+        class = "IntervalTier"
+        name = "Man_GPhase"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [16]:
+        class = "IntervalTier"
+        name = "Head_Movement_Type"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [17]:
+        class = "IntervalTier"
+        name = "Deixis"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [18]:
+        class = "IntervalTier"
+        name = "Utterance"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 1
+            xmax = 3.499
+            text = "Maria, agafa l'espelma de color negre"
+    item [19]:
+        class = "IntervalTier"
+        name = "PA"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 7
+        intervals [1]:
+            xmin = 2.452
+            xmax = 2.49199999999999
+            text = "H+L*"
+        intervals [2]:
+            xmin = 2.49199999999999
+            xmax = 2.98499999999999
+            text = ""
+        intervals [3]:
+            xmin = 2.98499999999999
+            xmax = 3.02500000000001
+            text = "H+L*"
+        intervals [4]:
+            xmin = 3.02500000000001
+            xmax = 3.184
+            text = ""
+        intervals [5]:
+            xmin = 3.184
+            xmax = 3.22400000000002
+            text = "L*"
+        intervals [6]:
+            xmin = 3.22400000000002
+            xmax = 3.499
+            text = ""
+        intervals [7]:
+            xmin = 3.499
+            xmax = 3.53900000000002
+            text = "L%"
+    item [20]:
+        class = "IntervalTier"
+        name = "Disfluencies"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [21]:
+        class = "IntervalTier"
+        name = "Item_num"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 1
+            xmax = 3.499
+            text = "item 4"
+    item [22]:
+        class = "IntervalTier"
+        name = "Non_referential"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [23]:
+        class = "IntervalTier"
+        name = "TP"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 2.178
+            xmax = 3.499
+            text = "L'espelma de color negre"
+    item [24]:
+        class = "IntervalTier"
+        name = "Gestural_Prom"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [25]:
+        class = "IntervalTier"
+        name = "Man_Articulator_I"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [26]:
+        class = "IntervalTier"
+        name = "Semantic_id"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [27]:
+        class = "IntervalTier"
+        name = "Head_TrajDirection"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""
+    item [28]:
+        class = "IntervalTier"
+        name = "Head_Apex"
+        xmin = 0
+        xmax = 4.499
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.499
+            text = ""

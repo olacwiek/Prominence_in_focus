@@ -110,7 +110,7 @@ library(shinystan)
 
 
 ```{r read metadata, echo=TRUE, message=FALSE, warning=FALSE}
-participant_info <- read_delim(paste0(data,"ParticipantInfoFocProd.csv"), delim = "\t")
+participant_info <- read_delim(paste0(data,"ParticipantInfo_GERCAT.csv"), delim = ";")
 ```
 
 
@@ -267,7 +267,7 @@ Now, we loop through the same list of files that we used for .wav extraction and
 for (wavFile in wavFiles) {
   
   # Generate the corresponding TextGrid file name
-  textGridFile <- sub("\\.wav$", ".TextGrid", wavFile)
+  textGridFile <- sub("\\.wav$", ".TextGrid", wavFile[])
   
   # Check if the TextGrid file exists
   if (file.exists(textGridFile)) {
@@ -310,18 +310,18 @@ for (wavFile in wavFiles) {
                                                  xmax = xmax - startTime))
             
             # Filter rows where xmin is smaller than or equal to zero
-            newTgData <- newTgData %>% filter(xmin <= 0)
+            newTgData <- newTgData %>% dplyr::filter(xmin <= 0)
             
             # Keep only the row with the largest xmin value if there are multiple rows
             newTgData <- newTgData %>% 
               group_by(tier_name) %>% 
-              filter(xmin == max(xmin)) %>% 
+              dplyr::filter(xmin == max(xmin)) %>% 
               ungroup()
           }
           
           # Time normalization missing tiers
           newTgData$xmin <- 0
-          newTgData$xmax <- max(originalAnnotations$xmax) - startTime
+          newTgData$xmax <- endTime - startTime
           
           # Copy annotations from originalAnnotations
           newTgData <- rbind(newTgData, mutate(originalAnnotations, 
@@ -427,6 +427,8 @@ This part is copied from FLESH original [project_Rhyme](https://github.com/sarka
 ## Amplitude envelope extraction
 
 This part was taken from the [Envision Bootcamp](https://wimpouw.github.io/EnvisionBootcamp2021/extract_AmplitudeEnvelope_Rmarkdown.html) and cleaned for clarity.
+
+The function takes time to run, so adjust your expectations accordingly.
 
 ```{r extractENV, echo=TRUE, message=FALSE, warning=FALSE}
 # Set whether to overwrite existing files
@@ -718,7 +720,7 @@ butter.it <- function(x, samplingrate = 100, order = 2, lowpasscutoff = 30) {
 # List of tier names you want to extract
 tiers_to_extract <- c("TP", "Word", "Gestural_Prom", "Prosodic_Prom", "Syll")
 
-cols_to_load <- c("Participant", "Language", "Item_type", "Item_num", "Focus", "Gender", "Age")
+cols_to_load <- c("Participant", "Language", "Item_type", "Item_num", "Focus", "Gender", "Age", "Native_language")
 
 ############### Merging ###################
 
@@ -848,6 +850,25 @@ mode_function <- function(x) {
   return(mode_val)
 }
 
+mode_function <- function(x) {
+  uniq_x <- na.omit(x)  # Remove NAs
+  if (length(uniq_x) == 0) {
+    return(NA)  # Return NA if all values are NA
+  }
+  counts <- table(uniq_x)
+  max_count <- max(counts)
+  mode_vals <- names(counts[counts == max_count])
+  if (length(mode_vals) > 1) {
+    mode_val <- mode_vals[1]  # Select the first mode in case of ties
+  } else {
+    mode_val <- mode_vals
+  }
+  if (is.na(mode_val) && sum(is.na(x)) > max_count) {
+    return(NA)  # Return NA if NAs are more frequent
+  }
+  return(mode_val)
+}
+
 # Loop through each CSV file and process it
 for (csv_file in csv_files) {
   # Read the CSV file
@@ -856,7 +877,7 @@ for (csv_file in csv_files) {
   # Filter and summarize Syll
   test_intervals <- 
     test %>%
-    filter(!is.na(Syll) & Syll != "") %>%
+    dplyr::filter(!is.na(Syll) & Syll != "") %>%
     group_by(Syll_num) %>%
     summarize(min_time = min(time_ms),
               max_time = max(time_ms)) %>%
@@ -926,9 +947,11 @@ We will only look at data in the target items.
 
 ```{r target items only, echo=TRUE, message=FALSE, warning=FALSE}
 df <- final_result %>%
-  filter(Item_type == "target") #%>%
+  dplyr::filter(Item_type == "target") #%>%
   #subset(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>") & is.na(Prosodic_Prom)))
 
+# Save 'df' as a CSV file
+write.csv(df, paste0(data, "df.csv"), row.names = FALSE)
 
 ```
 

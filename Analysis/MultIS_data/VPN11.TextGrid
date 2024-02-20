@@ -503,7 +503,7 @@ item []:
         intervals [24]:
             xmin = 76.54 
             xmax = 79.464 
-            text = "G11_P _01_I" 
+            text = "G11_P_01_I" 
         intervals [25]:
             xmin = 79.464 
             xmax = 79.54 
@@ -527,7 +527,7 @@ item []:
         intervals [30]:
             xmin = 97.98 
             xmax = 99.88 
-            text = "G11_P_02_F" 
+            text = "Fehler" 
         intervals [31]:
             xmin = 99.88 
             xmax = 101.58 
@@ -559,7 +559,7 @@ item []:
         intervals [38]:
             xmin = 119.58 
             xmax = 121.624 
-            text = "G11_P_03_I" 
+            text = "Fehler" 
         intervals [39]:
             xmin = 121.624 
             xmax = 122.3 

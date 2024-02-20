@@ -1,0 +1,450 @@
+File type = "ooTextFile"
+Object class = "TextGrid"
+
+xmin = 0 
+xmax = 4.517 
+tiers? <exists> 
+size = 27 
+item []: 
+    item [1]:
+        class = "IntervalTier"
+        name = "Man_Apex_id"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.517
+            text = ""
+    item [2]:
+        class = "IntervalTier"
+        name = "Word"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 3
+        intervals [1]:
+            xmin = 2.47699999999998
+            xmax = 2.91899999999998
+            text = "N"
+        intervals [2]:
+            xmin = 2.91899999999998
+            xmax = 3.14600000000002
+            text = ""
+        intervals [3]:
+            xmin = 3.14600000000002
+            xmax = 3.517
+            text = "A"
+    item [3]:
+        class = "IntervalTier"
+        name = "Label"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 1
+            xmax = 3.517
+            text = "C01_T_11_C"
+    item [4]:
+        class = "IntervalTier"
+        name = "Iconicity"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 3
+        intervals [1]:
+            xmin = 3.06099999999998
+            xmax = 3.42099999999999
+            text = "Iconic"
+        intervals [2]:
+            xmin = 3.42099999999999
+            xmax = 3.56
+            text = "Iconic"
+        intervals [3]:
+            xmin = 3.56
+            xmax = 3.79899999999998
+            text = "Iconic"
+    item [5]:
+        class = "IntervalTier"
+        name = "Comments-1"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.517
+            text = ""
+    item [6]:
+        class = "IntervalTier"
+        name = "Emblem"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.517
+            text = ""
+    item [7]:
+        class = "IntervalTier"
+        name = "Manual_GUnit"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0.935999999999979
+            xmax = 4.416
+            text = ""
+    item [8]:
+        class = "IntervalTier"
+        name = "FocCondition"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 1
+            xmax = 3.517
+            text = "Contrastive Presupposition Focus"
+    item [9]:
+        class = "IntervalTier"
+        name = "Prosodic_Prom"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 3
+        intervals [1]:
+            xmin = 2.572
+            xmax = 2.72500000000002
+            text = "2"
+        intervals [2]:
+            xmin = 2.72500000000002
+            xmax = 3.14600000000002
+            text = ""
+        intervals [3]:
+            xmin = 3.14600000000002
+            xmax = 3.36599999999999
+            text = "3"
+    item [10]:
+        class = "IntervalTier"
+        name = "Syll"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 6
+        intervals [1]:
+            xmin = 2.47699999999998
+            xmax = 2.572
+            text = "pre"
+        intervals [2]:
+            xmin = 2.572
+            xmax = 2.72500000000002
+            text = "que"
+        intervals [3]:
+            xmin = 2.72500000000002
+            xmax = 2.91899999999998
+            text = "post"
+        intervals [4]:
+            xmin = 2.91899999999998
+            xmax = 3.14600000000002
+            text = "<p>"
+        intervals [5]:
+            xmin = 3.14600000000002
+            xmax = 3.36599999999999
+            text = "ne"
+        intervals [6]:
+            xmin = 3.36599999999999
+            xmax = 3.517
+            text = "post"
+    item [11]:
+        class = "IntervalTier"
+        name = "Man_Apex"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.517
+            text = ""
+    item [12]:
+        class = "IntervalTier"
+        name = "Prosodic_Prom_2"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 3
+        intervals [1]:
+            xmin = 2.572
+            xmax = 2.72500000000002
+            text = "2W"
+        intervals [2]:
+            xmin = 2.72500000000002
+            xmax = 3.14600000000002
+            text = ""
+        intervals [3]:
+            xmin = 3.14600000000002
+            xmax = 3.36599999999999
+            text = "3"
+    item [13]:
+        class = "IntervalTier"
+        name = "Metaphoricity"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.517
+            text = ""
+    item [14]:
+        class = "IntervalTier"
+        name = "Comments"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.517
+            text = ""
+    item [15]:
+        class = "IntervalTier"
+        name = "EyebrowMovements"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.517
+            text = ""
+    item [16]:
+        class = "IntervalTier"
+        name = "Man_GPhase"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 11
+        intervals [1]:
+            xmin = 0.935999999999979
+            xmax = 1.24399999999997
+            text = "preparation"
+        intervals [2]:
+            xmin = 1.24399999999997
+            xmax = 1.45699999999999
+            text = "stroke"
+        intervals [3]:
+            xmin = 1.45699999999999
+            xmax = 1.59499999999997
+            text = "hold"
+        intervals [4]:
+            xmin = 1.59499999999997
+            xmax = 1.74599999999998
+            text = "preparation"
+        intervals [5]:
+            xmin = 1.74599999999998
+            xmax = 2.05700000000002
+            text = "stroke"
+        intervals [6]:
+            xmin = 2.05700000000002
+            xmax = 2.27299999999997
+            text = "hold"
+        intervals [7]:
+            xmin = 2.27299999999997
+            xmax = 2.42500000000001
+            text = "preparation"
+        intervals [8]:
+            xmin = 2.42500000000001
+            xmax = 2.78499999999997
+            text = "stroke"
+        intervals [9]:
+            xmin = 2.78499999999997
+            xmax = 3.06099999999998
+            text = "preparation"
+        intervals [10]:
+            xmin = 3.06099999999998
+            xmax = 3.86899999999997
+            text = "stroke"
+        intervals [11]:
+            xmin = 3.86899999999997
+            xmax = 4.416
+            text = "recovery"
+    item [17]:
+        class = "IntervalTier"
+        name = "Head_Movement_Type"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 3.15300000000002
+            xmax = 3.44799999999998
+            text = "nod"
+    item [18]:
+        class = "IntervalTier"
+        name = "Deixis"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.517
+            text = ""
+    item [19]:
+        class = "IntervalTier"
+        name = "Utterance"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 1
+            xmax = 3.517
+            text = "Molt bé, Maria, has d'agafar jaqueta negra"
+    item [20]:
+        class = "IntervalTier"
+        name = "PA"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 7
+        intervals [1]:
+            xmin = 2.65600000000001
+            xmax = 2.69599999999997
+            text = "L+H*"
+        intervals [2]:
+            xmin = 2.69599999999997
+            xmax = 2.91899999999998
+            text = ""
+        intervals [3]:
+            xmin = 2.91899999999998
+            xmax = 2.959
+            text = "H-"
+        intervals [4]:
+            xmin = 2.959
+            xmax = 3.27499999999998
+            text = ""
+        intervals [5]:
+            xmin = 3.27499999999998
+            xmax = 3.315
+            text = "H+L*"
+        intervals [6]:
+            xmin = 3.315
+            xmax = 3.517
+            text = ""
+        intervals [7]:
+            xmin = 3.517
+            xmax = 3.55700000000002
+            text = "L%"
+    item [21]:
+        class = "IntervalTier"
+        name = "Disfluencies"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0
+            xmax = 4.517
+            text = ""
+    item [22]:
+        class = "IntervalTier"
+        name = "Item_num"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 1
+            xmax = 3.517
+            text = "item 11"
+    item [23]:
+        class = "IntervalTier"
+        name = "Non_referential"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 5
+        intervals [1]:
+            xmin = 1.24399999999997
+            xmax = 1.45699999999999
+            text = "Non-referential"
+        intervals [2]:
+            xmin = 1.45699999999999
+            xmax = 1.74599999999998
+            text = ""
+        intervals [3]:
+            xmin = 1.74599999999998
+            xmax = 2.05700000000002
+            text = "Non-referential"
+        intervals [4]:
+            xmin = 2.05700000000002
+            xmax = 2.42500000000001
+            text = ""
+        intervals [5]:
+            xmin = 2.42500000000001
+            xmax = 2.78499999999997
+            text = "Non-referential"
+    item [24]:
+        class = "IntervalTier"
+        name = "TP"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 2.36599999999999
+            xmax = 3.517
+            text = "La jaqueta negra"
+    item [25]:
+        class = "IntervalTier"
+        name = "Gestural_Prom"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 3
+        intervals [1]:
+            xmin = 2.47699999999998
+            xmax = 2.91899999999998
+            text = "1"
+        intervals [2]:
+            xmin = 2.91899999999998
+            xmax = 3.14600000000002
+            text = ""
+        intervals [3]:
+            xmin = 3.14600000000002
+            xmax = 3.517
+            text = "2"
+    item [26]:
+        class = "IntervalTier"
+        name = "Man_Articulator_I"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 1
+        intervals [1]:
+            xmin = 0.935999999999979
+            xmax = 4.416
+            text = "BH-R"
+    item [27]:
+        class = "IntervalTier"
+        name = "Semantic_id"
+        xmin = 0
+        xmax = 4.517
+        intervals: size = 9
+        intervals [1]:
+            xmin = 1.24399999999997
+            xmax = 1.45699999999999
+            text = ""
+        intervals [2]:
+            xmin = 1.45699999999999
+            xmax = 1.74599999999998
+            text = ""
+        intervals [3]:
+            xmin = 1.74599999999998
+            xmax = 2.05700000000002
+            text = ""
+        intervals [4]:
+            xmin = 2.05700000000002
+            xmax = 2.42500000000001
+            text = ""
+        intervals [5]:
+            xmin = 2.42500000000001
+            xmax = 2.78499999999997
+            text = ""
+        intervals [6]:
+            xmin = 2.78499999999997
+            xmax = 3.06099999999998
+            text = ""
+        intervals [7]:
+            xmin = 3.06099999999998
+            xmax = 3.42099999999999
+            text = ""
+        intervals [8]:
+            xmin = 3.42099999999999
+            xmax = 3.56
+            text = ""
+        intervals [9]:
+            xmin = 3.56
+            xmax = 3.79899999999998
+            text = ""
