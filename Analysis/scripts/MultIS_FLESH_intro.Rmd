@@ -949,21 +949,94 @@ We will only look at data in the target items.
 df <- final_result %>%
   dplyr::filter(Item_type == "target") #%>%
   #subset(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>") & is.na(Prosodic_Prom)))
+```
 
+Correct the times.
+
+```{r correct time, echo=TRUE, message=FALSE, warning=FALSE}
+# Initialize an empty data frame to store all txtgrds data
+combined_txtgrds <- data.frame()
+
+allfiles <- unique(df$File)
+
+for (onefile in allfiles) {
+  fname <- paste0(audiodata, onefile, '.TextGrid')
+  
+  txtgrds <- readtextgrid::read_textgrid(fname)
+  
+  txtgrds <- txtgrds %>% 
+    filter(tier_name == "Syll")
+    
+  # Append the current txtgrds to the combined data frame
+  combined_txtgrds <- bind_rows(combined_txtgrds, txtgrds)
+}
+
+rm(allfiles, onefile)
+
+# After the loop, you can perform the final_result manipulation
+df <- df %>%
+  left_join(combined_txtgrds %>% 
+              mutate(file = gsub(".TextGrid", "", file),
+                     xmin = xmin * 1000,  # Convert seconds to milliseconds
+                     xmax = xmax * 1000) %>%  # Convert seconds to milliseconds
+              select(file, annotation_num, xmin, xmax), 
+            by = c("File" = "file", "Syll_num" = "annotation_num")) %>%
+  mutate(min_time = coalesce(xmin, min_time),  # Use xmin if available, else min_time
+         max_time = coalesce(xmax, max_time),  # Use xmax if available, else max_time
+         duration = ifelse(is.na(min_time) | is.na(max_time), NA, max_time - min_time)) %>%
+  select(-xmin, -xmax)  # Deselect specified variables
+
+
+```
+
+
+```{r save df, echo=TRUE, message=FALSE, warning=FALSE}
 # Save 'df' as a CSV file
 write.csv(df, paste0(data, "df.csv"), row.names = FALSE)
 
+df <- read.csv(paste0(data, "df.csv"))
+```
+
+
+## NAs prior to outlier removal
+
+```{r calculate NAs, echo=TRUE, message=FALSE, warning=FALSE}
+# Columns to process
+columns_to_process <- c("duration", "F0_mean", "F0_max", "F0_min", "F0_range", 
+                        "env_mean", "env_max", "env_min", "env_range"
+                        )
+
+# Function to calculate raw number and proportion of NAs
+calculate_na_stats <- function(df, columns) {
+  na_counts <- colSums(is.na(df[, columns]))
+  total_counts <- nrow(df)
+  proportions <- na_counts / total_counts * 100
+  return(data.frame("NA_Count" = na_counts, "Proportion" = proportions))
+}
+
+# Initial NA stats
+na_stats_before <- calculate_na_stats(df, columns_to_process)
+print(na_stats_before)
+```
+
+Relace Inf values.
+
+```{r replace inf, echo=TRUE, message=FALSE, warning=FALSE}
+# Loop through each column and replace Inf and -Inf with NA
+for (col_name in columns_to_process) {
+  # Replace Inf and -Inf with NA
+  df[[col_name]][df[[col_name]] == Inf | df[[col_name]] == -Inf] <- NA
+}
+
+# NA stats after replacing Inf and -Inf
+na_stats_after_replacement <- calculate_na_stats(df, columns_to_process)
+print(na_stats_after_replacement)
 ```
 
 
 ## Outliers
 
 ```{r outliers, eval=FALSE, echo=TRUE, message=FALSE, warning=FALSE}
-# Columns to process
-columns_to_process <- c("duration", "F0_mean", "F0_max", "F0_min", "F0_range", 
-                        "env_mean", "env_max", "env_min", "env_range"
-                        )
-
 # Initialize a list to store outlier information
 outliers_info <- list()
 
@@ -1001,11 +1074,21 @@ outliers_summary <- data.frame(t(sapply(outliers_info, unlist)))
 colnames(outliers_summary) <- c("N_outliers", "Prop_outliers", "Mean_outliers", "Mean_with_outliers", "Mean_without_outliers")
 
 # Remove unnecessary variables
-rm(columns_to_process, outliers_info, Q1, Q3, lower_bound, upper_bound, IQR, col_name)
+rm(outliers_info, Q1, Q3, lower_bound, upper_bound, IQR, col_name)
 
 # Print the summary table
 print(outliers_summary)
 
+```
+
+Check NAs after all removals
+
+```{r NAs after all, echo=TRUE, message=FALSE, warning=FALSE}
+# NA stats after outlier removal
+na_stats_after_outliers <- calculate_na_stats(df, columns_to_process)
+print(na_stats_after_outliers)
+
+rm(columns_to_process)
 ```
 
 # Descriptive statistics
@@ -1017,7 +1100,21 @@ For some plots, we also need a subset of only target syllables.
 ```{r target sylls only, echo=TRUE, message=FALSE, warning=FALSE}
 # Create subset without pre and post-tonic
 df_targets <- df %>%
-  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>")))
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>")))
+```
+
+Change inconsistencies in spelling.
+
+```{r correct syll, echo=TRUE, message=FALSE, warning=FALSE}
+# Update df with modified 'Syll' values
+df <- df %>%
+  mutate(Syll = case_when(
+    Syll == "Pre" ~ "pre",
+    Syll == "Post" ~ "post",
+    Syll == "post_post" ~ "post_pre",
+    Syll == "post_pre " ~ "post_pre", # Remove trailing space
+    TRUE ~ Syll # Keep other values as they are
+  ))
 ```
 
 ## Frequencies and proportions
@@ -1026,7 +1123,7 @@ How many target syllables do we have per language?
 
 ```{r sylls per lang, echo=TRUE, message=FALSE, warning=FALSE}
 df %>%
-  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>"))) %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
   group_by(Language) %>%
   summarize(Cumulative_Count = n())
 ```
@@ -1036,7 +1133,7 @@ How are they distributed across different focus conditions?
 ```{r sylls per foc, echo=TRUE, message=FALSE, warning=FALSE}
 syll_per_foc <- 
   df %>%
-  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>"))) %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
   group_by(Language, Focus) %>%
   summarize(Count = n()) %>%
   mutate(Proportion = Count / sum(Count))
@@ -1045,18 +1142,21 @@ syll_per_foc
 ## Count
 ggplot(syll_per_foc, aes(x = Focus, y = Count, fill = Language)) +
   geom_bar(stat = "identity", position = "dodge", alpha = 0.7) +
-  labs(title = "Count of Syll per Language and Focus",
+  labs(#title = "Count of focus types",
        x = "Focus", y = "Count") +
   scale_fill_manual(values = colorBlindBlack8) + 
   theme_minimal()
+ggsave(filename = paste0(plots, "focus_count.pdf"), plot = last_plot(), width = 6, height = 4)
+
 
 ## Proportion
 ggplot(syll_per_foc, aes(x = Focus, y = Proportion, fill = Language)) +
   geom_bar(stat = "identity", position = "dodge", alpha = 0.7) +
-  labs(title = "Proportion of Syll per Language and Focus",
-       x = "Focus", y = "Priportion") +
+  labs(#title = "Proportion of focus types",
+       x = "Focus", y = "Proportion") +
   scale_fill_manual(values = colorBlindBlack8) + 
   theme_minimal()
+ggsave(filename = paste0(plots, "focus_prop.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
 
 And how are they distributed across perceived prosodic prominence ratings?
@@ -1064,41 +1164,50 @@ And how are they distributed across perceived prosodic prominence ratings?
 ```{r sylls per pros, echo=TRUE, message=FALSE, warning=FALSE}
 syll_per_pros <- 
   df %>%
-  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>"))) %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
   group_by(Language, Prosodic_Prom) %>%
   summarize(Count = n()) %>%
   mutate(Proportion = Count / sum(Count))
 syll_per_pros
 
 # Identify NA
-df_targets %>%
+df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
   filter(Language == "German", is.na(Prosodic_Prom)) %>%
+  select(File, Syll)
+df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
+  filter(Language == "Catalan", is.na(Prosodic_Prom)) %>%
   select(File, Syll)
 
 ## Count
 ggplot(syll_per_pros, aes(x = Prosodic_Prom, y = Count, fill = Language)) +
   geom_bar(stat = "identity", position = "dodge", alpha = 0.7) +
-  labs(title = "Count of Syll per Language and Prominence",
-       x = "Prominence", y = "Count") +
+  labs(#title = "Count of Syll per Language and Prominence",
+       x = "Perceived prominence", y = "Count") +
   scale_fill_manual(values = colorBlindBlack8) + 
   theme_minimal()
+ggsave(filename = paste0(plots, "prominence_count.pdf"), plot = last_plot(), width = 6, height = 4)
 
 ## Proportion
 ggplot(syll_per_pros, aes(x = Prosodic_Prom, y = Proportion, fill = Language)) +
   geom_bar(stat = "identity", position = "dodge", alpha = 0.7) +
-  labs(title = "Proportion of Syll per Language and Prominence",
-       x = "Prominence", y = "Proportion") +
+  labs(#title = "Proportion of Syll per Language and Prominence",
+       x = "Perceived prominence", y = "Proportion") +
   scale_fill_manual(values = colorBlindBlack8) + 
   theme_minimal()
+ggsave(filename = paste0(plots, "prominence_prop.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
 
-## Averages
+## Averages prominence
+
+### Duration
 
 What is the average duration of the different prosodic prominence ratings in Catalan vs in German?
 
 ```{r avg duration, echo=TRUE, message=FALSE, warning=FALSE}
 df %>%
-  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "<p>"))) %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
   group_by(Language, Prosodic_Prom) %>%
   summarize(Average_Duration = mean(duration, na.rm = TRUE))
 ```
@@ -1106,19 +1215,21 @@ df %>%
 Let's plot it.
 
 ```{r avg duration plot, echo=TRUE, message=FALSE, warning=FALSE}
-ggplot(df_targets, aes(x = Language, y = duration, fill = Prosodic_Prom)) +
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = duration, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
   geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
   labs(
-    title = "Duration of Prosodic Prominence Ratings by Language",
+    #title = "Duration of Prosodic Prominence Ratings by Language",
     x = "Language",
     y = "Duration",
-    fill = "Prosodic Prominence"
+    fill = "Prosodic prominence"
   ) +
   scale_fill_manual(values = colorBlindBlack8) +
   theme_minimal()
-
+ggsave(filename = paste0(plots, "prominence_duration.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
+
+### Mean f0
 
 What is the average F0 of the different prosodic prominence ratings in Catalan vs in German?
 
@@ -1143,32 +1254,88 @@ Let's plot it.
 
 ```{r avg F0 plot, echo=TRUE, message=FALSE, warning=FALSE}
 ## Raw F0
-ggplot(df_targets, aes(x = Language, y = F0_mean, fill = Prosodic_Prom)) +
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = F0_mean, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
   geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
   labs(
-    title = "F0 means of Prosodic Prominence Ratings by Language",
+    #title = "F0 means of Prosodic Prominence Ratings by Language",
     x = "Language",
-    y = "F0",
-    fill = "Prosodic Prominence"
+    y = "Mean f0 (Hertz)",
+    fill = "Prosodic prominence"
   ) +
   scale_fill_manual(values = colorBlindBlack8) +
   theme_minimal()
+ggsave(filename = paste0(plots, "prominence_f0Mean_raw.pdf"), plot = last_plot(), width = 6, height = 4)
 
 ## z-scored F0
-ggplot(df_targets, aes(x = Language, y = F0_mean_z, fill = Prosodic_Prom)) +
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = F0_mean_z, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
   geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
   labs(
-    title = "F0 means of Prosodic Prominence Ratings by Language",
+    #title = "F0 means of Prosodic Prominence Ratings by Language",
     x = "Language",
-    y = "F0 (z-scored)",
-    fill = "Prosodic Prominence"
+    y = "Mean f0 (z-scored)",
+    fill = "Prosodic prominence"
   ) +
   scale_fill_manual(values = colorBlindBlack8) +
   theme_minimal()
-
+ggsave(filename = paste0(plots, "prominence_f0Mean_z.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
+
+## F0 range
+
+What is the average F0 of the different prosodic prominence ratings in Catalan vs in German?
+
+```{r range F0, echo=TRUE, message=FALSE, warning=FALSE}
+# Calculate z-scores for F0 within each combination of Language and Speaker
+df_targets <- df_targets %>%
+  group_by(Language, Participant) %>%
+  mutate(F0_range_z = scale(F0_range))
+
+# Calculate means for raw F0
+df_targets %>%
+  group_by(Language, Prosodic_Prom) %>%
+  summarize(Average_F0_range = mean(F0_range, na.rm = TRUE))
+
+# Calculate means for z-scored F0
+df_targets %>%
+  group_by(Language, Prosodic_Prom) %>%
+  summarize(Average_F0_range_z = mean(F0_range_z, na.rm = TRUE))
+```
+
+Let's plot it.
+
+```{r range F0 plot, echo=TRUE, message=FALSE, warning=FALSE}
+## Raw F0
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = F0_range, fill = as.factor(Prosodic_Prom))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "F0 means of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "f0 range (Hertz)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_f0Range_raw.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## z-scored F0
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = F0_mean_z, fill = as.factor(Prosodic_Prom))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "F0 means of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "f0 range (z-scored)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_f0Range_z.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+### Mean amplitude envelope
 
 What is the average amplitude envelope of the different prosodic prominence ratings in Catalan vs in German?
 
@@ -1193,32 +1360,310 @@ Let's plot it.
 
 ```{r avg env plot, echo=TRUE, message=FALSE, warning=FALSE}
 ## Raw env
-ggplot(df_targets, aes(x = Language, y = env_mean, fill = Prosodic_Prom)) +
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = env_mean, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
   geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
   labs(
-    title = "ENV means of Prosodic Prominence Ratings by Language",
+    #title = "ENV means of Prosodic Prominence Ratings by Language",
     x = "Language",
-    y = "ENV",
+    y = "Mean amplitude envelope",
     fill = "Prosodic Prominence"
   ) +
   scale_fill_manual(values = colorBlindBlack8) +
   theme_minimal()
+ggsave(filename = paste0(plots, "prominence_envMean_raw.pdf"), plot = last_plot(), width = 6, height = 4)
 
 ## z-scored env
-ggplot(df_targets, aes(x = Language, y = env_mean_z, fill = Prosodic_Prom)) +
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = env_mean_z, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
   geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
   labs(
-    title = "ENV means of Prosodic Prominence Ratings by Language",
+    #title = "ENV means of Prosodic Prominence Ratings by Language",
     x = "Language",
-    y = "ENV (z-scored)",
+    y = "Mean amplitude envelope (z-scored)",
     fill = "Prosodic Prominence"
   ) +
   scale_fill_manual(values = colorBlindBlack8) +
   theme_minimal()
-
+ggsave(filename = paste0(plots, "prominence_envMean_z.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
+
+### Amplitude envelope range
+
+What is the average amplitude envelope of the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
+# Calculate z-scores for F0 within each combination of Language and Speaker
+df_targets <- df_targets %>%
+  group_by(Language, Participant) %>%
+  mutate(env_range_z = scale(env_range))
+
+# Calculate means for raw envelope range
+df_targets %>%
+  group_by(Language, Prosodic_Prom) %>%
+  summarize(Average_env_range = mean(env_range, na.rm = TRUE))
+
+# Calculate means for z-scored envelope range
+df_targets %>%
+  group_by(Language, Prosodic_Prom) %>%
+  summarize(Average_env_range_z = mean(env_range_z, na.rm = TRUE))
+```
+
+Let's plot it.
+
+```{r avg env plot, echo=TRUE, message=FALSE, warning=FALSE}
+## Raw env
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = env_range, fill = as.factor(Prosodic_Prom))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "ENV means of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Amplitude envelope range",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_envRange_raw.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## z-scored env
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = env_mean_z, fill = as.factor(Prosodic_Prom))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "ENV means of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Amplitude envelope range (z-scored)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_envRange_z.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+## Averages focus
+
+### Duration
+
+What is the average duration of the different focus conditions in Catalan vs in German?
+
+```{r avg duration, echo=TRUE, message=FALSE, warning=FALSE}
+df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
+  group_by(Language, Focus) %>%
+  summarize(Average_Duration = mean(duration, na.rm = TRUE))
+```
+
+Let's plot it.
+
+```{r avg duration plot, echo=TRUE, message=FALSE, warning=FALSE}
+ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = duration, fill = as.factor(Focus))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Focus Ratings by Language",
+    x = "Language",
+    y = "Duration",
+    fill = "Focus"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "focus_duration.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+### Mean f0
+
+What is the average F0 of the different Focus ratings in Catalan vs in German?
+
+```{r avg F0, echo=TRUE, message=FALSE, warning=FALSE}
+# Calculate means for raw F0
+df_targets %>%
+  group_by(Language, Focus) %>%
+  summarize(Average_F0 = mean(F0_mean, na.rm = TRUE))
+
+# Calculate means for z-scored F0
+df_targets %>%
+  group_by(Language, Focus) %>%
+  summarize(Average_F0_z = mean(F0_mean_z, na.rm = TRUE))
+```
+
+Let's plot it.
+
+```{r avg F0 plot, echo=TRUE, message=FALSE, warning=FALSE}
+## Raw F0
+ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = F0_mean, fill = as.factor(Focus))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "F0 means of Focus Ratings by Language",
+    x = "Language",
+    y = "Mean f0 (Hertz)",
+    fill = "Focus"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "focus_f0Mean_raw.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## z-scored F0
+ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = F0_mean_z, fill = as.factor(Focus))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "F0 means of Focus Ratings by Language",
+    x = "Language",
+    y = "Mean f0 (z-scored)",
+    fill = "Focus"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "focus_f0Mean_z.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+## F0 range
+
+What is the average F0 of the different Focus ratings in Catalan vs in German?
+
+```{r range F0, echo=TRUE, message=FALSE, warning=FALSE}
+# Calculate means for raw F0
+df_targets %>%
+  group_by(Language, Focus) %>%
+  summarize(Average_F0_range = mean(F0_range, na.rm = TRUE))
+
+# Calculate means for z-scored F0
+df_targets %>%
+  group_by(Language, Focus) %>%
+  summarize(Average_F0_range_z = mean(F0_range_z, na.rm = TRUE))
+```
+
+Let's plot it.
+
+```{r range F0 plot, echo=TRUE, message=FALSE, warning=FALSE}
+## Raw F0
+ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = F0_range, fill = as.factor(Focus))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "F0 means of Focus Ratings by Language",
+    x = "Language",
+    y = "f0 range (Hertz)",
+    fill = "Focus"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "focus_f0Range_raw.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## z-scored F0
+ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = F0_mean_z, fill = as.factor(Focus))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "F0 means of Focus Ratings by Language",
+    x = "Language",
+    y = "f0 range (z-scored)",
+    fill = "Focus"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "focus_f0Range_z.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+### Mean amplitude envelope
+
+What is the average amplitude envelope of the different Focus ratings in Catalan vs in German?
+
+```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
+# Calculate means for raw F0
+df_targets %>%
+  group_by(Language, Focus) %>%
+  summarize(Average_env = mean(env_mean, na.rm = TRUE))
+
+# Calculate means for z-scored F0
+df_targets %>%
+  group_by(Language, Focus) %>%
+  summarize(Average_env_z = mean(env_mean_z, na.rm = TRUE))
+```
+
+Let's plot it.
+
+```{r avg env plot, echo=TRUE, message=FALSE, warning=FALSE}
+## Raw env
+ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = env_mean, fill = as.factor(Focus))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "ENV means of Focus Ratings by Language",
+    x = "Language",
+    y = "Mean amplitude envelope",
+    fill = "Focus"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "focus_envMean_raw.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## z-scored env
+ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = env_mean_z, fill = as.factor(Focus))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "ENV means of Focus Ratings by Language",
+    x = "Language",
+    y = "Mean amplitude envelope (z-scored)",
+    fill = "Focus"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "focus_envMean_z.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+### Amplitude envelope range
+
+What is the average amplitude envelope of the different Focus ratings in Catalan vs in German?
+
+```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
+# Calculate means for raw envelope range
+df_targets %>%
+  group_by(Language, Focus) %>%
+  summarize(Average_env_range = mean(env_range, na.rm = TRUE))
+
+# Calculate means for z-scored envelope range
+df_targets %>%
+  group_by(Language, Focus) %>%
+  summarize(Average_env_range_z = mean(env_range_z, na.rm = TRUE))
+```
+
+Let's plot it.
+
+```{r avg env plot, echo=TRUE, message=FALSE, warning=FALSE}
+## Raw env
+ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = env_range, fill = as.factor(Focus))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "ENV means of Focus Ratings by Language",
+    x = "Language",
+    y = "Amplitude envelope range",
+    fill = "Focus"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "focus_envRange_raw.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## z-scored env
+ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = env_mean_z, fill = as.factor(Focus))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "ENV means of Focus Ratings by Language",
+    x = "Language",
+    y = "Amplitude envelope range (z-scored)",
+    fill = "Focus"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "focus_envRange_z.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+
 
 ## Pre- and posttonic
 
