@@ -1109,12 +1109,24 @@ Change inconsistencies in spelling.
 # Update df with modified 'Syll' values
 df <- df %>%
   mutate(Syll = case_when(
+    Syll == "<p>Y" ~ "<p>",
     Syll == "Pre" ~ "pre",
     Syll == "Post" ~ "post",
+    Syll == "pre_post" ~ "post_pre",
+    Syll == "Pre_Post" ~ "post_pre",
+    Syll == "Post_Pre" ~ "post_pre",
+    Syll == "Post_pre" ~ "post_pre",
+    Syll == "post:pre" ~ "post_pre",
+    Syll == "post-pre" ~ "post_pre",
+    Syll == "post–pre" ~ "post_pre",
+    Syll == "post_Pre" ~ "post_pre",
+    Syll == "prepost" ~ "post_pre",
     Syll == "post_post" ~ "post_pre",
     Syll == "post_pre " ~ "post_pre", # Remove trailing space
     TRUE ~ Syll # Keep other values as they are
   ))
+
+unique(df$Syll)
 ```
 
 ## Frequencies and proportions
@@ -1179,6 +1191,19 @@ df %>%
   filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
   filter(Language == "Catalan", is.na(Prosodic_Prom)) %>%
   select(File, Syll)
+
+# Correct and add ratings
+df <- df %>%
+  # First, handle the specific updates for Prosodic_Prom
+  mutate(Prosodic_Prom = case_when(
+    File == "G17_T_35_B" & Syll == "pfan" ~ 2,
+    File == "C02_T_13_I" & Syll == "lor_pre" ~ 1,
+    File == "C02_T_14_F" & Syll == "lor_pre" ~ 1,
+    TRUE ~ Prosodic_Prom
+  )) %>%
+  # Then, filter out the specific row to delete
+  # This case is arguably important, but since it is not the real target word, I delete it
+  filter(!(File == "G14_T_22_R" & Syll == "an"))
 
 ## Count
 ggplot(syll_per_pros, aes(x = Prosodic_Prom, y = Count, fill = Language)) +
@@ -1668,6 +1693,13 @@ ggsave(filename = paste0(plots, "focus_envRange_z.pdf"), plot = last_plot(), wid
 ## Pre- and posttonic
 
 Try looking at pre- and post-tonic.
+
+```{r}
+df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>")))
+```
+
+
 
 ```{r prepost, echo=TRUE, message=FALSE, warning=FALSE}
 df %>%
