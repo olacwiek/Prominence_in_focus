@@ -20,6 +20,8 @@ output:
     toc_float: yes
 editor_options: 
   chunk_output_type: console
+  markdown: 
+    wrap: 72
 bibliography: references.bib
 ---
 
@@ -29,15 +31,59 @@ knitr::opts_chunk$set(echo = TRUE)
 
 # Introduction
 
-Prosodic annotation plays a critical role in linguistic research, enabling a detailed exploration of communication subtleties in diverse languages and contexts. Various methods for prosodic annotation exist, with some well-known and accepted, such as ToBI [@silverman1992]. However, prosody research encounters challenges in the manual annotation of data, primarily regarding inter-rater reliability, where multiple annotators' agreement varies significantly [even between 60% and 90%, @breen2012], leading to potential errors and manipulation.
+Prosodic annotation plays a critical role in linguistic research,
+enabling a detailed exploration of communication subtleties in diverse
+languages and contexts. Various methods for prosodic annotation exist,
+with some well-known and accepted, such as ToBI [@silverman1992].
+However, prosody research encounters challenges in the manual annotation
+of data, primarily regarding inter-rater reliability, where multiple
+annotators' agreement varies significantly [even between 60% and 90%,
+@breen2012], leading to potential errors and manipulation.
 
-Manual annotation remains time-consuming and labor-intensive, resulting in limited data availability, hindering the development of reliable computational models for comprehensive and robust prosodic annotation across various schemes and languages [see @ananthakrishnan2008; @rosenberg2010 as examples for ToBI on Standard American English]. To tackle this challenge, our project aims to adopt a middle-way approach, harnessing the expertise of skilled annotators alongside the power of computational tools while being cautious of potential challenges such as the complexity of prosody, interpretation of results, and ethical considerations regarding biases in training data and social impacts. By establishing robust computational models, we seek to significantly speed up the annotation process, generalize findings to new linguistic data, and pave the way for more extensive cross-linguistic studies in prosodic research.
+Manual annotation remains time-consuming and labor-intensive, resulting
+in limited data availability, hindering the development of reliable
+computational models for comprehensive and robust prosodic annotation
+across various schemes and languages [see @ananthakrishnan2008;
+@rosenberg2010 as examples for ToBI on Standard American English]. To
+tackle this challenge, our project aims to adopt a middle-way approach,
+harnessing the expertise of skilled annotators alongside the power of
+computational tools while being cautious of potential challenges such as
+the complexity of prosody, interpretation of results, and ethical
+considerations regarding biases in training data and social impacts. By
+establishing robust computational models, we seek to significantly speed
+up the annotation process, generalize findings to new linguistic data,
+and pave the way for more extensive cross-linguistic studies in prosodic
+research.
 
-In our project, we aim to establish connections between prosodic prominence marking and automatic predictions of focus conditions -- focus representing a pragmatic domain of prominence [cf. e.g., @krifka2008]. To achieve this, we will analyze data from German and Catalan speakers producing focus types as degrees of prominence in a semi-controlled environment. The perceived prominence of focus types in these data was annotated on a scale from 0 to 3 for prosodic prominence [DIMA, @kügler2015; @kügler2019; @kügler2022]. German and Catalan are suitable languages for investigating the applicability of computational systems across different languages, given their distinct prosodic prominence marking in terms of rhythm class and accentuation patterns [cf. @krahmer2007 for Germanic and Romance languages; @cole2019 for differences between Spanish, French, and English].
+In our project, we aim to establish connections between prosodic
+prominence marking and automatic predictions of focus conditions --
+focus representing a pragmatic domain of prominence [cf. e.g.,
+@krifka2008]. To achieve this, we will analyze data from German and
+Catalan speakers producing focus types as degrees of prominence in a
+semi-controlled environment. The perceived prominence of focus types in
+these data was annotated on a scale from 0 to 3 for prosodic prominence
+[DIMA, @kügler2015; @kügler2019; @kügler2022]. German and Catalan are
+suitable languages for investigating the applicability of computational
+systems across different languages, given their distinct prosodic
+prominence marking in terms of rhythm class and accentuation patterns
+[cf. @krahmer2007 for Germanic and Romance languages; @cole2019 for
+differences between Spanish, French, and English].
 
-To capture acoustic markers of prominence, such as F0 (max peak, mean, range), intensity (max peak, mean, range), and duration, we will extract these measures from the accented syllables of focused words. These acoustic markers will serve as predictors in a Bayesian ordinal model to rate prominence. Our models will account for language-specific variations in acoustic features of prominence between Catalan and German.
+To capture acoustic markers of prominence, such as F0 (max peak, mean,
+range), intensity (max peak, mean, range), and duration, we will extract
+these measures from the accented syllables of focused words. These
+acoustic markers will serve as predictors in a Bayesian ordinal model to
+rate prominence. Our models will account for language-specific
+variations in acoustic features of prominence between Catalan and
+German.
 
-Our goal is to identify the most predictive features of prominence in prosody for German and Catalan, effectively bridging the gap between manual and computer-aided annotation. By establishing these links, we aim to address the challenges posed by tiresome manual annotation. Subsequently, we plan to employ our findings to build a classifier for automatic focus-type assignment to utterances, which will undergo verification by human annotators.
+Our goal is to identify the most predictive features of prominence in
+prosody for German and Catalan, effectively bridging the gap between
+manual and computer-aided annotation. By establishing these links, we
+aim to address the challenges posed by tiresome manual annotation.
+Subsequently, we plan to employ our findings to build a classifier for
+automatic focus-type assignment to utterances, which will undergo
+verification by human annotators.
 
 # Data preparation
 
@@ -108,36 +154,41 @@ library(shinystan)
 
 ```
 
-
 ```{r read metadata, echo=TRUE, message=FALSE, warning=FALSE}
 participant_info <- read_delim(paste0(data,"ParticipantInfo_GERCAT.csv"), delim = ";")
 ```
 
-
 # Processing the audio
 
-Here, we show the process of handling the audio data from the raw audio, incl. annotation.
+Here, we show the process of handling the audio data from the raw audio,
+incl. annotation.
 
 ## Select & save parts
 
-The files provided are long. For our sake, we just need parts from which we will extract information, so we will first chop the files accordingly to our needs.
+The files provided are long. For our sake, we just need parts from which
+we will extract information, so we will first chop the files accordingly
+to our needs.
 
-Because the original annotation is done in ELAN, we have to prepare the files for processing.
+Because the original annotation is done in ELAN, we have to prepare the
+files for processing.
 
 -   Export .eaf to .TextGrid
 -   Open .TextGrid in Praat
 -   Save .TextGrid using Praat
 
-Now, the files can be imported. If this step is skipped, the files will not be imported correctly.
+Now, the files can be imported. If this step is skipped, the files will
+not be imported correctly.
 
 ------------------------------------------------------------------------
 
 Item codes:
 
--   G04 ---\> number of participant per language (G = German, C = Catalan)
+-   G04 ---\> number of participant per language (G = German, C =
+    Catalan)
 -   P ---\> practice trial or target item (P = Practice, T = Target)
 -   01 ---\> Itemnumber (begins from 01 for both practice and target)
--   I ---\> focus condition (I = Information focus, C = Contrastive focus, R = Corrective focus, B = Background, F = filler item)
+-   I ---\> focus condition (I = Information focus, C = Contrastive
+    focus, R = Corrective focus, B = Background, F = filler item)
 
 ------------------------------------------------------------------------
 
@@ -207,9 +258,11 @@ rm(startTime, endTime, outputFile, tg, i)
 
 ```
 
-But we also need the TextGrids for feature extraction in the stressed syllables.
+But we also need the TextGrids for feature extraction in the stressed
+syllables.
 
-First, we create a custom function to writeTextGrid in a format that is both Praat and other functions-readable.
+First, we create a custom function to writeTextGrid in a format that is
+both Praat and other functions-readable.
 
 ```{r writeTextGrid function, echo=TRUE, message=FALSE, warning=FALSE}
 writeTextGrid <- function(data, outputFile) {
@@ -260,7 +313,8 @@ writeTextGrid <- function(data, outputFile) {
 }
 ```
 
-Now, we loop through the same list of files that we used for .wav extraction and extract the excerpts of TextGrids for the .wavs.
+Now, we loop through the same list of files that we used for .wav
+extraction and extract the excerpts of TextGrids for the .wavs.
 
 ```{r loop and chop TextGrid, echo=TRUE, message=FALSE, warning=FALSE}
 # Loop through WAV files
@@ -405,7 +459,6 @@ rm(parts, File, Language, Participant, Item_type, Item_num, Focus, file_meta, wa
 
 ```
 
-
 ```{r metadata merge, echo=TRUE, message=FALSE, warning=FALSE}
 # Process participant_info so that participant number column is only number
 participant_info$Participant <- parse_number(participant_info$Participant)
@@ -415,18 +468,24 @@ META <- merge(META, participant_info, by = c("Participant", "Language"), all.x =
 
 ```
 
-
 # Processing audio into time series
 
-Having cut the parts out, we now want to loop through those parts in strategic places and extract acoustic measures.
+Having cut the parts out, we now want to loop through those parts in
+strategic places and extract acoustic measures.
 
-Ideally, we also want to analyze, how acoustics and gesture work together, so we will adapt our higher-sampled audio to match the video. The video was recorded in **25 frames/second**, therefore we have to downsample radically.
+Ideally, we also want to analyze, how acoustics and gesture work
+together, so we will adapt our higher-sampled audio to match the video.
+The video was recorded in **25 frames/second**, therefore we have to
+downsample radically.
 
-This part is copied from FLESH original [project_Rhyme](https://github.com/sarkadava/FLESH_projects/tree/main/project_Rhyme).
+This part is copied from FLESH original
+[project_Rhyme](https://github.com/sarkadava/FLESH_projects/tree/main/project_Rhyme).
 
 ## Amplitude envelope extraction
 
-This part was taken from the [Envision Bootcamp](https://wimpouw.github.io/EnvisionBootcamp2021/extract_AmplitudeEnvelope_Rmarkdown.html) and cleaned for clarity.
+This part was taken from the [Envision
+Bootcamp](https://wimpouw.github.io/EnvisionBootcamp2021/extract_AmplitudeEnvelope_Rmarkdown.html)
+and cleaned for clarity.
 
 The function takes time to run, so adjust your expectations accordingly.
 
@@ -498,9 +557,15 @@ rm(env, time_ms, ENV, wav, list_wavs, resample_rate)
 
 ## F0 extraction
 
-For more info, see [here](https://osf.io/m43qy). For info about WRASSP, see [here](https://ips-lmu.github.io/The-EMU-SDMS-Manual/chap-wrassp.html).
+For more info, see [here](https://osf.io/m43qy). For info about WRASSP,
+see
+[here](https://ips-lmu.github.io/The-EMU-SDMS-Manual/chap-wrassp.html).
 
-This script automatically assesses F0 traces from audio using WRASSP. It also needs a META data_file containing gender information so as to set F0 ranges. The function extracts F0 traces from wav, given gender info, at a particular sampling frequency algorithm is based on K. Schaefer-Vincent periodicity detection.
+This script automatically assesses F0 traces from audio using WRASSP. It
+also needs a META data_file containing gender information so as to set
+F0 ranges. The function extracts F0 traces from wav, given gender info,
+at a particular sampling frequency algorithm is based on K.
+Schaefer-Vincent periodicity detection.
 
 ```{r F0 extract prep, echo=TRUE, message=FALSE, warning = FALSE}
 # Set data reading and writing locations
@@ -538,7 +603,10 @@ F0.extract <- function(locationsound, gender_fm, resampledHz) {
 }
 ```
 
-I separated these chunks, because having them together sometimes made my R session abort. Also, I run this next chunk by marking the for-loop first and then the rest. Otherwise the R session aborts. Not sure how this helps.
+I separated these chunks, because having them together sometimes made my
+R session abort. Also, I run this next chunk by marking the for-loop
+first and then the rest. Otherwise the R session aborts. Not sure how
+this helps.
 
 ```{r extractF0, echo=TRUE, message=FALSE, warning = FALSE}
 
@@ -574,22 +642,24 @@ rm(PP, gender, locsound, F0_vec, first_letter, output_file, list_wavs, wav, over
     
 ```
 
-
-
 ## Other functions
 
 Here are further FLESH functions for processing and merging of data.
 
 ### `load.in.event` function
 
-**Purpose:** This function loads annotations into a time series based on their begin and end times.
+**Purpose:** This function loads annotations into a time series based on
+their begin and end times.
 
 **Parameters:**
 
 -   `time_original`: The original time series.
--   `anno`: A dataframe containing annotations with columns 'begintime', 'endtime', and 'annotation'.
+-   `anno`: A dataframe containing annotations with columns 'begintime',
+    'endtime', and 'annotation'.
 
-**Description:** It iterates through each annotation event and assigns the corresponding annotation to the time series where the time falls within the event's begin and end times.
+**Description:** It iterates through each annotation event and assigns
+the corresponding annotation to the time series where the time falls
+within the event's begin and end times.
 
 ```{r load.in.event function, echo=TRUE, message=FALSE, warning=FALSE}
 load.in.event <- function(time_original, annotations) {
@@ -615,14 +685,18 @@ load.in.event <- function(time_original, annotations) {
 
 ### `load.in.anno_num` function
 
-**Purpose:** Similar to `load.in.event`, this function loads numeric annotations into a time series based on their begin and end times.
+**Purpose:** Similar to `load.in.event`, this function loads numeric
+annotations into a time series based on their begin and end times.
 
 **Parameters:**
 
 -   `time_original`: The original time series.
--   `anno`: A dataframe containing annotations with columns 'begintime', 'endtime', 'annotation', and 'numeric_annotation'.
+-   `anno`: A dataframe containing annotations with columns 'begintime',
+    'endtime', 'annotation', and 'numeric_annotation'.
 
-**Description:** It iterates through each annotation event and assigns the corresponding numeric annotation to the time series where the time falls within the event's begin and end times.
+**Description:** It iterates through each annotation event and assigns
+the corresponding numeric annotation to the time series where the time
+falls within the event's begin and end times.
 
 ```{r load.in.anno_num function, echo=TRUE, message=FALSE, warning=FALSE}
 load.in.anno_num <- function(time_original, numeric_annotations) {
@@ -648,7 +722,8 @@ load.in.anno_num <- function(time_original, numeric_annotations) {
 
 ### `getphases.it` function
 
-**Purpose:** This function automatically detects phases in gesture movement.
+**Purpose:** This function automatically detects phases in gesture
+movement.
 
 **Parameters:**
 
@@ -656,7 +731,11 @@ load.in.anno_num <- function(time_original, numeric_annotations) {
 -   `mvmnt`: The movement data.
 -   `syll`: A numeric vector indicating syllable numbers.
 
-**Description:** It identifies phases in gesture movement and creates an annotation dataframe with the begin and end times for each phase. It also annotates the direction of movement (forward or backward) and assigns a numeric annotation for each phase. This function is useful for analyzing gesture phases during speech.
+**Description:** It identifies phases in gesture movement and creates an
+annotation dataframe with the begin and end times for each phase. It
+also annotates the direction of movement (forward or backward) and
+assigns a numeric annotation for each phase. This function is useful for
+analyzing gesture phases during speech.
 
 ```{r getphases.it function, echo=TRUE, message=FALSE, warning=FALSE}
 getphases.it <- function(time, movement, syllable) {
@@ -811,21 +890,23 @@ rm(tiers_to_extract, cols_to_load)
 
 ```
 
-With this, we created tables for each utterance of each participant. 
+With this, we created tables for each utterance of each participant.
 
 # Extract target syllable values
 
-Now, we want to these files and extract some information for the target syllables (and later pre- and post-tonic syllables), namely:
+Now, we want to these files and extract some information for the target
+syllables (and later pre- and post-tonic syllables), namely:
 
-- duration
-- F0 min
-- F0 max
-- F0 range
-- ENV min
-- ENV max
-- ENV range
+-   duration
+-   F0 min
+-   F0 max
+-   F0 range
+-   ENV min
+-   ENV max
+-   ENV range
 
-We also have to be mindful about the perceived prosodic prominence annotated for these syllables
+We also have to be mindful about the perceived prosodic prominence
+annotated for these syllables
 
 ```{r extract target syllable acoustics, echo=TRUE, message=FALSE, warning=FALSE}
 # Get a list of all CSV files in the datamerged directory
@@ -989,14 +1070,53 @@ df <- df %>%
 
 ```
 
-
 ```{r save df, echo=TRUE, message=FALSE, warning=FALSE}
 # Save 'df' as a CSV file
 write.csv(df, paste0(data, "df.csv"), row.names = FALSE)
+```
 
+```{r read df, echo=TRUE, message=FALSE, warning=FALSE}
 df <- read.csv(paste0(data, "df.csv"))
 ```
 
+# Descriptive statistics
+
+Now that we have a table with stressed and pre and postonic syllables,
+let us look at some descriptive statistics.
+
+Correct inconsistencies in spelling.
+
+```{r correct syll, echo=TRUE, message=FALSE, warning=FALSE}
+# Update df with modified 'Syll' values
+df <- df %>%
+  mutate(Syll = case_when(
+    Syll == "<p>Y" ~ "<p>",
+    Syll == "Pre" ~ "pre",
+    Syll == "Post" ~ "post",
+    Syll == "pre_post" ~ "post_pre",
+    Syll == "Pre_Post" ~ "post_pre",
+    Syll == "Post_Pre" ~ "post_pre",
+    Syll == "Post_pre" ~ "post_pre",
+    Syll == "post:pre" ~ "post_pre",
+    Syll == "post-pre" ~ "post_pre",
+    Syll == "post–pre" ~ "post_pre",
+    Syll == "post_Pre" ~ "post_pre",
+    Syll == "prepost" ~ "post_pre",
+    Syll == "post_post" ~ "post_pre",
+    Syll == "post_pre " ~ "post_pre", # Remove trailing space
+    TRUE ~ Syll # Keep other values as they are
+  ))
+
+unique(df$Syll)
+```
+
+For some plots, we also need a subset of only target syllables.
+
+```{r target sylls only, echo=TRUE, message=FALSE, warning=FALSE}
+# Create subset without pre and post-tonic
+df_targets <- df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>")))
+```
 
 ## NAs prior to outlier removal
 
@@ -1015,7 +1135,7 @@ calculate_na_stats <- function(df, columns) {
 }
 
 # Initial NA stats
-na_stats_before <- calculate_na_stats(df, columns_to_process)
+na_stats_before <- calculate_na_stats(df_targets, columns_to_process)
 print(na_stats_before)
 ```
 
@@ -1028,11 +1148,14 @@ for (col_name in columns_to_process) {
   df[[col_name]][df[[col_name]] == Inf | df[[col_name]] == -Inf] <- NA
 }
 
+# Process targets again
+df_targets <- df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>")))
+
 # NA stats after replacing Inf and -Inf
-na_stats_after_replacement <- calculate_na_stats(df, columns_to_process)
+na_stats_after_replacement <- calculate_na_stats(df_targets, columns_to_process)
 print(na_stats_after_replacement)
 ```
-
 
 ## Outliers
 
@@ -1078,55 +1201,20 @@ rm(outliers_info, Q1, Q3, lower_bound, upper_bound, IQR, col_name)
 
 # Print the summary table
 print(outliers_summary)
-
 ```
 
 Check NAs after all removals
 
 ```{r NAs after all, echo=TRUE, message=FALSE, warning=FALSE}
+# Process targets again
+df_targets <- df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>")))
+
 # NA stats after outlier removal
-na_stats_after_outliers <- calculate_na_stats(df, columns_to_process)
+na_stats_after_outliers <- calculate_na_stats(df_targets, columns_to_process)
 print(na_stats_after_outliers)
 
 rm(columns_to_process)
-```
-
-# Descriptive statistics
-
-Now that we have a table with stressed and pre and postonic syllables, let us look at some descriptive statistics.
-
-For some plots, we also need a subset of only target syllables.
-
-```{r target sylls only, echo=TRUE, message=FALSE, warning=FALSE}
-# Create subset without pre and post-tonic
-df_targets <- df %>%
-  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>")))
-```
-
-Change inconsistencies in spelling.
-
-```{r correct syll, echo=TRUE, message=FALSE, warning=FALSE}
-# Update df with modified 'Syll' values
-df <- df %>%
-  mutate(Syll = case_when(
-    Syll == "<p>Y" ~ "<p>",
-    Syll == "Pre" ~ "pre",
-    Syll == "Post" ~ "post",
-    Syll == "pre_post" ~ "post_pre",
-    Syll == "Pre_Post" ~ "post_pre",
-    Syll == "Post_Pre" ~ "post_pre",
-    Syll == "Post_pre" ~ "post_pre",
-    Syll == "post:pre" ~ "post_pre",
-    Syll == "post-pre" ~ "post_pre",
-    Syll == "post–pre" ~ "post_pre",
-    Syll == "post_Pre" ~ "post_pre",
-    Syll == "prepost" ~ "post_pre",
-    Syll == "post_post" ~ "post_pre",
-    Syll == "post_pre " ~ "post_pre", # Remove trailing space
-    TRUE ~ Syll # Keep other values as they are
-  ))
-
-unique(df$Syll)
 ```
 
 ## Frequencies and proportions
@@ -1171,7 +1259,8 @@ ggplot(syll_per_foc, aes(x = Focus, y = Proportion, fill = Language)) +
 ggsave(filename = paste0(plots, "focus_prop.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
 
-And how are they distributed across perceived prosodic prominence ratings?
+And how are they distributed across perceived prosodic prominence
+ratings?
 
 ```{r sylls per pros, echo=TRUE, message=FALSE, warning=FALSE}
 syll_per_pros <- 
@@ -1228,7 +1317,8 @@ ggsave(filename = paste0(plots, "prominence_prop.pdf"), plot = last_plot(), widt
 
 ### Duration
 
-What is the average duration of the different prosodic prominence ratings in Catalan vs in German?
+What is the average duration of the different prosodic prominence
+ratings in Catalan vs in German?
 
 ```{r avg duration, echo=TRUE, message=FALSE, warning=FALSE}
 df %>%
@@ -1256,7 +1346,8 @@ ggsave(filename = paste0(plots, "prominence_duration.pdf"), plot = last_plot(), 
 
 ### Mean f0
 
-What is the average F0 of the different prosodic prominence ratings in Catalan vs in German?
+What is the average F0 of the different prosodic prominence ratings in
+Catalan vs in German?
 
 ```{r avg F0, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate z-scores for F0 within each combination of Language and Speaker
@@ -1309,7 +1400,8 @@ ggsave(filename = paste0(plots, "prominence_f0Mean_z.pdf"), plot = last_plot(), 
 
 ## F0 range
 
-What is the average F0 of the different prosodic prominence ratings in Catalan vs in German?
+What is the average F0 of the different prosodic prominence ratings in
+Catalan vs in German?
 
 ```{r range F0, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate z-scores for F0 within each combination of Language and Speaker
@@ -1362,7 +1454,8 @@ ggsave(filename = paste0(plots, "prominence_f0Range_z.pdf"), plot = last_plot(),
 
 ### Mean amplitude envelope
 
-What is the average amplitude envelope of the different prosodic prominence ratings in Catalan vs in German?
+What is the average amplitude envelope of the different prosodic
+prominence ratings in Catalan vs in German?
 
 ```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate z-scores for F0 within each combination of Language and Speaker
@@ -1415,7 +1508,8 @@ ggsave(filename = paste0(plots, "prominence_envMean_z.pdf"), plot = last_plot(),
 
 ### Amplitude envelope range
 
-What is the average amplitude envelope of the different prosodic prominence ratings in Catalan vs in German?
+What is the average amplitude envelope of the different prosodic
+prominence ratings in Catalan vs in German?
 
 ```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate z-scores for F0 within each combination of Language and Speaker
@@ -1470,7 +1564,8 @@ ggsave(filename = paste0(plots, "prominence_envRange_z.pdf"), plot = last_plot()
 
 ### Duration
 
-What is the average duration of the different focus conditions in Catalan vs in German?
+What is the average duration of the different focus conditions in
+Catalan vs in German?
 
 ```{r avg duration, echo=TRUE, message=FALSE, warning=FALSE}
 df %>%
@@ -1498,7 +1593,8 @@ ggsave(filename = paste0(plots, "focus_duration.pdf"), plot = last_plot(), width
 
 ### Mean f0
 
-What is the average F0 of the different Focus ratings in Catalan vs in German?
+What is the average F0 of the different Focus ratings in Catalan vs in
+German?
 
 ```{r avg F0, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate means for raw F0
@@ -1546,7 +1642,8 @@ ggsave(filename = paste0(plots, "focus_f0Mean_z.pdf"), plot = last_plot(), width
 
 ## F0 range
 
-What is the average F0 of the different Focus ratings in Catalan vs in German?
+What is the average F0 of the different Focus ratings in Catalan vs in
+German?
 
 ```{r range F0, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate means for raw F0
@@ -1594,7 +1691,8 @@ ggsave(filename = paste0(plots, "focus_f0Range_z.pdf"), plot = last_plot(), widt
 
 ### Mean amplitude envelope
 
-What is the average amplitude envelope of the different Focus ratings in Catalan vs in German?
+What is the average amplitude envelope of the different Focus ratings in
+Catalan vs in German?
 
 ```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate means for raw F0
@@ -1642,7 +1740,8 @@ ggsave(filename = paste0(plots, "focus_envMean_z.pdf"), plot = last_plot(), widt
 
 ### Amplitude envelope range
 
-What is the average amplitude envelope of the different Focus ratings in Catalan vs in German?
+What is the average amplitude envelope of the different Focus ratings in
+Catalan vs in German?
 
 ```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate means for raw envelope range
@@ -1688,38 +1787,197 @@ ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = env_mean_z, f
 ggsave(filename = paste0(plots, "focus_envRange_z.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
 
-
-
 ## Pre- and posttonic
 
-Try looking at pre- and post-tonic.
+Check which item type do main "target" syllables have (sanity-check).
 
 ```{r}
 df %>%
-  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>")))
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
+  distinct(Item_type) %>%
+  pull(Item_type)
 ```
 
+All target, that is good.
 
+Create a new df that for each main target syllables also contains info
+on the pre and post-tonic.
 
-```{r prepost, echo=TRUE, message=FALSE, warning=FALSE}
+```{r}
 df %>%
-  arrange(Syll_num) %>%
-  group_by(Syll) %>%
-  mutate(
-    prev_duration = case_when(
-      Syll %in% c("pre", "post_pre") ~ lag(duration),
-      TRUE ~ lag(duration, 2)
-    ),
-    next_duration = case_when(
-      Syll %in% c("post", "post_pre") ~ lead(duration),
-      TRUE ~ lead(duration, 2)
-    )
-  ) %>%
-  summarize(
-    avg_prev_duration = mean(prev_duration, na.rm = TRUE),
-    avg_curr_duration = mean(duration),
-    avg_next_duration = mean(next_duration, na.rm = TRUE)
-  ) %>%
-  ungroup()
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
+  select(File,Syll_num)  # Select only the Syll_num column
+
+# Combined process to find "pre" syllables for Syll_num - 1 based on initial conditions
+df_prepost <- df %>%
+  # First, find rows that do not match the initial exclusion criteria and get their File and Syll_num
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
+  ## PRE
+  # Then, for each of these, find the corresponding "pre" Syll for Syll_num - 1
+  mutate(Syll_num_target = Syll_num - 1) %>%
+  # Join df with itself based on File and the target Syll_num
+  left_join(df, by = c("File", "Syll_num_target" = "Syll_num")) %>%
+  # Remove the specified columns
+  select(-Age.y, -Gender.y, -Word.y, -TP.y, -Focus.y, -Item_type.y, -Item_num.y, -Participant.y, -Language.y, -Syll_num_target) %>%
+  # Modify the joined columns to be NA where Syll does not contain "pre"
+  mutate(across(ends_with(".y"), ~ if_else(grepl("pre", Syll.y), ., NA), .names = "{.col}")) %>%
+  # Dynamically rename columns that end with .y to end with _pre
+  rename_with(~ sub("\\.y$", "_pre", .), ends_with(".y")) %>% 
+  # Dynamically rename columns to remove the .x ending
+  rename_with(~ sub("\\.x$", "", .), ends_with(".x")) %>% 
+  ## POST
+  # Now, for each of these, find the corresponding "post" Syll for Syll_num + 1
+  mutate(Syll_num_target = Syll_num + 1) %>%
+  # Join df with itself based on File and the target Syll_num
+  left_join(df, by = c("File", "Syll_num_target" = "Syll_num")) %>% 
+    # Remove the specified columns
+  select(-Age.y, -Gender.y, -Word.y, -TP.y, -Focus.y, -Item_type.y, -Item_num.y, -Participant.y, -Language.y, -Syll_num_target) %>%
+  # Modify the joined columns to be NA where Syll does not contain "pre"
+  mutate(across(ends_with(".y"), ~ if_else(grepl("post", Syll.y), ., NA), .names = "{.col}")) %>%
+  # Dynamically rename columns that end with .y to end with _pre
+  rename_with(~ sub("\\.y$", "_post", .), ends_with(".y")) %>% 
+  # Dynamically rename columns to remove the .x ending
+  rename_with(~ sub("\\.x$", "", .), ends_with(".x"))
+
 ```
+
+### Visualize pre- and posttonic
+
+# Modeling DGfS
+
+Our question is whether different acoustic parameters can predict focus
+conditions.
+
+Which acoustic parameters do we have for now?
+
+```{r}
+str(df_prepost)
+```
+
+1.  F0_mean
+
+2.  F0_min
+
+3.  F0_max
+
+4.  F0_range
+
+5.  env_mean
+
+6.  env_min
+
+7.  env_max
+
+8.  env_range
+
+9.  duration
+
+10. F0_mean_pre
+
+11. F0_min_pre
+
+12. F0_max_pre
+
+13. F0_range_pre
+
+14. env_mean_pre
+
+15. env_min_pre
+
+16. env_max_pre
+
+17. env_range_pre
+
+18. duration_pre
+
+19. F0_mean_post
+
+20. F0_min_post
+
+21. F0_max_post
+
+22. F0_range_post
+
+23. env_mean_post
+
+24. env_min_post
+
+25. env_max_post
+
+26. env_range_post
+
+27. duration_post
+
+With the grouping parameters:
+
+1. Language
+
+2. Gender
+
+3. Age
+
+These are a lot of variables, I don't know if the model will hold it. I will first try without the pre- and post-tonic.
+
+```{r}
+df_prepost$Focus <- as.factor(df_prepost$Focus)
+
+levels(df_prepost$Focus)
+```
+
+# Modeling prominence
+
+While I wait for the answer on the levels, I will run one for prominence ratings.
+
+```{r}
+summary(df_prepost$Prosodic_Prom)
+```
+
+Check distribution.
+
+```{r}
+hist(df_prepost$Prosodic_Prom)
+```
+
+## Priors
+
+```{r}
+get_prior(formula = Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_range + duration +
+            (1 + F0_mean + F0_range + env_mean + env_range + duration || Language) +
+            (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender) +
+            (1 + F0_mean + F0_range + env_mean + env_range + duration || Age),
+          data = df_prepost,
+          family = gaussian())
+```
+
+## Full target only
+
+```{r}
+mdl_fullTargetOnly <- brm(Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_range + duration +
+                            (1 + F0_mean + F0_range + env_mean + env_range + duration || Language) +
+                            (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender) +
+                            (1 + F0_mean + F0_range + env_mean + env_range + duration || Age),
+                   data = df_prepost,
+                   #prior = priors_intOnlyH1,
+                   family = gaussian(),
+                   #backend = "cmdstanr", # depends on you
+                   cores = 4,
+                   chains = 4,
+                   iter = 8000,
+                   warmup = 4000,
+                   seed = 998,
+                   control = list(max_treedepth = 13,
+                                  adapt_delta = 0.99),
+                   file = paste0(models, "mdl_fullTargetOnly.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_fullTargetOnly, file = paste0(models, "mdl_fullTargetOnly.rds"), compress = "xz")
+
+mdl_fullTargetOnly <- readRDS(paste0(models, "mdl_fullTargetOnly.rds"))
+```
+
+
+
+
+
+
 
