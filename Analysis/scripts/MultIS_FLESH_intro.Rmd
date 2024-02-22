@@ -1398,7 +1398,7 @@ ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = F0_me
 ggsave(filename = paste0(plots, "prominence_f0Mean_z.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
 
-## F0 range
+### F0 range
 
 What is the average F0 of the different prosodic prominence ratings in
 Catalan vs in German?
@@ -1562,6 +1562,12 @@ ggsave(filename = paste0(plots, "prominence_envRange_z.pdf"), plot = last_plot()
 
 ## Averages focus
 
+Change levels.
+
+```{r}
+df$Focus <- factor(df$Focus, levels = c("background", "information", "filler", "contrastive", "corrective"))
+```
+
 ### Duration
 
 What is the average duration of the different focus conditions in
@@ -1640,7 +1646,7 @@ ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = F0_mean_z, fi
 ggsave(filename = paste0(plots, "focus_f0Mean_z.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
 
-## F0 range
+### F0 range
 
 What is the average F0 of the different Focus ratings in Catalan vs in
 German?
@@ -1787,7 +1793,7 @@ ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = env_mean_z, f
 ggsave(filename = paste0(plots, "focus_envRange_z.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
 
-## Pre- and posttonic
+# Pre- and posttonic
 
 Check which item type do main "target" syllables have (sanity-check).
 
@@ -1841,7 +1847,312 @@ df_prepost <- df %>%
 
 ```
 
-### Visualize pre- and posttonic
+## Visualize pre- and posttonic
+
+Prepare dataframe.
+
+```{r}
+# Assuming df is your data frame
+df_long <- df_prepost %>%
+  select(File, Language, Item_type, Focus, Syll_num,
+         starts_with("F0_"), starts_with("env_"), starts_with("duration")) %>%
+  pivot_longer(cols = -c(File, Language, Item_type, Focus, Syll_num),
+               names_to = "variable",
+               values_to = "value") %>%
+  mutate(
+    phase = case_when(
+      grepl("_pre$", variable) ~ "pre",
+      grepl("_post$", variable) ~ "post",
+      TRUE ~ "target"
+    ),
+    # Remove suffixes from variable names for a cleaner look
+    variable = gsub("_pre|_post", "", variable)
+  )
+
+# Correct the phase factor levels
+df_long$phase <- factor(df_long$phase, levels = c("pre", "target", "post"))
+```
+
+### Variable x Language plots
+
+```{r}
+# Assuming colorBlindBlack8 and plots are defined
+languages <- unique(df_long$Language)
+variables <- unique(df_long$variable)
+
+# Without lines
+for (var in variables) {
+  for (lang in languages) {
+    # Filter df_long for the current language and variable
+    data_filtered <- subset(df_long, variable == var & Language == lang)
+    
+    # Generate the plot for the current language and variable
+    p <- ggplot(data = data_filtered, aes(x = phase, y = value, fill = phase)) +
+      geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+      geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+      scale_fill_manual(values = colorBlindBlack8) +
+      labs(x = "Syllable",
+           y = var,
+           title = lang) +
+      theme_minimal() +
+      theme(legend.position = "none")
+    
+    # Dynamically generate the file name to include both language and variable
+    file_name <- paste0(plots, "prepost_", var, "_", lang, ".pdf")
+    
+    # Save the plot
+    ggsave(filename = file_name, plot = p, width = 10, height = 8)
+  }
+}
+
+# With lines
+for (var in variables) {
+  for (lang in languages) {
+    # Filter df_long for the current language and variable
+    data_filtered <- subset(df_long, variable == var & Language == lang)
+    
+    # Generate the plot for the current language and variable
+    p <- ggplot(data = data_filtered, aes(x = phase, y = value, fill = phase)) +
+      geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+      geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+      geom_line(aes(group = interaction(File, Syll_num)), color = "grey", alpha = 0.1) +
+      scale_fill_manual(values = colorBlindBlack8) +
+      labs(x = "Syllable",
+           y = var,
+           title = lang) +
+      theme_minimal() +
+      theme(legend.position = "none")
+    
+    # Dynamically generate the file name to include both language and variable
+    file_name <- paste0(plots, "prepost_", var, "_lines", "_", lang, ".pdf")
+    
+    # Save the plot
+    ggsave(filename = file_name, plot = p, width = 10, height = 8)
+  }
+}
+
+rm(languages,lang,variables,var,data_filtered)
+
+```
+
+### Variables, Lang side-by-side
+
+
+```{r}
+# Assuming colorBlindBlack8 and plots are defined
+variables <- unique(df_long$variable)
+
+# Without lines
+for (var in variables) {
+    # Filter df_long for the current language and variable
+    data_filtered <- subset(df_long, variable == var)
+    
+    # Generate the plot for the current language and variable
+    p <- ggplot(data = data_filtered, aes(x = phase, y = value, fill = Language)) +
+      geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+      geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+      scale_fill_manual(values = colorBlindBlack8) +
+      labs(x = "Syllable",
+           y = var) +
+      theme_minimal()
+    
+    # Dynamically generate the file name to include both language and variable
+    file_name <- paste0(plots, "prepost_", var, ".pdf")
+    
+    # Save the plot
+    ggsave(filename = file_name, plot = p, width = 10, height = 8)
+}
+
+# With lines
+for (var in variables) {
+    # Filter df_long for the current language and variable
+    data_filtered <- subset(df_long, variable == var)
+    
+    # Generate the plot for the current language and variable
+    p <- ggplot(data = data_filtered, aes(x = phase, y = value, fill = Language)) +
+      geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+      geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+      geom_line(aes(group = interaction(File, Syll_num)), color = "grey", alpha = 0.1) +
+      scale_fill_manual(values = colorBlindBlack8) +
+      labs(x = "Syllable",
+           y = var) +
+      theme_minimal()
+    
+    # Dynamically generate the file name to include both language and variable
+    file_name <- paste0(plots, "prepost_", var, "_lines", ".pdf")
+    
+    # Save the plot
+    ggsave(filename = file_name, plot = p, width = 10, height = 8)
+}
+
+rm(variables,var,data_filtered)
+
+```
+
+
+### Duration
+
+```{r}
+df_long %>%
+  filter(variable == "duration") %>%
+  group_by(phase) %>%
+  summarize(
+    count = n(),
+    mean = mean(value, na.rm = TRUE),
+    median = median(value, na.rm = TRUE),
+    sd = sd(value, na.rm = TRUE),
+    min = min(value, na.rm = TRUE),
+    max = max(value, na.rm = TRUE)
+  )
+
+# Plot F0_mean across phases using direct filtering within ggplot
+ggplot(data = subset(df_long, variable == "duration"), 
+       aes(x = phase, y = value, fill = Language)) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  #geom_violin(fill = "lightblue", color = "blue", alpha = 0.5) +
+  #geom_point(position = position_jitter(width = 0.2, height = 0), alpha = 0.2, color = "darkblue") +
+  labs(#title = "Distribution of F0_mean Across Phases",
+       x = "Syllable", 
+       y = "Duration") +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prepost_duration.pdf"), plot = last_plot(), width = 10, height = 8)
+
+ggplot(data = subset(df_long, variable == "duration"), 
+       aes(x = phase, y = value, fill = phase)) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  geom_line(aes(group = interaction(File, Syll_num)), color = "grey", alpha = 0.1) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  #geom_violin(fill = "lightblue", color = "blue", alpha = 0.5) +
+  #geom_point(position = position_jitter(width = 0.2, height = 0), alpha = 0.2, color = "darkblue") +
+  labs(#title = "Distribution of F0_mean Across Phases",
+       x = "Syllable", 
+       y = "Duration") +
+  theme_minimal() +
+  theme(legend.position = "none")
+ggsave(filename = paste0(plots, "prepost_duration_lines.pdf"), plot = last_plot(), width = 10, height = 8)
+```
+
+### F0 mean
+
+```{r}
+df_long %>%
+  filter(variable == "F0_mean") %>%
+  group_by(phase) %>%
+  summarize(
+    count = n(),
+    mean = mean(value, na.rm = TRUE),
+    median = median(value, na.rm = TRUE),
+    sd = sd(value, na.rm = TRUE),
+    min = min(value, na.rm = TRUE),
+    max = max(value, na.rm = TRUE)
+  )
+
+# Plot F0_mean across phases using direct filtering within ggplot
+ggplot(data = subset(df_long, variable == "F0_mean"), 
+       aes(x = phase, y = value, fill = phase)) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  #geom_violin(fill = "lightblue", color = "blue", alpha = 0.5) +
+  #geom_point(position = position_jitter(width = 0.2, height = 0), alpha = 0.2, color = "darkblue") +
+  labs(#title = "Distribution of F0_mean Across Phases",
+       x = "Syllable", 
+       y = "F0 mean") +
+  theme_minimal() +
+  theme(legend.position = "none")
+ggsave(filename = paste0(plots, "prepost_F0mean.pdf"), plot = last_plot(), width = 10, height = 8)
+
+ggplot(data = subset(df_long, variable == "F0_mean"), 
+       aes(x = phase, y = value, fill = phase)) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  geom_line(aes(group = interaction(File, Syll_num)), color = "grey", alpha = 0.1) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  #geom_violin(fill = "lightblue", color = "blue", alpha = 0.5) +
+  #geom_point(position = position_jitter(width = 0.2, height = 0), alpha = 0.2, color = "darkblue") +
+  labs(#title = "Distribution of F0_mean Across Phases",
+       x = "Syllable", 
+       y = "F0 mean") +
+  theme_minimal() +
+  theme(legend.position = "none")
+ggsave(filename = paste0(plots, "prepost_F0mean_lines.pdf"), plot = last_plot(), width = 10, height = 8)
+```
+
+### F0 range
+
+```{r}
+# Plot F0_mean across phases using direct filtering within ggplot
+ggplot(data = subset(df_long, variable == "F0_range"), 
+       aes(x = phase, y = value)) +
+  geom_violin(fill = "lightblue", color = "blue", alpha = 0.5) +
+  geom_point(position = position_jitter(width = 0.2, height = 0), alpha = 0.5, color = "darkblue") +
+  labs(#title = "Distribution of F0_mean Across Phases",
+       x = "Syllable", 
+       y = "f0 range") +
+  theme_minimal()
+
+ggplot(data = subset(df_long, variable == "F0_range"), 
+       aes(x = phase, y = value)) +
+  geom_violin(fill = "lightblue", color = "blue", alpha = 0.5) +
+  geom_point(position = position_jitter(width = 0.2, height = 0), alpha = 0.5, color = "darkblue") +
+  geom_line(aes(group = interaction(File, Syll_num)), color = "grey", alpha = 0.1) +
+    labs(#title = "Distribution of F0_mean Across Phases",
+       x = "Syllable", 
+       y = "f0 range") +
+  theme_minimal()
+```
+
+### Amplitude envelope mean
+
+```{r}
+# Plot F0_mean across phases using direct filtering within ggplot
+ggplot(data = subset(df_long, variable == "env_mean"), 
+       aes(x = phase, y = value)) +
+  geom_violin(fill = "lightblue", color = "blue", alpha = 0.5) +
+  geom_point(position = position_jitter(width = 0.2, height = 0), alpha = 0.5, color = "darkblue") +
+  labs(#title = "Distribution of F0_mean Across Phases",
+       x = "Syllable", 
+       y = "Mean amplitude envelope") +
+  theme_minimal()
+
+ggplot(data = subset(df_long, variable == "env_mean"), 
+       aes(x = phase, y = value)) +
+  geom_violin(fill = "lightblue", color = "blue", alpha = 0.5) +
+  geom_point(position = position_jitter(width = 0.2, height = 0), alpha = 0.5, color = "darkblue") +
+  geom_line(aes(group = interaction(File, Syll_num)), color = "grey", alpha = 0.1) +
+    labs(#title = "Distribution of F0_mean Across Phases",
+       x = "Syllable", 
+       y = "Mean amplitude envelope") +
+  theme_minimal()
+```
+
+### Amplitude envelope range
+
+```{r}
+# Plot F0_mean across phases using direct filtering within ggplot
+ggplot(data = subset(df_long, variable == "env_range"), 
+       aes(x = phase, y = value)) +
+  geom_violin(fill = "lightblue", color = "blue", alpha = 0.5) +
+  geom_point(position = position_jitter(width = 0.2, height = 0), alpha = 0.5, color = "darkblue") +
+  labs(#title = "Distribution of F0_mean Across Phases",
+       x = "Syllable", 
+       y = "Amplitude envelope range") +
+  theme_minimal()
+
+ggplot(data = subset(df_long, variable == "env_range"), 
+       aes(x = phase, y = value)) +
+  geom_violin(fill = "lightblue", color = "blue", alpha = 0.5) +
+  geom_point(position = position_jitter(width = 0.2, height = 0), alpha = 0.5, color = "darkblue") +
+  geom_line(aes(group = interaction(File, Syll_num)), color = "grey", alpha = 0.1) +
+    labs(#title = "Distribution of F0_mean Across Phases",
+       x = "Syllable", 
+       y = "Amplitude envelope range") +
+  theme_minimal()
+```
+
 
 # Modeling DGfS
 
@@ -1922,7 +2233,59 @@ These are a lot of variables, I don't know if the model will hold it. I will fir
 df_prepost$Focus <- as.factor(df_prepost$Focus)
 
 levels(df_prepost$Focus)
+
+df_prepost$Focus <- factor(df_prepost$Focus, levels = c("background", "information", "filler", "contrastive", "corrective"))
 ```
+
+Check distribution.
+
+```{r}
+table(df_prepost$Focus)
+
+ggplot(df_prepost, aes(x = Focus)) +
+  geom_bar() +
+  labs(title = "Distribution of Focus Levels", x = "Focus", y = "Count") +
+  theme_minimal()
+
+```
+
+## Priors
+
+```{r}
+get_prior(formula = Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_range + duration +
+            (1 + F0_mean + F0_range + env_mean + env_range + duration || Language) +
+            (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender) +
+            (1 + F0_mean + F0_range + env_mean + env_range + duration || Age),
+          data = df_prepost,
+          family = gaussian())
+```
+
+## Full target only
+
+```{r}
+mdl_fullTargetOnly <- brm(Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_range + duration +
+                            (1 + F0_mean + F0_range + env_mean + env_range + duration || Language) +
+                            (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender),
+                   data = df_prepost,
+                   #prior = priors_intOnlyH1,
+                   family = gaussian(),
+                   #backend = "cmdstanr", # depends on you
+                   cores = 4,
+                   chains = 4,
+                   iter = 4000,
+                   warmup = 2000,
+                   seed = 998,
+                   control = list(max_treedepth = 13,
+                                  adapt_delta = 0.99),
+                   file = paste0(models, "mdl_fullTargetOnly.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_fullTargetOnly, file = paste0(models, "mdl_fullTargetOnly.rds"), compress = "xz")
+
+mdl_fullTargetOnly <- readRDS(paste0(models, "mdl_fullTargetOnly.rds"))
+```
+
+
 
 # Modeling prominence
 
@@ -1954,16 +2317,15 @@ get_prior(formula = Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_rang
 ```{r}
 mdl_fullTargetOnly <- brm(Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_range + duration +
                             (1 + F0_mean + F0_range + env_mean + env_range + duration || Language) +
-                            (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender) +
-                            (1 + F0_mean + F0_range + env_mean + env_range + duration || Age),
+                            (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender),
                    data = df_prepost,
                    #prior = priors_intOnlyH1,
                    family = gaussian(),
                    #backend = "cmdstanr", # depends on you
                    cores = 4,
                    chains = 4,
-                   iter = 8000,
-                   warmup = 4000,
+                   iter = 4000,
+                   warmup = 2000,
                    seed = 998,
                    control = list(max_treedepth = 13,
                                   adapt_delta = 0.99),
