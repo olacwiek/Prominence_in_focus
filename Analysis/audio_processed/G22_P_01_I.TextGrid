@@ -238,7 +238,7 @@ item []:
             text = ""
     item [24]:
         class = "IntervalTier"
-        name = "Wor"
+        name = "Word"
         xmin = 0
         xmax = 5.145
         intervals: size = 1

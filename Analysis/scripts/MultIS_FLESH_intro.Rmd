@@ -1110,6 +1110,43 @@ df <- df %>%
 unique(df$Syll)
 ```
 
+Correct column Word.
+
+```{r}
+df <- df %>%
+  # Replace "N\t" with "N"
+  mutate(Word = gsub("N\\t", "N", Word)) %>%
+  # Change "NP" to "N" and "Adj" to "A"
+  mutate(Word = case_when(
+    Word == "NP" ~ "N",
+    Word == "Adj" ~ "A",
+    TRUE ~ Word
+  )) %>%
+  # Convert Word column to factor after all replacements
+  mutate(Word = as.factor(Word)) %>%
+  # Filter out specific rows based on Syll_num and File
+  filter(!(Syll_num == 8 & File == "C08_T_21_C") & 
+         !(Syll_num == 2 & File == "G26_T_31_B"))
+```
+
+Correct prominence ratings.
+
+```{r}
+df <- df %>%
+  # First, handle the specific updates for Prosodic_Prom
+  mutate(# Ensure Prosodic_Prom is numeric before applying case_when
+    Prosodic_Prom = as.numeric(Prosodic_Prom),
+    Prosodic_Prom = case_when(
+    File == "G17_T_35_B" & Syll == "pfan" ~ 2,
+    File == "C02_T_13_I" & Syll == "lor_pre" ~ 1,
+    File == "C02_T_14_F" & Syll == "lor_pre" ~ 1,
+    TRUE ~ Prosodic_Prom
+  )) %>%
+  # Then, filter out the specific row to delete
+  # This case is arguably important, but since it is not the real target word, I delete it
+  filter(!(File == "G14_T_22_R" & Syll == "an"))
+```
+
 For some plots, we also need a subset of only target syllables.
 
 ```{r target sylls only, echo=TRUE, message=FALSE, warning=FALSE}
@@ -1139,7 +1176,7 @@ na_stats_before <- calculate_na_stats(df_targets, columns_to_process)
 print(na_stats_before)
 ```
 
-Relace Inf values.
+Replace Inf values.
 
 ```{r replace inf, echo=TRUE, message=FALSE, warning=FALSE}
 # Loop through each column and replace Inf and -Inf with NA
@@ -1281,19 +1318,6 @@ df %>%
   filter(Language == "Catalan", is.na(Prosodic_Prom)) %>%
   select(File, Syll)
 
-# Correct and add ratings
-df <- df %>%
-  # First, handle the specific updates for Prosodic_Prom
-  mutate(Prosodic_Prom = case_when(
-    File == "G17_T_35_B" & Syll == "pfan" ~ 2,
-    File == "C02_T_13_I" & Syll == "lor_pre" ~ 1,
-    File == "C02_T_14_F" & Syll == "lor_pre" ~ 1,
-    TRUE ~ Prosodic_Prom
-  )) %>%
-  # Then, filter out the specific row to delete
-  # This case is arguably important, but since it is not the real target word, I delete it
-  filter(!(File == "G14_T_22_R" & Syll == "an"))
-
 ## Count
 ggplot(syll_per_pros, aes(x = Prosodic_Prom, y = Count, fill = Language)) +
   geom_bar(stat = "identity", position = "dodge", alpha = 0.7) +
@@ -1312,6 +1336,14 @@ ggplot(syll_per_pros, aes(x = Prosodic_Prom, y = Proportion, fill = Language)) +
   theme_minimal()
 ggsave(filename = paste0(plots, "prominence_prop.pdf"), plot = last_plot(), width = 6, height = 4)
 ```
+
+Update df_targets
+
+```{r target sylls update, echo=TRUE, message=FALSE, warning=FALSE}
+df_targets <- df %>%
+  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>")))
+```
+
 
 ## Averages prominence
 
@@ -1438,7 +1470,7 @@ ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = F0_ra
 ggsave(filename = paste0(plots, "prominence_f0Range_raw.pdf"), plot = last_plot(), width = 6, height = 4)
 
 ## z-scored F0
-ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = F0_mean_z, fill = as.factor(Prosodic_Prom))) +
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = F0_range_z, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
   geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
   labs(
@@ -1546,7 +1578,7 @@ ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = env_r
 ggsave(filename = paste0(plots, "prominence_envRange_raw.pdf"), plot = last_plot(), width = 6, height = 4)
 
 ## z-scored env
-ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = env_mean_z, fill = as.factor(Prosodic_Prom))) +
+ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = env_range_z, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
   geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
   labs(
@@ -1566,6 +1598,7 @@ Change levels.
 
 ```{r}
 df$Focus <- factor(df$Focus, levels = c("background", "information", "filler", "contrastive", "corrective"))
+df_targets$Focus <- factor(df_targets$Focus, levels = c("background", "information", "filler", "contrastive", "corrective"))
 ```
 
 ### Duration
@@ -1576,25 +1609,44 @@ Catalan vs in German?
 ```{r avg duration, echo=TRUE, message=FALSE, warning=FALSE}
 df %>%
   filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
-  group_by(Language, Focus) %>%
-  summarize(Average_Duration = mean(duration, na.rm = TRUE))
+  group_by(Language, Focus, Word) %>%
+  summarize(Average_Duration = mean(duration, na.rm = TRUE)) %>% 
+  print(n=30)
 ```
 
 Let's plot it.
 
 ```{r avg duration plot, echo=TRUE, message=FALSE, warning=FALSE}
-ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = duration, fill = as.factor(Focus))) +
-  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
-  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
-  labs(
-    #title = "Duration of Focus Ratings by Language",
-    x = "Language",
-    y = "Duration",
-    fill = "Focus"
-  ) +
-  scale_fill_manual(values = colorBlindBlack8) +
-  theme_minimal()
-ggsave(filename = paste0(plots, "focus_duration.pdf"), plot = last_plot(), width = 6, height = 4)
+# Unique Word conditions to loop through
+word_conditions <- unique(df_targets$Word)
+
+# Loop through each Word condition to create, print, and save a plot
+for (word in word_conditions) {
+  # Filter the dataframe for the current Word condition
+  df_filtered <- df_targets %>%
+    filter(Word == word, !is.na(Focus))
+  
+  # Generate the plot
+  p <- ggplot(df_filtered, aes(x = Language, y = duration, fill = as.factor(Focus))) +
+    geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+    geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+    labs(
+      x = "Language",
+      y = "Duration",
+      fill = "Focus",
+      title = word
+    ) +
+    scale_fill_manual(values = colorBlindBlack8) +
+    theme_minimal()
+  
+  # Dynamically generate the filename
+  filename <- paste0(plots, "focus_duration_", word, ".pdf")
+  
+  # Save the plot
+  ggsave(filename = filename, plot = p, width = 6, height = 4)
+}
+
+rm(p,df_filtered,filename)
 ```
 
 ### Mean f0
@@ -1605,45 +1657,53 @@ German?
 ```{r avg F0, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate means for raw F0
 df_targets %>%
-  group_by(Language, Focus) %>%
-  summarize(Average_F0 = mean(F0_mean, na.rm = TRUE))
+  group_by(Language, Focus, Word) %>%
+  summarize(Average_F0 = mean(F0_mean, na.rm = TRUE)) %>% 
+  print(n = 30)
 
 # Calculate means for z-scored F0
 df_targets %>%
-  group_by(Language, Focus) %>%
-  summarize(Average_F0_z = mean(F0_mean_z, na.rm = TRUE))
+  group_by(Language, Focus, Word) %>%
+  summarize(Average_F0_z = mean(F0_mean_z, na.rm = TRUE)) %>% 
+  print(n = 30)
 ```
 
 Let's plot it.
 
 ```{r avg F0 plot, echo=TRUE, message=FALSE, warning=FALSE}
-## Raw F0
-ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = F0_mean, fill = as.factor(Focus))) +
-  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
-  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
-  labs(
-    #title = "F0 means of Focus Ratings by Language",
-    x = "Language",
-    y = "Mean f0 (Hertz)",
-    fill = "Focus"
-  ) +
-  scale_fill_manual(values = colorBlindBlack8) +
-  theme_minimal()
-ggsave(filename = paste0(plots, "focus_f0Mean_raw.pdf"), plot = last_plot(), width = 6, height = 4)
+# Unique Word conditions to loop through
+word_conditions <- unique(df_targets$Word)
 
-## z-scored F0
-ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = F0_mean_z, fill = as.factor(Focus))) +
-  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
-  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
-  labs(
-    #title = "F0 means of Focus Ratings by Language",
-    x = "Language",
-    y = "Mean f0 (z-scored)",
-    fill = "Focus"
-  ) +
-  scale_fill_manual(values = colorBlindBlack8) +
-  theme_minimal()
-ggsave(filename = paste0(plots, "focus_f0Mean_z.pdf"), plot = last_plot(), width = 6, height = 4)
+# Loop through each Word condition to create and save plots
+for (word in word_conditions) {
+  # Filter the dataframe for the current Word condition
+  df_filtered <- df_targets %>%
+    filter(Word == word, !is.na(Focus))
+  
+  # Plot for raw F0_mean
+  p_raw <- ggplot(df_filtered, aes(x = Language, y = F0_mean, fill = as.factor(Focus))) +
+    geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+    geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+    labs(x = "Language", y = "Mean f0 (Hertz)", fill = "Focus", title = word) +
+    scale_fill_manual(values = colorBlindBlack8) +
+    theme_minimal()
+  
+  # Save the raw F0_mean plot
+  ggsave(filename = paste0(plots, "focus_f0Mean_raw_", word, ".pdf"), plot = p_raw, width = 6, height = 4)
+  
+  # Plot for z-scored F0_mean
+  p_z <- ggplot(df_filtered, aes(x = Language, y = F0_mean_z, fill = as.factor(Focus))) +
+    geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+    geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+    labs(x = "Language", y = "Mean f0 (z-scored)", fill = "Focus", title = word) +
+    scale_fill_manual(values = colorBlindBlack8) +
+    theme_minimal()
+  
+  # Save the z-scored F0_mean plot
+  ggsave(filename = paste0(plots, "focus_f0Mean_z_", word, ".pdf"), plot = p_z, width = 6, height = 4)
+}
+
+rm(p_raw,p_z,df_filtered)
 ```
 
 ### F0 range
@@ -1654,45 +1714,53 @@ German?
 ```{r range F0, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate means for raw F0
 df_targets %>%
-  group_by(Language, Focus) %>%
-  summarize(Average_F0_range = mean(F0_range, na.rm = TRUE))
+  group_by(Language, Focus, Word) %>%
+  summarize(Average_F0_range = mean(F0_range, na.rm = TRUE)) %>% 
+  print(n = 30)
 
 # Calculate means for z-scored F0
 df_targets %>%
-  group_by(Language, Focus) %>%
-  summarize(Average_F0_range_z = mean(F0_range_z, na.rm = TRUE))
+  group_by(Language, Focus, Word) %>%
+  summarize(Average_F0_range_z = mean(F0_range_z, na.rm = TRUE)) %>% 
+  print(n = 30)
 ```
 
 Let's plot it.
 
 ```{r range F0 plot, echo=TRUE, message=FALSE, warning=FALSE}
-## Raw F0
-ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = F0_range, fill = as.factor(Focus))) +
-  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
-  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
-  labs(
-    #title = "F0 means of Focus Ratings by Language",
-    x = "Language",
-    y = "f0 range (Hertz)",
-    fill = "Focus"
-  ) +
-  scale_fill_manual(values = colorBlindBlack8) +
-  theme_minimal()
-ggsave(filename = paste0(plots, "focus_f0Range_raw.pdf"), plot = last_plot(), width = 6, height = 4)
+# Unique Word conditions to loop through
+word_conditions <- unique(df_targets$Word)
 
-## z-scored F0
-ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = F0_mean_z, fill = as.factor(Focus))) +
-  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
-  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
-  labs(
-    #title = "F0 means of Focus Ratings by Language",
-    x = "Language",
-    y = "f0 range (z-scored)",
-    fill = "Focus"
-  ) +
-  scale_fill_manual(values = colorBlindBlack8) +
-  theme_minimal()
-ggsave(filename = paste0(plots, "focus_f0Range_z.pdf"), plot = last_plot(), width = 6, height = 4)
+# Loop through each Word condition to create and save plots
+for (word in word_conditions) {
+  # Filter the dataframe for the current Word condition
+  df_filtered <- df_targets %>%
+    filter(Word == word, !is.na(Focus))
+  
+  # Plot for raw F0_mean
+  p_raw <- ggplot(df_filtered, aes(x = Language, y = F0_range, fill = as.factor(Focus))) +
+    geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+    geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+    labs(x = "Language", y = "F0 range (Hertz)", fill = "Focus", title = word) +
+    scale_fill_manual(values = colorBlindBlack8) +
+    theme_minimal()
+  
+  # Save the raw F0_mean plot
+  ggsave(filename = paste0(plots, "focus_f0Range_raw_", word, ".pdf"), plot = p_raw, width = 6, height = 4)
+  
+  # Plot for z-scored F0_mean
+  p_z <- ggplot(df_filtered, aes(x = Language, y = F0_range_z, fill = as.factor(Focus))) +
+    geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+    geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+    labs(x = "Language", y = "F0 range (z-scored)", fill = "Focus", title = word) +
+    scale_fill_manual(values = colorBlindBlack8) +
+    theme_minimal()
+  
+  # Save the z-scored F0_mean plot
+  ggsave(filename = paste0(plots, "focus_f0Range_z_", word, ".pdf"), plot = p_z, width = 6, height = 4)
+}
+
+rm(p_raw,p_z,df_filtered)
 ```
 
 ### Mean amplitude envelope
@@ -1703,45 +1771,49 @@ Catalan vs in German?
 ```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate means for raw F0
 df_targets %>%
-  group_by(Language, Focus) %>%
-  summarize(Average_env = mean(env_mean, na.rm = TRUE))
+  group_by(Language, Focus, Word) %>%
+  summarize(Average_env = mean(env_mean, na.rm = TRUE)) %>% 
+  print(n = 30)
 
 # Calculate means for z-scored F0
 df_targets %>%
-  group_by(Language, Focus) %>%
-  summarize(Average_env_z = mean(env_mean_z, na.rm = TRUE))
+  group_by(Language, Focus, Word) %>%
+  summarize(Average_env_z = mean(env_mean_z, na.rm = TRUE)) %>% 
+  print(n = 30)
 ```
 
 Let's plot it.
 
 ```{r avg env plot, echo=TRUE, message=FALSE, warning=FALSE}
-## Raw env
-ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = env_mean, fill = as.factor(Focus))) +
-  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
-  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
-  labs(
-    #title = "ENV means of Focus Ratings by Language",
-    x = "Language",
-    y = "Mean amplitude envelope",
-    fill = "Focus"
-  ) +
-  scale_fill_manual(values = colorBlindBlack8) +
-  theme_minimal()
-ggsave(filename = paste0(plots, "focus_envMean_raw.pdf"), plot = last_plot(), width = 6, height = 4)
+# Unique Word conditions to loop through
+word_conditions <- unique(df_targets$Word)
 
-## z-scored env
-ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = env_mean_z, fill = as.factor(Focus))) +
-  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
-  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
-  labs(
-    #title = "ENV means of Focus Ratings by Language",
-    x = "Language",
-    y = "Mean amplitude envelope (z-scored)",
-    fill = "Focus"
-  ) +
-  scale_fill_manual(values = colorBlindBlack8) +
-  theme_minimal()
-ggsave(filename = paste0(plots, "focus_envMean_z.pdf"), plot = last_plot(), width = 6, height = 4)
+# Loop through each Word condition to create and save plots
+for (word in word_conditions) {
+  # Filter the dataframe for the current Word condition
+  df_filtered <- df_targets %>%
+    filter(Word == word, !is.na(Focus))
+  
+  p_raw <- ggplot(df_filtered, aes(x = Language, y = env_mean, fill = as.factor(Focus))) +
+    geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+    geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+    labs(x = "Language", y = "Mean amplitude envelope", fill = "Focus", title = word) +
+    scale_fill_manual(values = colorBlindBlack8) +
+    theme_minimal()
+  
+  ggsave(filename = paste0(plots, "focus_envMean_raw_", word, ".pdf"), plot = p_raw, width = 6, height = 4)
+  
+  p_z <- ggplot(df_filtered, aes(x = Language, y = env_mean_z, fill = as.factor(Focus))) +
+    geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+    geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+    labs(x = "Language", y = "Mean amplitude envelope (z-scored)", fill = "Focus", title = word) +
+    scale_fill_manual(values = colorBlindBlack8) +
+    theme_minimal()
+  
+  ggsave(filename = paste0(plots, "focus_envMean_z_", word, ".pdf"), plot = p_z, width = 6, height = 4)
+}
+
+rm(p_raw,p_z,df_filtered)
 ```
 
 ### Amplitude envelope range
@@ -1749,48 +1821,52 @@ ggsave(filename = paste0(plots, "focus_envMean_z.pdf"), plot = last_plot(), widt
 What is the average amplitude envelope of the different Focus ratings in
 Catalan vs in German?
 
-```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
+```{r range env, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate means for raw envelope range
 df_targets %>%
-  group_by(Language, Focus) %>%
-  summarize(Average_env_range = mean(env_range, na.rm = TRUE))
+  group_by(Language, Focus, Word) %>%
+  summarize(Average_env_range = mean(env_range, na.rm = TRUE)) %>% 
+  print(n = 30)
 
 # Calculate means for z-scored envelope range
 df_targets %>%
-  group_by(Language, Focus) %>%
-  summarize(Average_env_range_z = mean(env_range_z, na.rm = TRUE))
+  group_by(Language, Focus, Word) %>%
+  summarize(Average_env_range_z = mean(env_range_z, na.rm = TRUE)) %>% 
+  print(n = 30)
 ```
 
 Let's plot it.
 
-```{r avg env plot, echo=TRUE, message=FALSE, warning=FALSE}
-## Raw env
-ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = env_range, fill = as.factor(Focus))) +
-  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
-  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
-  labs(
-    #title = "ENV means of Focus Ratings by Language",
-    x = "Language",
-    y = "Amplitude envelope range",
-    fill = "Focus"
-  ) +
-  scale_fill_manual(values = colorBlindBlack8) +
-  theme_minimal()
-ggsave(filename = paste0(plots, "focus_envRange_raw.pdf"), plot = last_plot(), width = 6, height = 4)
+```{r range env plot, echo=TRUE, message=FALSE, warning=FALSE}
+# Unique Word conditions to loop through
+word_conditions <- unique(df_targets$Word)
 
-## z-scored env
-ggplot(df_targets %>% filter(!is.na(Focus)), aes(x = Language, y = env_mean_z, fill = as.factor(Focus))) +
-  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
-  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
-  labs(
-    #title = "ENV means of Focus Ratings by Language",
-    x = "Language",
-    y = "Amplitude envelope range (z-scored)",
-    fill = "Focus"
-  ) +
-  scale_fill_manual(values = colorBlindBlack8) +
-  theme_minimal()
-ggsave(filename = paste0(plots, "focus_envRange_z.pdf"), plot = last_plot(), width = 6, height = 4)
+# Loop through each Word condition to create and save plots
+for (word in word_conditions) {
+  # Filter the dataframe for the current Word condition
+  df_filtered <- df_targets %>%
+    filter(Word == word, !is.na(Focus))
+  
+  p_raw <- ggplot(df_filtered, aes(x = Language, y = env_range, fill = as.factor(Focus))) +
+    geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+    geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+    labs(x = "Language", y = "Amplitude envelope range", fill = "Focus", title = word) +
+    scale_fill_manual(values = colorBlindBlack8) +
+    theme_minimal()
+  
+  ggsave(filename = paste0(plots, "focus_envRange_raw_", word, ".pdf"), plot = p_raw, width = 6, height = 4)
+  
+  p_z <- ggplot(df_filtered, aes(x = Language, y = env_range_z, fill = as.factor(Focus))) +
+    geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+    geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+    labs(x = "Language", y = "Amplitude envelope range (z-scored)", fill = "Focus", title = word) +
+    scale_fill_manual(values = colorBlindBlack8) +
+    theme_minimal()
+  
+  ggsave(filename = paste0(plots, "focus_envRange_z_", word, ".pdf"), plot = p_z, width = 6, height = 4)
+}
+
+rm(p_raw,p_z,df_filtered)
 ```
 
 # Pre- and posttonic
@@ -1806,14 +1882,26 @@ df %>%
 
 All target, that is good.
 
+Add scaled variables to df
+
+```{r}
+df <- df %>%
+  group_by(Language, Participant) %>%
+  mutate(env_mean_z = scale(env_mean),
+         env_range_z = scale(env_range),
+         env_min_z = scale(env_min),
+         env_max_z = scale(env_max),
+         F0_mean_z = scale(F0_mean),
+         F0_range_z = scale(F0_range),
+         F0_min_z = scale(F0_min),
+         F0_max_z = scale(F0_max))
+```
+
+
 Create a new df that for each main target syllables also contains info
 on the pre and post-tonic.
 
 ```{r}
-df %>%
-  filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
-  select(File,Syll_num)  # Select only the Syll_num column
-
 # Combined process to find "pre" syllables for Syll_num - 1 based on initial conditions
 df_prepost <- df %>%
   # First, find rows that do not match the initial exclusion criteria and get their File and Syll_num
@@ -1935,8 +2023,7 @@ rm(languages,lang,variables,var,data_filtered)
 
 ```
 
-### Variables, Lang side-by-side
-
+### Variables, Language side-by-side
 
 ```{r}
 # Assuming colorBlindBlack8 and plots are defined
@@ -1988,7 +2075,6 @@ for (var in variables) {
 rm(variables,var,data_filtered)
 
 ```
-
 
 ### Duration
 
@@ -2153,16 +2239,23 @@ ggplot(data = subset(df_long, variable == "env_range"),
   theme_minimal()
 ```
 
-
-# Modeling DGfS
+# Modeling focus
 
 Our question is whether different acoustic parameters can predict focus
 conditions.
 
+We leave out Focus = filler, and the two Focus conditions NC and PROP in Catalan.
+
+```{r}
+df_prepost_model <- df_prepost %>%
+  filter(!(Focus == "filler" | 
+           (Word %in% c("NC", "PRON"))))
+```
+
 Which acoustic parameters do we have for now?
 
 ```{r}
-str(df_prepost)
+str(df_prepost_model)
 ```
 
 1.  F0_mean
@@ -2221,54 +2314,240 @@ str(df_prepost)
 
 With the grouping parameters:
 
-1. Language
+1.  Language
 
-2. Gender
+2.  Gender
 
-3. Age
+3.  Age
 
-These are a lot of variables, I don't know if the model will hold it. I will first try without the pre- and post-tonic.
+These are a lot of variables, I don't know if the model will hold it. I
+will first try without the pre- and post-tonic.
 
 ```{r}
-df_prepost$Focus <- as.factor(df_prepost$Focus)
+df_prepost_model$Focus <- as.factor(df_prepost_model$Focus)
 
-levels(df_prepost$Focus)
+levels(df_prepost_model$Focus)
 
-df_prepost$Focus <- factor(df_prepost$Focus, levels = c("background", "information", "filler", "contrastive", "corrective"))
+df_prepost_model$Focus <- factor(df_prepost_model$Focus, levels = c("background", "information", "contrastive", "corrective"))
 ```
 
 Check distribution.
 
 ```{r}
-table(df_prepost$Focus)
+table(df_prepost_model$Focus)
 
-ggplot(df_prepost, aes(x = Focus)) +
+ggplot(df_prepost_model, aes(x = Focus)) +
   geom_bar() +
   labs(title = "Distribution of Focus Levels", x = "Focus", y = "Count") +
   theme_minimal()
-
 ```
 
 ## Priors
 
 ```{r}
-get_prior(formula = Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_range + duration +
+get_prior(formula = Focus ~ 1 + F0_mean + F0_range + env_mean + env_range + duration +
             (1 + F0_mean + F0_range + env_mean + env_range + duration || Language) +
-            (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender) +
-            (1 + F0_mean + F0_range + env_mean + env_range + duration || Age),
-          data = df_prepost,
-          family = gaussian())
+            (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender),
+          data = df_prepost_model,
+          family = categorical())
 ```
 
 ## Full target only
 
 ```{r}
-mdl_fullTargetOnly <- brm(Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_range + duration +
+mdl_focusFullTarget <- brm(Focus ~ 1 + F0_mean + F0_range + env_mean + env_range + duration +
                             (1 + F0_mean + F0_range + env_mean + env_range + duration || Language) +
                             (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender),
-                   data = df_prepost,
+                   data = df_prepost_model,
                    #prior = priors_intOnlyH1,
-                   family = gaussian(),
+                   family = categorical(),
+                   #backend = "cmdstanr", # depends on you
+                   cores = 4,
+                   chains = 4,
+                   iter = 2000,
+                   warmup = 1000,
+                   seed = 998,
+                   control = list(max_treedepth = 13,
+                                  adapt_delta = 0.99),
+                   file = paste0(models, "mdl_focusFullTarget.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_focusFullTarget, file = paste0(models, "mdl_focusFullTarget.rds"), compress = "xz")
+
+mdl_focusFullTarget <- readRDS(paste0(models, "mdl_focusFullTarget.rds"))
+```
+
+## Separating for DGfS
+
+### Priors
+
+```{r}
+priors_f0Mean <- c(
+  prior('normal(0, 3)', class = 'Intercept'),
+  prior('normal(0, 1)', class = b)
+)
+
+priors_f0Range <- c(
+  prior('normal(0, 2)', class = 'Intercept'),
+  prior('normal(0, 1)', class = b)
+)
+
+priors_envMean <- c(
+  prior('normal(0, 1)', class = 'Intercept'),
+  prior('normal(0, 0.5)', class = b)
+)
+
+priors_envRange <- c(
+  prior('normal(0, 0.5)', class = 'Intercept'),
+  prior('normal(0, 0.1)', class = b)
+)
+
+priors_duration <- c(
+  prior('normal(0, 5)', class = 'Intercept'),
+  prior('normal(0, 2)', class = b)
+)
+```
+
+### Contrast-coding
+
+
+```{r}
+df_prepost_model <- df_prepost_model %>%
+  mutate(
+    Gender_s = if_else(Gender == "female", -0.5, 0.5),
+    Word_s = if_else(Word == "N", -0.5, 0.5)
+  )
+```
+
+
+### Models
+
+#### F0 mean
+
+##### No random structure
+
+###### No interaction
+
+```{r}
+mdl_focus_f0Mean_noRS <- brm(F0_mean ~ 1 + Focus + Gender_s + Word_s,
+                   data = df_prepost_model,
+                   prior = priors_f0Mean,
+                   family = lognormal(),
+                   #backend = "cmdstanr", # depends on you
+                   cores = 4,
+                   chains = 4,
+                   iter = 2000,
+                   warmup = 1000,
+                   seed = 998,
+                   control = list(max_treedepth = 12,
+                                  adapt_delta = 0.99),
+                   file = paste0(models, "mdl_focus_f0Mean_noRS.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_fullTargetOnly, file = paste0(models, "mdl_fullTargetOnly.rds"), compress = "xz")
+
+mdl_focus_f0Mean_noRS <- readRDS(paste0(models, "mdl_focus_f0Mean_noRS.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_focus_f0Mean_noRS)
+```
+
+```{r}
+plot(mdl_focus_f0Mean_noRS)
+```
+
+```{r}
+pp_check(mdl_focus_f0Mean_noRS, ndraws = 100)
+```
+
+Let's compute the loo for model comparison.
+
+```{r}
+# run loo mdl
+if (file.exists(paste0(models, "mdl_focus_f0Mean_noRS_loo.rds"))) {
+  mdl_focus_f0Mean_noRS_loo <- readRDS(paste0(models, "mdl_focus_f0Mean_noRS_loo.rds"))
+} else {
+  mdl_focus_f0Mean_noRS_loo <- loo(mdl_focus_f0Mean_noRS)
+  saveRDS(mdl_focus_f0Mean_noRS_loo, paste0(models, "mdl_focus_f0Mean_noRS_loo.rds"))
+}
+```
+
+Check the loo.
+
+```{r}
+mdl_focus_f0Mean_noRS_loo
+```
+
+###### Interaction
+
+Trying with interaction.
+
+```{r}
+mdl_focus_f0Mean_noRS_int <- brm(F0_mean ~ 1 + Focus * Gender_s + Focus * Word_s + Gender_s * Word_s, 
+                   data = df_prepost_model,
+                   prior = priors_f0Mean,
+                   family = lognormal(),
+                   #backend = "cmdstanr", # depends on you
+                   cores = 4,
+                   chains = 4,
+                   iter = 2000,
+                   warmup = 1000,
+                   seed = 998,
+                   control = list(max_treedepth = 12,
+                                  adapt_delta = 0.99),
+                   file = paste0(models, "mdl_focus_f0Mean_noRS_int.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_fullTargetOnly, file = paste0(models, "mdl_fullTargetOnly.rds"), compress = "xz")
+
+mdl_focus_f0Mean_noRS_int <- readRDS(paste0(models, "mdl_focus_f0Mean_noRS_int.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_focus_f0Mean_noRS_int)
+```
+
+```{r}
+plot(mdl_focus_f0Mean_noRS_int)
+```
+
+```{r}
+pp_check(mdl_focus_f0Mean_noRS_int, ndraws = 100)
+```
+
+Let's compute the loo for model comparison.
+
+```{r}
+# run loo mdl
+if (file.exists(paste0(models, "mdl_focus_f0Mean_noRS_int_loo.rds"))) {
+  mdl_focus_f0Mean_noRS_int_loo <- readRDS(paste0(models, "mdl_focus_f0Mean_noRS_int_loo.rds"))
+} else {
+  mdl_focus_f0Mean_noRS_int_loo <- loo(mdl_focus_f0Mean_noRS_int)
+  saveRDS(mdl_focus_f0Mean_noRS_int_loo, paste0(models, "mdl_focus_f0Mean_noRS_int_loo.rds"))
+}
+```
+
+Check the loo.
+
+```{r}
+mdl_focus_f0Mean_noRS_int_loo
+```
+
+##### No random slopes
+
+###### No interaction
+
+```{r}
+mdl_focus_f0Mean_noSlopes <- brm(F0_mean ~ 1 + Focus + Gender_s + Word_s +
+                               (1 | Language),
+                   data = df_prepost_model,
+                   prior = priors_f0Mean,
+                   family = lognormal(),
                    #backend = "cmdstanr", # depends on you
                    cores = 4,
                    chains = 4,
@@ -2276,29 +2555,235 @@ mdl_fullTargetOnly <- brm(Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + en
                    warmup = 2000,
                    seed = 998,
                    control = list(max_treedepth = 13,
-                                  adapt_delta = 0.99),
-                   file = paste0(models, "mdl_fullTargetOnly.rds"))
+                                  adapt_delta = 0.995),
+                   file = paste0(models, "mdl_focus_f0Mean_noSlopes.rds"))
 
 # if we need to compress the model more
 #saveRDS(mdl_fullTargetOnly, file = paste0(models, "mdl_fullTargetOnly.rds"), compress = "xz")
 
-mdl_fullTargetOnly <- readRDS(paste0(models, "mdl_fullTargetOnly.rds"))
+mdl_focus_f0Mean_noSlopes <- readRDS(paste0(models, "mdl_focus_f0Mean_noSlopes.rds"))
 ```
 
+Let's check how it looks like.
+
+```{r}
+summary(mdl_focus_f0Mean_noSlopes)
+```
+
+```{r}
+plot(mdl_focus_f0Mean_noSlopes)
+```
+
+```{r}
+pp_check(mdl_focus_f0Mean_noSlopes, ndraws = 100)
+```
+
+Let's compute the loo for model comparison.
+
+```{r}
+# run loo mdl
+if (file.exists(paste0(models, "mdl_focus_f0Mean_noSlopes_loo.rds"))) {
+  mdl_focus_f0Mean_noSlopes_loo <- readRDS(paste0(models, "mdl_focus_f0Mean_noSlopes_loo.rds"))
+} else {
+  mdl_focus_f0Mean_noSlopes_loo <- loo(mdl_focus_f0Mean_noSlopes)
+  saveRDS(mdl_focus_f0Mean_noSlopes_loo, paste0(models, "mdl_focus_f0Mean_noSlopes_loo.rds"))
+}
+```
+
+Check the loo.
+
+```{r}
+mdl_focus_f0Mean_noSlopes_loo
+```
+
+###### Interaction
+
+Trying with interaction.
+
+```{r}
+mdl_focus_f0Mean_noSlopes_int <- brm(F0_mean ~ 1 + Focus * Gender_s + Focus * Word_s + Gender_s * Word_s +
+                               (1 | Language),
+                   data = df_prepost_model,
+                   prior = priors_f0Mean,
+                   family = lognormal(),
+                   #backend = "cmdstanr", # depends on you
+                   cores = 4,
+                   chains = 4,
+                   iter = 2000,
+                   warmup = 1000,
+                   seed = 998,
+                   control = list(max_treedepth = 12,
+                                  adapt_delta = 0.99),
+                   file = paste0(models, "mdl_focus_f0Mean_noSlopes_int.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_fullTargetOnly, file = paste0(models, "mdl_fullTargetOnly.rds"), compress = "xz")
+
+mdl_focus_f0Mean_noSlopes_int <- readRDS(paste0(models, "mdl_focus_f0Mean_noSlopes_int.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_focus_f0Mean_noSlopes_int)
+```
+
+```{r}
+plot(mdl_focus_f0Mean_noSlopes_int)
+```
+
+```{r}
+pp_check(mdl_focus_f0Mean_noSlopes_int, ndraws = 100)
+```
+
+Let's compute the loo for model comparison.
+
+```{r}
+# run loo mdl
+if (file.exists(paste0(models, "mdl_focus_f0Mean_noSlopes_int_loo.rds"))) {
+  mdl_focus_f0Mean_noSlopes_int_loo <- readRDS(paste0(models, "mdl_focus_f0Mean_noSlopes_int_loo.rds"))
+} else {
+  mdl_focus_f0Mean_noSlopes_int_loo <- loo(mdl_focus_f0Mean_noSlopes_int)
+  saveRDS(mdl_focus_f0Mean_noSlopes_int_loo, paste0(models, "mdl_focus_f0Mean_noSlopes_int_loo.rds"))
+}
+```
+
+Check the loo.
+
+```{r}
+mdl_focus_f0Mean_noSlopes_int_loo
+```
+
+
+##### With random structure
+
+```{r}
+mdl_focus_f0Mean <- brm(F0_mean ~ 1 + Focus + Gender_s + Word_s +
+                            (1 + Focus || Language),
+                   data = df_prepost_model,
+                   prior = priors_f0Mean,
+                   family = lognormal(),
+                   #backend = "cmdstanr", # depends on you
+                   cores = 4,
+                   chains = 4,
+                   iter = 2000,
+                   warmup = 1000,
+                   seed = 998,
+                   control = list(max_treedepth = 12,
+                                  adapt_delta = 0.99),
+                   file = paste0(models, "mdl_focus_f0Mean.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_fullTargetOnly, file = paste0(models, "mdl_fullTargetOnly.rds"), compress = "xz")
+
+mdl_focus_f0Mean <- readRDS(paste0(models, "mdl_focus_f0Mean.rds"))
+```
+
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_focus_f0Mean_noSlopes)
+```
+
+```{r}
+plot(mdl_focus_f0Mean_noSlopes)
+```
+
+```{r}
+pp_check(mdl_focus_f0Mean_noSlopes, ndraws = 100)
+```
+
+Let's compute the loo for model comparison.
+
+```{r}
+# run loo mdl
+if (file.exists(paste0(models, "mdl_focus_f0Mean_noSlopes_loo.rds"))) {
+  mdl_focus_f0Mean_noSlopes_loo <- readRDS(paste0(models, "mdl_focus_f0Mean_noSlopes_loo.rds"))
+} else {
+  mdl_focus_f0Mean_noSlopes_loo <- loo(mdl_focus_f0Mean_noSlopes)
+  saveRDS(mdl_focus_f0Mean_noSlopes_loo, paste0(models, "mdl_focus_f0Mean_noSlopes_loo.rds"))
+}
+```
+
+Check the loo.
+
+```{r}
+mdl_focus_f0Mean_noSlopes_loo
+```
+
+###### Interaction
+
+Trying with interaction.
+
+```{r}
+mdl_focus_f0Mean_noSlopes_int <- brm(F0_mean ~ 1 + Focus * Gender_s + Focus * Word_s + Gender_s * Word_s +
+                               (1 | Language),
+                   data = df_prepost_model,
+                   prior = priors_f0Mean,
+                   family = lognormal(),
+                   #backend = "cmdstanr", # depends on you
+                   cores = 4,
+                   chains = 4,
+                   iter = 2000,
+                   warmup = 1000,
+                   seed = 998,
+                   control = list(max_treedepth = 12,
+                                  adapt_delta = 0.99),
+                   file = paste0(models, "mdl_focus_f0Mean_noSlopes_int.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_fullTargetOnly, file = paste0(models, "mdl_fullTargetOnly.rds"), compress = "xz")
+
+mdl_focus_f0Mean_noSlopes_int <- readRDS(paste0(models, "mdl_focus_f0Mean_noSlopes_int.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_focus_f0Mean_noSlopes_int)
+```
+
+```{r}
+plot(mdl_focus_f0Mean_noSlopes_int)
+```
+
+```{r}
+pp_check(mdl_focus_f0Mean_noSlopes_int, ndraws = 100)
+```
+
+Let's compute the loo for model comparison.
+
+```{r}
+# run loo mdl
+if (file.exists(paste0(models, "mdl_focus_f0Mean_noSlopes_int_loo.rds"))) {
+  mdl_focus_f0Mean_noSlopes_int_loo <- readRDS(paste0(models, "mdl_focus_f0Mean_noSlopes_int_loo.rds"))
+} else {
+  mdl_focus_f0Mean_noSlopes_int_loo <- loo(mdl_focus_f0Mean_noSlopes_int)
+  saveRDS(mdl_focus_f0Mean_noSlopes_int_loo, paste0(models, "mdl_focus_f0Mean_noSlopes_int_loo.rds"))
+}
+```
+
+Check the loo.
+
+```{r}
+mdl_focus_f0Mean_noSlopes_int_loo
+```
 
 
 # Modeling prominence
 
-While I wait for the answer on the levels, I will run one for prominence ratings.
+While I wait for the answer on the levels, I will run one for prominence
+ratings.
 
 ```{r}
-summary(df_prepost$Prosodic_Prom)
+summary(df_prepost_model$Prosodic_Prom)
 ```
 
 Check distribution.
 
 ```{r}
-hist(df_prepost$Prosodic_Prom)
+hist(df_prepost_model$Prosodic_Prom)
 ```
 
 ## Priors
@@ -2308,7 +2793,7 @@ get_prior(formula = Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_rang
             (1 + F0_mean + F0_range + env_mean + env_range + duration || Language) +
             (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender) +
             (1 + F0_mean + F0_range + env_mean + env_range + duration || Age),
-          data = df_prepost,
+          data = df_prepost_model,
           family = gaussian())
 ```
 
@@ -2318,7 +2803,7 @@ get_prior(formula = Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_rang
 mdl_fullTargetOnly <- brm(Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + env_range + duration +
                             (1 + F0_mean + F0_range + env_mean + env_range + duration || Language) +
                             (1 + F0_mean + F0_range + env_mean + env_range + duration || Gender),
-                   data = df_prepost,
+                   data = df_prepost_model,
                    #prior = priors_intOnlyH1,
                    family = gaussian(),
                    #backend = "cmdstanr", # depends on you
@@ -2337,9 +2822,28 @@ mdl_fullTargetOnly <- brm(Prosodic_Prom ~ 1 + F0_mean + F0_range + env_mean + en
 mdl_fullTargetOnly <- readRDS(paste0(models, "mdl_fullTargetOnly.rds"))
 ```
 
+## DGfS
 
+```{r}
+mdl_prom_f0Mean <- brm(F0_mean ~ 1 + Prosodic_Prom +
+                            (1 + Prosodic_Prom || Language) +
+                            (1 + Prosodic_Prom || Gender),
+                   data = df_prepost_model,
+                   #prior = priors_intOnlyH1,
+                   family = lognormal(),
+                   #backend = "cmdstanr", # depends on you
+                   cores = 4,
+                   chains = 4,
+                   iter = 2000,
+                   warmup = 1000,
+                   seed = 998,
+                   control = list(max_treedepth = 12,
+                                  adapt_delta = 0.99),
+                   file = paste0(models, "mdl_prom_f0Mean.rds"))
 
+# if we need to compress the model more
+#saveRDS(mdl_fullTargetOnly, file = paste0(models, "mdl_fullTargetOnly.rds"), compress = "xz")
 
-
-
+mdl_prom_f0Mean <- readRDS(paste0(models, "mdl_prom_f0Mean.rds"))
+```
 
