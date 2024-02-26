@@ -4802,6 +4802,116 @@ postplot_focus_envRange_full_int
 ggsave(filename = paste0(plots, "postplot_focus_envRange_full_int.pdf"), plot = postplot_focus_envRange_full_int, width = 8, height = 12)
 ```
 
+### Data viz model effects
+
+```{r}
+library(ggthemes)
+
+ggplot(df_prepost_model, aes(x = Word, y = duration, fill = Word)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5, show.legend = FALSE) +
+  labs(x = "Word",y = "Duration (ms)") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8])  +
+  #facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_duration.pdf"), plot = last_plot(), width = 4, height = 6)
+
+ggplot(df_prepost_model, aes(x = Focus, y = duration, fill = Gender)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(x = "Focus Type",y = "Duration",fill = "Gender") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8])  +
+  #facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_duration_Gender.pdf"), plot = last_plot(), width = 8, height = 6)
+
+ggplot(df_prepost_model, aes(x = Focus, y = duration, fill = Word)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(x = "Focus Type",y = "Duration",fill = "Word") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8])  +
+  #facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_duration_Word.pdf"), plot = last_plot(), width = 8, height = 6)
+ggplot(df_prepost_model, aes(x = Focus, y = duration, fill = Word)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(x = "Focus Type",y = "Duration",fill = "Word") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8])  +
+  facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_duration_Word_Language.pdf"), plot = last_plot(), width = 8, height = 6)
+
+ggplot(df_prepost_model, aes(x = Focus, y = F0_range_z, fill = Word)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(x = "Focus Type",y = "F0 range (z-scored)",fill = "Word") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8])  +
+  #facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_f0Range_Word.pdf"), plot = last_plot(), width = 8, height = 6)
+
+ggplot(df_prepost_model, aes(x = Focus, y = F0_range_z, fill = Word)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(x = "Focus Type",y = "F0 range (z-scored)",fill = "Word") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8])  +
+  facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_f0Range_Word_Language.pdf"), plot = last_plot(), width = 8, height = 6)
+
+ggplot(df_prepost_model, aes(x = Focus, y = F0_mean_z, fill = Word)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(x = "Focus Type",y = "F0 mean (z-scored)",fill = "Word") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8]) +
+  ylim(-3, 2.5)  +
+  #facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_f0Mean_Word.pdf"), plot = last_plot(), width = 8, height = 6)
+
+ggplot(df_prepost_model, aes(x = Focus, y = env_range_z, fill = Word)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(x = "Focus Type",y = "Amplitude envelope range (z-scored)",fill = "Word") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8])  +
+  ylim(-2, 5)  +
+  #facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_envRange_Word.pdf"), plot = last_plot(), width = 8, height = 6)
+
+ggplot(df_prepost_model, aes(x = Focus, y = env_range_z, fill = Word)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(x = "Focus Type",y = "Amplitude envelope range (z-scored)",fill = "Word") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8])  +
+  ylim(-2, 5)  +
+  facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_envRange_Word_Language.pdf"), plot = last_plot(), width = 8, height = 6)
+
+ggplot(df_prepost_model, aes(x = Focus, y = env_mean_z, fill = Word)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(x = "Focus Type",y = "Amplitude envelope mean (z-scored)",fill = "Word") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8])  +
+  ylim(-2, 4)  +
+  #facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_envMean_Word.pdf"), plot = last_plot(), width = 8, height = 6)
+
+ggplot(df_prepost_model, aes(x = Focus, y = env_mean_z, fill = Word)) +
+  #geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +  # Draw violin plots
+  geom_boxplot(width = 0.3, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(x = "Focus Type",y = "Amplitude envelope mean (z-scored)",fill = "Word") +  # Adjust labels
+  scale_fill_manual(values = colorBlindBlack8[2:8])  +
+  #ylim(-2, 4)  +
+  facet_wrap(~ Language) +
+  theme_hc()
+ggsave(filename = paste0(plots, "focus_envMean_Word_Language.pdf"), plot = last_plot(), width = 8, height = 6)
+```
+
+
 # Modeling prominence
 
 While I wait for the answer on the levels, I will run one for prominence
