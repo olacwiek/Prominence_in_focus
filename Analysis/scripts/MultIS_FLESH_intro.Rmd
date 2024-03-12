@@ -1352,7 +1352,7 @@ df_targets <- df %>%
 What is the average duration of the different prosodic prominence
 ratings in Catalan vs in German?
 
-```{r avg duration, echo=TRUE, message=FALSE, warning=FALSE}
+```{r avg duration prom, echo=TRUE, message=FALSE, warning=FALSE}
 df %>%
   filter(!(Syll %in% c("pre", "post", "", "post_pre", "disfluency", "break", "<p>"))) %>%
   group_by(Language, Prosodic_Prom) %>%
@@ -1381,7 +1381,7 @@ ggsave(filename = paste0(plots, "prominence_duration.pdf"), plot = last_plot(), 
 What is the average F0 of the different prosodic prominence ratings in
 Catalan vs in German?
 
-```{r avg F0, echo=TRUE, message=FALSE, warning=FALSE}
+```{r avg F0 prom, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate z-scores for F0 within each combination of Language and Speaker
 df_targets <- df_targets %>%
   group_by(Language, Participant) %>%
@@ -1400,7 +1400,7 @@ df_targets %>%
 
 Let's plot it.
 
-```{r avg F0 plot, echo=TRUE, message=FALSE, warning=FALSE}
+```{r avg F0 plot prom, echo=TRUE, message=FALSE, warning=FALSE}
 ## Raw F0
 ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = F0_mean, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
@@ -1435,7 +1435,7 @@ ggsave(filename = paste0(plots, "prominence_f0Mean_z.pdf"), plot = last_plot(), 
 What is the average F0 of the different prosodic prominence ratings in
 Catalan vs in German?
 
-```{r range F0, echo=TRUE, message=FALSE, warning=FALSE}
+```{r range F0 prom, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate z-scores for F0 within each combination of Language and Speaker
 df_targets <- df_targets %>%
   group_by(Language, Participant) %>%
@@ -1454,7 +1454,7 @@ df_targets %>%
 
 Let's plot it.
 
-```{r range F0 plot, echo=TRUE, message=FALSE, warning=FALSE}
+```{r range F0 plot prom, echo=TRUE, message=FALSE, warning=FALSE}
 ## Raw F0
 ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = F0_range, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
@@ -1489,7 +1489,7 @@ ggsave(filename = paste0(plots, "prominence_f0Range_z.pdf"), plot = last_plot(),
 What is the average amplitude envelope of the different prosodic
 prominence ratings in Catalan vs in German?
 
-```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
+```{r avg env prom, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate z-scores for F0 within each combination of Language and Speaker
 df_targets <- df_targets %>%
   group_by(Language, Participant) %>%
@@ -1508,7 +1508,7 @@ df_targets %>%
 
 Let's plot it.
 
-```{r avg env plot, echo=TRUE, message=FALSE, warning=FALSE}
+```{r avg env plot prom, echo=TRUE, message=FALSE, warning=FALSE}
 ## Raw env
 ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = env_mean, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
@@ -1543,7 +1543,7 @@ ggsave(filename = paste0(plots, "prominence_envMean_z.pdf"), plot = last_plot(),
 What is the average amplitude envelope of the different prosodic
 prominence ratings in Catalan vs in German?
 
-```{r avg env, echo=TRUE, message=FALSE, warning=FALSE}
+```{r range env prom, echo=TRUE, message=FALSE, warning=FALSE}
 # Calculate z-scores for F0 within each combination of Language and Speaker
 df_targets <- df_targets %>%
   group_by(Language, Participant) %>%
@@ -1562,7 +1562,7 @@ df_targets %>%
 
 Let's plot it.
 
-```{r avg env plot, echo=TRUE, message=FALSE, warning=FALSE}
+```{r range env plot prom, echo=TRUE, message=FALSE, warning=FALSE}
 ## Raw env
 ggplot(df_targets %>% filter(!is.na(Prosodic_Prom)), aes(x = Language, y = env_range, fill = as.factor(Prosodic_Prom))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
@@ -1616,7 +1616,7 @@ df %>%
 
 Let's plot it.
 
-```{r avg duration plot, echo=TRUE, message=FALSE, warning=FALSE}
+```{r avg duration plot focus, echo=TRUE, message=FALSE, warning=FALSE}
 # Unique Word conditions to loop through
 word_conditions <- unique(df_targets$Word)
 
