@@ -115,7 +115,7 @@ item []:
         intervals [3]:
             xmin = 2.11099999999999
             xmax = 2.23900000000003
-            text = "post_pre "
+            text = "post_pre"
         intervals [4]:
             xmin = 2.23900000000003
             xmax = 2.42200000000003

@@ -93,16 +93,20 @@ item []:
         name = "Prosodic_Prom"
         xmin = 0
         xmax = 4.02100000000002
-        intervals: size = 3
+        intervals: size = 4
         intervals [1]:
             xmin = 1.82500000000005
             xmax = 2.05200000000002
             text = "2"
         intervals [2]:
             xmin = 2.05200000000002
-            xmax = 2.57300000000004
+            xmax = 2.44900000000001
             text = ""
         intervals [3]:
+            xmin = 2.44900000000001
+            xmax = 2.57300000000004
+            text = "1"
+        intervals [4]:
             xmin = 2.57300000000004
             xmax = 2.79600000000005
             text = "2"
@@ -155,16 +159,20 @@ item []:
         name = "Prosodic_Prom_2"
         xmin = 0
         xmax = 4.02100000000002
-        intervals: size = 3
+        intervals: size = 4
         intervals [1]:
             xmin = 1.82500000000005
             xmax = 2.05200000000002
             text = "2W"
         intervals [2]:
             xmin = 2.05200000000002
-            xmax = 2.57300000000004
+            xmax = 2.44900000000001
             text = ""
         intervals [3]:
+            xmin = 2.44900000000001
+            xmax = 2.57300000000004
+            text = "1"
+        intervals [4]:
             xmin = 2.57300000000004
             xmax = 2.79600000000005
             text = "2S"
