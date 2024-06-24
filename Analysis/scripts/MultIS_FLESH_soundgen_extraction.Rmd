@@ -1,0 +1,697 @@
+---
+title: "Bridging the Gap 2.0: Exploring a Middle-Way Approach for Prosodic Annotation"
+author: "Aleksandra Ćwiek, Alina Gregori, Paula G. Sánchez-Ramón, Frank Kügler, Pilar Prieto"
+date: "2024-06-20"
+output:
+  html_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    df_print: paged
+  pdf_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: '3'
+  html_notebook:
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+editor_options: 
+  chunk_output_type: console
+  markdown: 
+    wrap: 72
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+Prosodic annotation plays a critical role in linguistic research,
+enabling a detailed exploration of communication subtleties in diverse
+languages and contexts. Various methods for prosodic annotation exist,
+with some well-known and accepted, such as ToBI [@silverman1992].
+However, prosody research encounters challenges in the manual annotation
+of data, primarily regarding inter-rater reliability, where multiple
+annotators' agreement varies significantly [even between 60% and 90%,
+@breen2012], leading to potential errors and manipulation.
+
+Manual annotation remains time-consuming and labor-intensive, resulting
+in limited data availability, hindering the development of reliable
+computational models for comprehensive and robust prosodic annotation
+across various schemes and languages [see @ananthakrishnan2008;
+@rosenberg2010 as examples for ToBI on Standard American English]. To
+tackle this challenge, our project aims to adopt a middle-way approach,
+harnessing the expertise of skilled annotators alongside the power of
+computational tools while being cautious of potential challenges such as
+the complexity of prosody, interpretation of results, and ethical
+considerations regarding biases in training data and social impacts. By
+establishing robust computational models, we seek to significantly speed
+up the annotation process, generalize findings to new linguistic data,
+and pave the way for more extensive cross-linguistic studies in prosodic
+research.
+
+In our project, we aim to establish connections between prosodic
+prominence marking and automatic predictions of focus conditions --
+focus representing a pragmatic domain of prominence [cf. e.g.,
+@krifka2008]. To achieve this, we will analyze data from German and
+Catalan speakers producing focus types as degrees of prominence in a
+semi-controlled environment. The perceived prominence of focus types in
+these data was annotated on a scale from 0 to 3 for prosodic prominence
+[DIMA, @kügler2015; @kügler2019; @kügler2022]. German and Catalan are
+suitable languages for investigating the applicability of computational
+systems across different languages, given their distinct prosodic
+prominence marking in terms of rhythm class and accentuation patterns
+[cf. @krahmer2007 for Germanic and Romance languages; @cole2019 for
+differences between Spanish, French, and English].
+
+To capture acoustic markers of prominence, such as F0 (max peak, mean,
+range), intensity (max peak, mean, range), and duration, we will extract
+these measures from the accented syllables of focused words. These
+acoustic markers will serve as predictors in a Bayesian ordinal model to
+rate prominence. Our models will account for language-specific
+variations in acoustic features of prominence between Catalan and
+German.
+
+Our goal is to identify the most predictive features of prominence in
+prosody for German and Catalan, effectively bridging the gap between
+manual and computer-aided annotation. By establishing these links, we
+aim to address the challenges posed by tiresome manual annotation.
+Subsequently, we plan to employ our findings to build a classifier for
+automatic focus-type assignment to utterances, which will undergo
+verification by human annotators.
+
+# Data preparation
+
+## Source setup
+
+```{r source setup, echo = TRUE, message=FALSE, warning = FALSE}
+
+########## folders ##########
+# current folder (first go to session -> set working directory -> to source file location)
+parentfolder <- dirname(getwd())
+
+data          <- paste0(parentfolder, '/MultIS_data/')
+audiodata     <- paste0(parentfolder, '/audio_processed/')
+syllables     <- paste0(audiodata,    'syllables/')
+dataworkspace <- paste0(parentfolder, '/data_processed/')
+datamerged    <- paste0(parentfolder, '/data_merged/')
+models        <- paste0(parentfolder, '/models/')
+plots         <- paste0(parentfolder, '/plots/')
+scripts       <- paste0(parentfolder, '/scripts/')
+
+########## source file ##########
+
+#source(paste0(scripts, "adjectives-preparation.R"))
+
+#################### packages ####################
+library(tibble)
+library(stringr)
+library(tuneR)
+library(readtextgrid)
+library(soundgen) # sound analysis
+library(readr)    # data wrangling
+library(tidyr)
+library(dplyr)
+library(umap) # umap 
+library(ggplot2) # plotting
+library(viridis) # plotting
+library(ggforce) # 
+library(plotly) # interactive plots
+library(tidyverse)
+library(ggpubr)
+library(gridExtra)
+colorBlindBlack8  <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
+                       "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+```
+
+```{r read metadata, echo=TRUE, message=FALSE, warning=FALSE}
+participant_info <- read_delim(paste0(data,"ParticipantInfo_GERCAT.csv"), delim = ";")
+```
+
+
+# Processing the audio
+
+Here, we show the process of handling the audio data from the raw audio,
+incl. annotation.
+
+## Select & save parts
+
+The files provided are long. For our sake, we just need parts from which
+we will extract information, so we will first chop the files accordingly
+to our needs.
+
+Because the original annotation is done in ELAN, we have to prepare the
+files for processing.
+
+-   Export .eaf to .TextGrid
+-   Open .TextGrid in Praat
+-   Save .TextGrid using Praat
+
+Now, the files can be imported. If this step is skipped, the files will
+not be imported correctly.
+
+------------------------------------------------------------------------
+
+Item codes:
+
+-   G04 ---\> number of participant per language (G = German, C =
+    Catalan)
+-   P ---\> practice trial or target item (P = Practice, T = Target)
+-   01 ---\> Itemnumber (begins from 01 for both practice and target)
+-   I ---\> focus condition (I = Information focus, C = Contrastive
+    focus, R = Corrective focus, B = Background, F = filler item)
+
+------------------------------------------------------------------------
+
+We will first locate the .wav files in the input location.
+
+```{r locate wav, echo=TRUE, message=FALSE, warning=FALSE}
+wavFiles <- list.files(data, pattern = "\\.wav$", full.names = TRUE)
+
+# This is the tier we will be cutting from
+targetTier <- "Label"
+```
+
+Now we loop through .wav files.
+
+```{r loop and chop wav, echo=TRUE, message=FALSE, warning=FALSE}
+for (wavFile in wavFiles) {
+
+  # Generate the corresponding TextGrid file name
+  textGridFile <- sub("\\.wav$", ".TextGrid", wavFile)
+  
+  # Check if the TextGrid file exists
+  if (file.exists(textGridFile)) {
+    
+    # Read the TextGrid file
+    tg <- readtextgrid::read_textgrid(textGridFile)
+    
+    # Get the tier specified as input
+    tier <- tg[tg$tier_name == targetTier, ]
+    
+    # Loop through intervals and save corresponding parts of the .wav file
+    for (i in 1:nrow(tier)) {
+      interval <- tier[i, ]
+      
+      # Look if string is text begins with C or G that is followed by a digit
+      if (str_detect(interval$text, "^(C|G)\\d")) { 
+        startTime <- interval$xmin - 1
+        endTime <- interval$xmax + 1
+        
+        # Define the output file name
+        outputFile <- paste0(audiodata, interval$text, ".wav")
+        
+        # Check if the file already exists
+        if (!file.exists(outputFile)) {
+          # Read the .wav file
+          audio <- readWave(wavFile, from = startTime, to = endTime, units = "seconds")
+          
+          # Convert stereo to mono
+          audio <- mono(audio)
+          
+          # Write the .wav file
+          writeWave(audio, file = outputFile)
+          
+          # Remove unnecessary variables from memory
+          rm(audio)
+        } else {
+          cat("File", outputFile, "already exists. Skipping.\n")
+        }
+        
+
+      }
+    }
+    
+  }
+}
+
+rm(startTime, endTime, outputFile, tg, i)
+
+```
+
+But we also need the TextGrids for feature extraction in the stressed
+syllables.
+
+First, we create a custom function to writeTextGrid in a format that is
+both Praat and other functions-readable.
+
+```{r writeTextGrid function, echo=TRUE, message=FALSE, warning=FALSE}
+writeTextGrid <- function(data, outputFile) {
+  # Open a connection to the output file
+  con <- file(outputFile, "w")
+  
+  # Write the TextGrid header
+  cat('File type = "ooTextFile"\n', file = con)
+  cat('Object class = "TextGrid"\n', file = con)
+  cat('\n', file = con)  # Add an extra line
+  cat('xmin = 0 \n', file = con)
+  cat('xmax =', max(data$xmax), '\n', file = con)
+  cat('tiers? <exists> \n', file = con)
+  cat('size =', n_distinct(data$tier_name), '\n', file = con)
+  cat('item []:', '\n', file = con)
+  # Write the tier information
+  tiers <- unique(data[, c("tier_num", "tier_name", "tier_type")])
+  for (i in 1:nrow(tiers)) {
+    cat(paste0('    item [', i, ']:\n'), file = con)
+    cat(paste0('        class = "', tiers$tier_type[i], '"\n'), file = con)
+    cat(paste0('        name = "', tiers$tier_name[i], '"\n'), file = con)
+    cat(paste0('        xmin = 0\n'), file = con)
+    cat(paste0('        xmax = ', max(data$xmax), '\n'), file = con)
+    # Write intervals or points
+    if (tiers$tier_type[i] == "IntervalTier") {
+      intervals <- data[data$tier_name == tiers$tier_name[i], ]
+      cat(paste0('        intervals: size = ', nrow(intervals), '\n'), file = con)
+      for (j in 1:nrow(intervals)) {
+        cat(paste0('        intervals [', j, ']:\n'), file = con)
+        cat(paste0('            xmin = ', intervals$xmin[j], '\n'), file = con)
+        cat(paste0('            xmax = ', intervals$xmax[j], '\n'), file = con)
+        cat(paste0('            text = "', intervals$text[j], '"\n'), file = con)
+      }
+    } else if (tiers$tier_type[i] == "PointTier") {
+      points <- data[data$tier_name == tiers$tier_name[i], ]
+      cat(paste0('        points: size = ', nrow(points), '\n'), file = con)
+      for (j in 1:nrow(points)) {
+        cat(paste0('        points [', j, ']:\n'), file = con)
+        cat(paste0('            number = ', j - 1, '\n'), file = con)  # Point numbers start from 0
+        cat(paste0('            time = ', points$xmax[j], '\n'), file = con)  # Assuming xmax as time
+        cat(paste0('            mark = "', points$text[j], '"\n'), file = con)
+      }
+    }
+  }
+  
+  # Close the connection
+  close(con)
+}
+```
+
+Now, we loop through the same list of files that we used for .wav
+extraction and extract the excerpts of TextGrids for the .wavs.
+
+```{r loop and chop TextGrid, echo=TRUE, message=FALSE, warning=FALSE}
+# Loop through WAV files
+for (wavFile in wavFiles) {
+  
+  # Generate the corresponding TextGrid file name
+  textGridFile <- sub("\\.wav$", ".TextGrid", wavFile)
+  
+  # Check if the TextGrid file exists
+  if (file.exists(textGridFile)) {
+    
+    # Read the original TextGrid file
+    originalTg <- readtextgrid::read_textgrid(textGridFile)
+    
+    # Get the tier specified as input
+    tier <- originalTg[originalTg$tier_name == targetTier, ]
+    
+    # Loop through intervals and annotations and add them to the new TextGrid
+    for (i in 1:nrow(tier)) {
+      interval <- tier[i, ]
+      
+      # Check if interval$text starts with "G" or "C"
+      if (str_detect(interval$text, "^(C|G)\\d")) { 
+        startTime <- interval$xmin - 1
+        endTime <- interval$xmax + 1
+        
+        # Check if the new TextGrid file already exists
+        newTgFile <- file.path(paste0(audiodata, interval$text, ".TextGrid"))
+        
+        if (!file.exists(newTgFile)) {
+          # Find the corresponding annotations in the original TextGrid
+          originalAnnotations <- originalTg[originalTg$xmin >= startTime & originalTg$xmax <= endTime, ]
+          
+          # Ensure that all tiers from originalTg are present in newTgData
+          missingTiers <- setdiff(unique(originalTg$tier_name), unique(originalAnnotations$tier_name))
+          
+          # Initialize newTgData as an empty data frame
+          newTgData <- data.frame()
+          
+          for (tier_name in missingTiers) {
+            # Find corresponding intervals in the original TextGrid for missing tiers
+            originalIntervals <- originalTg[originalTg$tier_name == tier_name, ]
+            
+            # Add missing tiers to newTgData with adjusted time
+            newTgData <- rbind(newTgData, mutate(originalIntervals, 
+                                                 xmin = xmin - startTime, 
+                                                 xmax = xmax - startTime))
+            
+            # Filter rows where xmin is smaller than or equal to zero
+            newTgData <- newTgData %>% dplyr::filter(xmin <= 0)
+            
+            # Keep only the row with the largest xmin value if there are multiple rows
+            newTgData <- newTgData %>% 
+              group_by(tier_name) %>% 
+              dplyr::filter(xmin == max(xmin)) %>% 
+              ungroup()
+          }
+          
+          # Time normalization missing tiers
+          newTgData$xmin <- 0
+          newTgData$xmax <- endTime - startTime
+          
+          # Copy annotations from originalAnnotations
+          newTgData <- rbind(newTgData, mutate(originalAnnotations, 
+                                               xmin = xmin - startTime, 
+                                               xmax = xmax - startTime))
+          
+          # Time normalization global
+          newTgData$tier_xmin <- 0
+          newTgData$tier_xmax <- max(originalAnnotations$xmax) - startTime
+          
+          # Sort by tier_num
+          newTgData <- newTgData %>% arrange(tier_num, xmin)
+          
+          # Check if there is data to write
+          if (nrow(newTgData) > 0) {
+            # Save the new TextGrid data as a TextGrid file
+            writeTextGrid(newTgData, newTgFile)
+          }
+        }
+      }
+    }
+  }
+}
+
+# Remove unnecessary variables from memory
+rm(interval, startTime, endTime, newTgFile, originalAnnotations, originalIntervals, missingTiers, newTgData, tier, wavFile, wavFiles)
+rm(originalTg)
+rm(targetTier, tier_name, i)
+
+```
+
+## Select and save syllables
+
+We locate the .wav files of the utterances.
+
+```{r locate wav, echo=TRUE, message=FALSE, warning=FALSE}
+wavFiles <- list.files(audiodata, pattern = "\\.wav$", full.names = TRUE)
+
+# This is the tier we will be cutting from
+targetTier <- "Syll"
+wordTier <- "Word"
+
+# Function to sanitize filenames
+sanitize_filename <- function(filename) {
+  forbidden_chars <- "[<>:\"/\\|?*]"
+  sanitized_filename <- str_replace_all(filename, forbidden_chars, "-")
+  return(sanitized_filename)
+}
+```
+
+Now we loop through .wav files.
+
+```{r loop and chop syllable, echo=TRUE, message=FALSE, warning=FALSE}
+# Loop through .wav files
+for (wavFile in wavFiles) {
+  
+  # Generate the corresponding TextGrid file name
+  textGridFile <- sub("\\.wav$", ".TextGrid", wavFile)
+  
+  # Check if the TextGrid file exists
+  if (file.exists(textGridFile)) {
+    
+    # Read the TextGrid file
+    tg <- readtextgrid::read_textgrid(textGridFile)
+    
+    # Get the target tier (Syll) and the Word tier
+    tierSyll <- tg[tg$tier_name == targetTier, ]
+    tierWord <- tg[tg$tier_name == wordTier, ]
+    
+    # Trim leading and trailing whitespace or tab characters from tierWord$text
+    tierWord$text <- str_trim(tierWord$text)
+    
+    # Loop through intervals of the Syll tier and save corresponding parts of the .wav file
+    for (i in 1:nrow(tierSyll)) {
+      intervalSyll <- tierSyll[i, ]
+      
+      # Find the corresponding Word interval
+      wordMatch <- tierWord[tierWord$xmin <= intervalSyll$xmin & tierWord$xmax >= intervalSyll$xmax, ]
+      
+      if (nrow(wordMatch) > 0) {
+        wordText <- sanitize_filename(wordMatch$text[1])
+      } else {
+        wordText <- ""
+      }
+      
+      syllText <- sanitize_filename(intervalSyll$text)
+      syllText <- str_replace_all(syllText, "_", "") # Remove underscores because they will disturb our catogrization later on
+      annotationNum <- intervalSyll$annotation_num
+      
+      # Proceed only if syllText is not empty
+      if (syllText != "") {
+        startTime <- intervalSyll$xmin
+        endTime <- intervalSyll$xmax
+        
+        # Define the output file name
+        outputFile <- paste0(
+          syllables, "/",
+          sub("\\.TextGrid$", "", intervalSyll$file),
+          "_",
+          annotationNum,
+          "_",
+          wordText,
+          "_",
+          syllText,
+          ".wav"
+        )
+        
+        # Check if the file already exists
+        if (!file.exists(outputFile)) {
+          # Read the .wav file
+          audio <- readWave(wavFile, from = startTime, to = endTime, units = "seconds")
+          
+          # Convert stereo to mono
+          audio <- mono(audio)
+          
+          # Write the .wav file
+          writeWave(audio, file = outputFile)
+          
+          # Remove unnecessary variables from memory
+          rm(audio)
+        } else {
+          cat("File", outputFile, "already exists. Skipping.\n")
+        }
+      }
+    }
+  }
+}
+
+rm(startTime, endTime, outputFile, tg, i, tierSyll, tierWord, wordMatch, intervalSyll, audio, wordText, wordTier, wordAnnotationNum, syllText, targetTier, annotationNum, wavFile, wavFiles, textGridFile)
+```
+
+Create a list with file names and durations.
+
+```{r list durations, echo=TRUE, message=FALSE, warning=FALSE}
+# List all .wav files in the syllable directory
+syllableFiles <- list.files(syllables, pattern = "\\.wav$", full.names = TRUE)
+
+# Initialize an empty list to store filenames and durations
+fileDurations <- list()
+
+# Loop through the syllable files
+for (file in syllableFiles) {
+  # Read the .wav file
+  audio <- readWave(file)
+  
+  # Get the duration of the .wav file in milliseconds
+  duration <- (length(audio@left) / audio@samp.rate) * 1000
+  
+  # Add the filename and duration to the list
+  fileDurations <- append(fileDurations, list(list(fileName = basename(file), duration = duration)))
+}
+
+# Convert the list to a data frame for easier viewing
+fileDurationsDF <- do.call(rbind, lapply(fileDurations, as.data.frame))
+names(fileDurationsDF) <- c("fileName", "duration")
+
+rm(fileDurations, file, syllableFiles)
+```
+
+Add data to duration table.
+
+
+```{r metadata, echo=TRUE, message=FALSE, warning=FALSE}
+# List of the WAV files
+list_wavs <- list.files(syllables, pattern = ".wav") 
+
+# Function to map focus characters to focus values
+mapFocus <- function(char) {
+  switch(char,
+         I = "information",
+         C = "contrastive",
+         R = "corrective",
+         B = "background",
+         F = "filler",
+         "unknown")
+}
+
+# Initialize an empty dataframe to store the metadata
+META <- data.frame(File = character(),
+                   Language = character(),
+                   Participant = numeric(),
+                   Item_type = character(),
+                   Item_num = numeric(),
+                   Focus = character(),
+                   Annotation_num = numeric(),
+                   Word = character(),
+                   Syll_text = character(),
+                   stringsAsFactors = FALSE)
+
+# Loop through the WAV file names and decode the information
+for (wavFile in list_wavs) {
+  # Split the file name using "_"
+  parts <- strsplit(sub("\\.wav$", "", wavFile), "_")[[1]]
+  
+  # Replace empty strings with NA
+  parts <- ifelse(parts == "", NA, parts)
+  
+  # Extract the relevant parts
+  File <- sub("\\.wav$", "", wavFile)
+  Language <- ifelse(startsWith(parts[1], "G"), "German", "Catalan")
+  Participant <- as.numeric(parse_number(parts[1]))
+  Item_type <- ifelse(parts[2] == "P", "practice", "target")
+  Item_num <- as.numeric(parts[3])
+  Focus <- mapFocus(substr(parts[4], 1, 1))  # Extract the first character
+  
+  # Extract additional parts for new columns
+  Annotation_num <- as.numeric(parts[5])
+  Word <- parts[6]
+  Syll_text <- parts[7]
+  
+  # Create a data frame for the current file
+  file_meta <- data.frame(File, Language, Participant, Item_type, Item_num, Focus, Annotation_num, Word, Syll_text, stringsAsFactors = FALSE)
+  
+  # Append the file metadata to META
+  META <- rbind(META, file_meta)
+}
+
+# Remove unnecessary variables from memory
+rm(parts, File, Language, Participant, Item_type, Item_num, Focus, file_meta, wavFile, list_wavs, Annotation_num, Word, Syll_text)
+
+
+```
+
+Merge durations with other information on the files.
+
+```{r merge dur and other info, echo=TRUE, message=FALSE, warning=FALSE}
+# Remove .wav extension from fileName in fileDurationsDF
+fileDurationsDF$fileName <- sub("\\.wav$", "", fileDurationsDF$fileName)
+
+# Merge fileDurationsDF with META to enhance the data
+fileDurationsDF <- merge(fileDurationsDF, META, by.x = "fileName", by.y = "File", all.x = TRUE)
+
+# Rename columns
+colnames(fileDurationsDF) <- c("fileName", "duration", "language", "participant", "itemType", 
+                               "itemNum", "focus", "annotationNum", "word", "syllText")
+
+# Reorder columns
+fileDurationsDF <- fileDurationsDF[, c("fileName", "language", "participant", "itemType", 
+                                       "itemNum", "focus", "annotationNum", "word", "syllText", "duration")]
+
+```
+
+Save the final data frame with durations.
+
+```{r save duration data, echo=TRUE, message=FALSE, warning=FALSE}
+write.csv(fileDurationsDF, file = paste0(syllables, "fileDurationsDF.csv"), row.names = FALSE)
+```
+
+## YOU CAN ADD PARTICIPANT INFO
+
+```{r metadata merge, echo=TRUE, message=FALSE, warning=FALSE}
+# Process participant_info so that participant number column is only number
+participant_info$Participant <- parse_number(participant_info$Participant)
+
+# Merge the dataframes by "Participant" and "Language"
+META <- merge(META, participant_info, by = c("Participant", "Language"), all.x = TRUE)
+```
+
+# Data extraction
+
+Below, I will use the approach inspired by Sarka Kadava's analysis for Evolang.
+
+List the files to process and the table with duration.
+
+```{r reload data, echo=TRUE, message=FALSE, warning=FALSE}
+audio_files <- list.files(syllables,
+                         pattern = "*.wav",
+                         recursive = TRUE,
+                         all.files = FALSE,
+                         full.names = TRUE)
+
+
+# in this file we store the information about duration of each segment
+# read it in as a df
+data_df <- read.table(paste0(syllables, "fileDurationsDF.csv"), header = TRUE, sep = ',')
+
+# inspect the df
+head(data_df)
+
+# what is the minimum duration
+min(data_df$duration) # 31
+mean(data_df$duration) # 243.1474
+max(data_df$duration) # 3528
+
+```
+
+We use package 'soundgen' to extract a package of features for sound signal
+More info here: https://www.rdocumentation.org/packages/soundgen/versions/2.6.0 or here: https://cogsci.se/soundgen/acoustic_analysis.html
+
+Now we extract summary of features in segments
+
+```{r soundgen segments, echo=TRUE, message=FALSE, warning=FALSE}
+# this is an empty data frame where we store the features
+feature_df <- data.frame()
+
+# this function extracts summary features from the analyze output
+extract_summary_features <- function(file, analyze_result) {
+  summary_features <- analyze_result$summary
+  # add the filename as the first column
+  summary_features <- cbind(File = file, summary_features)
+  return(summary_features)
+}
+
+# loop over the .wav files in the directory and extract summary features
+for (file in audio_files) {
+  # skip pauses in segments
+  if (endsWith(file, "-p-.wav")) {
+    print(paste("Skipping file:", file))
+    next  
+  }
+  print(paste("Analyzing file:", file))
+  #audio <- readWave(file)
+  roughSet <- list(windowLength = 30, step = 3, amRes = 10)
+  features <- analyze(file, windowLength = 30, step = 5, 
+                      roughness = roughSet, pitchCeiling = 500, cutFreq = 500)
+  # sampling rate needed only if x is numeric vector
+  # windowLength 30 ms, the minimum duration of a segment is 31 ms
+  
+  # extract features
+  summary_features_df <- extract_summary_features(file, features)
+  
+  # append the summary features for this file to the main data frame
+  feature_df <- rbind(feature_df, summary_features_df)
+}
+
+# reset row names and remove them
+row.names(feature_df) <- NULL
+
+# let's inspect the data frame
+#print(feature_df)
+
+# and save it
+write.csv(feature_df, file = paste0(dataworkspace, "syllables_soundgen_summary.csv"), row.names = FALSE)
+
+```
+
+
+
+
+
+
+
