@@ -648,34 +648,42 @@ Now we extract summary of features in segments
 # this is an empty data frame where we store the features
 feature_df <- data.frame()
 
-# this function extracts summary features from the analyze output
+# Function to extract summary features from the analyze output
 extract_summary_features <- function(file, analyze_result) {
   summary_features <- analyze_result$summary
-  # add the filename as the first column
   summary_features <- cbind(File = file, summary_features)
   return(summary_features)
 }
 
-# loop over the .wav files in the directory and extract summary features
+# Loop over the .wav files in the directory and extract summary features
 for (file in audio_files) {
-  # skip pauses in segments
+  # Skip pauses in segments
   if (endsWith(file, "-p-.wav")) {
     print(paste("Skipping file:", file))
     next  
   }
+  
   print(paste("Analyzing file:", file))
-  #audio <- readWave(file)
-  roughSet <- list(windowLength = 30, step = 3, amRes = 10)
-  features <- analyze(file, windowLength = 30, step = 5, 
-                      roughness = roughSet, pitchCeiling = 500, cutFreq = 500)
-  # sampling rate needed only if x is numeric vector
-  # windowLength 30 ms, the minimum duration of a segment is 31 ms
   
-  # extract features
-  summary_features_df <- extract_summary_features(file, features)
-  
-  # append the summary features for this file to the main data frame
-  feature_df <- rbind(feature_df, summary_features_df)
+  tryCatch({
+    # Set roughness parameters
+    roughSet <- list(windowLength = 30, step = 3, amRes = 5)  # Adjusted amRes to 5
+    
+    # Analyze the audio file
+    features <- analyze(file, windowLength = 30, step = 5, 
+                        roughness = roughSet, pitchCeiling = 500, cutFreq = 500)
+    
+    # Extract features
+    summary_features_df <- extract_summary_features(file, features)
+    
+    # Append the summary features for this file to the main data frame
+    feature_df <- rbind(feature_df, summary_features_df)
+    
+  }, warning = function(w) {
+    message(paste("Warning while analyzing file:", file, ":", conditionMessage(w)))
+  }, error = function(e) {
+    message(paste("Error while analyzing file:", file, ":", conditionMessage(e)))
+  })
 }
 
 # reset row names and remove them
