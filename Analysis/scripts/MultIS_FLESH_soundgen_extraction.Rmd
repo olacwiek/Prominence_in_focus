@@ -110,22 +110,21 @@ scripts       <- paste0(parentfolder, '/scripts/')
 #source(paste0(scripts, "adjectives-preparation.R"))
 
 #################### packages ####################
+# Data Manipulation
 library(tibble)
 library(stringr)
+library(tidyverse) # includes readr, tidyr, dplyr, ggplot2
+
+# Audio Analysis
 library(tuneR)
 library(readtextgrid)
-library(soundgen) # sound analysis
-library(readr)    # data wrangling
-library(tidyr)
-library(dplyr)
-library(umap) # umap 
-library(ggplot2) # plotting
-library(viridis) # plotting
-library(ggforce) # 
-library(plotly) # interactive plots
-library(tidyverse)
+library(soundgen)
+
+# Plotting
+library(ggforce)
 library(ggpubr)
 library(gridExtra)
+
 colorBlindBlack8  <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
                        "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
@@ -180,7 +179,7 @@ targetTier <- "Label"
 
 Now we loop through .wav files.
 
-```{r loop and chop wav, echo=TRUE, message=FALSE, warning=FALSE}
+```{r loop and chop wav, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 for (wavFile in wavFiles) {
 
   # Generate the corresponding TextGrid file name
@@ -293,7 +292,7 @@ writeTextGrid <- function(data, outputFile) {
 Now, we loop through the same list of files that we used for .wav
 extraction and extract the excerpts of TextGrids for the .wavs.
 
-```{r loop and chop TextGrid, echo=TRUE, message=FALSE, warning=FALSE}
+```{r loop and chop TextGrid, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 # Loop through WAV files
 for (wavFile in wavFiles) {
   
@@ -388,7 +387,7 @@ rm(targetTier, tier_name, i)
 
 We locate the .wav files of the utterances.
 
-```{r locate wav, echo=TRUE, message=FALSE, warning=FALSE}
+```{r locate wav syllables, echo=TRUE, message=FALSE, warning=FALSE}
 wavFiles <- list.files(audiodata, pattern = "\\.wav$", full.names = TRUE)
 
 # This is the tier we will be cutting from
@@ -406,7 +405,7 @@ sanitize_filename <- function(filename) {
 
 Now we loop through .wav files.
 
-```{r loop and chop syllTextable, echo=TRUE, message=FALSE, warning=FALSE}
+```{r loop and chop syllTextable, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 # Loop through .wav files
 for (wavFile in wavFiles) {
   
@@ -447,12 +446,12 @@ for (wavFile in wavFiles) {
         promText <- ""
       }
       
-      syllTextText <- sanitize_filename(intervalsyllText$text)
-      syllTextText <- str_replace_all(syllTextText, "_", "") # Remove underscores because they will disturb our categorization later on
+      syllText <- sanitize_filename(intervalsyllText$text)
+      syllText <- str_replace_all(syllText, "_", "") # Remove underscores because they will disturb our categorization later on
       annotationNum <- intervalsyllText$annotation_num
       
-      # Proceed only if syllTextText is not empty
-      if (syllTextText != "") {
+      # Proceed only if syllText is not empty
+      if (syllText != "") {
         startTime <- intervalsyllText$xmin
         endTime <- intervalsyllText$xmax
         
@@ -465,7 +464,7 @@ for (wavFile in wavFiles) {
           "_",
           wordText,
           "_",
-          syllTextText,
+          syllText,
           "_",
           promText,
           ".wav"
@@ -492,7 +491,7 @@ for (wavFile in wavFiles) {
   }
 }
 
-rm(startTime, endTime, outputFile, tg, i, tiersyllText, tierWord, tierProm, wordMatch, promMatch, intervalsyllText, audio, wordText, promText, wordTier, promTier, syllTextText, targetTier, annotationNum, wavFile, wavFiles, textGridFile)
+rm(startTime, endTime, outputFile, tg, i, tiersyllText, tierWord, tierProm, wordMatch, promMatch, intervalsyllText, audio, wordText, promText, wordTier, promTier, syllText, targetTier, annotationNum, wavFile, wavFiles, textGridFile)
 ```
 
 Create a list with file names and durations.
@@ -598,11 +597,11 @@ fileDurationsDF <- merge(fileDurationsDF, META, by.x = "fileName", by.y = "File"
 
 # Rename columns
 colnames(fileDurationsDF) <- c("fileName", "duration", "language", "participant", "itemType", 
-                               "itemNum", "focus", "annotationNum", "word", "syllTextText", "percProm")
+                               "itemNum", "focus", "annotationNum", "word", "syllText", "percProm")
 
 # Reorder columns
 fileDurationsDF <- fileDurationsDF[, c("fileName", "language", "participant", "itemType", 
-                                       "itemNum", "focus", "annotationNum", "word", "syllTextText", 
+                                       "itemNum", "focus", "annotationNum", "word", "syllText", 
                                        "percProm", "duration")]
 
 ```
@@ -613,9 +612,11 @@ Save the final data frame with durations.
 write.csv(fileDurationsDF, file = paste0(syllables, "fileDurationsDF.csv"), row.names = FALSE)
 ```
 
-## YOU CAN ADD PARTICIPANT INFO
+## You can add participant info
 
-```{r metadata merge, echo=TRUE, message=FALSE, warning=FALSE}
+This is optional to run (chunk is eval = FALSE).
+
+```{r metadata merge, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 # Process participant_info so that participant number column is only number
 participant_info$Participant <- parse_number(participant_info$Participant)
 
@@ -659,7 +660,7 @@ here: <https://cogsci.se/soundgen/acoustic_analysis.html>
 
 Now we extract summary of features in segments
 
-```{r soundgen segments, echo=TRUE, message=FALSE, warning=FALSE}
+```{r soundgen segments, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 # this is an empty data frame where we store the features
 feature_df <- data.frame()
 
@@ -729,12 +730,12 @@ data <- read_csv(paste0(datasets, "syllables_soundgen_summary.csv"))
 
 ```
 
-# Data wrangling
+# Data cleaning
 
 Before we start to compute the distances, we need to prepare the data
 frame to more manageable form.
 
-```{r merge data, warning=FALSE, message=FALSE}
+```{r merge data, echo=TRUE, message=FALSE, warning=FALSE}
 # Remove the duration column from data_df
 data_df$duration <- data_df$duration / 1000
 
@@ -751,7 +752,7 @@ data <- data %>%
 We will also add f0 slope and amplitude envelope slope from a previous
 extraction.
 
-```{r}
+```{r load previous df, echo=TRUE, message=FALSE, warning=FALSE}
 # Load in previously extracted data
 df <- read.csv(paste0(datasets, "df.csv"))
 
@@ -763,10 +764,10 @@ df <- df %>%
 # Perform the left join to append F0_slope and env_slope to data
 data <- data %>%
   left_join(df, by = c("language" = "Language",
-                                "participant" = "Participant",
-                                "itemNum" = "Item_num",
-                                "word" = "Word",
-                                "annotationNum" = "Syll_num"))
+                       "participant" = "Participant",
+                       "itemNum" = "Item_num",
+                       "word" = "Word",
+                       "annotationNum" = "Syll_num"))
 
 rm(df)
 ```
@@ -774,7 +775,7 @@ rm(df)
 Make sure that the syllText is unified.
 
 ```{r fix syllText, echo=TRUE, message=FALSE, warning=FALSE}
-unique(data$syllTextText)
+unique(data$syllText)
 
 # Update df with modified 'syllText' values
 data <- data %>%
@@ -835,11 +836,44 @@ data <- data %>%
   mutate(percProm = coalesce(percProm.y, percProm.x)) %>%
   select(-percProm.x, -percProm.y)
 
-# Update targets
-targets <- data %>%
-  filter(!grepl("pre|post|postpre|disfluency|break|-p-", syllText, ignore.case = TRUE) & syllText != "")
-
 ```
+
+Add some corrections and deletions that were made previously (because of
+errors in the data).
+
+```{r}
+# Correct column Word
+data <- data %>%
+  # Replace "N\t" with "N"
+  mutate(word = gsub("N\\t", "N", word)) %>%
+  # Change "NP" to "N" and "Adj" to "A"
+  mutate(word = case_when(
+    word == "NP" ~ "N",
+    word == "Adj" ~ "A",
+    TRUE ~ word
+  )) %>%
+  # Convert Word column to factor after all replacements
+  mutate(word = as.factor(word)) %>%
+  # Conditionally filter out specific rows based on Syll_num and File, if Language column exists
+  {if("language" %in% colnames(.)) filter(., !(annotationNum == 8 & language == "Catalan" & participant == 8 & itemNum == 21) & 
+                                         !(annotationNum == 2 & language == "German" & participant == 26 & itemNum == 31)) else .}
+
+# Correct prominence ratings
+data <- data %>%
+  # First, handle the specific updates for Prosodic_Prom
+  mutate(# Ensure Prosodic_Prom is numeric before applying case_when
+    percProm = as.numeric(percProm),
+    percProm = case_when(
+      "language" %in% colnames(data) & language == "German" & participant == 17 & itemNum == 35 & syllText == "pfan" ~ 2,
+      "language" %in% colnames(data) & language == "Catalan" & participant == 2 & itemNum == 13 & syllText == "lorpre" ~ 1,
+      "language" %in% colnames(data) & language == "Catalan" & participant == 2 & itemNum == 14 & syllText == "lorpre" ~ 1,
+      TRUE ~ percProm
+    )) %>%
+  # Conditionally filter out specific rows if Language column exists
+  {if("language" %in% colnames(.)) filter(., !(language == "German" & participant == 14 & itemNum == 22 & syllText == "an")) else .}
+```
+
+# Feature choice
 
 Even though we will be using an XGBoost algorithm, it is a good idea to
 reduce the amount of features. I will focus on the following feature
@@ -915,7 +949,57 @@ data <- data %>%
          amEnvDep_median, fmDep_median)
 ```
 
-We need to identify the corresponding pre- and post-tonic syllables, because we assume that prosody is a function of the environment.
+Normalize variables dependent on physiological differences.
+
+```{r normalize frequencies, echo=TRUE, message=FALSE, warning=FALSE}
+# List of columns to normalize
+columns_to_normalize <- c("pitch_median", "pitch_sd", "f0_slope", "f1_freq_median", "f2_freq_median")
+
+# Calculate mean and standard deviation for each participant within each language
+data_stats <- data %>%
+  group_by(language, participant) %>%
+  summarise(across(all_of(columns_to_normalize), list(mean = ~ mean(.x, na.rm = TRUE), sd = ~ sd(.x, na.rm = TRUE)), .names = "{.col}_{.fn}"))
+
+# Normalize the values
+data <- data %>%
+  left_join(data_stats, by = c("language", "participant")) %>%
+  mutate(across(all_of(columns_to_normalize), 
+                list(norm = ~ (. - get(paste0(cur_column(), "_mean"))) / get(paste0(cur_column(), "_sd"))),
+                .names = "{.col}_norm")) %>%
+  select(-pitch_median_mean, -pitch_median_sd, 
+         -pitch_sd_mean, -pitch_sd_sd, 
+         -f0_slope_mean, -f0_slope_sd, 
+         -f1_freq_median_mean, -f1_freq_median_sd, 
+         -f2_freq_median_mean, -f2_freq_median_sd) # Optional: remove intermediate mean and sd columns
+
+# Sort columns in the specified order
+data <- data %>%
+  select(
+    fileName, language, participant, itemType, itemNum, focus, annotationNum, 
+    word, syllText, percProm, duration, duration_noSilence, ampl_median, 
+    ampl_noSilence_median, env_slope, pitch_median, pitch_median_norm, pitch_sd, 
+    pitch_sd_norm, f0_slope, f0_slope_norm, f1_freq_median, f1_freq_median_norm, 
+    f2_freq_median, f2_freq_median_norm, specCentroid_median, entropy_median, 
+    HNR_median, amEnvDep_median, fmDep_median
+  )
+
+rm(data_stats)
+```
+
+Update targets after all cleaning.
+
+```{r update targets, echo=TRUE, message=FALSE, warning=FALSE}
+# Update targets
+targets <- data %>%
+  filter(!grepl("pre|post|postpre|disfluency|break|-p-", syllText, ignore.case = TRUE) & syllText != "")
+
+write.csv(targets, file = paste0(datasets, "targets.csv"), row.names = FALSE)
+```
+
+# Pre- and post-tonic
+
+We need to identify the corresponding pre- and post-tonic syllables,
+because we assume that prosody is a function of the environment.
 
 ```{r}
 # Combined process to find "pre" and "post" syllables
@@ -923,54 +1007,54 @@ data_prepost <- data %>%
   # First, find rows that do not match the initial exclusion criteria
   filter(!grepl("pre|post|postpre|disfluency|break|-p-", syllText, ignore.case = TRUE)) %>%
   
-  ## PRE
-  # Create a new data frame for finding the corresponding "pre" syllables
-  bind_rows(
-    mutate(., annotationNumTarget = annotationNum - 1),
-    mutate(., annotationNumTarget = annotationNum - 2)
-  ) %>%
+  ## PRE - Step 1
+  # Create a new data frame for finding the corresponding "pre" syllables for annotationNum - 1
+  mutate(annotationNumTarget = annotationNum - 1) %>%
   # Join data with itself based on relevant columns
-  left_join(data, by = c("language", "participant", "itemType", "itemNum", "annotationNumTarget" = "annotationNum"), suffix = c("", ".y")) %>%
-  # Modify the joined columns to be NA where syllText.y does not contain "pre"
-  mutate(across(ends_with(".y"), ~ if_else(grepl("pre", syllText.y), ., NA), .names = "{.col}")) %>%
-  # Group by necessary columns to ensure only one "pre" syllable per target
-  group_by(fileName, annotationNum) %>%
-  slice_min(annotationNumTarget, with_ties = FALSE) %>%
-  ungroup() %>%
-  # Dynamically rename columns that end with .y to end with Pre
-  rename_with(~ sub("\\.y$", "Pre", .), ends_with(".y")) %>%
+  left_join(data, by = c("language", "participant", "itemType", "itemNum", "annotationNumTarget" = "annotationNum"), suffix = c("", ".pre1")) %>%
+  # Modify the joined columns to be NA where syllText.pre1 does not contain "pre"
+  mutate(across(ends_with(".pre1"), ~ if_else(grepl("pre", syllText.pre1), ., NA), .names = "{.col}")) %>%
+  
+  ## PRE - Step 2
+  # Create a new data frame for finding the corresponding "pre" syllables for annotationNum - 2
+  mutate(annotationNumTarget = annotationNum - 2) %>%
+  # Join data with itself based on relevant columns
+  left_join(data, by = c("language", "participant", "itemType", "itemNum", "annotationNumTarget" = "annotationNum"), suffix = c("", ".pre2")) %>%
+  # Modify the joined columns to be NA where syllText.pre2 does not contain "pre"
+  mutate(across(ends_with(".pre2"), ~ if_else(grepl("pre", syllText.pre2), ., NA), .names = "{.col}")) %>%
+  
+  # Combine the results of both pre steps, keeping only one set of pre columns
+  mutate(
+    across(ends_with(".pre2"), ~ if_else(!is.na(.), ., get(sub(".pre2$", ".pre1", cur_column()))), .names = "{.col}")
+  ) %>%
+  select(-ends_with(".pre1")) %>%
+  rename_with(~ sub("\\.pre2$", "Pre", .), ends_with(".pre2")) %>%
   
   ## POST
   # Create a new data frame for finding the corresponding "post" syllables
   mutate(annotationNumTarget = annotationNum + 1) %>%
   # Join data with itself based on relevant columns
-  left_join(data, by = c("language", "participant", "itemType", "itemNum", "annotationNumTarget" = "annotationNum"), suffix = c("", ".y")) %>%
-  # Modify the joined columns to be NA where syllText.y does not contain "post"
-  mutate(across(ends_with(".y"), ~ if_else(grepl("post", syllText.y), ., NA), .names = "{.col}")) %>%
-  # Group by necessary columns to ensure only one "post" syllable per target
-  group_by(fileName, annotationNum) %>%
-  slice_min(annotationNumTarget, with_ties = FALSE) %>%
-  ungroup() %>%
-  # Dynamically rename columns that end with .y to end with Post
-  rename_with(~ sub("\\.y$", "Post", .), ends_with(".y")) %>%
+  left_join(data, by = c("language", "participant", "itemType", "itemNum", "annotationNumTarget" = "annotationNum"), suffix = c("", ".post")) %>%
+  # Modify the joined columns to be NA where syllText.post does not contain "post"
+  mutate(across(ends_with(".post"), ~ if_else(grepl("post", syllText.post), ., NA), .names = "{.col}")) %>%
   
   ## Ensure all target syllables are included
   right_join(data %>%
                filter(!grepl("pre|post|postpre|disfluency|break|-p-", syllText, ignore.case = TRUE)),
              by = c("fileName", "annotationNum", "language", "participant", "itemType", "itemNum")) %>%
+  
+  # Dynamically rename columns that end with .post to end with Post
+  rename_with(~ sub("\\.post$", "Post", .), ends_with(".post")) %>%
   # Remove redundant columns
-  select(-ends_with(".y"))
-
-# Final renaming to remove .x and ensure column uniqueness
-data_prepost <- data_prepost %>%
-  rename_with(~ sub("\\.x$", "", .), ends_with(".x"))
-
-# Remove "percPromPost" and "percPromPre" columns
-data_prepost <- data_prepost %>%
-  select(-fileNamePre, -focusPre, -wordPre, -fileNamePost, -focusPost, -wordPost, -percPromPost, -percPromPre)
-
-# Sort columns so that "percProm" comes after "syllText"
-data_prepost <- data_prepost %>%
+  select(-ends_with(".y")) %>%
+  
+  # Final renaming to remove .x and ensure column uniqueness
+  rename_with(~ sub("\\.x$", "", .), ends_with(".x")) %>%
+  
+  # Remove unnecessary columns
+  select(-fileNamePre, -focusPre, -wordPre, -fileNamePost, -focusPost, -wordPost, -percPromPost, -percPromPre) %>%
+  
+  # Sort columns so that "percProm" comes after "syllText"
   select(fileName, language, participant, itemType, itemNum, focus, annotationNum, word, syllText, percProm, 
          everything())
 
@@ -983,9 +1067,7 @@ data_prepost <- data_prepost %>%
 Save the data ready to be modeled.
 
 ```{r save final data, echo=TRUE, message=FALSE, warning=FALSE}
+write.csv(data, file = paste0(datasets, "data_cleaned.csv"), row.names = FALSE)
+
 write.csv(data_prepost, file = paste0(datasets, "data_prepost.csv"), row.names = FALSE)
 ```
-
-
-
-
