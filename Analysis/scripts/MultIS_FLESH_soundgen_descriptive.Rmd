@@ -114,7 +114,7 @@ columns_to_process <- c(
   "pitch_median", "pitch_sd", "f0_slope", "f1_freq_median", "f2_freq_median",
   "specCentroid_median", "entropy_median", "HNR_median", "amEnvDep_median", "fmDep_median",
   "pitch_median_norm", "pitch_sd_norm", "f0_slope_norm", "f1_freq_median_norm", "f2_freq_median_norm",
-  "annotationNumTarget", "syllTextPre", "durationPre", "duration_noSilencePre", "ampl_medianPre",
+  "syllTextPre", "durationPre", "duration_noSilencePre", "ampl_medianPre",
   "ampl_noSilence_medianPre", "env_slopePre", "pitch_medianPre", "pitch_sdPre", "f0_slopePre",
   "f1_freq_medianPre", "f2_freq_medianPre", "specCentroid_medianPre", "entropy_medianPre", "HNR_medianPre",
   "amEnvDep_medianPre", "fmDep_medianPre", "pitch_median_normPre", "pitch_sd_normPre", "f0_slope_normPre",
