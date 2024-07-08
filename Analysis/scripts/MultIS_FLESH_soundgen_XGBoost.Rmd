@@ -279,9 +279,6 @@ num_cores <- detectCores()
 
 # Create a cluster with specified number of cores
 cl <- makeCluster(num_cores)
-
-# Close the cluster when you're done with your parallel tasks
-stopCluster(cl)
 ```
 
 Tuning the random forest.
@@ -335,6 +332,10 @@ sorted_feature_importance <- feature_importance[order(-feature_importance$Import
 
 # Print sorted feature importance
 print(sorted_feature_importance)
+
+
+# Close the cluster when you're done with your parallel tasks
+#stopCluster(cl)
 ```
 
 #### Imputation
@@ -407,6 +408,9 @@ sorted_feature_importance <- feature_importance_df[order(-feature_importance_df$
 
 # Print sorted feature importance
 print(sorted_feature_importance)
+
+# Close the cluster when you're done with your parallel tasks
+#stopCluster(cl)
 ```
 
 #### Model performance
@@ -628,9 +632,11 @@ gerData2345 <- rbind(gerData2, gerData3, gerData4, gerData5)
 
 #### Models
 
+Only run the models one time and then readRDS.
+
 ##### Model 1
 
-```{r ger model1, echo=TRUE, message=FALSE, warning=FALSE}
+```{r ger model1, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 gerModel1 <- caret::train(
   percProm ~ .,              
   data = gerData1234,
@@ -644,7 +650,7 @@ saveRDS(gerModel1, file = paste0(models, "gerModel1.rds"), compress = TRUE)
 
 ##### Model 2
 
-```{r ger model2, echo=TRUE, message=FALSE, warning=FALSE}
+```{r ger model2, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 gerModel2 <- caret::train(
   percProm ~ .,              
   data = gerData1235,
@@ -658,7 +664,7 @@ saveRDS(gerModel2, file = paste0(models, "gerModel2.rds"), compress = TRUE)
 
 ##### Model 3
 
-```{r ger model3, echo=TRUE, message=FALSE, warning=FALSE}
+```{r ger model3, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 gerModel3 <- caret::train(
   percProm ~ .,              
   data = gerData1245,
@@ -672,7 +678,7 @@ saveRDS(gerModel3, file = paste0(models, "gerModel3.rds"), compress = TRUE)
 
 ##### Model 4
 
-```{r ger model4, echo=TRUE, message=FALSE, warning=FALSE}
+```{r ger model4, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 gerModel4 <- caret::train(
   percProm ~ .,              
   data = gerData1345,
@@ -685,7 +691,7 @@ saveRDS(gerModel4, file = paste0(models, "gerModel4.rds"), compress = TRUE)
 
 ##### Model 5
 
-```{r ger model5, echo=TRUE, message=FALSE, warning=FALSE}
+```{r ger model5, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 gerModel5 <- caret::train(
   percProm ~ .,              
   data = gerData2345,
@@ -696,6 +702,19 @@ gerModel5 <- caret::train(
 
 saveRDS(gerModel5, file = paste0(models, "gerModel5.rds"), compress = TRUE)
 ```
+
+##### Load models
+
+Load all models after running.
+
+```{r loas models ger, echo=TRUE, message=FALSE, warning=FALSE}
+gerModel1 <- readRDS(paste0(models, "gerModel1.rds"))
+gerModel2 <- readRDS(paste0(models, "gerModel2.rds"))
+gerModel3 <- readRDS(paste0(models, "gerModel3.rds"))
+gerModel4 <- readRDS(paste0(models, "gerModel4.rds"))
+gerModel5 <- readRDS(paste0(models, "gerModel5.rds"))
+```
+
 
 #### Test models
 

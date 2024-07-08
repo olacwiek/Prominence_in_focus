@@ -1001,7 +1001,7 @@ write.csv(targets, file = paste0(datasets, "targets.csv"), row.names = FALSE)
 We need to identify the corresponding pre- and post-tonic syllables,
 because we assume that prosody is a function of the environment.
 
-```{r}
+```{r assign prepost, echo=TRUE, message=FALSE, warning=FALSE}
 # Combined process to find "pre" and "post" syllables
 data_prepost <- data %>%
   # First, find rows that do not match the initial exclusion criteria
