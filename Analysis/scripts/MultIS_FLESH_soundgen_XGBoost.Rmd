@@ -62,6 +62,7 @@ scripts       <- paste0(parentfolder, '/scripts/')
 library(tibble)
 library(stringr)
 library(tidyverse) # includes readr, tidyr, dplyr, ggplot2
+library(data.table)
 
 # Plotting
 library(ggforce)
@@ -78,7 +79,8 @@ library(xgboost)
 library(parallel)
 library(mice)
 library(doParallel)
-
+# use all available cores for parallel computing
+options(mc.cores = parallel::detectCores())
 
 colorBlindBlack8  <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
                        "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
@@ -137,10 +139,11 @@ data_prepost <- data_prepost %>%
 
 # Then, rearrange the remaining columns
 data_prepost <- data_prepost %>%
-  select(fileName, language, participant, itemType, itemNum, focus, annotationNum, word, syllText, syllTextPre, syllTextPost, percProm, 
-         duration, duration_noSilence, ampl_median, ampl_noSilence_median, env_slope,  pitch_median_norm, 
+  select(fileName, language, participant, itemType, itemNum, focus, annotationNum, 
+         annotationNumTarget, word, syllText, syllTextPre, syllTextPost, percProm, 
+         duration, duration_noSilence, ampl_median, ampl_noSilence_median, env_slope, pitch_median_norm, 
          pitch_sd_norm, f0_slope_norm, specCentroid_median, entropy_median, HNR_median, amEnvDep_median, fmDep_median, 
-         annotationNumTarget, durationPre, duration_noSilencePre, ampl_medianPre, ampl_noSilence_medianPre, env_slopePre, 
+         durationPre, duration_noSilencePre, ampl_medianPre, ampl_noSilence_medianPre, env_slopePre, 
          pitch_median_normPre, pitch_sd_normPre, f0_slope_normPre, specCentroid_medianPre, entropy_medianPre, 
          HNR_medianPre, amEnvDep_medianPre, fmDep_medianPre, durationPost, duration_noSilencePost, ampl_medianPost, ampl_noSilence_medianPost, 
          env_slopePost, pitch_median_normPost, pitch_sd_normPost, f0_slope_normPost, 
@@ -240,7 +243,7 @@ Building the untuned model.
 # Untuned Model with importance (permutation) option set
 gerUntuned <- ranger(
   y = train_data$percProm,
-  x = train_data[,13:52],
+  x = train_data[,14:52],
   num.trees = 500,
   importance = "permutation"
 )
@@ -284,7 +287,7 @@ stopCluster(cl)
 Tuning the random forest.
 
 ```{r tuning RF ger, message=FALSE, warning=FALSE}
-tuneGer <- makeClassifTask(data = data_prepost_ger_clean[,12:52],
+tuneGer <- makeClassifTask(data = data_prepost_ger_clean[,13:52],
                            target = "percProm")
 
 tuneGer <- tuneRanger(tuneGer,
@@ -296,18 +299,18 @@ tuneGer
 ## Ola: ALWAYS REPORT THOSE BECAUSE THEY ARE DIFFERENT EVERY TIME BC OF RANDOMIZATION
 # Recommended parameter settings: 
 #   mtry min.node.size sample.fraction
-# 1   11             2       0.6919782
+# 1   10             4       0.6350144
 # Results: 
 #   multiclass.brier exec.time
-# 1        0.4368146      2.08
+# 1        0.4413789     0.286
 
 gerTuned <- ranger(
   y = train_data$percProm,
-  x = train_data[,13:52], 
+  x = train_data[,14:52], 
   num.trees = 5000, 
-  mtry = 11, # Set the recommended mtry value (number of features).
-  min.node.size = 2, # Set the recommended min.node.size value (number of samples before a node terminates).
-  sample.fraction = 0.6919782, # Set the recommended sample fraction value.(% of data for bagging).
+  mtry = 10, # Set the recommended mtry value (number of features).
+  min.node.size = 4, # Set the recommended min.node.size value (number of samples before a node terminates).
+  sample.fraction = 0.6350144, # Set the recommended sample fraction value.(% of data for bagging).
   importance = "permutation" # Permutation is a computationally intensive test.
 )
 
@@ -339,7 +342,7 @@ print(sorted_feature_importance)
 ```{r imputation ger, echo=TRUE, message=FALSE, warning=FALSE}
 # First, impute missing values for columns 13 to 52 in data_prepost_ger
 data_prepost_ger_clean <- data_prepost_ger
-data_prepost_ger_clean[, 13:52] <- lapply(data_prepost_ger_clean[, 13:52], function(x) {
+data_prepost_ger_clean[, 14:52] <- lapply(data_prepost_ger_clean[, 14:52], function(x) {
   if (is.numeric(x)) {
     ifelse(is.na(x), mean(x, na.rm = TRUE), x) # Impute with mean
   } else {
@@ -357,7 +360,7 @@ Create a tuned model only.
 
 ```{r tuned model imputed ger, echo=TRUE, message=FALSE, warning=FALSE}
 # Create a classification task for tuning
-tuneGer <- makeClassifTask(data = train_data[, 12:52], target = "percProm")
+tuneGer <- makeClassifTask(data = train_data[, 13:52], target = "percProm")
 
 # Tune the model
 tuneGer <- tuneRanger(tuneGer, measure = list(multiclass.brier), num.trees = 500)
@@ -366,19 +369,19 @@ tuneGer <- tuneRanger(tuneGer, measure = list(multiclass.brier), num.trees = 500
 tuneGer
 # Recommended parameter settings: 
 #   mtry min.node.size sample.fraction
-# 1    7             9       0.6597187
+# 1   11             3       0.4698381
 # Results: 
 #   multiclass.brier exec.time
-# 1        0.4834036      2.59
+# 1        0.4735565      0.31
 
 # Fit the tuned model on the training data
 gerTuned <- ranger(
   y = train_data$percProm,
-  x = train_data[, 13:52],
+  x = train_data[, 14:52],
   num.trees = 5000,
-  mtry = 7,
-  min.node.size = 9,
-  sample.fraction = 0.6597187,
+  mtry = 11,
+  min.node.size = 3,
+  sample.fraction = 0.4698381,
   importance = "permutation"
 )
 
@@ -410,15 +413,15 @@ print(sorted_feature_importance)
 
 **NA Omission Model:**
 
--   Accuracy: 0.6707
--   Kappa: 0.2209
+-   Accuracy: 0.6683 
+-   Kappa: 0.2183 
 -   Balanced Accuracy: Lower for most classes compared to the imputed
     model.
 
 **Imputed Values Model:**
 
--   Accuracy: 0.6534
--   Kappa: 0.2818
+-   Accuracy: 0.6193
+-   Kappa: 0.2369
 -   Balanced Accuracy: Generally higher, indicating better performance
     across classes.
 
@@ -455,7 +458,7 @@ train_data <- data_prepost_ger_clean[sample_indices, ]
 test_data <- data_prepost_ger_clean[-sample_indices, ]
 
 # Create a classification task for tuning
-tuneGer <- makeClassifTask(data = train_data[, 12:52], target = "percProm")
+tuneGer <- makeClassifTask(data = train_data[, 13:52], target = "percProm")
 
 # Tune the model
 tuneGer <- tuneRanger(tuneGer, measure = list(multiclass.brier), num.trees = 500)
@@ -464,19 +467,19 @@ tuneGer <- tuneRanger(tuneGer, measure = list(multiclass.brier), num.trees = 500
 tuneGer
 # Recommended parameter settings: 
 #   mtry min.node.size sample.fraction
-# 1   11             4        0.592076
+# 1    8             2       0.5495003
 # Results: 
 #   multiclass.brier exec.time
-# 1        0.4787837      2.08
+# 1        0.4797154     0.312
 
 # Fit the tuned model on the training data
 gerTuned <- ranger(
   y = train_data$percProm,
-  x = train_data[, 13:52],
+  x = train_data[, 14:52],
   num.trees = 5000,
-  mtry = 11,
-  min.node.size = 4,
-  sample.fraction = 0.592076,
+  mtry = 8,
+  min.node.size = 2,
+  sample.fraction = 0.5495003,
   importance = "permutation"
 )
 
@@ -510,7 +513,7 @@ Ensure parallel processing.
 
 ```{r parallel, echo=TRUE, message=FALSE, warning=FALSE}
 # Detect the number of available cores
-cores <- detectCores() - 1  # Leave one core free
+cores <- detectCores() #- 1  # Leave one core free
 
 # Create a cluster with the detected number of cores
 cl <- makeCluster(cores)
@@ -524,11 +527,11 @@ Define the grid and estimate runtime.
 ```{r grid, echo=TRUE, message=FALSE, warning=FALSE}
 grid_tune <- expand.grid(
   nrounds = c(5000, 10000), 
-  max_depth = c(2,4,6), 
+  max_depth = c(3, 6), 
   eta = c(0.05, 0.1), 
-  gamma = c(0.1, 0.2), 
+  gamma = c(0.1), 
   colsample_bytree = c(0.6, 0.8), 
-  min_child_weight = c(1, 2), 
+  min_child_weight = c(1), 
   subsample = c(0.75, 1.0)
 )
 
@@ -552,7 +555,7 @@ total_time_hours <- total_time / 60
 print(paste("Estimated time for grid search without parallel processing:", total_time_hours, "hours"))
 
 # Parallel processing with 4 cores
-cores <- 7
+cores <- 24
 total_time_parallel <- total_time / cores # in minutes
 
 # Convert to hours
@@ -586,7 +589,7 @@ numSubsets <- 5
 gerSubsets <- vector("list", length = numSubsets)
 
 # only keep the columns of output and predictor variables
-gerDataXGB <- data_prepost_ger[,12:52]
+gerDataXGB <- data_prepost_ger[,13:52]
 
 # Perform MICE imputation
 imputed_data <- mice(gerDataXGB, m = 1, maxit = 50, method = 'pmm', seed = 500)
@@ -628,7 +631,7 @@ gerData2345 <- rbind(gerData2, gerData3, gerData4, gerData5)
 ##### Model 1
 
 ```{r ger model1, echo=TRUE, message=FALSE, warning=FALSE}
-gerModel1 <- train(
+gerModel1 <- caret::train(
   percProm ~ .,              
   data = gerData1234,
   method = "xgbTree",     
@@ -642,7 +645,7 @@ saveRDS(gerModel1, file = paste0(models, "gerModel1.rds"), compress = TRUE)
 ##### Model 2
 
 ```{r ger model2, echo=TRUE, message=FALSE, warning=FALSE}
-gerModel2 <- train(
+gerModel2 <- caret::train(
   percProm ~ .,              
   data = gerData1235,
   method = "xgbTree",     
@@ -656,7 +659,7 @@ saveRDS(gerModel2, file = paste0(models, "gerModel2.rds"), compress = TRUE)
 ##### Model 3
 
 ```{r ger model3, echo=TRUE, message=FALSE, warning=FALSE}
-gerModel3 <- train(
+gerModel3 <- caret::train(
   percProm ~ .,              
   data = gerData1245,
   method = "xgbTree",     
@@ -670,7 +673,7 @@ saveRDS(gerModel3, file = paste0(models, "gerModel3.rds"), compress = TRUE)
 ##### Model 4
 
 ```{r ger model4, echo=TRUE, message=FALSE, warning=FALSE}
-gerModel4 <- train(
+gerModel4 <- caret::train(
   percProm ~ .,              
   data = gerData1345,
   method = "xgbTree",     
@@ -680,11 +683,10 @@ gerModel4 <- train(
 saveRDS(gerModel4, file = paste0(models, "gerModel4.rds"), compress = TRUE)
 ```
 
-
 ##### Model 5
 
 ```{r ger model5, echo=TRUE, message=FALSE, warning=FALSE}
-gerModel5 <- train(
+gerModel5 <- caret::train(
   percProm ~ .,              
   data = gerData2345,
   method = "xgbTree",     
@@ -737,6 +739,100 @@ combined_z <- sum(z_scores) / sqrt(length(p_values))
 p_combined_stouffer <- 2 * (1 - pnorm(abs(combined_z)))
 print(p_combined_stouffer)
 ```
+
+The p-values sum up to 0, since they are all so small.
+
+#### Feature importance
+
+##### Model 1
+
+```{r ger feature importance 1, echo=TRUE, message=FALSE, warning=FALSE}
+XGBgerModel1 <- gerModel1$finalModel
+importanceXGBgerModel1 <- xgb.importance(model = XGBgerModel1)
+print(importanceXGBgerModel1)
+xgb.plot.importance(importanceXGBgerModel1)
+```
+
+##### Model 2
+
+```{r ger feature importance 2, echo=TRUE, message=FALSE, warning=FALSE}
+XGBgerModel2 <- gerModel2$finalModel
+importanceXGBgerModel2 <- xgb.importance(model = XGBgerModel2)
+print(importanceXGBgerModel2)
+xgb.plot.importance(importanceXGBgerModel2)
+```
+
+##### Model 3
+
+```{r ger feature importance 3, echo=TRUE, message=FALSE, warning=FALSE}
+XGBgerModel3 <- gerModel3$finalModel
+importanceXGBgerModel3 <- xgb.importance(model = XGBgerModel3)
+print(importanceXGBgerModel3)
+xgb.plot.importance(importanceXGBgerModel3)
+```
+
+
+##### Model 4
+
+```{r ger feature importance 4, echo=TRUE, message=FALSE, warning=FALSE}
+XGBgerModel4 <- gerModel4$finalModel
+importanceXGBgerModel4 <- xgb.importance(model = XGBgerModel4)
+print(importanceXGBgerModel4)
+xgb.plot.importance(importanceXGBgerModel4)
+```
+
+
+##### Model 5
+
+```{r ger feature importance 5, echo=TRUE, message=FALSE, warning=FALSE}
+XGBgerModel5 <- gerModel5$finalModel
+importanceXGBgerModel5 <- xgb.importance(model = XGBgerModel5)
+print(importanceXGBgerModel5)
+xgb.plot.importance(importanceXGBgerModel5)
+```
+
+##### Cumulative feature importance
+
+```{r ger cumulative importance, echo=TRUE, message=FALSE, warning=FALSE}
+# Function to extract and normalize importance
+get_normalized_importance <- function(model) {
+  importance <- xgb.importance(model = model)
+  importance$Gain <- importance$Gain / sum(importance$Gain)
+  return(importance)
+}
+
+# Extract normalized importance for each model
+importance1 <- get_normalized_importance(gerModel1$finalModel)
+importance2 <- get_normalized_importance(gerModel2$finalModel)
+importance3 <- get_normalized_importance(gerModel3$finalModel)
+importance4 <- get_normalized_importance(gerModel4$finalModel)
+importance5 <- get_normalized_importance(gerModel5$finalModel)
+
+# Combine importances
+all_importances <- list(importance1, importance2, importance3, importance4, importance5)
+
+# Function to merge importances
+merge_importances <- function(importances) {
+  for (i in 2:length(importances)) {
+    names(importances[[i]])[2:4] <- paste0(names(importances[[i]])[2:4], "_", i)
+  }
+  merged <- Reduce(function(x, y) merge(x, y, by = "Feature", all = TRUE), importances)
+  merged[is.na(merged)] <- 0  # Replace NAs with 0
+  gain_cols <- grep("Gain", colnames(merged), value = TRUE)
+  merged$Cumulative <- rowSums(merged[, ..gain_cols])
+  return(merged[, .(Feature, Cumulative)])
+}
+
+# Merge and sort importances
+cumulative_importance <- merge_importances(all_importances)
+cumulative_importance <- cumulative_importance[order(-cumulative_importance$Cumulative), ]
+
+# Print cumulative feature importance
+print(cumulative_importance)
+```
+
+
+
 
 
 
