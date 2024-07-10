@@ -383,15 +383,18 @@ rm(targetTier, tier_name, i)
 
 ```
 
-## Select and save syllables
+## Select & save syllables
 
 We locate the .wav files of the utterances.
 
 ```{r locate wav syllables, echo=TRUE, message=FALSE, warning=FALSE}
 wavFiles <- list.files(audiodata, pattern = "\\.wav$", full.names = TRUE)
+#wavFiles <- list.files(audiodata, pattern = "^C.*\\.wav$", full.names = TRUE)
+
 
 # This is the tier we will be cutting from
-targetTier <- "syllText"
+targetTier <- "syllText" # German
+targetTier <- "Syll" # Catalan. Adapt accordingly. In Catalan the name of the targetTier was different....
 wordTier <- "Word"
 promTier <- "Prosodic_Prom"
 
@@ -633,7 +636,8 @@ List the files to process and the table with duration.
 
 ```{r reload data, echo=TRUE, message=FALSE, warning=FALSE}
 audio_files <- list.files(syllables,
-                         pattern = "*.wav",
+                         #pattern = "*.wav",
+                         pattern = "^C.*\\.wav$",
                          recursive = TRUE,
                          all.files = FALSE,
                          full.names = TRUE)
@@ -647,8 +651,8 @@ data_df <- read.table(paste0(syllables, "fileDurationsDF.csv"), header = TRUE, s
 head(data_df)
 
 # what is the minimum duration
-min(data_df$duration) # 31
-mean(data_df$duration) # 243.1474
+min(data_df$duration) # 19
+mean(data_df$duration) # 216.651
 max(data_df$duration) # 3528
 
 ```
@@ -715,7 +719,7 @@ feature_df <- feature_df %>% select(-File)
 feature_df$file <- sub("\\.wav$", "", feature_df$file)
 
 # and save it
-write.csv(feature_df, file = paste0(datasets, "syllables_soundgen_summary.csv"), row.names = FALSE)
+write.csv(combined_feature_df, file = paste0(datasets, "syllables_soundgen_summary.csv"), row.names = FALSE)
 
 rm(feature_df,summary_features_df,roughSet,features)
 
@@ -797,6 +801,7 @@ data <- data %>%
     syllText == "postPre" ~ "postpre",
     syllText == "prepost" ~ "postpre",
     syllText == "postpost" ~ "postpre",
+    syllText == "lopre "~ "lopre", # Remove trailing space
     syllText == "postpre " ~ "postpre", # Remove trailing space
     TRUE ~ syllText # Keep other values as they are
   ))
@@ -1034,7 +1039,7 @@ data_prepost <- data %>%
   # Create a new data frame for finding the corresponding "post" syllables
   mutate(annotationNumTarget = annotationNum + 1) %>%
   # Join data with itself based on relevant columns
-  left_join(data, by = c("language", "participant", "itemType", "itemNum", "annotationNumTarget" = "annotationNum"), suffix = c("", ".post")) %>%
+  left_join(data, by = c("language", "participant", "itemType", "focus", "itemNum", "annotationNumTarget" = "annotationNum"), suffix = c("", ".post")) %>%
   # Modify the joined columns to be NA where syllText.post does not contain "post"
   mutate(across(ends_with(".post"), ~ if_else(grepl("post", syllText.post), ., NA), .names = "{.col}")) %>%
   
