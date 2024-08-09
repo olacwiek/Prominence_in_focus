@@ -125,6 +125,9 @@ library(ggforce)
 library(ggpubr)
 library(gridExtra)
 
+# Beep
+library(beepr)
+
 colorBlindBlack8  <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
                        "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
 
@@ -636,8 +639,8 @@ List the files to process and the table with duration.
 
 ```{r reload data, echo=TRUE, message=FALSE, warning=FALSE}
 audio_files <- list.files(syllables,
-                         #pattern = "*.wav",
-                         pattern = "^C.*\\.wav$",
+                         pattern = "*.wav",
+                         #pattern = "^C.*\\.wav$",
                          recursive = TRUE,
                          all.files = FALSE,
                          full.names = TRUE)
@@ -646,6 +649,9 @@ audio_files <- list.files(syllables,
 # in this file we store the information about duration of each segment
 # read it in as a df
 data_df <- read.table(paste0(syllables, "fileDurationsDF.csv"), header = TRUE, sep = ',')
+
+# Remove trailing spaces
+data_df$fileName <- trimws(data_df$fileName, which = "right")
 
 # inspect the df
 head(data_df)
@@ -662,7 +668,7 @@ signal More info here:
 <https://www.rdocumentation.org/packages/soundgen/versions/2.6.0> or
 here: <https://cogsci.se/soundgen/acoustic_analysis.html>
 
-Now we extract summary of features in segments
+Now we extract summary of features in segments. The window length is set to be 25 at default, but if the file duration is shorter than 50 ms, then window length is set to half of the file duration.
 
 ```{r soundgen segments, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 # this is an empty data frame where we store the features
@@ -678,7 +684,7 @@ extract_summary_features <- function(file, analyze_result) {
 # Loop over the .wav files in the directory and extract summary features
 for (file in audio_files) {
   # Skip pauses in segments
-  if (endsWith(file, "-p-.wav")) {
+  if (endsWith(file, "-p-.wav") || endsWith(file, "-p-_.wav")) {
     print(paste("Skipping file:", file))
     next  
   }
@@ -686,11 +692,18 @@ for (file in audio_files) {
   print(paste("Analyzing file:", file))
   
   tryCatch({
+
+    # Extract the file name without the .wav extension and get the corresponding duration from data_df
+    file_duration <- data_df %>% filter(fileName == basename(sub("\\.wav$", "", file))) %>% select(duration) %>% pull()
+    
+    # Set the windowLength parameter based on file duration
+    window_length <- ifelse(file_duration < 50, file_duration / 2, 25)
+    
     # Set roughness parameters
-    roughSet <- list(windowLength = 30, step = 3, amRes = 5)  # Adjusted amRes to 5
+    roughSet <- list(windowLength = window_length, step = 3, amRes = 10)  # Adjusted amRes to 10
     
     # Analyze the audio file
-    features <- analyze(file, windowLength = 30, step = 5, 
+    features <- analyze(file, windowLength = window_length, step = 10, 
                         roughness = roughSet, pitchCeiling = 500, cutFreq = 500)
     
     # Extract features
@@ -706,6 +719,8 @@ for (file in audio_files) {
   })
 }
 
+beep()
+
 # reset row names and remove them
 row.names(feature_df) <- NULL
 
@@ -719,10 +734,9 @@ feature_df <- feature_df %>% select(-File)
 feature_df$file <- sub("\\.wav$", "", feature_df$file)
 
 # and save it
-write.csv(combined_feature_df, file = paste0(datasets, "syllables_soundgen_summary.csv"), row.names = FALSE)
+write.csv(feature_df, file = paste0(datasets, "syllables_soundgen_summary.csv"), row.names = FALSE)
 
 rm(feature_df,summary_features_df,roughSet,features)
-
 ```
 
 Load in the dataset if you do not have it in the environment. Skip this
@@ -735,6 +749,17 @@ data <- read_csv(paste0(datasets, "syllables_soundgen_summary.csv"))
 ```
 
 # Data cleaning
+
+Compare contents.
+
+```{r}
+# For which files, no data were extracted?
+fileNames_not_in_data <- setdiff(data_df$fileName, data$file)
+print(fileNames_not_in_data) # all pauses
+
+# What is their duration?
+# data_df[data_df$fileName %in% fileNames_not_in_data, ]
+```
 
 Before we start to compute the distances, we need to prepare the data
 frame to more manageable form.
@@ -762,7 +787,7 @@ df <- read.csv(paste0(datasets, "df.csv"))
 
 # Select only the necessary columns from df for the merge
 df <- df %>%
-  select(Language, Participant, Item_num, Word, Syll_num, F0_slope, env_slope) %>%
+  select(Language, Participant, Item_num, Focus, Word, Syll_num, F0_slope, env_slope) %>%
   rename(f0_slope = F0_slope)
 
 # Perform the left join to append F0_slope and env_slope to data
@@ -771,6 +796,7 @@ data <- data %>%
                        "participant" = "Participant",
                        "itemNum" = "Item_num",
                        "word" = "Word",
+                       "focus" = "Focus",
                        "annotationNum" = "Syll_num"))
 
 rm(df)
@@ -1016,7 +1042,7 @@ data_prepost <- data %>%
   # Create a new data frame for finding the corresponding "pre" syllables for annotationNum - 1
   mutate(annotationNumTarget = annotationNum - 1) %>%
   # Join data with itself based on relevant columns
-  left_join(data, by = c("language", "participant", "itemType", "itemNum", "annotationNumTarget" = "annotationNum"), suffix = c("", ".pre1")) %>%
+  left_join(data, by = c("language", "participant", "itemType", "itemNum", "focus", "annotationNumTarget" = "annotationNum"), suffix = c("", ".pre1")) %>%
   # Modify the joined columns to be NA where syllText.pre1 does not contain "pre"
   mutate(across(ends_with(".pre1"), ~ if_else(grepl("pre", syllText.pre1), ., NA), .names = "{.col}")) %>%
   
@@ -1024,7 +1050,7 @@ data_prepost <- data %>%
   # Create a new data frame for finding the corresponding "pre" syllables for annotationNum - 2
   mutate(annotationNumTarget = annotationNum - 2) %>%
   # Join data with itself based on relevant columns
-  left_join(data, by = c("language", "participant", "itemType", "itemNum", "annotationNumTarget" = "annotationNum"), suffix = c("", ".pre2")) %>%
+  left_join(data, by = c("language", "participant", "itemType", "itemNum", "focus", "annotationNumTarget" = "annotationNum"), suffix = c("", ".pre2")) %>%
   # Modify the joined columns to be NA where syllText.pre2 does not contain "pre"
   mutate(across(ends_with(".pre2"), ~ if_else(grepl("pre", syllText.pre2), ., NA), .names = "{.col}")) %>%
   
@@ -1039,14 +1065,14 @@ data_prepost <- data %>%
   # Create a new data frame for finding the corresponding "post" syllables
   mutate(annotationNumTarget = annotationNum + 1) %>%
   # Join data with itself based on relevant columns
-  left_join(data, by = c("language", "participant", "itemType", "focus", "itemNum", "annotationNumTarget" = "annotationNum"), suffix = c("", ".post")) %>%
+  left_join(data, by = c("language", "participant", "itemType", "itemNum", "focus", "annotationNumTarget" = "annotationNum"), suffix = c("", ".post")) %>%
   # Modify the joined columns to be NA where syllText.post does not contain "post"
   mutate(across(ends_with(".post"), ~ if_else(grepl("post", syllText.post), ., NA), .names = "{.col}")) %>%
   
   ## Ensure all target syllables are included
   right_join(data %>%
                filter(!grepl("pre|post|postpre|disfluency|break|-p-", syllText, ignore.case = TRUE)),
-             by = c("fileName", "annotationNum", "language", "participant", "itemType", "itemNum")) %>%
+             by = c("fileName", "annotationNum", "language", "participant", "itemType", "itemNum", "focus")) %>%
   
   # Dynamically rename columns that end with .post to end with Post
   rename_with(~ sub("\\.post$", "Post", .), ends_with(".post")) %>%
@@ -1057,11 +1083,12 @@ data_prepost <- data %>%
   rename_with(~ sub("\\.x$", "", .), ends_with(".x")) %>%
   
   # Remove unnecessary columns
-  select(-fileNamePre, -focusPre, -wordPre, -fileNamePost, -focusPost, -wordPost, -percPromPost, -percPromPre) %>%
+  select(-fileNamePre, -wordPre, -fileNamePost, -wordPost, -percPromPost, -percPromPre) %>%
   
   # Sort columns so that "percProm" comes after "syllText"
   select(fileName, language, participant, itemType, itemNum, focus, annotationNum, word, syllText, percProm, 
          everything())
+
 
 # Find the missing fileNames in data_prepost compared to targets
 #missing_from_prepost <- anti_join(data_prepost, targets, by = "fileName")

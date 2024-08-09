@@ -447,7 +447,7 @@ ggplot(targets %>% filter(!is.na(percProm)), aes(x = language, y = f0_slope, fil
   theme_minimal()
 ggsave(filename = paste0(plots, "prominence_f0_slope_raw.pdf"), plot = last_plot(), width = 6, height = 4)
 
-# Raw
+# Normalized
 ggplot(targets %>% filter(!is.na(percProm)), aes(x = language, y = f0_slope_norm, fill = as.factor(percProm))) +
   geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
   geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
@@ -846,6 +846,779 @@ for (var in variables) {
 rm(variables, var, data_filtered)
 ```
 
+### Pretonic: Averages prominence
+
+#### Duration
+
+What is the average duration of pretonic across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg duration pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_duration = mean(durationPre, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = durationPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic duration (total)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_duration_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Duration without silences
+
+What is the average duration of sounding across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg duration_noSilence pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_duration_noSilence = mean(duration_noSilencePre, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = duration_noSilencePre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic duration (without silences)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_duration_noSilence_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Amplitude (median)
+
+What is the average amplitude (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg amplitude pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_ampl_median = mean(ampl_medianPre, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = ampl_medianPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic amplitude (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_ampl_median_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Amplitude (median) without silences
+
+What is the average amplitude (median) without silences across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg ampl_noSilence_median pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_ampl_noSilence_median = mean(ampl_noSilence_medianPre, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = ampl_noSilence_medianPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic amplitude without silences (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_ampl_noSilence_median_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Amplitude envelope slope
+
+What is the average amplitude envelope slope across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg env_slope pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_env_slope = mean(env_slopePre, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = env_slopePre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    x = "Language",
+    y = "Pretonic amplitude envelope slope",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_env_slope_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Pitch (median)
+
+What is the average pitch (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg pitch_median pre, echo=TRUE, message=FALSE, warning=FALSE}
+#Vavlues
+## Raw
+avg_pitch_median_pre <- data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_pitch_median = mean(pitch_medianPre, na.rm = TRUE))
+
+## Normalized
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_pitch_median_norm = mean(pitch_median_normPre, na.rm = TRUE))
+
+# Plots
+## Raw
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = pitch_medianPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    x = "Language",
+    y = "Pretonic f0 (raw medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_pitch_median_raw_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## Normalized
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = pitch_median_normPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    x = "Language",
+    y = "Pretonic f0 (normalized medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_pitch_median_norm_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Pitch (sd)
+
+What is the average pitch (sd) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg pitch_sd pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+## Raw
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_pitch_sd = mean(pitch_sdPre, na.rm = TRUE))
+
+## Normalized
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_pitch_sd = mean(pitch_sd_normPre, na.rm = TRUE))
+
+# Plots
+## Raw
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = pitch_sdPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic f0 (raw sd)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_pitch_sd_raw_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## Normalized
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = pitch_sd_normPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic f0 (normalized sd)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_pitch_sd_norm_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### F0 slope 
+
+What is the average f0 slope across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg f0_slope pre, echo=TRUE, message=FALSE, warning=FALSE}
+#Values
+## Raw
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_f0_slope = mean(f0_slopePre, na.rm = TRUE))
+
+## Normalized
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_f0_slope = mean(f0_slope_normPre, na.rm = TRUE))
+
+# Plots
+## Raw
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = f0_slopePre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic f0 slope (raw)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_f0_slope_raw_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## Normalized
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = f0_slope_normPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic f0 slope (normalized)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_f0_slope_norm_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Spectral centroid (median)
+
+What is the average spectral centeroid (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg specCentroid_median pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_specCentroid_median = mean(specCentroid_medianPre, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = specCentroid_medianPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic spectral centroid (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_specCentroid_median_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Entropy (median)
+
+What is the average entropy (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg entropy_median pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_entropy_median = mean(entropy_medianPre, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = entropy_medianPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic entropy (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_entropy_median_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Harmonics-to-Noise Ratio (median)
+
+What is the average Harmonics-to-Noise Ratio (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg HNR_median pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_HNR_median = mean(HNR_medianPre, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = HNR_medianPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic HNR (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_HNR_median_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Amplitude modulation (median)
+
+What is the average amplitude modulation (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg amEnvDep_median pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_amEnvDep_median = mean(amEnvDep_medianPre, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = amEnvDep_medianPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic amplitude modulation (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_amEnvDep_median_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Frequency modulation (median)
+
+What is the average frequency modulation (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg fmDep_median pre, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_fmDep_median = mean(fmDep_medianPre, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = fmDep_medianPre, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Pretonic frequency modulation (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_fmDep_median_pretonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+### Posttonic: Averages prominence
+
+#### Duration
+
+What is the average duration of pretonic across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg duration post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_duration = mean(durationPost, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = durationPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic duration (total)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_duration_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Duration without silences
+
+What is the average duration of sounding across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg duration_noSilence post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_duration_noSilence = mean(duration_noSilencePost, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = duration_noSilencePost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic duration (without silences)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_duration_noSilence_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Amplitude (median)
+
+What is the average amplitude (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg amplitude post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_ampl_median = mean(ampl_medianPost, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = ampl_medianPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic amplitude (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_ampl_median_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Amplitude (median) without silences
+
+What is the average amplitude (median) without silences across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg ampl_noSilence_median post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_ampl_noSilence_median = mean(ampl_noSilence_medianPost, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = ampl_noSilence_medianPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic amplitude without silences (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_ampl_noSilence_median_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Amplitude envelope slope
+
+What is the average amplitude envelope slope across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg env_slope post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_env_slope = mean(env_slopePost, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = env_slopePost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    x = "Language",
+    y = "Posttonic amplitude envelope slope",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_env_slope_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Pitch (median)
+
+What is the average pitch (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg pitch_median post, echo=TRUE, message=FALSE, warning=FALSE}
+#Vavlues
+## Raw
+avg_pitch_median_pre <- data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_pitch_median = mean(pitch_medianPost, na.rm = TRUE))
+
+## Normalized
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_pitch_median_norm = mean(pitch_median_normPost, na.rm = TRUE))
+
+# Plots
+## Raw
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = pitch_medianPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    x = "Language",
+    y = "Posttonic f0 (raw medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_pitch_median_raw_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## Normalized
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = pitch_median_normPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    x = "Language",
+    y = "Posttonic f0 (normalized medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_pitch_median_norm_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Pitch (sd)
+
+What is the average pitch (sd) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg pitch_sd post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+## Raw
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_pitch_sd = mean(pitch_sdPost, na.rm = TRUE))
+
+## Normalized
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_pitch_sd = mean(pitch_sd_normPost, na.rm = TRUE))
+
+# Plots
+## Raw
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = pitch_sdPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic f0 (raw sd)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_pitch_sd_raw_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## Normalized
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = pitch_sd_normPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic f0 (normalized sd)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_pitch_sd_norm_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### F0 slope 
+
+What is the average f0 slope across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg f0_slope post, echo=TRUE, message=FALSE, warning=FALSE}
+#Values
+## Raw
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_f0_slope = mean(f0_slopePost, na.rm = TRUE))
+
+## Normalized
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_f0_slope = mean(f0_slope_normPost, na.rm = TRUE))
+
+# Plots
+## Raw
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = f0_slopePost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic f0 slope (raw)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_f0_slope_raw_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+
+## Normalized
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = f0_slope_normPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic f0 slope (normalized)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_f0_slope_norm_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Spectral centroid (median)
+
+What is the average spectral centeroid (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg specCentroid_median post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_specCentroid_median = mean(specCentroid_medianPost, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = specCentroid_medianPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic spectral centroid (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_specCentroid_median_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Entropy (median)
+
+What is the average entropy (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg entropy_median post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_entropy_median = mean(entropy_medianPost, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = entropy_medianPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic entropy (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_entropy_median_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Harmonics-to-Noise Ratio (median)
+
+What is the average Harmonics-to-Noise Ratio (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg HNR_median post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_HNR_median = mean(HNR_medianPost, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = HNR_medianPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic HNR (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_HNR_median_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Amplitude modulation (median)
+
+What is the average amplitude modulation (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg amEnvDep_median post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_amEnvDep_median = mean(amEnvDep_medianPost, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = amEnvDep_medianPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic amplitude modulation (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_amEnvDep_median_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
+
+#### Frequency modulation (median)
+
+What is the average frequency modulation (median) across the different prosodic prominence ratings in Catalan vs in German?
+
+```{r avg fmDep_median post, echo=TRUE, message=FALSE, warning=FALSE}
+# Values
+data_prepost %>% 
+  group_by(language, percProm) %>%
+  summarize(avg_fmDep_median = mean(fmDep_medianPost, na.rm = TRUE))
+
+# Plot
+ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = fmDep_medianPost, fill = as.factor(percProm))) +
+  geom_violin(scale = "width", trim = FALSE, alpha = 0.3) +
+  geom_boxplot(width = 0.1, outlier.shape = NA, position = position_dodge(width = 0.9), alpha = 0.5) +
+  labs(
+    #title = "Duration of Prosodic Prominence Ratings by Language",
+    x = "Language",
+    y = "Posttonic frequency modulation (medians)",
+    fill = "Prosodic prominence"
+  ) +
+  scale_fill_manual(values = colorBlindBlack8) +
+  theme_minimal()
+ggsave(filename = paste0(plots, "prominence_fmDep_median_posttonic.pdf"), plot = last_plot(), width = 6, height = 4)
+```
 
 
 
