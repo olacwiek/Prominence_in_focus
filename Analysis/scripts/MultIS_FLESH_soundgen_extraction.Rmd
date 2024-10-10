@@ -668,7 +668,9 @@ signal More info here:
 <https://www.rdocumentation.org/packages/soundgen/versions/2.6.0> or
 here: <https://cogsci.se/soundgen/acoustic_analysis.html>
 
-Now we extract summary of features in segments. The window length is set to be 25 at default, but if the file duration is shorter than 50 ms, then window length is set to half of the file duration.
+Now we extract summary of features in segments. The window length is set
+to be 25 at default, but if the file duration is shorter than 50 ms,
+then window length is set to half of the file duration.
 
 ```{r soundgen segments, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 # this is an empty data frame where we store the features
@@ -910,43 +912,68 @@ Even though we will be using an XGBoost algorithm, it is a good idea to
 reduce the amount of features. I will focus on the following feature
 clusters, given their relevance for prominence:
 
-1.  Duration:
+1.  **Duration:**
 
     Longer duration is a consistent indicator of prominence, as
     prominent syllables tend to be lengthened.
     <https://core.ac.uk/reader/50716260>
     <https://drive.google.com/file/d/1Ys8FSHwNRjC1bYvTaEZz1itgGZ7PX7I-/view>
 
-2.  Amplitude/Intensity:
+2.  **Amplitude/Intensity:**
 
     Increased amplitude or loudness often marks prominent syllables, as
     they are typically spoken louder.
     <https://core.ac.uk/reader/50716260>
     <https://drive.google.com/file/d/1Ys8FSHwNRjC1bYvTaEZz1itgGZ7PX7I-/view>
 
-3.  Pitch (F0):
+3.  **Pitch (f0):**
 
     Higher pitch or fundamental frequency (F0) is strongly associated
     with prominence (REF). Range has also been noted to be relevant
     <https://core.ac.uk/reader/50716260>
     <https://drive.google.com/file/d/1Ys8FSHwNRjC1bYvTaEZz1itgGZ7PX7I-/view>
 
-4.  Formant Frequencies:
+4.  **Formant Frequencies:**
 
     Formant frequencies, particularly the first and second formants (F1,
     F2), influence vowel quality and perceived prominence.
 
-5.  Spectral Features:
+5.  **Spectral Features:**
 
-    Spectral centroid and entropy describe the distribution of energy in
-    the speech spectrum and correlate with stress and clarity.
+    a.  *Spectral Centroid* (`specCentroid_median`, `specCentroid_sd`):\
+        Measures the "brightness" of the sound, indicating the balance
+        of energy across frequencies, often linked to prominence and
+        clarity.
 
-6.  Voice Quality Measures:
+    b.  *Entropy* (`entropy_median`, `entropy_sd`, `entropySh_median`,
+        `entropySh_sd`):\
+        Reflects the randomness or complexity in the speech signal.
+        Lower entropy is associated with clearer, more structured speech
+        segments, while higher entropy may indicate more noise or less
+        structured energy distribution.
+
+    c.  *Spectral Flux* (`flux_median`, `flux_sd`):\
+        Tracks the rate of change in the speech spectrum, capturing how
+        dynamically speech energy shifts over time. Higher spectral flux
+        indicates rapid energy shifts, relevant for accented syllables.
+
+    d.  *Cepstral Peak Prominence (CPP)* (`CPP_median`, `CPP_sd`):\
+        Measures the strength of harmonic peaks in the spectrum, related
+        to the clarity of the voice. Higher CPP values reflect clearer,
+        more harmonically rich signals, often associated with
+        prominence.
+
+    e.  *Novelty* (`novelty_median`, `novelty_sd`):\
+        Detects transitions and changes in the acoustic signal. Novelty
+        features highlight abrupt acoustic shifts, often marking
+        boundaries of prominent syllables or transitions in speech.
+
+6.  **Voice Quality Measures:**
 
     Measures such as Harmonics-to-Noise Ratio (HNR) can indicate voice
     quality changes associated with prominence.
 
-7.  Temporal Features:
+7.  **Temporal Features:**
 
     Amplitude and frequency modulation features capture variations
     relevant to prominence.
@@ -955,29 +982,41 @@ Based on this, we proceed with the following features for the model:
 
 -   **Duration**: `duration`, `duration_noSilence`
 
--   **Amplitude**: `ampl_median`, `ampl_noSilence_median`, `env_slope`
+-   **Amplitude**: `ampl_median`, `ampl_noSilence_median`, `ampl_sd`,
+    `ampl_noSilence_sd`, `env_slope`
 
 -   **Pitch**: `pitch_median`, `pitch_sd`,`f0_slope`
 
 -   **Formants**: `f1_freq_median`, `f2_freq_median`
 
--   **Spectral**: `specCentroid_median`, `entropy_median`
+-   **Spectral**: `specCentroid_median`, `specCentroid_sd`,
+    `entropy_median`, `entropy_sd`, `entropySh_median`, `entropySh_sd`,
+    `CPP_median`, `CPP_sd`, `flux_median`, `flux_sd`, `novelty_median`,
+    `novelty_sd`
 
--   **Voice Quality**: `HNR_median`
+-   **Voice Quality**: `HNR_median`, `HNR_sd`
 
--   **Temporal**: `amEnvDep_median`, `fmDep_median`
+-   **Temporal**: `amEnvDep_median`, `amEnvDep_sd`, `fmDep_median`,
+    `fmDep_sd`
 
 ```{r reduce features, echo=TRUE, message=FALSE, warning=FALSE}
 data <- data %>%
   select(fileName, language, participant, itemType, itemNum, focus, 
          annotationNum, word, syllText, percProm,
          duration, duration_noSilence,
-         ampl_median, ampl_noSilence_median, env_slope,
+         ampl_median, ampl_sd, 
+         ampl_noSilence_median, ampl_noSilence_sd, env_slope,
+         CPP_median, CPP_sd,
+         flux_median, flux_sd,
+         novelty_median, novelty_sd,
          pitch_median, pitch_sd, f0_slope,
          f1_freq_median, f2_freq_median,
-         specCentroid_median, entropy_median,
-         HNR_median,
-         amEnvDep_median, fmDep_median)
+         specCentroid_median, specCentroid_sd, 
+         entropy_median, entropy_sd,
+         entropySh_median, entropySh_sd,
+         HNR_median, HNR_sd,
+         amEnvDep_median, amEnvDep_sd, 
+         fmDep_median, fmDep_sd)
 ```
 
 Normalize variables dependent on physiological differences.
@@ -1006,13 +1045,24 @@ data <- data %>%
 # Sort columns in the specified order
 data <- data %>%
   select(
-    fileName, language, participant, itemType, itemNum, focus, annotationNum, 
-    word, syllText, percProm, duration, duration_noSilence, ampl_median, 
-    ampl_noSilence_median, env_slope, pitch_median, pitch_median_norm, pitch_sd, 
-    pitch_sd_norm, f0_slope, f0_slope_norm, f1_freq_median, f1_freq_median_norm, 
-    f2_freq_median, f2_freq_median_norm, specCentroid_median, entropy_median, 
-    HNR_median, amEnvDep_median, fmDep_median
-  )
+    fileName, language, participant, itemType, itemNum, focus, 
+         annotationNum, word, syllText, percProm,
+         duration, duration_noSilence,
+         ampl_median, ampl_sd, 
+         ampl_noSilence_median, ampl_noSilence_sd, env_slope,
+         CPP_median, CPP_sd,
+         flux_median, flux_sd,
+         novelty_median, novelty_sd,
+         pitch_median, pitch_sd, pitch_median_norm, pitch_sd_norm, f0_slope, f0_slope_norm,
+         f1_freq_median, f1_freq_median_norm, 
+         f2_freq_median, f2_freq_median_norm,
+         specCentroid_median, specCentroid_sd, 
+         entropy_median, entropy_sd,
+         entropySh_median, entropySh_sd,
+         HNR_median, HNR_sd,
+         amEnvDep_median, amEnvDep_sd, 
+         fmDep_median, fmDep_sd
+    )
 
 rm(data_stats)
 ```
