@@ -13,7 +13,7 @@
 
 <meta name="date" content="2024-06-20" />
 
-<title>Bridging the Gap 2.0: Exploring a Middle-Way Approach for Prosodic Annotation</title>
+<title>Acoustic correlates of perceived prominence in German and Catalan: Feature extraction</title>
 
 <script>// Pandoc 2.9 adds attributes on both header and div. We remove the former (to
 // be compatible with the behavior of Pandoc < 2.8).
@@ -2773,8 +2773,8 @@ border-radius: 0px;
 
 
 
-<h1 class="title toc-ignore">Bridging the Gap 2.0: Exploring a
-Middle-Way Approach for Prosodic Annotation</h1>
+<h1 class="title toc-ignore">Acoustic correlates of perceived prominence
+in German and Catalan: Feature extraction</h1>
 <h4 class="author">Aleksandra Ćwiek, Alina Gregori, Paula G.
 Sánchez-Ramón, Frank Kügler, Pilar Prieto</h4>
 <h4 class="date">2024-06-20</h4>
@@ -2865,11 +2865,13 @@ library(stringr)
 library(tidyverse) # includes readr, tidyr, dplyr, ggplot2
 
 # Audio Analysis
-library(tuneR)
-library(readtextgrid)
-library(soundgen)
-
-# Plotting
+library(tuneR); packageVersion(&quot;tuneR&quot;)</code></pre>
+<pre><code>## [1] &#39;1.4.7&#39;</code></pre>
+<pre class="r"><code>library(readtextgrid); packageVersion(&quot;readtextgrid&quot;)</code></pre>
+<pre><code>## [1] &#39;0.1.2&#39;</code></pre>
+<pre class="r"><code>library(soundgen); packageVersion(&quot;soundgen&quot;)</code></pre>
+<pre><code>## [1] &#39;2.7.0&#39;</code></pre>
+<pre class="r"><code># Plotting
 library(ggforce)
 library(ggpubr)
 library(gridExtra)
@@ -3940,25 +3942,51 @@ data &lt;- data %&gt;%
 to reduce the amount of features. I will focus on the following feature
 clusters, given their relevance for prominence:</p>
 <ol style="list-style-type: decimal">
-<li><p>Duration:</p>
+<li><p><strong>Duration:</strong></p>
 <p>Longer duration is a consistent indicator of prominence, as prominent
 syllables tend to be lengthened. <a href="https://core.ac.uk/reader/50716260" class="uri">https://core.ac.uk/reader/50716260</a> <a href="https://drive.google.com/file/d/1Ys8FSHwNRjC1bYvTaEZz1itgGZ7PX7I-/view" class="uri">https://drive.google.com/file/d/1Ys8FSHwNRjC1bYvTaEZz1itgGZ7PX7I-/view</a></p></li>
-<li><p>Amplitude/Intensity:</p>
+<li><p><strong>Amplitude/Intensity:</strong></p>
 <p>Increased amplitude or loudness often marks prominent syllables, as
 they are typically spoken louder. <a href="https://core.ac.uk/reader/50716260" class="uri">https://core.ac.uk/reader/50716260</a> <a href="https://drive.google.com/file/d/1Ys8FSHwNRjC1bYvTaEZz1itgGZ7PX7I-/view" class="uri">https://drive.google.com/file/d/1Ys8FSHwNRjC1bYvTaEZz1itgGZ7PX7I-/view</a></p></li>
-<li><p>Pitch (F0):</p>
+<li><p><strong>Pitch (f0):</strong></p>
 <p>Higher pitch or fundamental frequency (F0) is strongly associated
 with prominence (REF). Range has also been noted to be relevant <a href="https://core.ac.uk/reader/50716260" class="uri">https://core.ac.uk/reader/50716260</a> <a href="https://drive.google.com/file/d/1Ys8FSHwNRjC1bYvTaEZz1itgGZ7PX7I-/view" class="uri">https://drive.google.com/file/d/1Ys8FSHwNRjC1bYvTaEZz1itgGZ7PX7I-/view</a></p></li>
-<li><p>Formant Frequencies:</p>
+<li><p><strong>Formant Frequencies:</strong></p>
 <p>Formant frequencies, particularly the first and second formants (F1,
 F2), influence vowel quality and perceived prominence.</p></li>
-<li><p>Spectral Features:</p>
-<p>Spectral centroid and entropy describe the distribution of energy in
-the speech spectrum and correlate with stress and clarity.</p></li>
-<li><p>Voice Quality Measures:</p>
+<li><p><strong>Spectral Features:</strong></p>
+<ol style="list-style-type: lower-alpha">
+<li><p><em>Spectral Centroid</em> (<code>specCentroid_median</code>,
+<code>specCentroid_sd</code>):<br />
+Measures the “brightness” of the sound, indicating the balance of energy
+across frequencies, often linked to prominence and clarity.</p></li>
+<li><p><em>Entropy</em> (<code>entropy_median</code>,
+<code>entropy_sd</code>, <code>entropySh_median</code>,
+<code>entropySh_sd</code>):<br />
+Reflects the randomness or complexity in the speech signal. Lower
+entropy is associated with clearer, more structured speech segments,
+while higher entropy may indicate more noise or less structured energy
+distribution.</p></li>
+<li><p><em>Spectral Flux</em> (<code>flux_median</code>,
+<code>flux_sd</code>):<br />
+Tracks the rate of change in the speech spectrum, capturing how
+dynamically speech energy shifts over time. Higher spectral flux
+indicates rapid energy shifts, relevant for accented syllables.</p></li>
+<li><p><em>Cepstral Peak Prominence (CPP)</em> (<code>CPP_median</code>,
+<code>CPP_sd</code>):<br />
+Measures the strength of harmonic peaks in the spectrum, related to the
+clarity of the voice. Higher CPP values reflect clearer, more
+harmonically rich signals, often associated with prominence.</p></li>
+<li><p><em>Novelty</em> (<code>novelty_median</code>,
+<code>novelty_sd</code>):<br />
+Detects transitions and changes in the acoustic signal. Novelty features
+highlight abrupt acoustic shifts, often marking boundaries of prominent
+syllables or transitions in speech.</p></li>
+</ol></li>
+<li><p><strong>Voice Quality Measures:</strong></p>
 <p>Measures such as Harmonics-to-Noise Ratio (HNR) can indicate voice
 quality changes associated with prominence.</p></li>
-<li><p>Temporal Features:</p>
+<li><p><strong>Temporal Features:</strong></p>
 <p>Amplitude and frequency modulation features capture variations
 relevant to prominence.</p></li>
 </ol>
@@ -3968,27 +3996,41 @@ model:</p>
 <li><p><strong>Duration</strong>: <code>duration</code>,
 <code>duration_noSilence</code></p></li>
 <li><p><strong>Amplitude</strong>: <code>ampl_median</code>,
-<code>ampl_noSilence_median</code>, <code>env_slope</code></p></li>
+<code>ampl_noSilence_median</code>, <code>ampl_sd</code>,
+<code>ampl_noSilence_sd</code>, <code>env_slope</code></p></li>
 <li><p><strong>Pitch</strong>: <code>pitch_median</code>,
 <code>pitch_sd</code>,<code>f0_slope</code></p></li>
 <li><p><strong>Formants</strong>: <code>f1_freq_median</code>,
 <code>f2_freq_median</code></p></li>
 <li><p><strong>Spectral</strong>: <code>specCentroid_median</code>,
-<code>entropy_median</code></p></li>
-<li><p><strong>Voice Quality</strong>: <code>HNR_median</code></p></li>
+<code>specCentroid_sd</code>, <code>entropy_median</code>,
+<code>entropy_sd</code>, <code>entropySh_median</code>,
+<code>entropySh_sd</code>, <code>CPP_median</code>, <code>CPP_sd</code>,
+<code>flux_median</code>, <code>flux_sd</code>,
+<code>novelty_median</code>, <code>novelty_sd</code></p></li>
+<li><p><strong>Voice Quality</strong>: <code>HNR_median</code>,
+<code>HNR_sd</code></p></li>
 <li><p><strong>Temporal</strong>: <code>amEnvDep_median</code>,
-<code>fmDep_median</code></p></li>
+<code>amEnvDep_sd</code>, <code>fmDep_median</code>,
+<code>fmDep_sd</code></p></li>
 </ul>
 <pre class="r"><code>data &lt;- data %&gt;%
   select(fileName, language, participant, itemType, itemNum, focus, 
          annotationNum, word, syllText, percProm,
          duration, duration_noSilence,
-         ampl_median, ampl_noSilence_median, env_slope,
+         ampl_median, ampl_sd, 
+         ampl_noSilence_median, ampl_noSilence_sd, env_slope,
+         CPP_median, CPP_sd,
+         flux_median, flux_sd,
+         novelty_median, novelty_sd,
          pitch_median, pitch_sd, f0_slope,
          f1_freq_median, f2_freq_median,
-         specCentroid_median, entropy_median,
-         HNR_median,
-         amEnvDep_median, fmDep_median)</code></pre>
+         specCentroid_median, specCentroid_sd, 
+         entropy_median, entropy_sd,
+         entropySh_median, entropySh_sd,
+         HNR_median, HNR_sd,
+         amEnvDep_median, amEnvDep_sd, 
+         fmDep_median, fmDep_sd)</code></pre>
 <p>Normalize variables dependent on physiological differences.</p>
 <pre class="r"><code># List of columns to normalize
 columns_to_normalize &lt;- c(&quot;pitch_median&quot;, &quot;pitch_sd&quot;, &quot;f0_slope&quot;, &quot;f1_freq_median&quot;, &quot;f2_freq_median&quot;)
@@ -4013,13 +4055,24 @@ data &lt;- data %&gt;%
 # Sort columns in the specified order
 data &lt;- data %&gt;%
   select(
-    fileName, language, participant, itemType, itemNum, focus, annotationNum, 
-    word, syllText, percProm, duration, duration_noSilence, ampl_median, 
-    ampl_noSilence_median, env_slope, pitch_median, pitch_median_norm, pitch_sd, 
-    pitch_sd_norm, f0_slope, f0_slope_norm, f1_freq_median, f1_freq_median_norm, 
-    f2_freq_median, f2_freq_median_norm, specCentroid_median, entropy_median, 
-    HNR_median, amEnvDep_median, fmDep_median
-  )
+    fileName, language, participant, itemType, itemNum, focus, 
+         annotationNum, word, syllText, percProm,
+         duration, duration_noSilence,
+         ampl_median, ampl_sd, 
+         ampl_noSilence_median, ampl_noSilence_sd, env_slope,
+         CPP_median, CPP_sd,
+         flux_median, flux_sd,
+         novelty_median, novelty_sd,
+         pitch_median, pitch_sd, pitch_median_norm, pitch_sd_norm, f0_slope, f0_slope_norm,
+         f1_freq_median, f1_freq_median_norm, 
+         f2_freq_median, f2_freq_median_norm,
+         specCentroid_median, specCentroid_sd, 
+         entropy_median, entropy_sd,
+         entropySh_median, entropySh_sd,
+         HNR_median, HNR_sd,
+         amEnvDep_median, amEnvDep_sd, 
+         fmDep_median, fmDep_sd
+    )
 
 rm(data_stats)</code></pre>
 <p>Update targets after all cleaning.</p>
@@ -4100,6 +4153,53 @@ data_prepost &lt;- data %&gt;%
 <pre class="r"><code>write.csv(data, file = paste0(datasets, &quot;data_cleaned.csv&quot;), row.names = FALSE)
 
 write.csv(data_prepost, file = paste0(datasets, &quot;data_prepost.csv&quot;), row.names = FALSE)</code></pre>
+</div>
+<div id="session-info" class="section level1" number="9">
+<h1><span class="header-section-number">9</span> Session info</h1>
+<pre class="r"><code>sessionInfo()</code></pre>
+<pre><code>## R version 4.4.1 (2024-06-14 ucrt)
+## Platform: x86_64-w64-mingw32/x64
+## Running under: Windows 10 x64 (build 19045)
+## 
+## Matrix products: default
+## 
+## 
+## locale:
+## [1] LC_COLLATE=German_Germany.utf8  LC_CTYPE=German_Germany.utf8   
+## [3] LC_MONETARY=German_Germany.utf8 LC_NUMERIC=C                   
+## [5] LC_TIME=German_Germany.utf8    
+## 
+## time zone: Europe/Berlin
+## tzcode source: internal
+## 
+## attached base packages:
+## [1] stats     graphics  grDevices utils     datasets  methods   base     
+## 
+## other attached packages:
+##  [1] beepr_2.0          gridExtra_2.3      ggpubr_0.6.0       ggforce_0.4.2     
+##  [5] soundgen_2.7.0     shinyBS_0.61.1     readtextgrid_0.1.2 tuneR_1.4.7       
+##  [9] lubridate_1.9.3    forcats_1.0.0      dplyr_1.1.4        purrr_1.0.2       
+## [13] readr_2.1.5        tidyr_1.3.1        ggplot2_3.5.1      tidyverse_2.0.0   
+## [17] stringr_1.5.1      tibble_3.2.1      
+## 
+## loaded via a namespace (and not attached):
+##  [1] gtable_0.3.5      xfun_0.48         bslib_0.8.0       rstatix_0.7.2    
+##  [5] tzdb_0.4.0        vctrs_0.6.5       tools_4.4.1       generics_0.1.3   
+##  [9] parallel_4.4.1    fansi_1.0.6       pkgconfig_2.0.3   lifecycle_1.0.4  
+## [13] compiler_4.4.1    farver_2.1.2      munsell_0.5.1     codetools_0.2-20 
+## [17] carData_3.0-5     httpuv_1.6.15     htmltools_0.5.8.1 sass_0.4.9       
+## [21] yaml_2.3.10       Formula_1.2-5     crayon_1.5.3      car_3.1-3        
+## [25] pillar_1.9.0      later_1.3.2       jquerylib_0.1.4   MASS_7.3-60.2    
+## [29] cachem_1.1.0      iterators_1.0.14  abind_1.4-8       foreach_1.5.2    
+## [33] mime_0.12         tidyselect_1.2.1  digest_0.6.37     stringi_1.8.4    
+## [37] polyclip_1.10-7   fastmap_1.2.0     grid_4.4.1        colorspace_2.1-1 
+## [41] cli_3.6.3         magrittr_2.0.3    utf8_1.2.4        broom_1.0.7      
+## [45] withr_3.0.1       backports_1.5.0   scales_1.3.0      promises_1.3.0   
+## [49] bit64_4.5.2       timechange_0.3.0  rmarkdown_2.28    audio_0.1-11     
+## [53] bit_4.5.0         signal_1.8-1      ggsignif_0.6.4    hms_1.1.3        
+## [57] shiny_1.9.1       evaluate_1.0.0    knitr_1.48        rlang_1.1.4      
+## [61] Rcpp_1.0.13       xtable_1.8-4      glue_1.8.0        tweenr_2.0.3     
+## [65] vroom_1.6.5       rstudioapi_0.16.0 jsonlite_1.8.9    R6_2.5.1</code></pre>
 <div id="refs" class="references csl-bib-body hanging-indent" entry-spacing="0">
 <div id="ref-ananthakrishnan2008" class="csl-entry">
 Ananthakrishnan, Sankaranarayanan, and Shrikanth S. Narayanan. 2008.

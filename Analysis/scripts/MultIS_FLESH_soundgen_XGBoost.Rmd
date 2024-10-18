@@ -1,5 +1,5 @@
 ---
-title: "Bridging the Gap 2.0: Exploring a Middle-Way Approach for Prosodic Annotation"
+title: "Acoustic correlates of perceived prominence in German and Catalan: XGBoost Modeling"
 author: "Aleksandra Ćwiek, Alina Gregori, Paula G. Sánchez-Ramón, Frank Kügler, Pilar Prieto"
 date: "2024-06-20"
 output:
@@ -62,6 +62,7 @@ scripts       <- paste0(parentfolder, '/scripts/')
 library(tibble)
 library(stringr)
 library(tidyverse) # includes readr, tidyr, dplyr, ggplot2
+packageVersion("tidyverse")
 library(data.table)
 
 # Plotting
@@ -69,16 +70,17 @@ library(ggforce)
 library(ggpubr)
 library(gridExtra)
 
-# Random Forests and XGBoost
+# Random Forests
 library(rpart)
 library(rpart.plot)
 library(ranger)
 library(tuneRanger)
 library(caret)
-library(xgboost)
-library(parallel)
-library(mice)
-library(doParallel)
+# XGBoost
+library(xgboost); packageVersion("xgboost")
+library(parallel); packageVersion("parallel")
+library(mice); packageVersion("mice")
+library(doParallel); packageVersion("doParallel")
 # use all available cores for parallel computing
 options(mc.cores = parallel::detectCores())
 
@@ -273,7 +275,7 @@ write.csv(data_prepost_ger_clean, file = paste0(datasets, "gerDataXGB.csv"), row
 
 Ensure parallel processing.
 
-```{r parallel, echo=TRUE, message=FALSE, warning=FALSE}
+```{r parallel ger, echo=TRUE, message=FALSE, warning=FALSE}
 # Detect the number of available cores
 cores <- detectCores() #- 1  # Leave one core free
 
@@ -286,7 +288,7 @@ registerDoParallel(cl)
 
 Define the grid and estimate runtime.
 
-```{r grid, echo=TRUE, message=FALSE, warning=FALSE}
+```{r grid ger, echo=TRUE, message=FALSE, warning=FALSE}
 grid_tune <- expand.grid(
   nrounds = c(5000, 10000), 
   max_depth = c(3, 6), 
@@ -333,7 +335,7 @@ rm(total_combinations,single_model_time,folds,total_runs,total_time,total_time_h
 
 Create subsets to train and test data (80/20).
 
-```{r k-fold subset, echo=TRUE, message=FALSE, warning=FALSE}
+```{r k-fold subset ger, echo=TRUE, message=FALSE, warning=FALSE}
 # Set seed for reproducibility
 set.seed(998)
 
@@ -499,6 +501,16 @@ gerPValues <- c(gerCm1$overall['AccuracyPValue'],
               gerCm3$overall['AccuracyPValue'], 
               gerCm4$overall['AccuracyPValue'], 
               gerCm5$overall['AccuracyPValue'])
+```
+
+Show confusion matrices.
+
+```{r output ger, echo=TRUE, message=FALSE, warning=FALSE}
+gerCm1
+gerCm2
+gerCm3
+gerCm4
+gerCm5
 ```
 
 Combine p-values using Fisher's method
@@ -682,7 +694,7 @@ write.csv(data_prepost_cat_clean, file = paste0(datasets, "catDataXGB.csv"), row
 
 Ensure parallel processing.
 
-```{r parallel, echo=TRUE, message=FALSE, warning=FALSE}
+```{r parallel cat, echo=TRUE, message=FALSE, warning=FALSE}
 # Detect the number of available cores
 cores <- detectCores() #- 1  # Leave one core free
 
@@ -695,7 +707,7 @@ registerDoParallel(cl)
 
 Define the grid and estimate runtime.
 
-```{r grid, echo=TRUE, message=FALSE, warning=FALSE}
+```{r grid cat, echo=TRUE, message=FALSE, warning=FALSE}
 grid_tune <- expand.grid(
   nrounds = c(5000, 10000), 
   max_depth = c(3, 6), 
@@ -742,7 +754,7 @@ rm(total_combinations,single_model_time,folds,total_runs,total_time,total_time_h
 
 Create subsets to train and test data (80/20).
 
-```{r k-fold subset, echo=TRUE, message=FALSE, warning=FALSE}
+```{r k-fold subset cat, echo=TRUE, message=FALSE, warning=FALSE}
 # Set seed for reproducibility
 set.seed(998)
 
@@ -908,6 +920,16 @@ catPValues <- c(catCm1$overall['AccuracyPValue'],
               catCm3$overall['AccuracyPValue'], 
               catCm4$overall['AccuracyPValue'], 
               catCm5$overall['AccuracyPValue'])
+```
+
+Show confusion matrices.
+
+```{r output cat, echo=TRUE, message=FALSE, warning=FALSE}
+catCm1
+catCm2
+catCm3
+catCm4
+catCm5
 ```
 
 Combine p-values using Fisher's method

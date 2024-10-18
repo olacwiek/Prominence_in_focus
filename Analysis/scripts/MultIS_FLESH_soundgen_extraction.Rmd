@@ -1,5 +1,5 @@
 ---
-title: "Bridging the Gap 2.0: Exploring a Middle-Way Approach for Prosodic Annotation"
+title: "Acoustic correlates of perceived prominence in German and Catalan: Feature extraction"
 author: "Aleksandra Ćwiek, Alina Gregori, Paula G. Sánchez-Ramón, Frank Kügler, Pilar Prieto"
 date: "2024-06-20"
 output:
@@ -116,9 +116,9 @@ library(stringr)
 library(tidyverse) # includes readr, tidyr, dplyr, ggplot2
 
 # Audio Analysis
-library(tuneR)
-library(readtextgrid)
-library(soundgen)
+library(tuneR); packageVersion("tuneR")
+library(readtextgrid); packageVersion("readtextgrid")
+library(soundgen); packageVersion("soundgen")
 
 # Plotting
 library(ggforce)
@@ -614,7 +614,7 @@ fileDurationsDF <- fileDurationsDF[, c("fileName", "language", "participant", "i
 
 Save the final data frame with durations.
 
-```{r save duration data, echo=TRUE, message=FALSE, warning=FALSE}
+```{r save duration data, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 write.csv(fileDurationsDF, file = paste0(syllables, "fileDurationsDF.csv"), row.names = FALSE)
 ```
 
@@ -754,7 +754,7 @@ data <- read_csv(paste0(datasets, "syllables_soundgen_summary.csv"))
 
 Compare contents.
 
-```{r}
+```{r compare, echo=TRUE, message=FALSE, warning=FALSE}
 # For which files, no data were extracted?
 fileNames_not_in_data <- setdiff(data_df$fileName, data$file)
 print(fileNames_not_in_data) # all pauses
@@ -874,7 +874,7 @@ data <- data %>%
 Add some corrections and deletions that were made previously (because of
 errors in the data).
 
-```{r}
+```{r correct column, echo=TRUE, message=FALSE, warning=FALSE}
 # Correct column Word
 data <- data %>%
   # Replace "N\t" with "N"
@@ -1148,8 +1148,15 @@ data_prepost <- data %>%
 
 Save the data ready to be modeled.
 
-```{r save final data, echo=TRUE, message=FALSE, warning=FALSE}
+```{r save final data, echo=TRUE, message=FALSE, warning=FALSE, eval = FALSE}
 write.csv(data, file = paste0(datasets, "data_cleaned.csv"), row.names = FALSE)
 
 write.csv(data_prepost, file = paste0(datasets, "data_prepost.csv"), row.names = FALSE)
 ```
+
+# Session info
+
+```{r}
+sessionInfo()
+```
+

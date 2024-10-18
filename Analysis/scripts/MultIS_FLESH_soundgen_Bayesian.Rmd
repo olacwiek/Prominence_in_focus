@@ -1,0 +1,2711 @@
+---
+title: "Acoustic correlates of perceived prominence in German and Catalan: Bayesian Modeling"
+author: "Aleksandra Ćwiek, Alina Gregori, Paula G. Sánchez-Ramón, Frank Kügler, Pilar Prieto"
+date: "2024-10-16"
+output:
+  html_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: 4
+    toc_float: yes
+    df_print: paged
+  pdf_document:
+    number_sections: yes
+    toc: yes
+    toc_depth: '3'
+  html_notebook:
+    number_sections: yes
+    toc: yes
+    toc_depth: 3
+    toc_float: yes
+editor_options: 
+  chunk_output_type: console
+  markdown: 
+    wrap: 72
+bibliography: references.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# Introduction
+
+This is the analysis using Bayesian Modeling.
+
+# Data preparation
+
+## Source setup
+
+```{r source setup, echo = TRUE, message=FALSE, warning = FALSE}
+
+########## folders ##########
+# current folder (first go to session -> set working directory -> to source file location)
+parentfolder <- dirname(getwd())
+
+data          <- paste0(parentfolder, '/MultIS_data/')
+audiodata     <- paste0(parentfolder, '/audio_processed/')
+syllables     <- paste0(audiodata,    'syllables/')
+dataworkspace <- paste0(parentfolder, '/data_processed/')
+datamerged    <- paste0(parentfolder, '/data_merged/')
+datasets      <- paste0(parentfolder, '/datasets/')
+models        <- paste0(parentfolder, '/models/')
+plots         <- paste0(parentfolder, '/plots/')
+scripts       <- paste0(parentfolder, '/scripts/')
+
+########## source file ##########
+
+#source(paste0(scripts, "adjectives-preparation.R"))
+
+#################### packages ####################
+# Data Manipulation
+library(tibble)
+library(stringr)
+library(tidyverse) # includes readr, tidyr, dplyr, ggplot2
+packageVersion("tidyverse")
+library(data.table)
+
+# Plotting
+library(ggforce)
+library(ggpubr)
+library(gridExtra)
+library(corrplot)
+
+# Bayesian
+library(brms); packageVersion("brms")
+library(cmdstanr); packageVersion("cmdstanr")
+library(emmeans); packageVersion("emmeans")
+
+
+# use all available cores for parallel computing
+options(mc.cores = parallel::detectCores())
+
+colorBlindBlack8  <- c("#000000", "#E69F00", "#56B4E9", "#009E73", 
+                       "#F0E442", "#0072B2", "#D55E00", "#CC79A7")
+
+```
+
+## Functions
+
+```{r}
+# Function to back-transform fixed effects from a model
+backtransform_fixef <- function(model) {
+  
+  # Extract fixed effects (population-level)
+  fixef_output <- fixef(model)
+  
+  # Extract the estimates for the intercept and percProm levels
+  intercept <- fixef_output["Intercept", "Estimate"]
+  percProm1 <- fixef_output["percProm1", "Estimate"]
+  percProm2 <- fixef_output["percProm2", "Estimate"]
+  percProm3 <- fixef_output["percProm3", "Estimate"]
+  
+  # Combine the effects for each percProm level before applying exp()
+  combined_effects <- data.frame(
+    percProm_level = c("percProm0", "percProm1", "percProm2", "percProm3"),
+    Estimate = exp(c(intercept,  # percProm0 is just the intercept
+                     intercept + percProm1,  # Add percProm1 effect to intercept
+                     intercept + percProm2,  # Add percProm2 effect to intercept
+                     intercept + percProm3)),  # Add percProm3 effect to intercept
+    # You can calculate confidence intervals by combining Q2.5 and Q97.5 as well
+    Q2.5 = exp(c(fixef_output["Intercept", "Q2.5"],  # percProm0 interval
+                 fixef_output["Intercept", "Q2.5"] + fixef_output["percProm1", "Q2.5"],  # percProm1 interval
+                 fixef_output["Intercept", "Q2.5"] + fixef_output["percProm2", "Q2.5"],  # percProm2 interval
+                 fixef_output["Intercept", "Q2.5"] + fixef_output["percProm3", "Q2.5"])),  # percProm3 interval
+    Q97.5 = exp(c(fixef_output["Intercept", "Q97.5"],
+                  fixef_output["Intercept", "Q97.5"] + fixef_output["percProm1", "Q97.5"],
+                  fixef_output["Intercept", "Q97.5"] + fixef_output["percProm2", "Q97.5"],
+                  fixef_output["Intercept", "Q97.5"] + fixef_output["percProm3", "Q97.5"]))
+  )
+  
+  return(combined_effects)
+}
+
+combine_fixed_random_backtransforming <- function(participant_id) {
+  
+  # Get the random effects for the given participant
+  rand_intercept <- ranef_output$participant[participant_id, , "Intercept"]
+  rand_percProm1 <- ranef_output$participant[participant_id, , "percProm1"]
+  rand_percProm2 <- ranef_output$participant[participant_id, , "percProm2"]
+  rand_percProm3 <- ranef_output$participant[participant_id, , "percProm3"]
+  
+  # Combine fixed and random effects
+  participant_effects <- data.frame(
+    percProm_level = c("percProm0", "percProm1", "percProm2", "percProm3"),
+    Estimate = exp(c(
+      intercept + rand_intercept["Estimate"], 
+      intercept + percProm1 + rand_intercept["Estimate"] + rand_percProm1["Estimate"],
+      intercept + percProm2 + rand_intercept["Estimate"] + rand_percProm2["Estimate"],
+      intercept + percProm3 + rand_intercept["Estimate"] + rand_percProm3["Estimate"]
+    )),
+    Est.Error = c(
+      sqrt(fixef_output["Intercept", "Est.Error"]^2 + rand_intercept["Est.Error"]^2),
+      sqrt(
+        fixef_output["Intercept", "Est.Error"]^2 + fixef_output["percProm1", "Est.Error"]^2 +
+        rand_intercept["Est.Error"]^2 + rand_percProm1["Est.Error"]^2
+      ),
+      sqrt(
+        fixef_output["Intercept", "Est.Error"]^2 + fixef_output["percProm2", "Est.Error"]^2 +
+        rand_intercept["Est.Error"]^2 + rand_percProm2["Est.Error"]^2
+      ),
+      sqrt(
+        fixef_output["Intercept", "Est.Error"]^2 + fixef_output["percProm3", "Est.Error"]^2 +
+        rand_intercept["Est.Error"]^2 + rand_percProm3["Est.Error"]^2
+      )
+    ),
+    Q2.5 = exp(c(
+      intercept + rand_intercept["Q2.5"], 
+      intercept + percProm1 + rand_intercept["Q2.5"] + rand_percProm1["Q2.5"],
+      intercept + percProm2 + rand_intercept["Q2.5"] + rand_percProm2["Q2.5"],
+      intercept + percProm3 + rand_intercept["Q2.5"] + rand_percProm3["Q2.5"]
+    )),
+    Q97.5 = exp(c(
+      intercept + rand_intercept["Q97.5"], 
+      intercept + percProm1 + rand_intercept["Q97.5"] + rand_percProm1["Q97.5"],
+      intercept + percProm2 + rand_intercept["Q97.5"] + rand_percProm2["Q97.5"],
+      intercept + percProm3 + rand_intercept["Q97.5"] + rand_percProm3["Q97.5"]
+    ))
+  )
+  
+  participant_effects$participant <- participant_id
+  return(participant_effects)
+}
+
+combine_fixed_random_student <- function(participant_id) {
+  
+  # Get the random effects for the given participant
+  rand_intercept <- ranef_output$participant[participant_id, , "Intercept"]
+  rand_percProm1 <- ranef_output$participant[participant_id, , "percProm1"]
+  rand_percProm2 <- ranef_output$participant[participant_id, , "percProm2"]
+  rand_percProm3 <- ranef_output$participant[participant_id, , "percProm3"]
+  
+  # Combine fixed and random effects for each percProm level
+  participant_effects <- data.frame(
+    percProm_level = c("percProm0", "percProm1", "percProm2", "percProm3"),
+    
+    # Estimate: sum of fixed and random effects
+    Estimate = c(
+      rand_intercept["Estimate"], 
+      rand_intercept["Estimate"] + rand_percProm1["Estimate"],
+      rand_intercept["Estimate"] + rand_percProm2["Estimate"],
+      rand_intercept["Estimate"] + rand_percProm3["Estimate"]
+    ),
+    
+    # Standard Error: combining errors using sqrt of sum of squares
+    Est.Error = c(
+      sqrt(rand_intercept["Est.Error"]^2),
+      sqrt(rand_intercept["Est.Error"]^2 + rand_percProm1["Est.Error"]^2),
+      sqrt(rand_intercept["Est.Error"]^2 + rand_percProm2["Est.Error"]^2),
+      sqrt(rand_intercept["Est.Error"]^2 + rand_percProm3["Est.Error"]^2)
+    ),
+    
+    # Q2.5 and Q97.5: these need to be simulated to reflect the full posterior distribution
+    Q2.5 = c(
+      rand_intercept["Q2.5"], 
+      rand_intercept["Q2.5"] + rand_percProm1["Q2.5"],
+      rand_intercept["Q2.5"] + rand_percProm2["Q2.5"],
+      rand_intercept["Q2.5"] + rand_percProm3["Q2.5"]
+    ),
+    Q97.5 = c(
+      rand_intercept["Q97.5"], 
+      rand_intercept["Q97.5"] + rand_percProm1["Q97.5"],
+      rand_intercept["Q97.5"] + rand_percProm2["Q97.5"],
+      rand_intercept["Q97.5"] + rand_percProm3["Q97.5"]
+    )
+  )
+  
+  participant_effects$participant <- participant_id
+  return(participant_effects)
+}
+```
+
+
+## Load in data frames
+
+```{r read metadata, echo=TRUE, message=FALSE, warning=FALSE}
+participant_info <- read_delim(paste0(data,"ParticipantInfo_GERCAT.csv"), delim = ";")
+
+# Load the information about duration of each segment (if needed)
+data_df <- read.table(paste0(syllables, "fileDurationsDF.csv"), header = TRUE, sep = ',')
+
+# Load cleaned syllable data
+data <- read_csv(paste0(datasets, "data_cleaned.csv"))
+
+# Load cleaned targets data
+targets <- read_csv(paste0(datasets, "targets.csv"))
+
+# Load cleaned targets with pre-post data
+data_prepost <- read_csv(paste0(datasets, "data_prepost.csv"))
+```
+
+## You can add participant info
+
+```{r metadata merge, echo=TRUE, message=FALSE, warning=FALSE}
+# Process participant_info so that participant number column is only number
+participant_info$Participant <- parse_number(participant_info$Participant)
+
+# Convert the column names of participant_info to lowercase
+colnames(participant_info) <- tolower(colnames(participant_info))
+
+# Merge the dataframes by "Participant" and "Language"
+data_prepost <- merge(data_prepost, participant_info, by = c("participant", "language"), all.x = TRUE)
+
+```
+
+# Data preparation
+
+We split the table in two languages. Then, we only keep the relevant
+columns (top 10 features).
+
+```{r inspect data, echo=TRUE, message=FALSE, warning=FALSE}
+# Turn variables to factors
+data_prepost$percProm <- as.factor(data_prepost$percProm)
+data_prepost$itemNum <- as.factor(data_prepost$itemNum)
+data_prepost$focus <- as.factor(data_prepost$focus)
+data_prepost$participant <- as.factor(data_prepost$participant)
+
+# Add contrast-coded gender info (in case we want to use if)
+data_prepost <- data_prepost %>% 
+  mutate(gender_s = case_when(gender == "female" ~ 0.5,
+                              gender == "male" ~ -0.5))
+
+# First, remove some columns for both languages
+data_prepost <- data_prepost %>%
+  select(-f1_freq_median, -f1_freq_median_norm, -f2_freq_median, -f2_freq_median_norm, 
+         -f1_freq_medianPre, -f1_freq_median_normPre, -f2_freq_medianPre, -f2_freq_median_normPre, 
+         -f1_freq_medianPost, -f1_freq_median_normPost, -f2_freq_medianPost, -f2_freq_median_normPost
+         )
+
+# Adapt duration scale (because we set the priors for ms, not s)
+data_prepost$duration <- data_prepost$duration * 1000
+data_prepost$durationPre <- data_prepost$durationPre * 1000
+data_prepost$durationPost <- data_prepost$durationPost * 1000
+data_prepost$duration_noSilence <- data_prepost$duration_noSilence * 1000
+data_prepost$duration_noSilencePre <- data_prepost$duration_noSilencePre * 1000
+data_prepost$duration_noSilencePost <- data_prepost$duration_noSilencePost * 1000
+
+# Create data_prepost_german for rows where language is German
+data_prepost_ger <- data_prepost %>% 
+  filter(language == "German")
+
+# Create data_prepost_catalan for rows where language is Catalan
+data_prepost_cat <- data_prepost %>% 
+  filter(language == "Catalan")
+
+# Select columns for German
+data_prepost_ger <- data_prepost_ger %>%
+  select(fileName, language, participant, gender, gender_s, age, 
+         itemNum, focus, annotationNum, annotationNumTarget, 
+         word, syllText, syllTextPre, syllTextPost, percProm,
+         f0_slope, f0_slope_norm,
+         pitch_median, pitch_median_norm,
+         ampl_sd,
+         ampl_noSilence_medianPost,
+         ampl_noSilence_median,
+         duration,
+         flux_sd,
+         flux_median,
+         ampl_noSilence_sd,
+         pitch_medianPost, pitch_median_normPost)
+
+# Select columns for Catalan
+data_prepost_cat <- data_prepost_cat %>%
+  select(fileName, language, participant, gender, gender_s, age, 
+         itemNum, focus, annotationNum, annotationNumTarget, 
+         word, syllText, syllTextPre, syllTextPost, percProm,
+         duration,
+         f0_slopePost, f0_slope_normPost,
+         fmDep_medianPost,
+         entropySh_sd,
+         flux_medianPost,
+         ampl_medianPost,
+         specCentroid_median,
+         duration_noSilence,
+         durationPre,
+         ampl_sd)
+
+```
+
+Add information on pauses to test separately. First in German.
+
+```{r pauses ger, echo=TRUE, message=FALSE, warning=FALSE}
+# First, let's create a copy of data_prepost_ger to work on
+data_prepost_ger_updated <- data_prepost_ger
+
+# Add a new column durationPause and pausePre initialized to NA
+data_prepost_ger_updated$durationPause <- NA
+data_prepost_ger_updated$pausePre <- NA
+
+# Loop through each row in data_prepost_ger where syllTextPre is NA
+for (i in 1:nrow(data_prepost_ger_updated)) {
+  # Check if syllTextPre is NA
+  if (is.na(data_prepost_ger_updated$syllTextPre[i])) {
+    
+    # Get the corresponding fileName in this row
+    fileName_i <- data_prepost_ger_updated$fileName[i]
+    
+    # Find the index of this fileName in the data dataset
+    match_idx <- which(data$fileName == fileName_i)
+    
+    # If a match is found, and the previous row exists (to avoid out of bounds)
+    if (length(match_idx) > 0 && match_idx > 1) {
+      # Look at the previous row's syllText to see if it's "-p-"
+      if (data$syllText[match_idx - 1] == "-p-") {
+        # Extract the duration value from the previous row
+        duration_value <- data$duration[match_idx - 1]
+        
+        # Update syllTextPre with "-p-" in data_prepost_ger
+        data_prepost_ger_updated$syllTextPre[i] <- "-p-"
+        
+        # Update the durationPause column with the value from data
+        data_prepost_ger_updated$durationPause[i] <- duration_value
+      }
+    }
+  }
+}
+
+rm(i, fileName_i, duration_value, match_idx)
+
+# Create the pausePre column based on whether durationPause is NA or not
+data_prepost_ger_updated$pausePre <- ifelse(is.na(data_prepost_ger_updated$durationPause), "no", "yes")
+
+data_prepost_ger <- data_prepost_ger_updated
+rm(data_prepost_ger_updated)
+```
+
+Inspect.
+
+```{r}
+table(data_prepost_ger$pausePre)
+prop.table(table(data_prepost_ger$pausePre))
+```
+
+It does not really make sense to investigate this in German.
+
+Now in Catalan.
+
+```{r pauses cat, echo=TRUE, message=FALSE, warning=FALSE}
+# First, let's create a copy of data_prepost_cat to work on
+data_prepost_cat_updated <- data_prepost_cat
+
+# Add a new column durationPause and pausePre initialized to NA
+data_prepost_cat_updated$durationPause <- NA
+data_prepost_cat_updated$pausePre <- NA
+
+# Loop through each row in data_prepost_cat where syllTextPre is NA
+for (i in 1:nrow(data_prepost_cat_updated)) {
+  # Check if syllTextPre is NA
+  if (is.na(data_prepost_cat_updated$syllTextPre[i])) {
+    
+    # Get the corresponding fileName in this row
+    fileName_i <- data_prepost_cat_updated$fileName[i]
+    
+    # Find the index of this fileName in the data dataset
+    match_idx <- which(data$fileName == fileName_i)
+    
+    # If a match is found, and the previous row exists (to avoid out of bounds)
+    if (length(match_idx) > 0 && match_idx > 1) {
+      # Look at the previous row's syllText to see if it's "-p-"
+      if (data$syllText[match_idx - 1] == "-p-") {
+        # Extract the duration value from the previous row
+        duration_value <- data$duration[match_idx - 1]
+        
+        # Update syllTextPre with "-p-" in data_prepost_cat
+        data_prepost_cat_updated$syllTextPre[i] <- "-p-"
+        
+        # Update the durationPause column with the value from data
+        data_prepost_cat_updated$durationPause[i] <- duration_value
+      }
+    }
+  }
+}
+
+rm(i, fileName_i, duration_value, match_idx)
+
+# Create the pausePre column based on whether durationPause is NA or not
+data_prepost_cat_updated$pausePre <- ifelse(is.na(data_prepost_cat_updated$durationPause), "no", "yes")
+
+data_prepost_cat <- data_prepost_cat_updated
+rm(data_prepost_cat_updated)
+
+```
+
+What are the values in Catalan?
+
+```{r}
+table(data_prepost_cat$pausePre)
+prop.table(table(data_prepost_cat$pausePre))
+```
+
+It makes more sense.
+
+# Modeling
+
+Given the goal of comparing the thresholds of changes in acoustic
+features across prominence levels, while accounting for speaker
+variability differences, a hierarchical (or mixed-effects) Bayesian
+model with acoustic features as outcome variables will be a suitable
+approach. This model allows you to account for the variability across
+participants while focusing on estimating the thresholds.
+
+## German
+
+Let's check the correlations between acoustic features.
+
+```{r}
+# Calculate the correlation matrix
+corrGer <- cor(data_prepost_ger[, c("f0_slope", "pitch_median", "ampl_sd", 
+                                    "ampl_noSilence_medianPost", "ampl_noSilence_median", 
+                                    "duration", "flux_sd", "flux_median", 
+                                    "ampl_noSilence_sd", "pitch_medianPost")], use = "complete.obs")
+corrplot(corrGer, method = "color", tl.cex = 0.7, number.cex = 0.7, addCoef.col = "black")
+```
+
+Let's set contrasts for comparisons.
+
+```{r}
+# Set sum contrasts for percProm to compare all levels
+contrasts(data_prepost_ger$percProm) <- contr.sum(length(unique(data_prepost_ger$percProm)))
+```
+
+We go one by one the ten features from top to bottom.
+
+### F0 slope
+
+#### Priors
+
+```{r}
+get_prior(
+  f0_slope ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_ger,
+  family = "student"
+)
+
+prior_f0_slopeGer <- c(
+  prior('normal(0, 5)', class = "b"),  # For fixed effects (percProm)
+  prior('student_t(3, 0, 10)', class = "Intercept"),  # For intercept
+  prior('student_t(3, 0, 10)', class = "sd")  # For random effects (participant)
+)
+
+# Visualize the priors
+prior_plot_data <- data.frame(
+  x = seq(-20, 20, length.out = 1000),
+  normal_b = dnorm(seq(-20, 20, length.out = 1000), mean = 0, sd = 2),
+  student_t_intercept = dt((seq(-20, 20, length.out = 1000) - 0) / 10, df = 3) / 10,
+  student_t_sd = dt((seq(-20, 20, length.out = 1000) - 0) / 10, df = 3) / 10
+)
+
+# Create the plot for priors
+ggplot(prior_plot_data, aes(x = x)) +
+  geom_line(aes(y = normal_b, color = "Fixed Effects (Normal)"), size = 1) +
+  geom_line(aes(y = student_t_intercept, color = "Intercept (Student-t)"), size = 1, linetype = "dashed") +
+  geom_line(aes(y = student_t_sd, color = "SD (Student-t)"), size = 1, linetype = "dotted") +
+  labs(x = "Value", y = "Density") +
+  scale_color_manual(values = c("Fixed Effects (Normal)" = "blue",
+                                "Intercept (Student-t)" = "red",
+                                "SD (Student-t)" = "green")) +
+  theme_minimal()
+```
+
+#### Model
+
+```{r}
+mdl_f0_slopeGer <- brm(f0_slope ~ 1 +
+                         percProm +
+                         (1 + percProm | participant),
+                       data = data_prepost_ger,
+                       family = "student",
+                       prior = prior_f0_slopeGer,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_f0_slopeGer.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_f0_slopeGer, file = paste0(models, "mdl_f0_slopeGer.rds"), compress = "xz")
+
+mdl_f0_slopeGer <- readRDS(paste0(models, "mdl_f0_slopeGer.rds"))
+```
+
+Calculate R².
+
+```{r}
+# # Calculate Bayesian R²
+# mdl_f0_slopeGer_R2 <- bayes_R2(mdl_f0_slopeGer)
+# # Save the R² output
+# saveRDS(mdl_f0_slopeGer_R2, file = paste0(models, "mdl_f0_slopeGer_R2.rds"))
+
+mdl_f0_slopeGer_R2 <- readRDS(paste0(models, "mdl_f0_slopeGer_R2.rds"))
+
+mdl_f0_slopeGer_R2
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_f0_slopeGer)
+```
+
+```{r}
+plot(mdl_f0_slopeGer)
+```
+
+Check conditional effect.
+
+```{r}
+# plot excluding RE 
+conditional_effects(mdl_f0_slopeGer, sample_prior = "only", re_formula=NA,) 
+# values excluding RE
+conditional_effects(mdl_f0_slopeGer, plot = FALSE, re_formula=NA)$percProm
+
+# plot including RE
+conditional_effects(mdl_f0_slopeGer, sample_prior = "only", re_formula=NULL)
+# values excluding RE
+conditional_effects(mdl_f0_slopeGer, plot = FALSE, re_formula=NULL)$percProm
+```
+
+Compare conditional effects to raw values.
+
+```{r}
+data_prepost_ger %>% 
+    group_by(percProm) %>%
+    summarize(avg = mean(f0_slope, na.rm = TRUE))
+
+summary(data_prepost_ger$f0_slope)
+```
+
+```{r}
+pp_check(mdl_f0_slopeGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_f0_slopeGer <- pairs(emmeans(mdl_f0_slopeGer, ~ percProm))
+print(em_mdl_f0_slopeGer)
+plot(em_mdl_f0_slopeGer)
+```
+
+Example interpretation:
+
+**percProm0 - percProm1**: The estimated difference in `f0_slope`
+between `percProm0` and `percProm1` is **-0.0656**. The HPD interval is
+**(-0.147, 0.0199)**, which includes zero, meaning this difference is
+**not credibly different from zero** (i.e., no significant difference
+between these levels).
+
+**percProm0 - percProm2**: The estimated difference between `percProm0`
+and `percProm2` is **-0.1867**, and the HPD interval is **(-0.273,
+-0.1004)**. Since this interval does **not include zero**, the
+difference is **credibly different from zero**, indicating a significant
+difference in `f0_slope` between these two levels.
+
+```{r}
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_f0_slopeGer <- pairs(em_mdl_f0_slopeGer)
+print(pw_em_mdl_f0_slopeGer)
+```
+
+Example interpretation:
+
+-   **(percProm0 - percProm1) - (percProm0 - percProm2)**: This
+    comparison measures the difference between two contrasts: the
+    difference between `percProm0 - percProm1` and the difference
+    between `percProm0 - percProm2`.
+
+    -   The estimate is **0.1218**, meaning that the difference between
+        `percProm0 - percProm1` and `percProm0 - percProm2` is around
+        **0.1218**.
+
+    -   The HPD interval is **(0.0950, 0.1483)**, which does **not
+        include zero**, suggesting that these two contrasts are
+        significantly different from each other.
+
+-   In general, if the HPD interval for these comparisons **does not
+    include zero**, it suggests that the differences between the
+    pairwise comparisons are themselves significant.
+
+```{r}
+plot(pw_em_mdl_f0_slopeGer)
+```
+
+
+#### Group-level effects
+
+```{r}
+# Extract fixed effects
+fixef_mdl_f0_slopeGer <- fixef(mdl_f0_slopeGer)
+
+# Extract random effects for participants
+ranef_mdl_f0_slopeGer <- ranef(mdl_f0_slopeGer)
+
+# Get the number of participants
+num_participants <- dim(ranef_mdl_f0_slopeGer$participant)[1]
+
+# Combine effects for all participants
+participant_eff_mdl_f0_slopeGer <- lapply(1:num_participants, combine_fixed_random_student)
+
+# Combine into a single data frame for all participants
+all_participant_eff_mdl_f0_slopeGer <- do.call(rbind, participant_eff_mdl_f0_slopeGer)
+
+# View the effects for all participants
+print(all_participant_eff_mdl_f0_slopeGer)
+```
+
+
+```{r}
+ggplot(all_participant_eff_mdl_f0_slopeGer, aes(x = percProm_level, y = Estimate, group = participant, color = as.factor(participant))) +
+  geom_line(alpha = 0.7, position = position_dodge(width = 0.5)) +
+  geom_point(size = 2, alpha = 0.8, position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = Q2.5, ymax = Q97.5), width = 0.2, position = position_dodge(width = 0.5)) +
+  labs(x = "Perceived prominence", y = "Predicted f0 median",
+       color = "Participant") +
+  theme_minimal() +
+  theme(legend.position = "right")
+
+ggplot(all_participant_eff_mdl_f0_slopeGer, aes(x = percProm_level, y = Estimate, group = participant, color = as.factor(participant))) +
+  geom_line(alpha = 0.7) +
+  geom_point(size = 2, alpha = 0.8) +
+  geom_errorbar(aes(ymin = Q2.5, ymax = Q97.5), width = 0.2) +
+  facet_wrap(~ participant, scales = "free_y") +  # Create a separate plot for each participant
+  labs(x = "Perceived prominence", y = "Predicted f0 median") +
+  theme_minimal() +
+  theme(legend.position = "none")  # Remove legend as it's redundant with facetting
+```
+
+
+### F0 median
+
+#### Priors
+
+```{r}
+get_prior(
+  pitch_median ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_ger,
+  family = lognormal()
+)
+
+prior_pitch_medianGer <- c(
+  prior('normal(0, 10)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_pitch_medianGer <- brm(pitch_median ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_ger,
+                       family = lognormal(),
+                       prior = prior_pitch_medianGer,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_pitch_medianGer.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_pitch_medianGer, file = paste0(models, "mdl_pitch_medianGer.rds"), compress = "xz")
+
+mdl_pitch_medianGer <- readRDS(paste0(models, "mdl_pitch_medianGer.rds"))
+```
+
+Calculate R².
+
+```{r}
+# # Calculate Bayesian R²
+# mdl_pitch_medianGer_R2 <- bayes_R2(mdl_pitch_medianGer)
+# # Save the R² output
+# saveRDS(mdl_pitch_medianGer_R2, file = paste0(models, "mdl_pitch_medianGer_R2.rds"))
+
+mdl_pitch_medianGer_R2 <- readRDS(paste0(models, "mdl_pitch_medianGer_R2.rds"))
+
+mdl_pitch_medianGer_R2
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_pitch_medianGer)
+```
+
+Create a back-transformed output.
+
+```{r}
+backtransform_fixef(mdl_pitch_medianGer)
+
+exp(fixef(mdl_pitch_medianGer))
+```
+
+```{r}
+plot(mdl_pitch_medianGer)
+```
+
+Check conditional effect.
+
+```{r}
+# plot excluding RE 
+conditional_effects(mdl_pitch_medianGer, sample_prior = "only", re_formula=NA,) 
+# values excluding RE
+conditional_effects(mdl_pitch_medianGer, plot = FALSE, re_formula=NA)$percProm
+
+# plot including RE
+conditional_effects(mdl_pitch_medianGer, sample_prior = "only", re_formula=NULL)
+# values excluding RE
+conditional_effects(mdl_pitch_medianGer, plot = FALSE, re_formula=NULL)$percProm
+```
+
+Compare conditional effects to raw values.
+
+```{r}
+data_prepost_ger %>% 
+    group_by(percProm) %>%
+    summarize(avg = mean(pitch_median, na.rm = TRUE))
+
+summary(data_prepost_ger$pitch_median)
+```
+
+Mean is the same, but the posteriors for percProm levels differ from the raw values.
+
+```{r}
+pp_check(mdl_pitch_medianGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_pitch_medianGer <- pairs(emmeans(mdl_pitch_medianGer, ~ percProm))
+# Backtransform the post.beta values
+backtransformed_estimates <- exp(em_mdl_pitch_medianGer@post.beta)
+em_mdl_pitch_medianGer@post.beta <- backtransformed_estimates
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_pitch_medianGer <- pairs(em_mdl_pitch_medianGer)
+print(pw_em_mdl_pitch_medianGer)
+
+plot(pw_em_mdl_pitch_medianGer)
+```
+
+#### Group-level effects
+
+```{r}
+# Extract fixed effects
+fixef_mdl_pitch_medianGer <- fixef(mdl_pitch_medianGer)
+
+# Extract random effects for participants
+ranef_mdl_pitch_medianGer <- ranef(mdl_pitch_medianGer)
+
+# Get the number of participants
+num_participants <- dim(ranef_mdl_pitch_medianGer$participant)[1]
+
+# Combine effects for all participants
+participant_eff_mdl_pitch_medianGer <- lapply(1:num_participants, combine_fixed_random_backtransforming)
+
+# Combine into a single data frame for all participants
+all_participant_eff_mdl_pitch_medianGer <- do.call(rbind, participant_eff_mdl_pitch_medianGer)
+
+# View the effects for all participants
+print(all_participant_eff_mdl_pitch_medianGer)
+```
+
+
+```{r}
+ggplot(all_participant_eff_mdl_pitch_medianGer, aes(x = percProm_level, y = Estimate, group = participant, color = as.factor(participant))) +
+  geom_line(alpha = 0.7, position = position_dodge(width = 0.5)) +
+  geom_point(size = 2, alpha = 0.8, position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = Q2.5, ymax = Q97.5), width = 0.2, position = position_dodge(width = 0.5)) +
+  labs(x = "Perceived prominence", y = "Predicted f0 median",
+       color = "Participant") +
+  theme_minimal() +
+  theme(legend.position = "right")
+
+ggplot(all_participant_eff_mdl_pitch_medianGer, aes(x = percProm_level, y = Estimate, group = participant, color = as.factor(participant))) +
+  geom_line(alpha = 0.7) +
+  geom_point(size = 2, alpha = 0.8) +
+  geom_errorbar(aes(ymin = Q2.5, ymax = Q97.5), width = 0.2) +
+  facet_wrap(~ participant, scales = "free_y") +  # Create a separate plot for each participant
+  labs(x = "Perceived prominence", y = "Predicted f0 median") +
+  theme_minimal() +
+  theme(legend.position = "none")  # Remove legend as it's redundant with facetting
+```
+
+### Amplitude SD
+
+#### Priors
+
+```{r}
+get_prior(
+  ampl_sd ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_ger,
+  family = lognormal()
+)
+
+prior_ampl_sdGer <- c(
+  prior('normal(0, 1)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_ampl_sdGer <- brm(ampl_sd ~ 1 +
+                         percProm +
+                         (1 + percProm | participant),
+                       data = data_prepost_ger,
+                       family = lognormal(),
+                       prior = prior_ampl_sdGer,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_ampl_sdGer.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_ampl_sdGer, file = paste0(models, "mdl_ampl_sdGer.rds"), compress = "xz")
+
+mdl_ampl_sdGer <- readRDS(paste0(models, "mdl_ampl_sdGer.rds"))
+```
+
+Calculate R².
+
+```{r}
+# # Calculate Bayesian R²
+# mdl_ampl_sdGer_R2 <- bayes_R2(mdl_ampl_sdGer)
+# # Save the R² output
+# saveRDS(mdl_ampl_sdGer_R2, file = paste0(models, "mdl_ampl_sdGer_R2.rds"))
+
+mdl_ampl_sdGer_R2 <- readRDS(paste0(models, "mdl_ampl_sdGer_R2.rds"))
+
+mdl_ampl_sdGer_R2
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_ampl_sdGer)
+```
+
+Create a back-transformed output.
+
+```{r}
+backtransform_fixef(mdl_ampl_sdGer)
+
+exp(fixef(mdl_ampl_sdGer))
+```
+
+```{r}
+plot(mdl_ampl_sdGer)
+```
+
+Check conditional effect.
+
+```{r}
+# plot excluding RE 
+conditional_effects(mdl_ampl_sdGer, sample_prior = "only", re_formula=NA,) 
+# values excluding RE
+conditional_effects(mdl_ampl_sdGer, plot = FALSE, re_formula=NA)$percProm
+
+# plot including RE
+conditional_effects(mdl_ampl_sdGer, sample_prior = "only", re_formula=NULL)
+# values excluding RE
+conditional_effects(mdl_ampl_sdGer, plot = FALSE, re_formula=NULL)$percProm
+```
+
+Compare conditional effects to raw values.
+
+```{r}
+data_prepost_ger %>% 
+    group_by(percProm) %>%
+    summarize(avg = mean(ampl_sd, na.rm = TRUE))
+
+summary(data_prepost_ger$ampl_sd)
+```
+
+```{r}
+pp_check(mdl_ampl_sdGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_ampl_sdGer <- pairs(emmeans(mdl_ampl_sdGer, ~ percProm))
+# Backtransform the post.beta values
+backtransformed_estimates <- exp(em_mdl_ampl_sdGer@post.beta)
+em_mdl_ampl_sdGer@post.beta <- backtransformed_estimates
+print(em_mdl_ampl_sdGer)
+plot(em_mdl_ampl_sdGer)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_ampl_sdGer <- pairs(em_mdl_ampl_sdGer)
+print(pw_em_mdl_ampl_sdGer)
+
+plot(pw_em_mdl_ampl_sdGer)
+```
+
+#### Group-level effects
+
+```{r}
+# Extract fixed effects
+fixef_mdl_ampl_sdGer <- fixef(mdl_ampl_sdGer)
+
+# Extract random effects for participants
+ranef_mdl_ampl_sdGer <- ranef(mdl_ampl_sdGer)
+
+# Get the number of participants
+num_participants <- dim(ranef_mdl_ampl_sdGer$participant)[1]
+## WORK HERE SOMETHING IS WRONG WITH THE FUNCTION BACKTRANSFORMING!!!!!!
+# Combine effects for all participants
+participant_eff_mdl_ampl_sdGer <- lapply(1:num_participants, combine_fixed_random_backtransforming)
+
+# Combine into a single data frame for all participants
+all_participant_eff_mdl_ampl_sdGer <- do.call(rbind, participant_eff_mdl_ampl_sdGer)
+
+# View the effects for all participants
+print(all_participant_eff_mdl_ampl_sdGer)
+```
+
+
+```{r}
+ggplot(all_participant_eff_mdl_ampl_sdGer, aes(x = percProm_level, y = Estimate, group = participant, color = as.factor(participant))) +
+  geom_line(alpha = 0.7, position = position_dodge(width = 0.5)) +
+  geom_point(size = 2, alpha = 0.8, position = position_dodge(width = 0.5)) +
+  geom_errorbar(aes(ymin = Q2.5, ymax = Q97.5), width = 0.2, position = position_dodge(width = 0.5)) +
+  labs(x = "Perceived prominence", y = "Predicted f0 median",
+       color = "Participant") +
+  theme_minimal() +
+  theme(legend.position = "right")
+
+ggplot(all_participant_eff_mdl_ampl_sdGer, aes(x = percProm_level, y = Estimate, group = participant, color = as.factor(participant))) +
+  geom_line(alpha = 0.7) +
+  geom_point(size = 2, alpha = 0.8) +
+  geom_errorbar(aes(ymin = Q2.5, ymax = Q97.5), width = 0.2) +
+  facet_wrap(~ participant, scales = "free_y") +  # Create a separate plot for each participant
+  labs(x = "Perceived prominence", y = "Predicted f0 median") +
+  theme_minimal() +
+  theme(legend.position = "none")  # Remove legend as it's redundant with facetting
+```
+
+### Amplitude median without silences (post-tonic)
+
+#### Priors
+
+```{r}
+get_prior(
+  ampl_noSilence_medianPost ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_ger,
+  family = lognormal()
+)
+
+prior_ampl_noSilence_medianPostGer <- c(
+  prior('normal(0, 1)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_ampl_noSilence_medianPostGer <- brm(ampl_noSilence_medianPost ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_ger,
+                       family = lognormal(),
+                       prior = prior_ampl_noSilence_medianPostGer,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_ampl_noSilence_medianPostGer.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_ampl_noSilence_medianPostGer, file = paste0(models, "mdl_ampl_noSilence_medianPostGer.rds"), compress = "xz")
+
+mdl_ampl_noSilence_medianPostGer <- readRDS(paste0(models, "mdl_ampl_noSilence_medianPostGer.rds"))
+```
+
+Calculate R².
+
+```{r}
+# # Calculate Bayesian R²
+# mdl_ampl_noSilence_medianPostGer_R2 <- bayes_R2(mdl_ampl_noSilence_medianPostGer)
+# # Save the R² output
+# saveRDS(mdl_ampl_noSilence_medianPostGer_R2, file = paste0(models, "mdl_ampl_noSilence_medianPostGer_R2.rds"))
+
+mdl_ampl_noSilence_medianPostGer_R2 <- readRDS(paste0(models, "mdl_ampl_noSilence_medianPostGer_R2.rds"))
+
+mdl_ampl_noSilence_medianPostGer_R2
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_ampl_noSilence_medianPostGer)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_ampl_noSilence_medianPostGer)),
+  Estimate = ifelse(rownames(fixef(mdl_ampl_noSilence_medianPostGer)) == "Intercept",
+                    fixef(mdl_ampl_noSilence_medianPostGer)["Intercept", "Estimate"],
+                    exp(fixef(mdl_ampl_noSilence_medianPostGer)[, "Estimate"]) + fixef(mdl_ampl_noSilence_medianPostGer)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_ampl_noSilence_medianPostGer)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_ampl_noSilence_medianPostGer)) == "Intercept",
+                fixef(mdl_ampl_noSilence_medianPostGer)["Intercept", "Q2.5"],
+                exp(fixef(mdl_ampl_noSilence_medianPostGer)[, "Q2.5"]) + fixef(mdl_ampl_noSilence_medianPostGer)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_ampl_noSilence_medianPostGer)) == "Intercept",
+                 fixef(mdl_ampl_noSilence_medianPostGer)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_ampl_noSilence_medianPostGer)[, "Q97.5"]) + fixef(mdl_ampl_noSilence_medianPostGer)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_ampl_noSilence_medianPostGer)
+```
+
+```{r}
+conditional_effects(mdl_ampl_noSilence_medianPostGer, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_ampl_noSilence_medianPostGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_ampl_noSilence_medianPostGer <- pairs(emmeans(mdl_ampl_noSilence_medianPostGer, ~ percProm))
+print(em_mdl_ampl_noSilence_medianPostGer)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_ampl_noSilence_medianPostGer <- pairs(em_mdl_ampl_noSilence_medianPostGer)
+print(pw_em_mdl_ampl_noSilence_medianPostGer)
+
+plot(pw_em_mdl_ampl_noSilence_medianPostGer)
+```
+
+### Amplitude median without silences
+
+#### Priors
+
+```{r}
+get_prior(
+  ampl_noSilence_median ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_ger,
+  family = lognormal()
+)
+
+prior_ampl_noSilence_medianGer <- c(
+  prior('normal(0, 1)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_ampl_noSilence_medianGer <- brm(ampl_noSilence_median ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_ger,
+                       family = lognormal(),
+                       prior = prior_ampl_noSilence_medianGer,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_ampl_noSilence_medianGer.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_ampl_noSilence_medianGer, file = paste0(models, "mdl_ampl_noSilence_medianGer.rds"), compress = "xz")
+
+mdl_ampl_noSilence_medianGer <- readRDS(paste0(models, "mdl_ampl_noSilence_medianGer.rds"))
+```
+
+Calculate R².
+
+```{r}
+# # Calculate Bayesian R²
+# mdl_ampl_noSilence_medianGer_R2 <- bayes_R2(mdl_ampl_noSilence_medianGer)
+# # Save the R² output
+# saveRDS(mdl_ampl_noSilence_medianGer_R2, file = paste0(models, "mdl_ampl_noSilence_medianGer_R2.rds"))
+
+mdl_ampl_noSilence_medianGer_R2 <- readRDS(paste0(models, "mdl_ampl_noSilence_medianGer_R2.rds"))
+
+mdl_ampl_noSilence_medianGer_R2
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_ampl_noSilence_medianGer)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_ampl_noSilence_medianGer)),
+  Estimate = ifelse(rownames(fixef(mdl_ampl_noSilence_medianGer)) == "Intercept",
+                    fixef(mdl_ampl_noSilence_medianGer)["Intercept", "Estimate"],
+                    exp(fixef(mdl_ampl_noSilence_medianGer)[, "Estimate"]) + fixef(mdl_ampl_noSilence_medianGer)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_ampl_noSilence_medianGer)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_ampl_noSilence_medianGer)) == "Intercept",
+                fixef(mdl_ampl_noSilence_medianGer)["Intercept", "Q2.5"],
+                exp(fixef(mdl_ampl_noSilence_medianGer)[, "Q2.5"]) + fixef(mdl_ampl_noSilence_medianGer)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_ampl_noSilence_medianGer)) == "Intercept",
+                 fixef(mdl_ampl_noSilence_medianGer)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_ampl_noSilence_medianGer)[, "Q97.5"]) + fixef(mdl_ampl_noSilence_medianGer)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_ampl_noSilence_medianGer)
+```
+
+```{r}
+conditional_effects(mdl_ampl_noSilence_medianGer, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_ampl_noSilence_medianGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_ampl_noSilence_medianGer <- pairs(emmeans(mdl_ampl_noSilence_medianGer, ~ percProm))
+print(em_mdl_ampl_noSilence_medianGer)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_ampl_noSilence_medianGer <- pairs(em_mdl_ampl_noSilence_medianGer)
+print(pw_em_mdl_ampl_noSilence_medianGer)
+
+plot(pw_em_mdl_ampl_noSilence_medianGer)
+```
+
+### Duration
+
+#### Priors
+
+```{r}
+get_prior(
+  duration ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_ger,
+  family = lognormal()
+)
+
+prior_durationGer <- c(
+  prior('normal(0, 10)', class = 'Intercept', lb = 0),
+  prior('normal(0, 5)', class = 'b'),  # For intercept
+  prior('normal(0, 5)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_durationGer <- brm(duration ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_ger,
+                       family = lognormal(),
+                       prior = prior_durationGer,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_durationGer.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_durationGer, file = paste0(models, "mdl_durationGer.rds"), compress = "xz")
+
+mdl_durationGer <- readRDS(paste0(models, "mdl_durationGer.rds"))
+```
+
+Calculate R².
+
+```{r}
+# # Calculate Bayesian R²
+# mdl_durationGer_R2 <- bayes_R2(mdl_durationGer)
+# # Save the R² output
+# saveRDS(mdl_durationGer_R2, file = paste0(models, "mdl_durationGer_R2.rds"))
+
+mdl_durationGer_R2 <- readRDS(paste0(models, "mdl_durationGer_R2.rds"))
+
+mdl_durationGer_R2
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_durationGer)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_durationGer)),
+  Estimate = ifelse(rownames(fixef(mdl_durationGer)) == "Intercept",
+                    fixef(mdl_durationGer)["Intercept", "Estimate"],
+                    exp(fixef(mdl_durationGer)[, "Estimate"]) + fixef(mdl_durationGer)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_durationGer)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_durationGer)) == "Intercept",
+                fixef(mdl_durationGer)["Intercept", "Q2.5"],
+                exp(fixef(mdl_durationGer)[, "Q2.5"]) + fixef(mdl_durationGer)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_durationGer)) == "Intercept",
+                 fixef(mdl_durationGer)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_durationGer)[, "Q97.5"]) + fixef(mdl_durationGer)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_durationGer)
+```
+
+```{r}
+conditional_effects(mdl_durationGer, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_durationGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_durationGer <- pairs(emmeans(mdl_durationGer, ~ percProm))
+print(em_mdl_durationGer)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_durationGer <- pairs(em_mdl_durationGer)
+print(pw_em_mdl_durationGer)
+
+plot(pw_em_mdl_durationGer)
+```
+
+### Flux SD
+
+#### Priors
+
+```{r}
+get_prior(
+  flux_sd ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_ger,
+  family = lognormal()
+)
+
+prior_flux_sdGer <- c(
+  prior('normal(0, 1)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_flux_sdGer <- brm(flux_sd ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_ger,
+                       family = lognormal(),
+                       prior = prior_flux_sdGer,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_flux_sdGer.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_flux_sdGer, file = paste0(models, "mdl_flux_sdGer.rds"), compress = "xz")
+
+mdl_flux_sdGer <- readRDS(paste0(models, "mdl_flux_sdGer.rds"))
+```
+
+Calculate R².
+
+```{r}
+# # Calculate Bayesian R²
+# mdl_flux_sdGer_R2 <- bayes_R2(mdl_flux_sdGer)
+# # Save the R² output
+# saveRDS(mdl_flux_sdGer_R2, file = paste0(models, "mdl_flux_sdGer_R2.rds"))
+
+mdl_flux_sdGer_R2 <- readRDS(paste0(models, "mdl_flux_sdGer_R2.rds"))
+
+mdl_flux_sdGer_R2
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_flux_sdGer)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_flux_sdGer)),
+  Estimate = ifelse(rownames(fixef(mdl_flux_sdGer)) == "Intercept",
+                    fixef(mdl_flux_sdGer)["Intercept", "Estimate"],
+                    exp(fixef(mdl_flux_sdGer)[, "Estimate"]) + fixef(mdl_flux_sdGer)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_flux_sdGer)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_flux_sdGer)) == "Intercept",
+                fixef(mdl_flux_sdGer)["Intercept", "Q2.5"],
+                exp(fixef(mdl_flux_sdGer)[, "Q2.5"]) + fixef(mdl_flux_sdGer)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_flux_sdGer)) == "Intercept",
+                 fixef(mdl_flux_sdGer)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_flux_sdGer)[, "Q97.5"]) + fixef(mdl_flux_sdGer)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_flux_sdGer)
+```
+
+```{r}
+conditional_effects(mdl_flux_sdGer, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_flux_sdGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_flux_sdGer <- pairs(emmeans(mdl_flux_sdGer, ~ percProm))
+print(em_mdl_flux_sdGer)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_flux_sdGer <- pairs(em_mdl_flux_sdGer)
+print(pw_em_mdl_flux_sdGer)
+
+plot(pw_em_mdl_flux_sdGer)
+```
+
+### Flux median
+
+#### Priors
+
+```{r}
+get_prior(
+  flux_median ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_ger,
+  family = lognormal()
+)
+
+prior_flux_medianGer <- c(
+  prior('normal(0, 1)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_flux_medianGer <- brm(flux_median ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_ger,
+                       family = lognormal(),
+                       prior = prior_flux_medianGer,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_flux_medianGer.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_flux_medianGer, file = paste0(models, "mdl_flux_medianGer.rds"), compress = "xz")
+
+mdl_flux_medianGer <- readRDS(paste0(models, "mdl_flux_medianGer.rds"))
+```
+
+Calculate R².
+
+```{r}
+# # Calculate Bayesian R²
+# mdl_flux_medianGer_R2 <- bayes_R2(mdl_flux_medianGer)
+# # Save the R² output
+# saveRDS(mdl_flux_medianGer_R2, file = paste0(models, "mdl_flux_medianGer_R2.rds"))
+
+mdl_flux_medianGer_R2 <- readRDS(paste0(models, "mdl_flux_medianGer_R2.rds"))
+
+mdl_flux_medianGer_R2
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_flux_medianGer)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_flux_medianGer)),
+  Estimate = ifelse(rownames(fixef(mdl_flux_medianGer)) == "Intercept",
+                    fixef(mdl_flux_medianGer)["Intercept", "Estimate"],
+                    exp(fixef(mdl_flux_medianGer)[, "Estimate"]) + fixef(mdl_flux_medianGer)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_flux_medianGer)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_flux_medianGer)) == "Intercept",
+                fixef(mdl_flux_medianGer)["Intercept", "Q2.5"],
+                exp(fixef(mdl_flux_medianGer)[, "Q2.5"]) + fixef(mdl_flux_medianGer)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_flux_medianGer)) == "Intercept",
+                 fixef(mdl_flux_medianGer)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_flux_medianGer)[, "Q97.5"]) + fixef(mdl_flux_medianGer)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_flux_medianGer)
+```
+
+```{r}
+conditional_effects(mdl_flux_medianGer, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_flux_medianGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_flux_medianGer <- pairs(emmeans(mdl_flux_medianGer, ~ percProm))
+print(em_mdl_flux_medianGer)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_flux_medianGer <- pairs(em_mdl_flux_medianGer)
+print(pw_em_mdl_flux_medianGer)
+
+plot(pw_em_mdl_flux_medianGer)
+```
+
+### Amplitude SD without silences
+
+#### Priors
+
+```{r}
+get_prior(
+  ampl_noSilence_sd ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_ger,
+  family = lognormal()
+)
+
+prior_ampl_noSilence_sdGer <- c(
+  prior('normal(0, 1)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_ampl_noSilence_sdGer <- brm(ampl_noSilence_sd ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_ger,
+                       family = lognormal(),
+                       prior = prior_ampl_noSilence_sdGer,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_ampl_noSilence_sdGer.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_ampl_noSilence_sdGer, file = paste0(models, "mdl_ampl_noSilence_sdGer.rds"), compress = "xz")
+
+mdl_ampl_noSilence_sdGer <- readRDS(paste0(models, "mdl_ampl_noSilence_sdGer.rds"))
+```
+
+Calculate R².
+
+```{r}
+# # Calculate Bayesian R²
+# mdl_ampl_noSilence_sdGer_R2 <- bayes_R2(mdl_ampl_noSilence_sdGer)
+# # Save the R² output
+# saveRDS(mdl_ampl_noSilence_sdGer_R2, file = paste0(models, "mdl_ampl_noSilence_sdGer_R2.rds"))
+
+mdl_ampl_noSilence_sdGer_R2 <- readRDS(paste0(models, "mdl_ampl_noSilence_sdGer_R2.rds"))
+
+mdl_ampl_noSilence_sdGer_R2
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_ampl_noSilence_sdGer)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_ampl_noSilence_sdGer)),
+  Estimate = ifelse(rownames(fixef(mdl_ampl_noSilence_sdGer)) == "Intercept",
+                    fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Estimate"],
+                    exp(fixef(mdl_ampl_noSilence_sdGer)[, "Estimate"]) + fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_ampl_noSilence_sdGer)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_ampl_noSilence_sdGer)) == "Intercept",
+                fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Q2.5"],
+                exp(fixef(mdl_ampl_noSilence_sdGer)[, "Q2.5"]) + fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_ampl_noSilence_sdGer)) == "Intercept",
+                 fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_ampl_noSilence_sdGer)[, "Q97.5"]) + fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_ampl_noSilence_sdGer)
+```
+
+```{r}
+conditional_effects(mdl_ampl_noSilence_sdGer, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_ampl_noSilence_sdGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_ampl_noSilence_sdGer <- pairs(emmeans(mdl_ampl_noSilence_sdGer, ~ percProm))
+print(em_mdl_ampl_noSilence_sdGer)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_ampl_noSilence_sdGer <- pairs(em_mdl_ampl_noSilence_sdGer)
+print(pw_em_mdl_ampl_noSilence_sdGer)
+
+plot(pw_em_mdl_ampl_noSilence_sdGer)
+```
+
+### F0 median (post-tonic)
+
+#### Priors
+
+```{r}
+get_prior(
+  pitch_medianPost ~ 1 +
+    percProm +
+    (1 + percProm | participant),
+  data = data_prepost_ger,
+  family = lognormal()
+)
+
+prior_pitch_medianPostGer <- c(
+  prior('normal(0, 5)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_pitch_medianPostGer <- brm(pitch_medianPost ~ 1 +
+                         percProm +
+                         (1 + percProm | participant),
+                       data = data_prepost_ger,
+                       family = lognormal(),
+                       prior = prior_pitch_medianPostGer,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_pitch_medianPostGer.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_pitch_medianPostGer, file = paste0(models, "mdl_pitch_medianPostGer.rds"), compress = "xz")
+
+mdl_pitch_medianPostGer <- readRDS(paste0(models, "mdl_pitch_medianPostGer.rds"))
+```
+
+Calculate R².
+
+```{r}
+# # Calculate Bayesian R²
+# mdl_pitch_medianPostGer_R2 <- bayes_R2(mdl_pitch_medianPostGer)
+# # Save the R² output
+# saveRDS(mdl_pitch_medianPostGer_R2, file = paste0(models, "mdl_pitch_medianPostGer_R2.rds"))
+
+mdl_pitch_medianPostGer_R2 <- readRDS(paste0(models, "mdl_pitch_medianPostGer_R2.rds"))
+
+mdl_pitch_medianPostGer_R2
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_pitch_medianPostGer)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_ampl_noSilence_sdGer)),
+  Estimate = ifelse(rownames(fixef(mdl_ampl_noSilence_sdGer)) == "Intercept",
+                    fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Estimate"],
+                    exp(fixef(mdl_ampl_noSilence_sdGer)[, "Estimate"]) + fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_ampl_noSilence_sdGer)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_ampl_noSilence_sdGer)) == "Intercept",
+                fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Q2.5"],
+                exp(fixef(mdl_ampl_noSilence_sdGer)[, "Q2.5"]) + fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_ampl_noSilence_sdGer)) == "Intercept",
+                 fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_ampl_noSilence_sdGer)[, "Q97.5"]) + fixef(mdl_ampl_noSilence_sdGer)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_ampl_noSilence_sdGer)
+```
+
+```{r}
+conditional_effects(mdl_ampl_noSilence_sdGer, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_ampl_noSilence_sdGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_ampl_noSilence_sdGer <- pairs(emmeans(mdl_ampl_noSilence_sdGer, ~ percProm))
+print(em_mdl_ampl_noSilence_sdGer)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_ampl_noSilence_sdGer <- pairs(em_mdl_ampl_noSilence_sdGer)
+print(pw_em_mdl_ampl_noSilence_sdGer)
+
+plot(pw_em_mdl_ampl_noSilence_sdGer)
+```
+
+## Catalan
+
+Let's check the correlations between acoustic features.
+
+```{r}
+# Calculate the correlation matrix
+corrCat <- cor(data_prepost_cat[, c("duration", "f0_slopePost", "fmDep_medianPost", 
+                                    "entropySh_sd", "flux_medianPost", 
+                                    "ampl_medianPost", "specCentroid_median", "duration_noSilence", 
+                                    "durationPre", "ampl_sd")], use = "complete.obs")
+corrplot(corrCat, method = "color", tl.cex = 0.7, number.cex = 0.7, addCoef.col = "black")
+```
+
+Let's set contrasts for comparisons.
+
+```{r}
+# Drop unused levels of percProm
+data_prepost_cat$percProm <- droplevels(data_prepost_cat$percProm)
+# Set sum contrasts for percProm to compare all levels
+contrasts(data_prepost_cat$percProm) <- contr.sum(length(unique(data_prepost_cat$percProm)))
+```
+
+We go one by one the ten features from top to bottom.
+
+### Duration
+
+#### Priors
+
+```{r}
+get_prior(
+  duration ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_cat,
+  family = lognormal()
+)
+
+prior_durationCat <- c(
+  prior('normal(0, 10)', class = 'Intercept', lb = 0),
+  prior('normal(0, 5)', class = 'b'),  # For intercept
+  prior('normal(0, 5)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_durationCat <- brm(duration ~ 1 +
+                         percProm +
+                         (1 + percProm | participant),
+                       data = data_prepost_cat,
+                       family = lognormal(),
+                       prior = prior_durationCat,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_durationCat.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_durationCat, file = paste0(models, "mdl_durationCat.rds"), compress = "xz")
+
+mdl_durationCat <- readRDS(paste0(models, "mdl_durationCat.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_durationCat)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_pitch_medianGer)),
+  Estimate = ifelse(rownames(fixef(mdl_pitch_medianGer)) == "Intercept",
+                    fixef(mdl_pitch_medianGer)["Intercept", "Estimate"],
+                    exp(fixef(mdl_pitch_medianGer)[, "Estimate"]) + fixef(mdl_pitch_medianGer)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_pitch_medianGer)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_pitch_medianGer)) == "Intercept",
+                fixef(mdl_pitch_medianGer)["Intercept", "Q2.5"],
+                exp(fixef(mdl_pitch_medianGer)[, "Q2.5"]) + fixef(mdl_pitch_medianGer)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_pitch_medianGer)) == "Intercept",
+                 fixef(mdl_pitch_medianGer)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_pitch_medianGer)[, "Q97.5"]) + fixef(mdl_pitch_medianGer)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_pitch_medianGer)
+```
+
+```{r}
+conditional_effects(mdl_pitch_medianGer, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_pitch_medianGer, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_pitch_medianGer <- pairs(emmeans(mdl_pitch_medianGer, ~ percProm))
+print(em_mdl_pitch_medianGer)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_pitch_medianGer <- pairs(em_mdl_pitch_medianGer)
+print(pw_em_mdl_pitch_medianGer)
+
+plot(pw_em_mdl_pitch_medianGer)
+```
+
+### F0 slope (post-tonic)
+
+#### Priors
+
+```{r}
+get_prior(
+  f0_slopePost ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_cat,
+  family = "student"
+)
+
+prior_f0_slopePostCat <- c(
+  prior('normal(0, 5)', class = "b"),  # For fixed effects (percProm)
+  prior('student_t(3, 0, 10)', class = "Intercept"),  # For intercept
+  prior('student_t(3, 0, 10)', class = "sd")  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_f0_slopePostCat <- brm(f0_slopePost ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_cat,
+                       family = "student",
+                       prior = prior_f0_slopePostCat,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_f0_slopePostCat.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_f0_slopePostCat, file = paste0(models, "mdl_f0_slopePostCat.rds"), compress = "xz")
+
+mdl_f0_slopePostCat <- readRDS(paste0(models, "mdl_f0_slopePostCat.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_f0_slopePostCat)
+```
+
+```{r}
+plot(mdl_f0_slopePostCat)
+```
+
+```{r}
+conditional_effects(mdl_f0_slopePostCat, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_f0_slopePostCat, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_f0_slopePostCat <- pairs(emmeans(mdl_f0_slopePostCat, ~ percProm))
+print(em_mdl_f0_slopePostCat)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_f0_slopePostCat <- pairs(em_mdl_f0_slopePostCat)
+print(pw_em_mdl_f0_slopePostCat)
+
+plot(pw_em_mdl_f0_slopePostCat)
+```
+
+### Frequency modulation median (post-tonic)
+
+#### Priors
+
+```{r}
+get_prior(
+  fmDep_medianPost ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_cat,
+  family = lognormal()
+)
+
+prior_fmDep_medianPostCat <- c(
+  prior('normal(0, 3)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_fmDep_medianPostCat <- brm(fmDep_medianPost ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_cat,
+                       family = lognormal(),
+                       prior = prior_fmDep_medianPostCat,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_fmDep_medianPostCat.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_fmDep_medianPostCat, file = paste0(models, "mdl_fmDep_medianPostCat.rds"), compress = "xz")
+
+mdl_fmDep_medianPostCat <- readRDS(paste0(models, "mdl_fmDep_medianPostCat.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_fmDep_medianPostCat)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_fmDep_medianPostCat)),
+  Estimate = ifelse(rownames(fixef(mdl_fmDep_medianPostCat)) == "Intercept",
+                    fixef(mdl_fmDep_medianPostCat)["Intercept", "Estimate"],
+                    exp(fixef(mdl_fmDep_medianPostCat)[, "Estimate"]) + fixef(mdl_fmDep_medianPostCat)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_fmDep_medianPostCat)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_fmDep_medianPostCat)) == "Intercept",
+                fixef(mdl_fmDep_medianPostCat)["Intercept", "Q2.5"],
+                exp(fixef(mdl_fmDep_medianPostCat)[, "Q2.5"]) + fixef(mdl_fmDep_medianPostCat)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_fmDep_medianPostCat)) == "Intercept",
+                 fixef(mdl_fmDep_medianPostCat)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_fmDep_medianPostCat)[, "Q97.5"]) + fixef(mdl_fmDep_medianPostCat)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_fmDep_medianPostCat)
+```
+
+```{r}
+conditional_effects(mdl_fmDep_medianPostCat, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_fmDep_medianPostCat, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_fmDep_medianPostCat <- pairs(emmeans(mdl_fmDep_medianPostCat, ~ percProm))
+print(em_mdl_fmDep_medianPostCat)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_fmDep_medianPostCat <- pairs(em_mdl_fmDep_medianPostCat)
+print(pw_em_mdl_fmDep_medianPostCat)
+
+plot(pw_em_mdl_fmDep_medianPostCat)
+```
+
+### Shannon entropy SD
+
+#### Priors
+
+```{r}
+get_prior(
+  entropySh_sd ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_cat,
+  family = lognormal()
+)
+
+prior_entropySh_sdCat <- c(
+  prior('normal(0, 1)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_entropySh_sdCat <- brm(entropySh_sd ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_cat,
+                       family = lognormal(),
+                       prior = prior_entropySh_sdCat,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_entropySh_sdCat.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_entropySh_sdCat, file = paste0(models, "mdl_entropySh_sdCat.rds"), compress = "xz")
+
+mdl_entropySh_sdCat <- readRDS(paste0(models, "mdl_entropySh_sdCat.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_entropySh_sdCat)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_entropySh_sdCat)),
+  Estimate = ifelse(rownames(fixef(mdl_entropySh_sdCat)) == "Intercept",
+                    fixef(mdl_entropySh_sdCat)["Intercept", "Estimate"],
+                    exp(fixef(mdl_entropySh_sdCat)[, "Estimate"]) + fixef(mdl_entropySh_sdCat)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_entropySh_sdCat)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_entropySh_sdCat)) == "Intercept",
+                fixef(mdl_entropySh_sdCat)["Intercept", "Q2.5"],
+                exp(fixef(mdl_entropySh_sdCat)[, "Q2.5"]) + fixef(mdl_entropySh_sdCat)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_entropySh_sdCat)) == "Intercept",
+                 fixef(mdl_entropySh_sdCat)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_entropySh_sdCat)[, "Q97.5"]) + fixef(mdl_entropySh_sdCat)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_entropySh_sdCat)
+```
+
+```{r}
+conditional_effects(mdl_entropySh_sdCat, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_entropySh_sdCat, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_entropySh_sdCat <- pairs(emmeans(mdl_entropySh_sdCat, ~ percProm))
+print(em_mdl_entropySh_sdCat)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_entropySh_sdCat <- pairs(em_mdl_entropySh_sdCat)
+print(pw_em_mdl_entropySh_sdCat)
+
+plot(pw_em_mdl_entropySh_sdCat)
+```
+
+### Flux median (post-tonic)
+
+#### Priors
+
+```{r}
+get_prior(
+  flux_medianPost ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_cat,
+  family = "zero_inflated_beta"
+)
+
+prior_flux_medianPostCat <- c(
+  prior('normal(0, 1)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_flux_medianPostCat <- brm(flux_medianPost ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_cat,
+                       family = "zero_inflated_beta",
+                       prior = prior_flux_medianPostCat,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_flux_medianPostCat.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_flux_medianPostCat, file = paste0(models, "mdl_flux_medianPostCat.rds"), compress = "xz")
+
+mdl_flux_medianPostCat <- readRDS(paste0(models, "mdl_flux_medianPostCat.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_flux_medianPostCat)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_flux_medianPostCat)),
+  Estimate = ifelse(rownames(fixef(mdl_flux_medianPostCat)) == "Intercept",
+                    fixef(mdl_flux_medianPostCat)["Intercept", "Estimate"],
+                    exp(fixef(mdl_flux_medianPostCat)[, "Estimate"]) + fixef(mdl_flux_medianPostCat)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_flux_medianPostCat)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_flux_medianPostCat)) == "Intercept",
+                fixef(mdl_flux_medianPostCat)["Intercept", "Q2.5"],
+                exp(fixef(mdl_flux_medianPostCat)[, "Q2.5"]) + fixef(mdl_flux_medianPostCat)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_flux_medianPostCat)) == "Intercept",
+                 fixef(mdl_flux_medianPostCat)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_flux_medianPostCat)[, "Q97.5"]) + fixef(mdl_flux_medianPostCat)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_flux_medianPostCat)
+```
+
+```{r}
+conditional_effects(mdl_flux_medianPostCat, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_flux_medianPostCat, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_flux_medianPostCat <- pairs(emmeans(mdl_flux_medianPostCat, ~ percProm))
+print(em_mdl_flux_medianPostCat)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_flux_medianPostCat <- pairs(em_mdl_flux_medianPostCat)
+print(pw_em_mdl_flux_medianPostCat)
+
+plot(pw_em_mdl_flux_medianPostCat)
+```
+
+### Amplitude median (post-tonic)
+
+#### Priors
+
+```{r}
+get_prior(
+  ampl_medianPost ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_cat,
+  family = lognormal()
+)
+
+prior_ampl_medianPostCat <- c(
+  prior('normal(0, 1)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_ampl_medianPostCat <- brm(ampl_medianPost ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_cat,
+                       family = lognormal(),
+                       prior = prior_ampl_medianPostCat,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_ampl_medianPostCat.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_ampl_medianPostCat, file = paste0(models, "mdl_ampl_medianPostCat.rds"), compress = "xz")
+
+mdl_ampl_medianPostCat <- readRDS(paste0(models, "mdl_ampl_medianPostCat.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_ampl_medianPostCat)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_ampl_medianPostCat)),
+  Estimate = ifelse(rownames(fixef(mdl_ampl_medianPostCat)) == "Intercept",
+                    fixef(mdl_ampl_medianPostCat)["Intercept", "Estimate"],
+                    exp(fixef(mdl_ampl_medianPostCat)[, "Estimate"]) + fixef(mdl_ampl_medianPostCat)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_ampl_medianPostCat)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_ampl_medianPostCat)) == "Intercept",
+                fixef(mdl_ampl_medianPostCat)["Intercept", "Q2.5"],
+                exp(fixef(mdl_ampl_medianPostCat)[, "Q2.5"]) + fixef(mdl_ampl_medianPostCat)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_ampl_medianPostCat)) == "Intercept",
+                 fixef(mdl_ampl_medianPostCat)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_ampl_medianPostCat)[, "Q97.5"]) + fixef(mdl_ampl_medianPostCat)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_ampl_medianPostCat)
+```
+
+```{r}
+conditional_effects(mdl_ampl_medianPostCat, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_ampl_medianPostCat, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_ampl_medianPostCat <- pairs(emmeans(mdl_ampl_medianPostCat, ~ percProm))
+print(em_mdl_ampl_medianPostCat)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_ampl_medianPostCat <- pairs(em_mdl_ampl_medianPostCat)
+print(pw_em_mdl_ampl_medianPostCat)
+
+plot(pw_em_mdl_ampl_medianPostCat)
+```
+
+### Spectral centroid median
+
+#### Priors
+
+```{r}
+get_prior(
+  specCentroid_median ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_cat,
+  family = lognormal()
+)
+
+prior_specCentroid_medianCat <- c(
+  prior('normal(0, 10)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_specCentroid_medianCat <- brm(specCentroid_median ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_cat,
+                       family = lognormal(),
+                       prior = prior_specCentroid_medianCat,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_specCentroid_medianCat.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_specCentroid_medianCat, file = paste0(models, "mdl_specCentroid_medianCat.rds"), compress = "xz")
+
+mdl_specCentroid_medianCat <- readRDS(paste0(models, "mdl_specCentroid_medianCat.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_specCentroid_medianCat)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_specCentroid_medianCat)),
+  Estimate = ifelse(rownames(fixef(mdl_specCentroid_medianCat)) == "Intercept",
+                    fixef(mdl_specCentroid_medianCat)["Intercept", "Estimate"],
+                    exp(fixef(mdl_specCentroid_medianCat)[, "Estimate"]) + fixef(mdl_specCentroid_medianCat)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_specCentroid_medianCat)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_specCentroid_medianCat)) == "Intercept",
+                fixef(mdl_specCentroid_medianCat)["Intercept", "Q2.5"],
+                exp(fixef(mdl_specCentroid_medianCat)[, "Q2.5"]) + fixef(mdl_specCentroid_medianCat)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_specCentroid_medianCat)) == "Intercept",
+                 fixef(mdl_specCentroid_medianCat)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_specCentroid_medianCat)[, "Q97.5"]) + fixef(mdl_specCentroid_medianCat)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_specCentroid_medianCat)
+```
+
+```{r}
+conditional_effects(mdl_specCentroid_medianCat, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_specCentroid_medianCat, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_specCentroid_medianCat <- pairs(emmeans(mdl_specCentroid_medianCat, ~ percProm))
+print(em_mdl_specCentroid_medianCat)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_specCentroid_medianCat <- pairs(em_mdl_specCentroid_medianCat)
+print(pw_em_mdl_specCentroid_medianCat)
+
+plot(pw_em_mdl_specCentroid_medianCat)
+```
+
+### Duration (without silences)
+
+#### Priors
+
+```{r}
+get_prior(
+  duration_noSilence ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_cat,
+  family = lognormal()
+)
+
+prior_duration_noSilenceCat <- c(
+  prior('normal(0, 10)', class = 'Intercept', lb = 0),
+  prior('normal(0, 5)', class = 'b'),  # For intercept
+  prior('normal(0, 5)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_duration_noSilenceCat <- brm(duration_noSilence ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_cat,
+                       family = lognormal(),
+                       prior = prior_duration_noSilenceCat,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_duration_noSilenceCat.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_duration_noSilenceCat, file = paste0(models, "mdl_duration_noSilenceCat.rds"), compress = "xz")
+
+mdl_duration_noSilenceCat <- readRDS(paste0(models, "mdl_duration_noSilenceCat.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_duration_noSilenceCat)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_duration_noSilenceCat)),
+  Estimate = ifelse(rownames(fixef(mdl_duration_noSilenceCat)) == "Intercept",
+                    fixef(mdl_duration_noSilenceCat)["Intercept", "Estimate"],
+                    exp(fixef(mdl_duration_noSilenceCat)[, "Estimate"]) + fixef(mdl_duration_noSilenceCat)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_duration_noSilenceCat)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_duration_noSilenceCat)) == "Intercept",
+                fixef(mdl_duration_noSilenceCat)["Intercept", "Q2.5"],
+                exp(fixef(mdl_duration_noSilenceCat)[, "Q2.5"]) + fixef(mdl_duration_noSilenceCat)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_duration_noSilenceCat)) == "Intercept",
+                 fixef(mdl_duration_noSilenceCat)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_duration_noSilenceCat)[, "Q97.5"]) + fixef(mdl_duration_noSilenceCat)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_duration_noSilenceCat)
+```
+
+```{r}
+conditional_effects(mdl_duration_noSilenceCat, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_duration_noSilenceCat, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_duration_noSilenceCat <- pairs(emmeans(mdl_duration_noSilenceCat, ~ percProm))
+print(em_mdl_duration_noSilenceCat)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_duration_noSilenceCat <- pairs(em_mdl_duration_noSilenceCat)
+print(pw_em_mdl_duration_noSilenceCat)
+
+plot(pw_em_mdl_duration_noSilenceCat)
+```
+
+### Duration (pretonic)
+
+#### Priors
+
+```{r}
+get_prior(
+  durationPre ~ 1 +
+    percProm + 
+    (1 + percProm | participant),
+  data = data_prepost_cat,
+  family = lognormal()
+)
+
+prior_durationPreCat <- c(
+  prior('normal(0, 10)', class = 'Intercept', lb = 0),
+  prior('normal(0, 5)', class = 'b'),  # For intercept
+  prior('normal(0, 5)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_durationPreCat <- brm(durationPre ~ 1 +
+                         percProm + 
+                         (1 + percProm | participant),
+                       data = data_prepost_cat,
+                       family = lognormal(),
+                       prior = prior_durationPreCat,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_durationPreCat.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_durationPreCat, file = paste0(models, "mdl_durationPreCat.rds"), compress = "xz")
+
+mdl_durationPreCat <- readRDS(paste0(models, "mdl_durationPreCat.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_durationPreCat)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_durationPreCat)),
+  Estimate = ifelse(rownames(fixef(mdl_durationPreCat)) == "Intercept",
+                    fixef(mdl_durationPreCat)["Intercept", "Estimate"],
+                    exp(fixef(mdl_durationPreCat)[, "Estimate"]) + fixef(mdl_durationPreCat)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_durationPreCat)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_durationPreCat)) == "Intercept",
+                fixef(mdl_durationPreCat)["Intercept", "Q2.5"],
+                exp(fixef(mdl_durationPreCat)[, "Q2.5"]) + fixef(mdl_durationPreCat)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_durationPreCat)) == "Intercept",
+                 fixef(mdl_durationPreCat)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_durationPreCat)[, "Q97.5"]) + fixef(mdl_durationPreCat)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_durationPreCat)
+```
+
+```{r}
+conditional_effects(mdl_durationPreCat, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_durationPreCat, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_durationPreCat <- pairs(emmeans(mdl_durationPreCat, ~ percProm))
+print(em_mdl_durationPreCat)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_durationPreCat <- pairs(em_mdl_durationPreCat)
+print(pw_em_mdl_durationPreCat)
+
+plot(pw_em_mdl_durationPreCat)
+```
+
+### Amplitude SD
+
+#### Priors
+
+```{r}
+get_prior(
+  ampl_sd ~ 1 +
+    percProm +
+    (1 + percProm | participant),
+  data = data_prepost_cat,
+  family = lognormal()
+)
+
+prior_ampl_sdCat <- c(
+  prior('normal(0, 1)', class = 'Intercept', lb = 0),
+  prior('normal(0, 1)', class = 'b'),  # For intercept
+  prior('normal(0, 1)', class = 'sd')  # For random effects (participant)
+)
+```
+
+#### Model
+
+```{r}
+mdl_ampl_sdCat <- brm(ampl_sd ~ 1 +
+                         percProm +
+                         (1 + percProm | participant),
+                       data = data_prepost_cat,
+                       family = lognormal(),
+                       prior = prior_ampl_sdCat,
+                       #backend = "cmdstanr", # depends on you
+                       cores = 4,
+                       chains = 4,
+                       iter = 8000,
+                       warmup = 4000,
+                       seed = 998,
+                       control = list(max_treedepth = 12,
+                                      adapt_delta = 0.99),
+                       file = paste0(models, "mdl_ampl_sdCat.rds"))
+
+# if we need to compress the model more
+#saveRDS(mdl_ampl_sdCat, file = paste0(models, "mdl_ampl_sdCat.rds"), compress = "xz")
+
+mdl_ampl_sdCat <- readRDS(paste0(models, "mdl_ampl_sdCat.rds"))
+```
+
+Let's check how it looks like.
+
+```{r}
+summary(mdl_ampl_sdCat)
+```
+
+Create a back-transformed output.
+
+```{r}
+data.frame(
+  Predictor = rownames(fixef(mdl_ampl_sdCat)),
+  Estimate = ifelse(rownames(fixef(mdl_ampl_sdCat)) == "Intercept",
+                    fixef(mdl_ampl_sdCat)["Intercept", "Estimate"],
+                    exp(fixef(mdl_ampl_sdCat)[, "Estimate"]) + fixef(mdl_ampl_sdCat)["Intercept", "Estimate"]),
+  Est.Error = fixef(mdl_ampl_sdCat)[, "Est.Error"],
+  Q2.5 = ifelse(rownames(fixef(mdl_ampl_sdCat)) == "Intercept",
+                fixef(mdl_ampl_sdCat)["Intercept", "Q2.5"],
+                exp(fixef(mdl_ampl_sdCat)[, "Q2.5"]) + fixef(mdl_ampl_sdCat)["Intercept", "Q2.5"]),
+  Q97.5 = ifelse(rownames(fixef(mdl_ampl_sdCat)) == "Intercept",
+                 fixef(mdl_ampl_sdCat)["Intercept", "Q97.5"],
+                 exp(fixef(mdl_ampl_sdCat)[, "Q97.5"]) + fixef(mdl_ampl_sdCat)["Intercept", "Q97.5"])
+)
+```
+
+```{r}
+plot(mdl_ampl_sdCat)
+```
+
+```{r}
+conditional_effects(mdl_ampl_sdCat, sample_prior = "only")
+```
+
+```{r}
+pp_check(mdl_ampl_sdCat, ndraws = 100)
+```
+
+#### Effect comparison
+
+```{r}
+em_mdl_ampl_sdCat <- pairs(emmeans(mdl_ampl_sdCat, ~ percProm))
+print(em_mdl_ampl_sdCat)
+
+# Perform pairwise comparisons between levels of percProm
+pw_em_mdl_ampl_sdCat <- pairs(em_mdl_ampl_sdCat)
+print(pw_em_mdl_ampl_sdCat)
+
+plot(pw_em_mdl_ampl_sdCat)
+```
+
+# Session info
+
+```{r}
+sessionInfo()
+```

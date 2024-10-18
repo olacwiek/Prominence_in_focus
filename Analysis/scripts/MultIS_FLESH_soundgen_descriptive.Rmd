@@ -1,5 +1,5 @@
 ---
-title: "Bridging the Gap 2.0: Exploring a Middle-Way Approach for Prosodic Annotation"
+title: "Acoustic correlates of perceived prominence in German and Catalan: Descriptive statistics and visualizations"
 author: "Aleksandra Ćwiek, Alina Gregori, Paula G. Sánchez-Ramón, Frank Kügler, Pilar Prieto"
 date: "2024-06-20"
 output:
@@ -2791,5 +2791,10 @@ ggplot(data_prepost %>% filter(!is.na(percProm)), aes(x = language, y = fmDep_sd
 ggsave(filename = paste0(plots, "prominence_fmDep_sd_posttonic.png"), plot = last_plot(), width = 6, height = 4)
 ```
 
+# Session info
+
+```{r}
+sessionInfo()
+```
 
 
