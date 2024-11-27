@@ -1,0 +1,23 @@
+# Ignore all files in the 'data' folder
+MultIS_data/
+audio_processed/syllables/
+models/earlier/
+
+# Ignore specific files
+scripts/MultIS_FLESH_DGfS.Rmd
+scripts/MultIS_FLESH_intro.html
+scripts/MultIS_FLESH_intro.Rmd
+scripts/MultIS_FLESH_intro.RData
+
+2023-10-31-final_result.csv
+2024-02-26-Results-report.docx
+2024-10-07-XGBoost-Report.docx
+2024-10-07-XGBoost-Report.pdf
+Abstract.docx
+Bridging the Gap_DGfS2024.pdf
+F0_NA.csv
+IPrAfinal.pdf
+NA_percProm_targets.csv
+NA_percProm_targets_AG.csv
+Prom_NA.csv
+unknown_focus.csv
